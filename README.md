@@ -1,2 +1,2 @@
 # team
-The Rust Community Team respository for managing projects
+The Rust Community Team repository for managing projects
