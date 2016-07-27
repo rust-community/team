@@ -1,0 +1,271 @@
+[2016-07-20 09:01:09] <erickt> time for everyone's favorite meeting!
+[2016-07-20 09:01:25] <erickt> hello everyone. who's here today?
+[2016-07-20 09:01:26] <carols10cents> good UGT morning to all!
+[2016-07-20 09:01:33] <jntrnr> o/
+[2016-07-20 09:01:53] <erickt> carols10cents: Glucuronosyltransferase morning? https://en.wikipedia.org/wiki/Glucuronosyltransferase
+[2016-07-20 09:02:03] <steveklabnik> :)
+[2016-07-20 09:02:07] <erickt> which is what google interpreted UGT as?
+[2016-07-20 09:02:20] <carols10cents> nooooo Universal Greeting Time!! http://www.total-knowledge.com/~ilya/mips/ugt.html
+[2016-07-20 09:02:29] <erickt> hehe
+[2016-07-20 09:02:43] ⇐ nathanhammond quit (nathanhammo@moz-31cunm.mycingular.net): Client exited
+[2016-07-20 09:03:17] <erickt> so we have a fairly light schedule today, though I always think our schedules are usually pretty bare
+[2016-07-20 09:03:25] <erickt> https://github.com/rust-community/team/issues/48 for those just signing on
+[2016-07-20 09:03:42] <bstrie> SUPER SECRET AGENDA ITEM
+[2016-07-20 09:03:45] <jntrnr> hehe
+[2016-07-20 09:03:58] <erickt> the first thing I want to do is formally welcome jntrnr, booyaa, and johannh to the community team!
+[2016-07-20 09:04:14] → nathanhammond joined (nathanhammo@moz-31cunm.mycingular.net)
+[2016-07-20 09:04:20] <jntrnr> woohoo! 🎉🎉🎉
+[2016-07-20 09:04:27] <steveklabnik> :)
+[2016-07-20 09:04:52] <carols10cents> \o/
+[2016-07-20 09:04:53] <johannh> \o/
+[2016-07-20 09:05:04] <bstrie> awesome
+[2016-07-20 09:05:05] <Manishearth> o/
+[2016-07-20 09:05:13] <Manishearth> erickt: wait that happened? yay!
+[2016-07-20 09:05:16] <Manishearth> \o/
+[2016-07-20 09:05:18] <erickt> for the most part this is just formalizing their contributions
+[2016-07-20 09:05:24] <erickt> Manishearth: I finally got around to asking them!
+[2016-07-20 09:05:52] <badboy> puh, I made it. Though it was nice out in the sun.
+[2016-07-20 09:06:48] <erickt> but also asking these folks to help out with (or lead) our future initiatives, or help start some of their own
+[2016-07-20 09:08:05] <erickt> we all also need to start collectively figuring out how we should start structuring these initiatives
+[2016-07-20 09:09:01] <erickt> and make sure they're making progress
+[2016-07-20 09:09:12] <Manishearth> I propose a structure of "have erickt do it"
+[2016-07-20 09:09:25] <Manishearth> (but yeah, agreed)
+[2016-07-20 09:09:26] <carols10cents> +1
+[2016-07-20 09:09:27] <jntrnr> haha
+[2016-07-20 09:09:32] <erickt> darn it. I should kick Manishearth so I can assign it to him
+[2016-07-20 09:09:34] <Manishearth> the rustbridge one seems to be trundling along well
+[2016-07-20 09:09:36] ⇐ nathanhammond quit (nathanhammo@moz-31cunm.mycingular.net): Client exited
+[2016-07-20 09:10:17] <erickt> Manishearth: yeah, I think's doing pretty well. I'm happy with bors.io's progress as well
+[2016-07-20 09:10:21] → srwalker_ joined (srwalker101@moz-eo937o.warwick.ac.uk)
+[2016-07-20 09:10:59] <erickt> booyaa's agenda item on getting meetup communities more engaged could also be really interesting and useful
+[2016-07-20 09:11:03] ⇐ srwalker101 quit (srwalker101@moz-tiijru.warwick.ac.uk): Ping timeout: 121 seconds
+[2016-07-20 09:11:11] <johannh> yeah I guess trundle is a good word for it, writing these workshops is obviously not easy and I'm really happy that eduard took some ownership over that
+[2016-07-20 09:11:32] <erickt> and now that we got a lot of the conference organizers on our team, y'all can start figuring out how can you support each other
+[2016-07-20 09:11:41] <erickt> me too!
+[2016-07-20 09:13:49] <Manishearth> johannh: I have a wide variety of work to do so I can't help write, but if y'all need review let me know
+[2016-07-20 09:14:18] <erickt> so my ask of all of you is to start thinking about if you don't already have something you're driving and you got some free time, what can you do ;)
+[2016-07-20 09:15:56] <erickt> and if there's any better way we ought to be structuring ourselves
+[2016-07-20 09:16:28] <Manishearth> given that so far we don't have many major things to work on I'm not sure if we *need* structure yet
+[2016-07-20 09:17:07] <erickt> that's a fair argument :)
+[2016-07-20 09:17:11] <Manishearth> rustbridge itself involves a considerable amount of effort, both workshop-writing and logistics so it makes sense to make it independentish, but beyond that idk
+[2016-07-20 09:17:49] <erickt> how about the other things we've talked about, like organizing some community-wide events?
+[2016-07-20 09:18:17] <erickt> (someday obfuscated rust contest, some day)
+[2016-07-20 09:18:22] — erickt sighs
+[2016-07-20 09:18:33] <Manishearth> good point
+[2016-07-20 09:18:47] <erickt> it's more about how do we get those things started, and building a group to actually drive them
+[2016-07-20 09:19:06] <Manishearth> I guess as far a structure is concerned we basically have strike teams for each thing like this comprised of the folkes interested in getting involved in them?
+[2016-07-20 09:19:14] <Manishearth> *as far as
+[2016-07-20 09:19:17] <Manishearth> right
+[2016-07-20 09:19:21] <erickt> yeah I think that's a pretty good way to go
+[2016-07-20 09:19:46] <Manishearth> we could do a very generic obfuscated rust contest
+[2016-07-20 09:19:55] <erickt> I think it could work out pretty well that our team's responsibility is trying build a strike team to do these things
+[2016-07-20 09:20:02] <Manishearth> I'd love an underhanded rust contest some day but writing underhanded code in rust is super hard
+[2016-07-20 09:20:18] <Manishearth> yes
+[2016-07-20 09:21:53] <erickt> so in summary: 1) Welcome everyone!
+[2016-07-20 09:22:56] <erickt> 2) Think about if there's any projects you want to help out on or start
+[2016-07-20 09:23:08] <erickt> 3) then assign that work to Manishearth when he's not looking
+[2016-07-20 09:23:13] <jntrnr> hehe
+[2016-07-20 09:23:26] <booyaa> heh
+[2016-07-20 09:23:36] <erickt> (It sounds to me like Manishearth volunteered to organize an underhanded rust contest)
+[2016-07-20 09:23:53] <badboy> oh an underhanded rust contest!
+[2016-07-20 09:23:56] <badboy> Manishearth: when is it?
+[2016-07-20 09:24:35] <Manishearth> lol
+[2016-07-20 09:25:19] <erickt> alright next item: bors.io. It sounds like life got in the way of making much progress this past week
+[2016-07-20 09:25:36] <erickt> frewsxcv: are you blocked on nathan at the moment?
+[2016-07-20 09:25:46] <erickt> locks: ^
+[2016-07-20 09:25:55] <frewsxcv> No, not blocked on anyone, just time
+[2016-07-20 09:26:06] <Manishearth> erickt: frewsxcv fwiw, Servo/Mozilla can provide infra if necessary
+[2016-07-20 09:26:19] <frewsxcv> My employer is launching a product next week so I've been busy
+[2016-07-20 09:26:41] <Manishearth> we should prototype on heroku but I talked to Lars and we can get an aws instance or something if we need
+[2016-07-20 09:26:41] <frewsxcv> Infra is in a good place. Needs more people to help set it up though
+[2016-07-20 09:26:45] <Manishearth> yeah
+[2016-07-20 09:26:51] — frewsxcv strongly prefers Heroku over AWS
+[2016-07-20 09:26:57] <Manishearth> cool
+[2016-07-20 09:27:02] <Manishearth> I am swamped right now :)
+[2016-07-20 09:27:25] <frewsxcv> But I can't be picky if I'm not the one who will set it up
+[2016-07-20 09:27:28] <Manishearth> feel free to ask me questions when deploying though
+[2016-07-20 09:27:33] <Manishearth> I just probably won't be able to do it myself
+[2016-07-20 09:27:34] <Manishearth> heh
+[2016-07-20 09:27:54] — carols10cents whispers heroku is aws
+[2016-07-20 09:28:08] <erickt> heh
+[2016-07-20 09:28:18] <carols10cents> WAKE UP SHEEPLE
+[2016-07-20 09:28:29] <steveklabnik> lol
+[2016-07-20 09:28:54] <booyaa> frewsxcv: you're looking for people with heroku experience to do the setup?
+[2016-07-20 09:29:08] <jntrnr> http://imgs.xkcd.com/comics/wake_up_sheeple.png
+[2016-07-20 09:29:10] <frewsxcv> Looking for people with time :)
+[2016-07-20 09:29:34] <jntrnr> carols10cents: that's one of my favorite xkcds :)
+[2016-07-20 09:29:42] <carols10cents> :)
+[2016-07-20 09:29:46] <frewsxcv> Instructions are already written too https://github.com/japaric/homu-on-heroku
+[2016-07-20 09:29:57] → niconii joined (nicole@moz-qjoals.midco.net)
+[2016-07-20 09:29:57] * ChanServ set +o niconii
+[2016-07-20 09:30:15] — frewsxcv can grant anyone access to the Heroku account if they want to step up
+[2016-07-20 09:30:15] <hjr3> i am late, but finally arrived
+[2016-07-20 09:30:53] <booyaa> frewsxcv:  k i'll have read, i've got spare time commuting too and from work if i can help i'll let you know by tomorrow (if that's okay)
+[2016-07-20 09:31:15] <frewsxcv> booyaa: Sounds great :)
+[2016-07-20 09:31:41] — erickt waves at hjr3
+[2016-07-20 09:32:02] <Manishearth> frewsxcv: I ... might, if I get some time
+[2016-07-20 09:32:06] <Manishearth> email me
+[2016-07-20 09:32:17] <Manishearth> if the instructions are done that's something I can look into
+[2016-07-20 09:33:12] <frewsxcv> Manishearth: The instructions exist, I haven't tried them though :P
+[2016-07-20 09:34:28] <erickt> anything else on bors?
+[2016-07-20 09:35:08] <erickt> Manishearth / booyaa: fyi, there's also the #bors irc channel that's dedicated to this project
+[2016-07-20 09:35:21] <Manishearth> right, I'm sometimes in it
+[2016-07-20 09:35:37] <Manishearth> my IRC client has been restarting a bit lately
+[2016-07-20 09:35:40] <erickt> :) I thought I saw you there
+[2016-07-20 09:35:41] <Manishearth> (the server is hiccuping)
+[2016-07-20 09:35:55] <erickt> ok next topic (if there's nothing else on bors) rustbridge
+[2016-07-20 09:36:18] <erickt> I've almost got an SF meetup planned to build workshop material: http://www.meetup.com/Rust-Bay-Area/events/232753393/
+[2016-07-20 09:36:29] <erickt> on 7/30, which is only a week and a half a way
+[2016-07-20 09:37:00] <erickt> which seems a bit tight to get good turnout
+[2016-07-20 09:37:29] <brson> erickt: i need to know soon if it's actually going to happen
+[2016-07-20 09:37:31] <erickt> so I'm thinking it might be better to push it back to early august. what do you all think?
+[2016-07-20 09:37:36] <brson> +1
+[2016-07-20 09:37:37] <Manishearth> +1
+[2016-07-20 09:37:58] <Manishearth> that sounds like a very good event, and it should have breathing room :)
+[2016-07-20 09:38:06] <brson> erickt: i've been told we need to schedule security even if we don't otherwise need assistance
+[2016-07-20 09:38:26] <erickt> ok, brson want to see if Saturday 8/6 or 8/13 is available?
+[2016-07-20 09:38:35] <brson> sure
+[2016-07-20 09:38:40] <steveklabnik> dawww
+[2016-07-20 09:38:45] <steveklabnik> i will miss it if it gets pushed back.
+[2016-07-20 09:38:48] <steveklabnik> which isn't the end of the world
+[2016-07-20 09:38:50] <booyaa> +1
+[2016-07-20 09:38:57] <erickt> steveklabnik: aw drat
+[2016-07-20 09:39:04] <erickt> forgot you'd be in town
+[2016-07-20 09:39:07] <booyaa> wasn't +1 that steveklabnik sorry
+[2016-07-20 09:39:12] <Manishearth> steveklabnik: oh, you in the bay area this week?
+[2016-07-20 09:39:14] <booyaa> couldn't make it
+[2016-07-20 09:39:35] <steveklabnik> booyaa: hehe
+[2016-07-20 09:39:43] <steveklabnik> Manishearth: something like sunday -> sunday
+[2016-07-20 09:39:56] <brson> erickt: do you think this event will need to broadcast on airmo or otherwise use video conferencing?
+[2016-07-20 09:39:58] <erickt> steveklabnik: maybe we can get the nyc meetup to also have a workshop-a-thon? :)
+[2016-07-20 09:40:02] <steveklabnik> :)
+[2016-07-20 09:40:12] <Manishearth> steveklabnik: aw. there's a pokemon go thing at the moz office on thursday that you might have enjoyed
+[2016-07-20 09:40:24] — jntrnr groans
+[2016-07-20 09:40:24] <jntrnr> :p
+[2016-07-20 09:40:33] <Manishearth> (I get emails about all these fun sf events. and lunch. and I'm not there to enjoy them )
+[2016-07-20 09:40:39] <erickt> Manishearth: we still have our regular meetup on 7/28
+[2016-07-20 09:40:48] <Manishearth> cool
+[2016-07-20 09:40:49] <erickt> this is a bonus meetup ;)
+[2016-07-20 09:40:55] <booyaa> if others want to get involved at the workshop-a-thon, should we register our interest in a workshop by commenting on therelated issue to avoid duplicated effort?
+[2016-07-20 09:41:06] <erickt> carols10cents / hjr3: would you also be interested in doing a workshop-a-thon?
+[2016-07-20 09:41:13] <erickt> booyaa: +1
+[2016-07-20 09:41:15] <brson> what's the workshopathon link?
+[2016-07-20 09:41:17] <booyaa> or better allow us to align what we're trying to achieve with that workshop?
+[2016-07-20 09:41:47] <erickt> brson / booyaa: workshop ideas are here: https://github.com/rust-community/rustbridge/issues?q=is%3Aissue+is%3Aopen+label%3Aworkshop
+[2016-07-20 09:41:48] <stian> yo booyaa :)
+[2016-07-20 09:41:57] <erickt> brson: meetup link is http://www.meetup.com/Rust-Bay-Area/events/232753393/
+[2016-07-20 09:42:00] <booyaa> brson: https://github.com/rust-community/rustbridge/issues?utf8=%E2%9C%93&q=is%3Aissue%20is%3Aopen%20in%3Atitle%20workshop
+[2016-07-20 09:42:08] <booyaa> whoops sorry misunderstood
+[2016-07-20 09:42:22] <booyaa> ah we've got a label nice
+[2016-07-20 09:42:24] <hjr3> i would interested in participating
+[2016-07-20 09:42:31] <brson> erickt: do you think we need a/v for workshop?
+[2016-07-20 09:42:33] <booyaa> stian: o/
+[2016-07-20 09:42:36] <erickt> hjr3: great!
+[2016-07-20 09:43:04] <erickt> brson: can we use the monitors without an A/V person to set it up?
+[2016-07-20 09:43:17] <erickt> not sure if we really need them
+[2016-07-20 09:43:32] <brson> erickt: i think we can probably arrange that, also possibly set up video conferencing on our own
+[2016-07-20 09:43:34] <erickt> I don't think we need air.mozilla setup for this
+[2016-07-20 09:43:36] <brson> ok
+[2016-07-20 09:43:37] <brson> good
+[2016-07-20 09:43:52] <erickt> brson: btw, do we have air mozilla setup for 7/28?
+[2016-07-20 09:43:55] <erickt> just to be safe?
+[2016-07-20 09:44:46] <erickt> hjr3 / carols10cents: the basic idea we had over in #rustbridge would be to just grab a space for a few hours to build out workshop material in small teams, then test them out on each other
+[2016-07-20 09:44:56] <brson> erickt: yes it's scheduled from 7-8.30
+[2016-07-20 09:45:02] <erickt> should be pretty straight forward
+[2016-07-20 09:45:03] <Manishearth> erickt: before focusing on event logistics, could we discuss the thing booyaa was talking about?
+[2016-07-20 09:45:04] <erickt> brson: great!
+[2016-07-20 09:45:09] <Manishearth> in the meeting agenda?
+[2016-07-20 09:45:13] <carols10cents> erickt: perhaps
+[2016-07-20 09:45:38] <erickt> carols10cents: :)
+[2016-07-20 09:46:07] <erickt> Manishearth: sure! I think I'm pretty much done with rustbridge unless anyone else has anything to add
+[2016-07-20 09:46:45] <erickt> Manishearth: or are you referring to the question as to how would we avoid overlapping tutorials?
+[2016-07-20 09:48:25] <erickt> booyaa: did you have more you wanted to talk about?
+[2016-07-20 09:49:06] <booyaa> what was the outcome about getting more engagement with meetups?
+[2016-07-20 09:49:43] <carols10cents> we're going to turn on the engagement switch, we forgot to before
+[2016-07-20 09:49:45] <Manishearth> erickt: no, the meetup thing
+[2016-07-20 09:49:46] <booyaa> my past experience (last month) is that we end up having to do a straw poll to see if there's interest i.e. in a learn together based meetup
+[2016-07-20 09:50:14] <booyaa> sounds like people have a similar experience with meetup and member engagement, beyond rsvping
+[2016-07-20 09:50:52] <erickt> yeah I haven't really seen the SF community engage with meetup.com
+[2016-07-20 09:51:33] <erickt> I meant to direct more people to urlo or our github repo, but I never really came up with a good strategy
+[2016-07-20 09:52:13] <erickt> organizing a "learn-together" is a great idea though that I should pitch at the meetup
+[2016-07-20 09:53:03] <erickt> booyaa: have you come up with other ideas?
+[2016-07-20 09:53:49] <booyaa> i did stick loads of url in my opening presentation last month, technical gremlins scuppered /my/ presentation slot natch. posted the deck in the meetup thread and to date have 7 views
+[2016-07-20 09:54:18] <booyaa> i was pitching the rust bridge workshop development and also our rust evanglism to other meetup groups
+[2016-07-20 09:54:58] <erickt> any interest?
+[2016-07-20 09:55:35] <booyaa> not been made aware, will ask again next month if anyone did get involved
+[2016-07-20 09:55:48] — Manishearth has to go, it's late
+[2016-07-20 09:55:50] <Manishearth> cya folks!
+[2016-07-20 09:55:54] <booyaa> bye Manishearth !
+[2016-07-20 09:55:55] <erickt> gnight Manishearth!
+[2016-07-20 09:56:24] <erickt> booyaa: hm. well maybe some good will come out of the workshop dev
+[2016-07-20 09:56:45] <erickt> we should make sure we encourage the authors to actually give the talks at other meetups
+[2016-07-20 09:56:53] <booyaa> definitely
+[2016-07-20 09:57:04] <erickt> sneak it in
+[2016-07-20 09:58:06] <erickt> well it's getting to the top of the hour. Anyone have any last minute things for the official agenda?
+[2016-07-20 09:58:57] <booyaa> just a bit of feedback
+[2016-07-20 09:59:09] <erickt> I love feedback!
+[2016-07-20 09:59:37] <booyaa> was speaking to some of our meetupers last month and asked how they sought help with rust. still using the usual channels stackoverflow and urlo
+[2016-07-20 09:59:57] <booyaa> i think there'sa bit of frustration that all the good stuff is on #rust-beginners (irc)
+[2016-07-20 10:00:15] <booyaa> i can't think of a way to redress tha so many work environments block access
+[2016-07-20 10:00:44] <erickt> booyaa: hrm, that is a problem
+[2016-07-20 10:01:04] <erickt> well, we could always start a rust-beginners slack channel
+[2016-07-20 10:01:24] <erickt> but I'm not sure how much that helps
+[2016-07-20 10:02:06] <booyaa> if there's bridging software that links the slack network with mozilla ircnet it could help somewhat
+[2016-07-20 10:02:12] <brson> it does seem like maybe there is an important audience that just won't use irc
+[2016-07-20 10:02:17] <brson> and people love slack
+[2016-07-20 10:02:20] <brson> i haven't used it yet...
+[2016-07-20 10:02:30] <badboy> booyaa: there exists such software
+[2016-07-20 10:02:38] <erickt> booyaa: there is https://www.mibbit.com/
+[2016-07-20 10:02:40] <badboy> npm install slack-irc-bridge or something like that
+[2016-07-20 10:02:51] <erickt> but it's no where a nice as slack
+[2016-07-20 10:03:23] <erickt> https://github.com/ekmartin/slack-irc seems interesting
+[2016-07-20 10:04:02] <booyaa> might dig into this, i'm also going to canvas some more to see what the resistance is to irc. i do one if it's not knowing how to setup an irc client
+[2016-07-20 10:04:02] <badboy> that's what I meant
+[2016-07-20 10:04:36] <badboy> the Hoodies used that for quite some time, failed some times, but was mostly reliable
+[2016-07-20 10:04:51] <erickt> badboy: Hoodies?
+[2016-07-20 10:05:16] <badboy> erickt: http://hood.ie/
+[2016-07-20 10:06:04] <badboy> (just another opensource project I was part of)
+[2016-07-20 10:06:22] <erickt> booyaa / badboy: if either of you want to experiment with slack or a better interactive thing like gitter, that'd be awesome
+[2016-07-20 10:07:27] <erickt> booyaa / badboy: or something like https://www.mattermost.org/?
+[2016-07-20 10:07:29] <booyaa> i'll be glad to have a play. will do a post on urlo to see what the interest is in slack/gitter/x gateway to mozilla irc
+[2016-07-20 10:08:13] <badboy> I won't have the time in the coming weeks to look into that
+[2016-07-20 10:08:28] <erickt> booyaa: great! I think mozilla also has some budget to host something too if we decide to go in this direction
+[2016-07-20 10:08:45] <erickt> edunham: ^ if it'd be possible
+[2016-07-20 10:10:03] <erickt> neat! mattermost has an irc bridge: https://www.mattermost.org/mattermost-v1-1-open-source-slack-compatible-integrations/
+[2016-07-20 10:10:32] <badboy> slack does so too :P
+[2016-07-20 10:10:45] <erickt> oh hey it's 10:10. I'm going to officially close the meeting, but feel free to stick around and talk about this some more!
+[2016-07-20 10:10:51] <badboy> (well, it has an irc gateway)
+[2016-07-20 10:11:26] <erickt> badboy: yeah
+[2016-07-20 10:11:29] <steveklabnik> badboy: erickt booyaa also https://zulip.org/
+[2016-07-20 10:11:36] <steveklabnik> which the Recurse Center uses
+[2016-07-20 10:12:15] <steveklabnik> (my personal favorite if i'm forced at gunpoint to use a non-IRC thing ;) )
+[2016-07-20 10:12:16] <erickt> interesting!
+[2016-07-20 10:12:17] <booyaa> nice
+[2016-07-20 10:13:42] <erickt> here's the summary action items: https://github.com/rust-community/team/issues/46#issuecomment-234009049
+[2016-07-20 10:15:03] <erickt> steveklabnik: what do you like better about zulip vs the others?
+[2016-07-20 10:15:27] <steveklabnik> first of all, it's completely open source
+[2016-07-20 10:16:03] <steveklabnik> second, it's got a really interesitng approach to "rooms"
+[2016-07-20 10:16:28] <steveklabnik> it exposes both the "I want to read just this room" and "give me the firehose of all rooms" in a really neat way, depending on how you want to read things
+[2016-07-20 10:17:28] <erickt> neat, didn't realize dropbox aquired the zulip team and opened it up: https://blogs.dropbox.com/tech/2015/09/open-sourcing-zulip-a-dropbox-hack-week-project/
+[2016-07-20 10:17:53] <steveklabnik> yeah
+[2016-07-20 10:24:26] <edunham> erickt: aturon has the last word on these things, but with his blessing I can spin up an instance for it :)
+[2016-07-20 10:24:43] → booyaa_ joined (uid14565@moz-uusv4p.highgate.irccloud.com)
+[2016-07-20 10:24:59] — erickt loves spending aturon's money
+[2016-07-20 10:26:12] <badboy> oh, can I also spent aturon's money?
+[2016-07-20 10:26:19] <erickt> that's my plan
+[2016-07-20 10:26:30] <erickt> aturon's money for everybody!
+[2016-07-20 10:26:54] <badboy> wuhu!
+[2016-07-20 10:27:35] <steveklabnik> lol
+[2016-07-20 10:28:50] ⇐ booyaa_ quit (uid14565@moz-uusv4p.highgate.irccloud.com): Quit: 
+[2016-07-20 10:29:56] <edunham> well, it's Moz's money, for which aturon is accountable, to be pedantic about it
+[2016-07-20 10:30:21] <badboy> now that I'm somewhat part of somethingsomething mozilla I'm sure that's fine
+[2016-07-20 10:52:23] → japaric joined (japaric@moz-ais.i67.64.181.IP)
+[2016-07-20 10:56:52] <Manishearth> booyaa / badboy :were there issues with using something like orccloud?
+[2016-07-20 10:57:12] <Manishearth> doesnt require port, basic use is free, and these days pretty slack-like
+[2016-07-20 10:57:16] <Manishearth> *irccloud
+[2016-07-20 10:57:48] <badboy> I don't know
+[2016-07-20 10:58:07] <steveklabnik> people just also have a cultural aversion to IRC that goes depeer than the interface
+[2016-07-20 10:58:44] <badboy> anyway, gotta go (and catch some pokemon)
+[2016-07-20 10:59:11] <frewsxcv> Manishearth: One thing is that it requires sign up
+[2016-07-20 11:05:29] <booyaa> i know unless you've got some form of persistance (shell or bouncer) it's hard to track if anyone responded to your question. #rust-beginners isn't logged
+[2016-07-20 11:05:43] <booyaa> well not officially
