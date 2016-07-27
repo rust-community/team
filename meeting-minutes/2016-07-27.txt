@@ -1,0 +1,307 @@
+[2016-07-27 09:00:15] <erickt> hello everyone!
+[2016-07-27 09:00:24] — erickt lights off fireworks
+[2016-07-27 09:00:30] <erickt> welcome to our meeting!
+[2016-07-27 09:00:41] <erickt> anyone here that didn't chime up yet?
+[2016-07-27 09:00:58] — locks taps papers on desk
+[2016-07-27 09:01:03] <erickt> hehe
+[2016-07-27 09:01:17] <erickt> here's the agenda, please add to it if you have something you want to talk about: https://github.com/rust-community/team/issues/49
+[2016-07-27 09:01:36] <locks> I have a small status update on bors
+[2016-07-27 09:01:48] — carols10cents hums "let's give em something to talk about"
+[2016-07-27 09:01:53] <erickt> ok take it away locks!
+[2016-07-27 09:01:59] <locks> 4:52 PM <booyaa> i'll be travelling for a bit, tried getting https://github.com/japaric/homu-on-heroku to work no joy. the web ui works, but i can't get the bot to respond to any commands in the pr comments (i saw you gave it ago)
+[2016-07-27 09:01:59] <locks> 4:52 PM <booyaa> i'm willing to raise an issue with japaric to see if i can work out why it's not responding to commands ^^ 
+[2016-07-27 09:02:06] <locks> that's it ;P
+[2016-07-27 09:02:31] <erickt> well that's some progress :)
+[2016-07-27 09:02:36] <erickt> any word from japaric?
+[2016-07-27 09:02:49] <erickt> (who seems to be in this room and might respond?)
+[2016-07-27 09:03:19] <locks> japaric: 🙏
+[2016-07-27 09:03:37] <erickt> or if not, brson, were you involved in getting the original bors/github integration working?
+[2016-07-27 09:03:54] <brson> only as a source of moral support
+[2016-07-27 09:04:12] <brson> edunham may have dealt with it with servo
+[2016-07-27 09:04:59] <edunham> I've dealt with adding repos to an existing bors being finicky... Troubleshooting goes a) diff perms+webhook settings against an existing repo, b) re-send event payloads a lot
+[2016-07-27 09:05:10] <edunham> s/bors/homu/
+[2016-07-27 09:06:13] <edunham> Heroku may also not have the ports that homu defaults to open; that's something to check with booyaa/japaric on
+[2016-07-27 09:06:58] <erickt> edunham: does homu listen on a non-standard port?
+[2016-07-27 09:07:10] ⇐ jdm quit (jdm@moz-3eu2pc.cpe.teksavvy.com): Quit: 
+[2016-07-27 09:07:19] — erickt doesn't see any wacky ports mentioned in https://github.com/japaric/homu-on-heroku
+[2016-07-27 09:07:44] <erickt> locks: this might be relevant: https://github.com/japaric/homu-on-heroku#homu-is-not-listening-to-my-commands
+[2016-07-27 09:07:51] <erickt> "Homu only listen to commands on PRs that appear on your repository queue. If your PR doesn't appear on the queue you probably need to use the synchronize button."
+[2016-07-27 09:08:27] <badboy> I'm online
+[2016-07-27 09:08:31] — erickt waves
+[2016-07-27 09:08:34] <badboy> only mobile, but I'm here
+[2016-07-27 09:09:17] <erickt> edunham + locks + booyaa: got any time today or tomorrow to meetup and debug what's up?
+[2016-07-27 09:09:30] <erickt> I could help out tonight, but I suspect at least booyaa will be asleep :)
+[2016-07-27 09:10:18] — japaric pops in
+[2016-07-27 09:10:26] <edunham> yep, I can help troubleshoot within 2hrs of any ping at a sane time Pacific this week
+[2016-07-27 09:10:38] <japaric> locks: 'it's not responding to commands' does the PR appear under homu queue?
+[2016-07-27 09:11:13] <japaric> locks: if not, there is a synchronize button in the web UI
+[2016-07-27 09:11:23] <japaric> that will put all the existing PRs in the queue
+[2016-07-27 09:11:41] <locks> booyaa would know best
+[2016-07-27 09:12:01] <locks> we can move this to #bors and carry on there 👍
+[2016-07-27 09:12:19] <erickt> sounds good, thanks for helping out japaric and edunham 
+[2016-07-27 09:12:43] <erickt> next up because I don't want to forget about it, carols10cents and contacting survey folks
+[2016-07-27 09:13:05] <carols10cents> HI
+[2016-07-27 09:13:06] <carols10cents> so 
+[2016-07-27 09:13:23] <carols10cents> 300 people said in the survey that they were interested in a pgh conference, but i have not sold 300 tickets :(
+[2016-07-27 09:13:36] ⇐ bjorn3 quit (bjorn3@moz-itl6d3.dynamic.ziggo.nl): Quit: 
+[2016-07-27 09:13:38] <erickt> carols10cents: I looked over what we wrote in the survey and in my opinion, we did ask if we could  contact people for things such as conferences
+[2016-07-27 09:13:57] <carols10cents> i'd really like to make sure they know about rust belt rust, if and only if they 1. expressed interest in conf in pgh and 2. consented to being contacted via email
+[2016-07-27 09:14:08] <carols10cents> and i would make it clear how i got their email and only send 1 email
+[2016-07-27 09:14:26] <carols10cents> i want to make absolutely sure everyone is ok with this before i do it
+[2016-07-27 09:14:41] <carols10cents> if there are any objections, i won't :)
+[2016-07-27 09:15:08] <carols10cents> any thoughts?
+[2016-07-27 09:15:29] <erickt> it looks like we also have some tickets available for RustConf. We could just do one big "hey y'all, we got these three conferences coming up around the world"
+[2016-07-27 09:16:12] <carols10cents> so yeah that sort of leads into my next item too, jntrnr and i were talking a bit about more general outreach from the survey dat
+[2016-07-27 09:16:13] <carols10cents> a
+[2016-07-27 09:16:28] <carols10cents> if it would be better to batch announcements, i'm into that too :) 
+[2016-07-27 09:16:37] <erickt> aturon / brson: any idea if RustConf is expected to sell out?
+[2016-07-27 09:16:51] <edunham> erickt: I suspect if rustconf offered some kind of student discount, you'd get at least a dozen new signups right away
+[2016-07-27 09:17:15] <brson> idk but it's not in danger of selling out in the near term
+[2016-07-27 09:17:21] <carols10cents> yeah i've heard that a lot too-- i'm planning on adding a student price to rust belt rust this week
+[2016-07-27 09:17:31] <badboy> if the survey clearly said so about being contacted I'm fine with it
+[2016-07-27 09:17:38] — edunham has heard a surprising amount of "this looks amazing but I can't justify $200 when I'm this far in debt" from student types within a few hours' drive of pdx
+[2016-07-27 09:18:15] <booyaa> hello, just catching up on chat
+[2016-07-27 09:18:32] <edunham> (I have no objections to sending emails to those who requested them)
+[2016-07-27 09:18:39] <erickt>  fyi, here's the verbage we had in the survey "Unless you choose to enter your email, your answers will be anonymous and only used in aggregate."  and
+[2016-07-27 09:18:50] <erickt> "If you would like to be contacted by a member of the Rust Community or Core teams, please enter your email address. We will not share this information with third parties. You may also send an email to community-team [at] rust-lang [dot] org if you would like to avoid associating your answers here with your identity."
+[2016-07-27 09:19:20] <edunham> erickt: what was the wording on "I want to know more about pgh rust" one?
+[2016-07-27 09:19:58] <carols10cents> ok. that makes me think we should send 1 email to anyone expressing interest in any of the 3 conference locations mentioning all 3, signed by a community team member 
+[2016-07-27 09:20:09] <erickt> which I think covers us. We should have had an explicit "I would like to be contacted about conferences or meetups in my area", but I think what we have is sufficient
+[2016-07-27 09:20:31] <edunham> yeah, I think it's consent to a single personalized email, not necessarily mailing list, when read literally
+[2016-07-27 09:21:34] <carols10cents> "To which of these cities would you travel to attend a Rust conference?"
+[2016-07-27 09:21:41] <carols10cents> is the question i'm most interested in answers to
+[2016-07-27 09:22:23] <steveklabnik> hiiii sorry i'm late
+[2016-07-27 09:22:27] <steveklabnik> freakin' MUNI
+[2016-07-27 09:22:28] <erickt> hey steveklabnik!
+[2016-07-27 09:22:37] — steveklabnik reads scrollback
+[2016-07-27 09:22:38] <erickt> lols, welcome back to the neighborhood!
+[2016-07-27 09:23:35] <Manishearth> edunham: thank you for reminding me, I need to stick green stuff into that scholarship fund for rustcamp
+[2016-07-27 09:23:38] <erickt> edunham: I think we have at least some cover in this circumstance if we orient a bit towards helping to point these people towards community efforts, and only do it once
+[2016-07-27 09:23:44] <steveklabnik> erickt: carols10cents there was https://blog.rust-lang.org/2016/07/25/conf-lineup.html
+[2016-07-27 09:24:03] <erickt> steveklabnik: oh hey
+[2016-07-27 09:24:14] <Manishearth> er, rustconf
+[2016-07-27 09:24:14] <carols10cents> if we're mentioning all 3, maybe i should wait until rustfest tickets are on sale
+[2016-07-27 09:24:30] <carols10cents> steveklabnik: yup, saw that, i think i got a sale or two from that :)
+[2016-07-27 09:24:44] <erickt> steveklabnik: that's pretty much what I envisioned in email form. maybe also throwing in links to the worldwide meetups as well
+[2016-07-27 09:24:54] <badboy> 1 august!
+[2016-07-27 09:24:55] <carols10cents> just trying to use every possible avenue for outreach
+[2016-07-27 09:25:09] <badboy> that's next monday
+[2016-07-27 09:25:28] <carols10cents> 1 aug is when tickets for rustfest go on sale?
+[2016-07-27 09:25:44] <badboy> yes
+[2016-07-27 09:25:57] <carols10cents> ok! i'm going to make an issue to remind me to send said email then :)
+[2016-07-27 09:26:02] <steveklabnik> carols10cents: :)
+[2016-07-27 09:27:37] <erickt> so what's the call? edunham, do you think it's too gray of an area to use the email addresses here?
+[2016-07-27 09:27:39] <carols10cents> https://github.com/rust-community/team/issues/50
+[2016-07-27 09:28:05] <edunham> erickt: I think a single email shoudl be fine, but don't add them to a list w/o opt-in
+[2016-07-27 09:28:21] <erickt> +1 I agree to that
+[2016-07-27 09:28:34] <erickt> next year we can be a bit more explicit with our ask
+[2016-07-27 09:28:45] <edunham> if it's just those who said they'd travel to pgh, we meet the definition of "contacting them about their answers"
+[2016-07-27 09:28:58] <erickt> carols10cents: hehe you already added https://github.com/rust-community/team/issues/28#issuecomment-235639907
+[2016-07-27 09:29:00] <carols10cents> yup, and i added https://github.com/rust-community/team/issues/28#issuecomment-235639907 to r
+[2016-07-27 09:29:02] <carols10cents> :)
+[2016-07-27 09:29:02] <badboy> +1 from me as both rustfest and community team member
+[2016-07-27 09:30:45] <erickt> edunham: think we should send distinct emails to the people that said they'd be up to traveling to portland, or, and berlin?
+[2016-07-27 09:30:46] <Manishearth> steveklabnik: the rustconf scholarship form rejects my zip code :/
+[2016-07-27 09:30:47] <carols10cents> ok! i feel validated, and if anyone reads this later and has concerns before aug 1, there's issue #50.
+[2016-07-27 09:30:50] <Manishearth> both my Indian and american one
+[2016-07-27 09:31:01] <carols10cents> jntrnr: are you here?
+[2016-07-27 09:31:20] <steveklabnik> Manishearth: oh? :( gah
+[2016-07-27 09:31:28] <brson> i don't think jntrnr is here yet
+[2016-07-27 09:31:40] <Manishearth> steveklabnik: do you know who to ping about that?
+[2016-07-27 09:31:48] <Manishearth> I guess wycats?
+[2016-07-27 09:31:49] <edunham> erickt: hmm. I wouldn't want 3 emails if I'd said I was up for all of them... but "here are all the things" feels generic.
+[2016-07-27 09:31:59] <erickt> carols10cents: haha you keep making comments on tickets before me
+[2016-07-27 09:32:08] <Manishearth> steveklabnik: alternatively, I could just transfer to the rustconf bank account if that exists
+[2016-07-27 09:32:18] <steveklabnik> Manishearth: technically leia, if you don't know how to get in touch with her, i can email intro you two
+[2016-07-27 09:32:19] <edunham> I think either is probably fine, though.
+[2016-07-27 09:32:22] <carols10cents> ok, then i'd like to propose postponing the general discussion about outreach from the survey until a time/date when jntrnr is here
+[2016-07-27 09:32:42] <Manishearth> steveklabnik: wfm
+[2016-07-27 09:32:43] <erickt> edunham: we could be smart and figure out who said they wanted to hear from who, and construct emails that way
+[2016-07-27 09:32:46] <steveklabnik> Manishearth: the email?
+[2016-07-27 09:32:50] <Manishearth> steveklabnik: yes
+[2016-07-27 09:32:55] <carols10cents> edunham: maybe i'll look to see how many people expressed interest in more than 1 of the 3
+[2016-07-27 09:32:56] <steveklabnik> carols10cents: he's in a meeting with aturon rn, dunno when they're done
+[2016-07-27 09:32:57] <Manishearth> steveklabnik: or if you could just ping her to get it fixed :)
+[2016-07-27 09:32:58] <steveklabnik> Manishearth: k
+[2016-07-27 09:33:05] <edunham> erickt: I think that'd be ideal, but probably more work than it's worth
+[2016-07-27 09:33:06] <carols10cents> steveklabnik: HOW DARE THEY
+[2016-07-27 09:33:11] <Manishearth> steveklabnik: but via email I can then just bank transfer, which works
+[2016-07-27 09:33:34] <carols10cents> erickt: i think we should move to next agenda item
+[2016-07-27 09:34:06] <erickt> carols10cents: yep!
+[2016-07-27 09:34:54] <erickt> so next item. brson you wanted to talk about friend of the tree
+[2016-07-27 09:35:06] <brson> sure
+[2016-07-27 09:35:10] <Manishearth> steveklabnik: nvm it worked
+[2016-07-27 09:35:16] <Manishearth> I tried it with a third address
+[2016-07-27 09:35:21] <steveklabnik> lol i just sent the email
+[2016-07-27 09:36:01] <brson> fott is a tradition we had for a while where approximately the core team tried to recognize great contributions by individuals
+[2016-07-27 09:36:04] <brson> https://forge.rust-lang.org/index.html
+[2016-07-27 09:36:22] <brson> it's based off firefox's fott tradition, which i think goes by another name now
+[2016-07-27 09:36:37] <brson> for a couple years we were relatively good about keeping it up
+[2016-07-27 09:36:44] <brson> and it seemed to be well recieved
+[2016-07-27 09:37:14] <brson> but we've almost completely stopped, and the few we've done in the last year kinda got buried in subteam reports, didn't make an impact
+[2016-07-27 09:37:50] <brson> we've tried to revive it a few times, but at least in the core team there isn't the will to keep it going
+[2016-07-27 09:38:07] <brson> so i was thinking the community team might want to take it up instead
+[2016-07-27 09:38:12] <Manishearth> wfm
+[2016-07-27 09:38:15] <erickt> +1
+[2016-07-27 09:38:19] <edunham> sgtm
+[2016-07-27 09:38:20] <brson> some important points
+[2016-07-27 09:38:25] <Manishearth> might be helpful to rope in active people like llogiq and co
+[2016-07-27 09:38:27] <brson> it can't be voting based. that's just horrible
+[2016-07-27 09:38:48] <erickt> what if we make it more of a friend-of-the-ecosystem?
+[2016-07-27 09:39:00] <brson> it's better for already established and respected project members to recognize newbies
+[2016-07-27 09:39:03] <brson> erickt: yes
+[2016-07-27 09:39:11] <brson> need to recognize all kinds of contribution
+[2016-07-27 09:39:11] <edunham> (friend-of-the-[ecosystem|language|project]++)
+[2016-07-27 09:39:18] <erickt> it'd be nice to recognize folks like carl for mio, the iron folks, dtolnay and oli-obk that have made serde so much better
+[2016-07-27 09:39:22] <Manishearth> friend-of-the-forest
+[2016-07-27 09:39:25] <brson> lol
+[2016-07-27 09:39:26] <Manishearth> ALL THE TREES
+[2016-07-27 09:39:38] <Manishearth> oli-obk has basically made every project better
+[2016-07-27 09:39:41] <Manishearth> rust, clippy, serde
+[2016-07-27 09:39:57] <carols10cents> how often should we award fotf?
+[2016-07-27 09:39:59] <Manishearth> I eventually turned off serde notifications because of dtolnay and oli being too awesome and cluttering my inbox
+[2016-07-27 09:40:01] <erickt> Manishearth: love it
+[2016-07-27 09:40:02] — edunham imagines a super easy nomination form where anyone in the project can say who did a friend thing and what the thing was
+[2016-07-27 09:40:13] <carols10cents> edunham: +1
+[2016-07-27 09:40:15] <brson> carols10cents: i think we should be pretty liberal with doling out the kudos
+[2016-07-27 09:40:17] <Manishearth> +1
+[2016-07-27 09:40:25] <brson> edunham: i'm not sure about that
+[2016-07-27 09:40:33] <brson> don't want it to be a gamable popularity contest
+[2016-07-27 09:40:38] <Manishearth> hm, yes
+[2016-07-27 09:40:38] <brson> that could be disastrous
+[2016-07-27 09:40:51] <carols10cents> brson: we wouldnt have to award every nomination
+[2016-07-27 09:40:55] <edunham> ok, include submitter, and start disregarding entries if folks spam
+[2016-07-27 09:40:56] <Manishearth> I think in that case -- just rope in a wider section of the community for discussions?
+[2016-07-27 09:41:02] <carols10cents> and the entries could be private
+[2016-07-27 09:41:10] <edunham> I'm thinking just a way for community team to have more eyes on who's desercing kudos
+[2016-07-27 09:41:14] <edunham> *deserving
+[2016-07-27 09:41:17] <brson> carols10cents: even still, just having a venue for people to 'vote' on other people puts undue political pressure
+[2016-07-27 09:41:27] <Manishearth> carols10cents: yeah, but it introduces the question "why was I rejected?". This is different from the question "why wasn't I selected", because the former involves a conscious decision
+[2016-07-27 09:41:38] <brson> imagine trolls that want to disrupt the project by asserting their popularity and support
+[2016-07-27 09:41:42] <carols10cents> but yeah, my next question was going to be how the community team finds out about people deserving of the award
+[2016-07-27 09:41:57] <edunham> perhaps nominate was a bad word to use -- I'm imagining you say "I'm X, Y made the project better today by doing Z" and you never see it again
+[2016-07-27 09:42:12] <brson> i like to think between all the people here paying attention to the communty, we know who is doing great work
+[2016-07-27 09:42:26] <brson> on the other hand, a thread just for soliciting recognition could be good
+[2016-07-27 09:42:26] <Manishearth> edunham: this...could be a regular section of twir actually
+[2016-07-27 09:42:32] <brson> if it doesn't have the promise of an award
+[2016-07-27 09:42:45] <Manishearth> edunham: and exceptional entries get fotf
+[2016-07-27 09:42:46] <brson> it should go at the top of twir
+[2016-07-27 09:42:51] <carols10cents> Manishearth: ooooh i like it
+[2016-07-27 09:42:56] <Manishearth> brson: no, I mean we do something like
+[2016-07-27 09:42:59] <brson> twir used to host fott
+[2016-07-27 09:43:02] <carols10cents> so weekly
+[2016-07-27 09:43:14] — carols10cents just wants someone to say a cadence
+[2016-07-27 09:43:15] <edunham> brson: I think we could easily miss useful, less-visible work on crates we don't maintain if we base it on "work that community team members can see"
+[2016-07-27 09:43:16] <erickt> +1 to twir if they'll take fotf
+[2016-07-27 09:43:23] <erickt> edunham: +1
+[2016-07-27 09:43:38] <Manishearth> brson: we ask people to nominate folks for default kudos, which is always listed in a section in twir, below the "new rust contributors" section. Exceptional nominations there are considered for fotf
+[2016-07-27 09:43:44] <edunham> also, I don't think we have to use the entries verbatim, or even use the same criteria each week
+[2016-07-27 09:43:52] <Manishearth> there's no rejection for default kudos
+[2016-07-27 09:44:00] <erickt> the benefit I see here is if we can help to draw more people into contributing to the ecosystem
+[2016-07-27 09:44:01] <Manishearth> default kudos is for anyone who gets nominated
+[2016-07-27 09:44:21] <edunham> maybe one week we recognize someone who's had a *lot* of kudos, and another week we want to highlight a new iron release so we highlight someone who was a friend specifically to iron
+[2016-07-27 09:44:25] <Manishearth> edunham: this is why i want to rope in a wider section of the community
+[2016-07-27 09:44:58] <Manishearth> not many people, but a trusted set of people
+[2016-07-27 09:45:00] <brson> if we solicit kudos, let's require a paragraph explaining why. not just a list of names
+[2016-07-27 09:45:18] <carols10cents> paragraph? that seems like a lot... maybe a sentence?
+[2016-07-27 09:45:25] <edunham> I'd be wary of claiming we publish all entries; the line of what's a "big enough" contribution might get blurry and incite arguments
+[2016-07-27 09:45:42] <brson> i'd also not suggest that fotf draws strictly from the kudo list
+[2016-07-27 09:45:47] <Manishearth> edunham: yeah, i guess
+[2016-07-27 09:45:52] <Manishearth> yes
+[2016-07-27 09:45:54] <brson> it's the choice of the comunity team, and the kudo list is a good source
+[2016-07-27 09:46:09] <edunham> brson: that++; we can add folks to kudo-list ourselves when we see them deserving it
+[2016-07-27 09:46:11] <erickt> one possibility of controlling excess nominations would be to just limit the nominator to project owners
+[2016-07-27 09:46:50] <erickt> or people who went over and above helping someone with a problem
+[2016-07-27 09:47:06] <carols10cents> :-/ that means like, someone who runs a meetup but doesnt run a project couldn't nominate peopel
+[2016-07-27 09:47:11] <edunham> one way to do that would be requiring github login or doing kudos as contributions to something on github, though I'm not sure if the list should be as public as gh
+[2016-07-27 09:48:01] <edunham> I think it's more important to uniquely identify submitters across submissions than to require that submitters have a certain status in the community
+[2016-07-27 09:48:04] <erickt> carols10cents: hm. we could make it informal, and give some examples of good nominatable actions
+[2016-07-27 09:48:28] <brson> prefer rules are informal
+[2016-07-27 09:48:32] <edunham> imagine kudos: "I'm a new Rust user, and FOTF took 10 hours this weekend to patiently help me understand lifetimes and get my code to compile"
+[2016-07-27 09:48:41] <erickt> brson: yeah
+[2016-07-27 09:49:45] <erickt> I'd be fine if we had excess kudos being granted. If they take up a bunch of space, they could just be put at the bottom of twir
+[2016-07-27 09:50:20] <brson> it would be a fine problem to have if lots and lots of people were being praised with specifics
+[2016-07-27 09:50:31] <erickt> it'd be a wonderful problem
+[2016-07-27 09:51:11] <erickt> someone want to distill all of this down into a friend-of-the-forest ticket?
+[2016-07-27 09:51:40] <edunham> erickt: sure! To clarify, are we suggesting turning FOTT into kudos list, or having both?
+[2016-07-27 09:51:48] <erickt> with the goal of coming up with a nomination process. Either a form, or just mail community-team@, and we'll route that to TWIR?
+[2016-07-27 09:51:53] <brson> it does sound like two seperate processes
+[2016-07-27 09:52:17] <erickt> hm. I invisioned FOTF as being the name for the kudu list
+[2016-07-27 09:52:17] <brson> and it kinda sounds like people are more excited about the general kudo list
+[2016-07-27 09:52:48] <erickt> we/twir then reserve the right to order the list to call out what we think of as the significant contributions of the week
+[2016-07-27 09:53:09] <brson> could be worthwhile, but it loses some impact if there are many people on the list, and they are being recognized by arbitrary other contributors
+[2016-07-27 09:53:34] <brson> good thing about fott was that you are being singled out *by the core team*
+[2016-07-27 09:53:49] <Manishearth> edunham  im envisioning a kudos list,which is used as a source for fotf noms too
+[2016-07-27 09:53:54] <erickt> maybe we rotate which project we highlight at the top of twir
+[2016-07-27 09:53:58] <brson> like, it's an even more distinguished honor than getting thanks from random joe
+[2016-07-27 09:54:03] <Manishearth> eg an exceptional kudos = fotr
+[2016-07-27 09:54:22] <erickt> brson: yeah that's definitely nice, but we're getting big enough that people aren't just working on rust proper
+[2016-07-27 09:55:06] <erickt> so it might actually be more significant for someone in the piston community to be nominated by that group than the core team
+[2016-07-27 09:55:10] <edunham> I think for FOTT, a Rust team should still have to evaluate the kudos and make sure it looks accurate
+[2016-07-27 09:55:31] <erickt> edunham: that sounds reasonable
+[2016-07-27 09:55:36] <edunham> I see kudos as being advice to the community team on who to consider for FOTT
+[2016-07-27 09:56:29] <edunham> perhaps a "thank you" section in TWIR would be more suitable for arbitrary community members to say fott-type things about others?
+[2016-07-27 09:57:17] <brson> regardless of whether there's is a distinct process for the community team to single out one fott, getting a system started for giving kudos on twir would be a great start
+[2016-07-27 09:57:27] <edunham> +1
+[2016-07-27 09:57:34] <edunham> I'll file the issue on it.
+[2016-07-27 09:57:36] <erickt> made a quick ticket to track the FOTF: https://github.com/rust-community/team/issues/51
+[2016-07-27 09:57:38] <brson> thanks
+[2016-07-27 09:57:43] <erickt> please feel free to add more to it
+[2016-07-27 09:57:52] <brson> ping llogiq and nasa42?
+[2016-07-27 09:58:06] <brson> (twir maintainers)
+[2016-07-27 09:58:21] <erickt> brson: great idea with this, thanks brson
+[2016-07-27 09:58:35] <brson> i'll be glad to see it moving again
+[2016-07-27 09:58:50] <erickt> so in our remaining two minutes, anyone else have any other items to discuss?
+[2016-07-27 09:59:00] <badboy>  Ok, I have to go (unrolling another 60m of fiber cable -_-)
+[2016-07-27 09:59:12] <erickt> booyaa: did you have any luck thinking about improving the #rust-beginners story?
+[2016-07-27 09:59:29] <erickt> Manishearth: did you finish making underhanded rust?
+[2016-07-27 09:59:37] <steveklabnik> erickt: improving it? /cc booyaa 
+[2016-07-27 09:59:53] → jdm joined (jdm@66.207.193.21)
+[2016-07-27 09:59:55] <brson> might want to mention that sf meetup has a scheduled rustbridge hackathon on 8/13
+[2016-07-27 10:00:07] <erickt> oh right. y'all should come
+[2016-07-27 10:00:30] <brson> several newbies have piped up that they will be there
+[2016-07-27 10:00:36] <erickt> hannelita, from rustbridge and the sao paolo meetup, is doing a workshop-a-thon on 8/3
+[2016-07-27 10:01:07] <brson> erickt: will both meetups be coordinating on the same material?
+[2016-07-27 10:01:44] <erickt> brson: not necessarily
+[2016-07-27 10:02:10] <erickt> the idea we had was more of a first-come-first -serve kind of thing
+[2016-07-27 10:02:46] <erickt> where teams at each meetup will pick some tutorial topic and start hashing it out technically, then start building workshop materials around it
+[2016-07-27 10:03:05] <brson> worried that could result in lots of half-done material
+[2016-07-27 10:03:18] — carols10cents has to go, sneaks out
+[2016-07-27 10:03:21] <erickt> yeah, but that's a wonderful place to be
+[2016-07-27 10:03:23] <erickt> bye carols10cents!
+[2016-07-27 10:03:38] <erickt> brson: that gives us some foundation to build finished materials
+[2016-07-27 10:03:48] <brson> sure. anything's better than nothing
+[2016-07-27 10:04:00] <erickt> one of the things we can do at SF is take the artifacts produced from the first meetup and take it to the next step
+[2016-07-27 10:04:13] <brson> that's kinda what i was thinking
+[2016-07-27 10:04:52] <erickt> hopefully we'll have enough people in SF that we can't all just work on one topic :)
+[2016-07-27 10:06:22] <erickt> any other questions / agenda items?
+[2016-07-27 10:06:22] <jntrnr> sorry all
+[2016-07-27 10:06:26] <jntrnr> meeting went loooong
+[2016-07-27 10:06:30] <erickt> hey jntrnr!
+[2016-07-27 10:06:35] <erickt> so did ours :)
+[2016-07-27 10:06:47] <booyaa> steveklabnik: resistance to using irc, we briefly touched on alternatives to terminal based i.e. irc cloud, possibly slack integration
+[2016-07-27 10:06:59] <erickt> jntrnr: of particular interest to you: https://github.com/rust-community/team/issues/50#issuecomment-235643644
+[2016-07-27 10:07:13] <booyaa> erickt: sorry no progress, yet
+[2016-07-27 10:07:13] <jntrnr> ah yes, I wanted to chat about that
+[2016-07-27 10:07:19] <erickt> booyaa: ;)
+[2016-07-27 10:07:40] <jntrnr> I was also going to propose that we reach out to people who wanted to be contacted who are interested in using Rust commercially
+[2016-07-27 10:07:55] <jntrnr> since I'm very +1 on Rust commercial usage :)
+[2016-07-27 10:08:01] <steveklabnik> booyaa: ahhh yes, i remember now
+[2016-07-27 10:08:16] <erickt> jntrnr: that would also be useful. we could do another roundtable phone session like brson did about a year ago
+[2016-07-27 10:08:16] <brson> we have a huge list of new prod users since last time we did prod outreach
+[2016-07-27 10:08:27] <jntrnr> erickt: yup, exactly
+[2016-07-27 10:08:43] <jntrnr> brson: right, they'd be great to get to know
+[2016-07-27 10:08:50] <brson> just sending a fresh signal that we care and want to support them would be valuable - even if they don't bite
+[2016-07-27 10:09:13] <jntrnr> +1
+[2016-07-27 10:09:40] <jntrnr> also to carols10cents's comment - I was a little leary of using the emails to promote things like conferences
+[2016-07-27 10:09:52] <jntrnr> mostly because it felt like we're advertising
+[2016-07-27 10:09:56] <jntrnr> instead of doing outreach
+[2016-07-27 10:10:09] <jntrnr> but looks like she's gone now
+[2016-07-27 10:10:17] <jntrnr> anywho, we can chat about it next meeting
+[2016-07-27 10:10:45] <erickt> jntrnr: yeah we are a bit too, but we think we phrased things well enough to give us the ability to do one mailing
+[2016-07-27 10:11:04] <booyaa> steveklabnik: wondering if you could help out with this issue? https://github.com/rust-community/rustbridge/issues/18
+[2016-07-27 10:11:07] <erickt> if we coorelate emails with people that said they'd want to attend conferences in the right location
+[2016-07-27 10:11:16] <jntrnr> erickt: right
+[2016-07-27 10:11:26] <booyaa> i've got some ideas, but i suspect you've done this numerous times and know what works and doesn't
+[2016-07-27 10:11:48] <steveklabnik> booyaa: i will throw in some links <3
+[2016-07-27 10:12:22] <booyaa> steveklabnik: thank you! :)
