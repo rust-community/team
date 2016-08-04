@@ -1,0 +1,306 @@
+16:57 < jntrnr> t-minus 3 mins
+16:59 < locks> where be the agenda
+16:59 < jntrnr> locks: https://github.com/rust-community/team/issues/52
+17:00 < jntrnr> Let's begin!
+17:00 < jntrnr> I and Manishearth are "Vice-Erick" today
+17:00 < jntrnr> since he's out
+17:01 < jntrnr> Who's here?
+17:01 < badboy> I am here.
+17:01 <@Manishearth> o/
+17:01 < badboy> (though on the way to the cologne meetup)
+17:01 < jntrnr> brson said he was here a few minutes ago
+17:01  * edunham here
+17:02  * frewsxcv is observing
+17:02  * Manishearth observes frewsxcv
+17:02 < jntrnr> I know aturon is also out
+17:02  * frewsxcv puts on his Cloak of Invisibility
+17:02 <@Manishearth> is booyaa here?
+17:02 < jntrnr> carols10cents, bstrie, burntsushi, or mbrubeck?
+17:03 < jntrnr> skade?
+17:03 <@Manishearth> We're missing all the rustbridge people afaict
+17:04 <@Manishearth> so the first agenda item should be pushed to next week I guess? unless one of them turns up
+17:04 < jntrnr> Manishearth: hmm.  We could skip that part of the agenda until they show
+17:04 < jntrnr> yeah
+17:04 < edunham> +1 ^
+17:04 <@bstrie> looks like brson owns the rest of the agenda :)
+17:04 <@brson> lol sorry
+17:05 <@brson> ok first, 'announcing new friends'
+17:05 <@brson> this is quick
+17:05 <@brson> we've got this friends page, and a slow trickle of companies adding themselves to it, but we don't do much with it
+17:05 <@brson> i'm afraid their contributions will get lost and feel unappreciated, so thinking about escalating them somehow
+17:06 <@brson> discussed this in channel earlier this week, and the suggestion was to put them in twir some how
+17:06 < jntrnr> +1
+17:06 < edunham> it'd be great if everyone adding themself included a blog post on how they're using Rust, so we could just link that
+17:06 <@brson> which seems ok, so considering just making them a line-item in twir somewhere, but we could also have a section to really call it out
+17:06 < jntrnr> edunham: yeah, we could encourage them to do that when they file the PR
+17:06 <@Manishearth> brson: maybe a section once a month?
+17:06 < edunham> it'd also hit a broader audience to tweet about it from @rustlang
+17:06 <@brson> edunham: ah yeah, that provides could reason to mention it
+17:07 < jntrnr> we could also call out the friends from the front page
+17:07 <@brson> edunham: also a good idea
+17:07 < jntrnr> so more people can see it's there
+17:07 < frewsxcv> For what it's worth, I've attempted to find it on the rust-lang.org website a few times over the past month and I always struggle to find it
+17:07 <@brson> jntrnr: it is probably time to start thinking about how to make it more discoverable yeah
+17:07 <@brson> frewsxcv: yep. there are a few pages like that on the site
+17:07 < frewsxcv> Same goes for the teams page
+17:08 <@brson> i don't think i personally can do that design work right now
+17:08 < frewsxcv> Maybe not teams actually. There was something else I was trying to find recently
+17:08 < edunham> I think a link from the community page would make sense for the friends page -- "who's using Rust?"
+17:08 <@Manishearth> jntrnr: like a little section with 3 randomly-chosen friends?
+17:08 < jntrnr> Manishearth: yeah, I think that'd work well
+17:09 < hjr3> im here, sorry im late
+17:09 < jntrnr> hjr3: no worries :)
+17:10 < jntrnr> edunham: I think that's also a good idea
+17:10 < jntrnr> we can problem have a few ways to get to it
+17:10 < edunham> looks like we're only telling companies to PR in a tiny blurb at the bottom of the friends page; I wonder if that's enough to draw the attention of everyone who should know
+17:11 < edunham> perhaps include it with the TWIR section
+17:11 <@brson> community page is easy, i'll open that bug and ask for help on it
+17:11 < jntrnr> I'm hoping if we have, say, three random ones on the front page that it'll encourage more companies to promote their use via the friends page
+17:11 < jntrnr> brson: how does Manishearth's idea of the 3 random friends on the front page sound?
+17:12 <@brson> jntrnr: it sounds fine, but as has always been the case i'm picky about the front page and adding additional content will make it go below the fold
+17:12 <@brson> which it never has
+17:12 <@brson> could be big design work
+17:12 <@brson> i'll open a bug about it and start soliciting help anyway
+17:12 < jntrnr> brson: +1
+17:13 <@brson> i'll also add an item to my twir checklist to update friends, and monthly roll them up into a friends section
+17:13 < edunham> (fold's quite subjective based on screen size)
+17:13 <@brson> unless somebody else wants that
+17:13 < jntrnr> sounds good
+17:13 <@brson> next?
+17:13 < jntrnr> yup
+17:13 <@brson> ok this is the big one
+17:13 < edunham> if it's too hard to fit 3 friends on the front page, we could also consider having a featured friend each day. That might also encourage the featured company to promote Rust more than if it was random.
+17:14 <@brson> mozilla is ramping up its rust commitments
+17:14 < jntrnr> edunham: and it could use their blurb of how they use Rust to promote their project
+17:14 < jntrnr> sorry go on :)
+17:14 <@brson> and sort of out of nowhere the participation team has launched an effort to mobilize *their* comunity to learn/contribute to rust
+17:15 <@brson> links are in the agenda
+17:15 <@brson> these things tend to be driven by the 'mozilla reps' program
+17:16 < hjr3> are any of the companies on the friends page hiring people to help on those projects? seems like there could be some synergy there
+17:16 <@brson> i want to emphasize that they fully appreciate that rust is its own community, and very intentionally so; they don't want to step on our toes
+17:16 <@bstrie> brson: who makes up the community of the participation team?
+17:16 <@bstrie> is it primarily gecko contributors?
+17:16 < jntrnr> bstrie: like who is their audience?
+17:16 <@brson> bstrie: i'm not very clued in, but my understanding is that the 'participation team' is an ubrella for a variety of outreach efforts
+17:17 <@brson> they do a variety of things to forward mozilla's objectives, whatever they are
+17:17 <@brson> as an example, during firefox os era they were promoting that
+17:17 <@brson> now they have a lot of resources to redirect to something else :)
+17:18 <@Manishearth> bstrie: the majority of the community is non-programmers
+17:18 <@brson> if you look at https://activate.mozilla.community/ you can see a bit about what they are thinking
+17:18 <@brson> this 'activate mozilla' is a single new program from the participation team
+17:18 <@brson> not the totality of what they do
+17:18 <@Manishearth> or people who are not in the community to program (but may be programmers otherwise)
+17:18 <@Manishearth> bstrie: a lot of the stuff they do is about promoting web literacy, privacy, encryption, etc
+17:19 <@Manishearth> firefox os, as brian said, was one major push of theirs. getting it tested by people, evangelism, etc
+17:19 <@brson> so you can see their rust effort, as they've currently conceptualized it, is about getting people to learn rust https://activate.mozilla.community/developer-engagement/rust-hack
+17:19 <@Manishearth> the Indian subcommunity has always been pretty excited about rust
+17:19 < edunham> AIUI they also work with a global team of volunteers, like student and regional reps, to put on various programs
+17:19 <@Manishearth> yes
+17:19 <@Manishearth> Firefox Student Ambassadors
+17:19 < jntrnr> brson: so this sounds like great news.  Do they have ways we can help them?
+17:20 <@brson> it is amazing news
+17:20 <@Manishearth> IIRC that program was largely meant to bolster the fxos stuff, so I'm not sure how active it is now.
+17:20 <@brson> it's a huge opportunity for us
+17:20 <@brson> and istm it's important this goes well for them and for us
+17:20 <@Manishearth> yes
+17:20 <@brson> so i don't know exactly what *we* should do about it yet, but it's important that it's on our radar
+17:21 < booyaa> o/
+17:21 <@Manishearth> probably switchboarding? They'll need to connect with local rustaceans, we often know who those people are
+17:21 < jntrnr> +1
+17:21 <@brson> if you followed the email thread from brian king (our participation team contact on this), i suggested that rust-community@ was *the* place to go  for their reps to find expert rustaceans
+17:21 <@Manishearth> yep
+17:22 <@brson> that discourse https://discourse.mozilla-community.org/ link is where they organize and i'd *expect* the program to be announced there
+17:23 <@brson> once they ramp up we might consider how to alert our commumnity to what they are doing and help, haven't thought it through very far
+17:23 <@brson> ok, that's everything i wanted to convey on that front
+17:23 <@Manishearth> yeah
+17:23 < jntrnr> great, thanks brson
+17:23 <@Manishearth> one thing
+17:23 <@Manishearth> brson: I'd like to try and keep the rest of the community engaged/involved from a relatively early stage
+17:24 <@brson> sgtm
+17:25 <@Manishearth> this has worked well for other things the participation folks have done like firefox code contributions -- whereas many participation events are not directly tied to the programmer communities, these are closely tied and work well
+17:25 < edunham> we can also put them in touch with local rust meetups when appropriate :)
+17:25 <@Manishearth> yep
+17:25 <@Manishearth> I'm wary of basically "two" communities forming
+17:26 < jntrnr> love it
+17:26 < jntrnr> yeah, good instincts Manishearth
+17:26 <@Manishearth> alright, next point?
+17:26 < jntrnr> t-shirts!
+17:26 < edunham> brson: what kind of t-shirts?
+17:26 <@brson> this is related to the last. participation team wants rust swag
+17:26 <@brson> but need it fast
+17:27 <@brson> we've got lots of sticker options, no t-shirts
+17:27 <@brson> except 1.0, but those are too old to be cool
+17:27 < jntrnr> do we have anyone who can turn out a t-shirt design?
+17:27 < jntrnr> who did the 1.0 t-shirt?
+17:27 <@brson> that was tilde, but the design process there is lengthy. we should do something simple
+17:27 < jntrnr> agreed
+17:27 <@brson> take the logo and put it on a black shirt in a way that looks simple and classy
+17:28 <@brson> etc
+17:28 < jntrnr> I'm good with that
+17:28 < edunham> why do they want t-shirts? is there any other item with equivalent swag value that doesn't have the sizing issues of shirts?
+17:28 <@brson> put it on one of those sites that has a global distribution network
+17:28 <@Manishearth> edunham++
+17:28 < jntrnr> would be nice in parallel to have an official shirt
+17:28 <@brson> edunham: they also suggested it would be good to have a swag item that is uniquely rusty
+17:28 <@brson> but i have no ideas
+17:28 <@brson> some cool trinket
+17:28 < jntrnr> hmm
+17:28 < edunham> a multitool or mending kit would be pretty appropriate
+17:29 < jntrnr> the Rust swiss army knife?
+17:29 <@Manishearth> that sounds like C++
+17:29 < edunham> multitools tend to be expensive and varyingly legal to ship around, though leatherman makes a $20 TSA-approved one
+17:29 <@brson> sounds expensive
+17:29 < jntrnr> necklace?
+17:29 < jntrnr> with the logo?
+17:29 < edunham> USB battery with the logo on it?
+17:30 < edunham> socks?
+17:30 < jntrnr> haha
+17:30  * jntrnr would wear Rust socks
+17:30 < hjr3> oh i like socks
+17:30 <@Manishearth> My favorite piece of swag is a coffee mug that looks like a beaker, from Chemistry Stack Exchange. Something useful but unique like that would be cool. If expensive
+17:30 <@Manishearth> socks are a good idea
+17:30 < booyaa> socks and coffee cups!
+17:30 < edunham> socks were super in at oscon this year, as you can get them in one-size-fits-most
+17:30 <@Manishearth> yep
+17:30 < jntrnr> sweet
+17:31 < edunham> I'd <3 a coffee cup printed with some kind of Rust command reference
+17:31 < jntrnr> edunham: that sounds like a fun one to design
+17:31 < edunham> or even community reference
+17:31 < edunham> I'd design that :)
+17:31 < jntrnr> does anyone want to take up the Rust socks idea?
+17:31 < hjr3> Option<cream>
+17:31 <@Manishearth> edunham: Option<Tea>
+17:31 < jntrnr> haha
+17:31 <@Manishearth> pronounced T
+17:31 < booyaa> try!(coffee_machine::brew())
+17:32 < jntrnr> obviously we need a mug too apparently :D
+17:32 < booyaa> would the socks have the logo embroided on ankle? or printed?
+17:32 < edunham> looks like custom standard socks with a knitted-in design run around $7-8 per pair, http://www.customsockshop.com/shop/custom-made-socks/corporate-casual/, not sure what quantity
+17:33 <@bstrie> brson: could print up a quick batch of stickers, using either the rustlang logo or the rustacean
+17:33 <@bstrie> btw we need a community sticker fund :)
+17:33 < booyaa> that's a point we've got a mascot don't we
+17:33 < booyaa> the little crab
+17:33 < jntrnr> edunham: do you want to file an issue for the cup and/or socks?
+17:33 < edunham> jntrnr: ok
+17:34 < jntrnr> we can brainstorm/price them out
+17:34 < hjr3> we have the black rustacean shirt too
+17:34 < edunham> oh and I specc'd out Rustacean plushies; production cost would run around $10 each in quantities of 500-1,000
+17:34 <@brson> bstrie: i don't know if we need to physically print anything for them (there's going to be events all over the world). maybe better to make them available online so they can deal with it themselves
+17:34 <@brson> if you haven't seen it this is badass https://www.stickermule.com/marketplace/14448-oxidation
+17:35 < edunham> nice!
+17:35 < hjr3> i like that
+17:35 <@Manishearth> edunham: there are services which make these things in bulk? nice
+17:35 <@brson> hjr3: do you have the rustacean shirt link?
+17:36 <@Manishearth> oooo nice
+17:36 <@brson> i can forward that to brian king
+17:36 < hjr3> brson sure one sec
+17:36 <@brson> (though nobody likes the back of that shirt)
+17:36 <@brson> does anybody want to take an the task of setting up a simple rust t-shirt on some t-shirt website within the next week and a half?
+17:36 < hjr3> brson https://teespring.com/shop/programmer-tshirts/rustacean#pid=2&cid=2397&sid=front
+17:36 <@brson> thanks
+17:37 <@brson> teespring looks like a good option :)
+17:37 <@brson> assume they ship globally?
+17:37 < hjr3> im not sure who set that up
+17:37 < hjr3> i believe so
+17:38 < edunham> they're a good place for people to buy their own shirts, less great for an organization to buy giveaway shirts in bulk
+17:38 <@brson> huh
+17:38 <@brson> why?
+17:38 <@brson> do you know an option that serves both cases well?
+17:39 < edunham> brson: it's just more expensive to get bulk shirts there than someplace like customink.
+17:39 <@brson> ok, i'll keep that as an option too
+17:39 < hjr3> yes, teespring has a consumer focus. customink has a bulk order focus
+17:40 < edunham> could you clarify whether we're looking for "swag people can buy" or "swag we can give people"? Because the distribution models tend to differ quite a bit
+17:40 <@brson> edunham: both are important. the latter is what the participation team needs now
+17:40 <@Manishearth> brson: also, do they want a complete design on a site, or just some ideas?
+17:40 <@Manishearth> I imagine the participation team does this often so they already have preferred sites/distribution
+17:40 < edunham> ok, do you have a feel for roughly how many items they want? (tens? hundreds? thousands?)
+17:40 <@Manishearth> in which case we can share some assets an ideas
+17:40 <@brson> Manishearth: good point. i can ask if they have a preferred site
+17:40 < johannh> brson: wooow oxidation is so cool
+17:41 <@brson> edunham: don't know
+17:41 <@brson> i can ask that too
+17:41 <@brson> i can also ask how much budget they have
+17:41 <@brson> but suspect they don't know
+17:41 <@brson> 40 minutes down. might vant to move on to other agenda
+17:42 <@bstrie> edunham has a thing
+17:42 < edunham> issue filed, https://github.com/rust-community/team/issues/53
+17:42 <@brson> i'll take action items to follow up on t-shirt matters on the list
+17:42 < edunham> yep I just wanted to ask where semi-maintained orphaned projects should land
+17:42 <@brson> try to get more info
+17:43 < edunham> I've inherited gankro's too-many-lists, and established that it's really only feasible to share perms with other maintainers in an org rather than with a repo in one's personal account
+17:44 < edunham> From discussion yesterday it seems that either landing it in rust-community (if that's what the org is for) or making a rust-orphanage type org to catch it and future "homeless" projects would be suitable
+17:44 < edunham> thought?
+17:44 < edunham> *thoughts?
+17:44 <@brson> steveklabnik also suggested rust-lang-deprecated
+17:45 < edunham> although it is not currently deprecated, hosting it under r-l-deprecated would be a fast route to it becoming so
+17:45 < dikaiosune> rust-reunion (a la rust team alumni)
+17:45 <@brson> yeah, i think it doesn't quite fit
+17:45 <@brson> also i'm not inclined to call this project official
+17:46 <@brson> rather 'to call thes docs official docs'
+17:46 <@Manishearth> edunham: I am very +1 on the rust-lang-unmaintained thing
+17:46 <@Manishearth> edunham: also willing to help with too-many-lists. I already have plans for the nomicon, so too-many-lists might be also good to fix
+17:46 < edunham> Manishearth: awesome, I'll give you all the perms on it once it finds a home
+17:46 < badboy> same here, deprecated is the wrong word, orphanage or unmaintained seems more reasonable.
+17:46 <@Manishearth> edunham: I think rust-community is the best home for too-many-lists
+17:47 < edunham> would unofficial be better than unmaintained?
+17:47 <@Manishearth> and all "unmaintained" things, though too-many-lists can be counted as maintained -- I do plan to maintain it even if I don't get time to actively contribute
+17:47 <@Manishearth> edunham: rust-community arleady contains semi-official things, no?
+17:47 < edunham> rust-unofficial
+17:47 <@Manishearth> works
+17:47 < hjr3> +1 to unofficial
+17:47 < edunham> ok cool
+17:47 < edunham> problem solved
+17:48 <@Manishearth> I'll make it
+17:48 < hjr3> the others have negative connotation
+17:48 < edunham> (unless any -1's)
+17:48 <@brson> hm
+17:48 < booyaa> nope +1 here too
+17:48 < booyaa> is there time to give a quick rust bridge update?
+17:49 < edunham> booyaa: 12mins :)
+17:49 < badboy> who will be responsible for the orga (not the individual projects), the community team as well?
+17:49 <@Manishearth> booyaa: yep!
+17:49 <@Manishearth> orga?
+17:49 < edunham> org
+17:49 < badboy> the github organisation hosting these projects
+17:49 < badboy> (my german abbrevations slip through)
+17:50 <@brson> emphasizing unofficialness could be seen as negative or discouraging contributions
+17:50 <@brson> and just to clarify, i think these *could* be official docs, just don't think they should jump straight to that status
+17:50 <@brson> needs to be clear they are are high quality and can be maintained
+17:50 < edunham> so... are you suggesting nursery instead?
+17:51 <@brson> :( no, i see that as the lowest-level official endorsement
+17:51 <@brson> sorry for being so confusing
+17:51 < edunham> hmm ok, let's chat later about how to be unofficial without calling it unofficial then
+17:52 <@brson> k
+17:52 <@bstrie> edunham: this is sort of something that we need to solve in general as well, should be a cross-team thing. need to figure out who's taking up huon's simd and rand work, for example
+17:52 <@Manishearth> I created the org already, but we can rename it
+17:52 <@Manishearth> bstrie: I would but simd/rand in nursery though
+17:53 <@Manishearth> > Catch-all organization for unofficial Rust projects which have become orphaned or otherwise need community maintainership
+17:53 <@bstrie> well it's one thing to have them filed away in the correct organization, it's another thing to have someone actually championing them :P
+17:53 <@Manishearth> right
+17:53 <@bstrie> rand and simd are too important to lie fallow
+17:53 < jntrnr> bstrie: +1
+17:54 < edunham> I think we should hand out perms liberally on unofficial, and to get in a repo should have a guardian who'll take the lead on adding people and closing PRs...
+17:55 <@brson> becoming an official project often means nobody feels responsible for them it seems
+17:55 <@brson> weirdly
+17:55 < booyaa> rust bridge update: we got stuck on what level to pitch the workshops. i know the assumption is that the attendees will not have any programming experience, but the concern was what if they dont' have anycomputer exp at all. we looking at what rails bridge "foundational skills" workshop. go bridge assumes you've some programming experience.
+17:56 < edunham> booyaa: if you're requiring pre-reg, can you say "please read this short guide on basic programming concepts before attending" and give them a little bit of friendly docs to even the playing field?
+17:57 <@Manishearth> edunham: yep
+17:57  * edunham not sure if that'd be too discouraging...
+17:57 < booyaa> woudl tie in necessary with an install fest (setup) guide too thanks!
+17:59 < booyaa> k will pass this along to the group.
+17:59 < edunham> (I think you could decrease the pile of impostor syndrome it'd create by putting simple multiple choice questions at the end of each section, so readers can confirm they understood "enough")
+18:01 <@Manishearth> +1
+18:01 < booyaa> yup really like the idea of the quiz, saw this recently and found it very useful for quantifying my abilities https://stackoverflow.com/company/salary/calculator
+18:02 < booyaa> sorry wrong link
+18:02 < booyaa> https://stackoverflow.com/company/salary/skills/web-developer
+18:02 < edunham> (just make sure the quiz answers are in the section somewhere so diligence will pay off if they get stuck and have to reread ;))
+18:02 < booyaa> will do
+18:03 < edunham> looks like we've hit time
+18:03 < badboy> perfect. our meetup is about to start.
+18:03 < booyaa> ty you!
+18:03 < edunham> have a great meetup!
+18:03 < booyaa> skade: re: can you give me more context about the complaint?
+18:03 < badboy> later!
+18:03  * jntrnr waves
+18:04 <@Manishearth> o/
+18:06 < booyaa> laters potaters
