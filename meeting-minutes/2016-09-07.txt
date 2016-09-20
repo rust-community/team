@@ -1,0 +1,147 @@
+16:00	erickt	hi everyone!
+16:00	bstrie	guten morgen
+16:00	badboy	moin
+16:00	erickt	who's secretly here but hasn't spoken up?
+16:01	badboy	(yeah, I'm sure that works :D)
+16:01	erickt	hehe
+16:01	erickt	i gotta trick them somehow
+16:01	* frewsxcv speaks up
+16:01	erickt	everyone who's not here please say so
+16:01	* matthew-piziak- speaks up
+16:01	* erickt waves
+16:02	erickt	ok so we might have a pretty abridged meeting because I couldn't think of things for the agenda: github.com/rust-community/team/issues/64
+16:02	erickt	first thing should be pretty quick. for those going to rustconf, who wants to claim which spot at our booth during the breaks?
+16:03	edunham	I can do any of them, though I'll be more alert if you don't book me for very-first-thing
+16:03	erickt	I figure we'll be helping to organize, and have a signup sheet for nominating friends of the forest
+16:03	erickt	heh
+16:03	bstrie	edunham: oh, I will not be going to rustconf (unless someone wants to spot me a last minute plane ticket!) so I cannot accept the eldritch ferris :P
+16:04	erickt	bstrie: ;_;
+16:04	* matthew-piziak- won't be there, but will be going to Rust Belt Rust
+16:04	edunham	bstrie: awww :( maybe I can have someone from your local meetup courier him to you?
+16:04	bstrie	edunham: I imagine nmatsakis and jntrnr will be there, so sure
+16:04	bstrie	matthew-piziak-: I'll see you at RBR at least :)
+16:04	* erickt is hoping to go to RBR too
+16:04	matthew-piziak-	\o/
+16:05	erickt	haven't bought plane tickets yet
+16:05	edunham	erickt: also I am not picky about the number of shifts you pick for me at the table -- I'll probably get equal or better hallway track there than I would just mingling around :)
+16:05	erickt	edunham: I slotted you in for lunch. we can split the duties so we can eat
+16:06	erickt	it doesn't sound like we got a lot of attendees here so I'll just make sure to cover the morning bit and recruit as we go
+16:07	erickt	bstrie: you're up!
+16:07	frewsxcv	matthew-piziak-: see you there :)
+16:07	bstrie	brson: are you organizing the production user outreach again this year?
+16:07	erickt	bstrie: he and jntrnr are working on it
+16:08	bstrie	well, in lieu of them I don't have much to say on this topic :)
+16:08	matthew-piziak-	frewsxcv: Yes indeed. And we'll probably see each other at NYC meetups as well, although not the next one because I'll be in Eastern Europe.
+16:08	bstrie	but we should have an issue somewhere where we can organize things for the production user outreach
+16:08	erickt	bstrie: hehe
+16:08	erickt	I thought we did
+16:08	bstrie	last year it was very successful, and this year we have a lot more known production users
+16:08	bstrie	aturon might also want to get in on this, potentially
+16:08	bstrie	since it has to do with 2017 priorities
+16:09	bstrie	anyway, I have one more thing as well
+16:09	erickt	sure
+16:09	edunham	(community-booth-folks ought to know who to send people who mention production use to, as well)
+16:09	bstrie	carol was telling me that we have a lot of tickets left for rust belt rust, so I want to see if we can leverage the other two conferences to help sell them
+16:09	* jntrnr pops head up
+16:09	erickt	bstrie: I've heard brson and jntrnr talk about this near aturon so I think he's also aware
+16:10	jntrnr	yes, outreach is still a go. and yeah, aturon is looped in
+16:10	bstrie	jntrnr: howdy hello, is there a central ticket open for production user outreach?
+16:10	jntrnr	will probably start after rustconf since most of us are pulled off onto that
+16:10	bstrie	so that we can organize out-of-band
+16:10	bstrie	ok, that sounds good
+16:10	bstrie	we'll hold off on that until next week's meeting then
+16:10	jntrnr	bstrie: we've got the list together, and I have drafts of emails being looked over now
+16:11	bstrie	anyway, as I was saying, it would be nice to help expand our east coast community if we can all help make RBR a success
+16:11	badboy	bstrie: We could probably mention RBR at rustfest, but I don't think there will be large interest, getting over to the US is still expensive, that's why we have the one in europe in the first place
+16:11	bstrie	mostly it seems that we just need to keep marketing going
+16:12	bstrie	badboy: right, I don't expect many tickets from rustfest, but it still makes sense for all the conferences to support one another :)
+16:12	* jntrnr continues his on-going saga to try to move to New Zealand
+16:12	badboy	bstrie: yup
+16:12	erickt	badboy: yeah that might be a little tough. carols10cents, any luck advertising at CMU and Pitt?
+16:12	bstrie	yes, and if anyone has any other ideas for getting the word out about RBR, please let carol know
+16:13	erickt	(carols10cents btw I'll be in pittsburgh 9/18 through 9/21, we should totally hang out)
+16:13	bstrie	or if you want to tweet about it to your rust-curious friends, that would help too
+16:13	booyaa	is there a page we can point people to or just email?
+16:13	erickt	booyaa: www.rust-belt-rust.com
+16:14	bstrie	when we tell people about RBR in person we get a lot of positive responses and immediate ticket sales, but increasing exposure to the fact that the event is happening at all has been challenging
+16:14	bstrie	what is the date of rustfest?
+16:14	erickt	bstrie: 9/17-18
+16:15	bstrie	I'm regretting not remembering to plug the upcoming conferences in the last general discussions of the previous rust release
+16:15	badboy	rustconf → viewsource → rustfest :)
+16:15	bstrie	those are always good opportunities for getting the word out without feeling forced
+16:15	bstrie	next rust release is late september, so I guess we'll get one more chance to do that for RBR anyway
+16:16	erickt	bstrie: we should make sure to plug the conferences at the rustconf keynote
+16:16	bstrie	yes, absolutely
+16:16	erickt	the slides/video will probably get a bunch of views and buzz on HN
+16:16	badboy	bstrie: that and maybe get it into this-week-in-rust in some prominent place?
+16:16	bstrie	and we should remind aturon to mention RBR in the official "Announcing Rust 1.X" blog posts
+16:16	erickt	yeah
+16:16	bstrie	badboy: ah yes, there's still time to do that for rustfest as well
+16:17	erickt	like a "special community events section"
+16:17	bstrie	badboy: and twir is pull-request driven, so anyone can go in and do that
+16:17	bstrie	are tickets still available for rustconf? I can go in and make a reddit post right now
+16:17	booyaa	erickt: ah sorry crossed wires thought it was about production user outreach
+16:17	badboy	RustFest is already in the "Upcoming Events" section there, plus we already are dealing with the waiting list for tickets
+16:17	erickt	badboy: are you sold out? if so, that's great!
+16:18	badboy	erickt: more or less, yes
+16:18	erickt	\o/
+16:18	badboy	at least we reached a number we are happy with (there are still tickets on sale though)
+16:19	badboy	so, back to topic? (I'll leave in 10minutes)
+16:19	erickt	yeah. bstrie anything more, or shall we move on?
+16:19	bstrie	still just wondering if rustconf has tickets for sale
+16:20	bstrie	if we should do some last-minute plugging
+16:20	erickt	that I don't know
+16:20	erickt	bstrie: I pinged aturon
+16:20	badboy	rustconf.com/register.html < at least here only training tickets are left
+16:21	bstrie	in that case I'm done then
+16:21	erickt	ok so next topic, everyone see github.com/rust-community/team/issues/72
+16:21	erickt	2017 planning
+16:21	erickt	we got a callout for a theme for us for mentoring over the next year
+16:22	erickt	which includes but is not just rustbridge
+16:22	erickt	so we should at least start brainstorming what else fits in this space
+16:23	erickt	and come up with some quarterly goals for us
+16:24	erickt	so, any ideas how we should approach this?
+16:24	frewsxcv	It might be good to point out issues before attempting to come up with goals?
+16:24	* frewsxcv shrugs
+16:24	erickt	frewsxcv: what do you mean by issues?
+16:25	erickt	do you mean github issues, or actual problems our community is facing?
+16:25	frewsxcv	The latter, though I suppose "goals" aren't necessarily meant to address specific issues
+16:26	erickt	I'm sorta meaning the same thing :)
+16:26	bstrie	personally I think that 2017 planning is something that we can tackle at our own pace, rather than needing to inter-coordinate as other teams do
+16:27	badboy	but we should at least communicate that
+16:27	badboy	so people can jump in and help (because while we coordinate, we're not necessarily the ones that need to do all the work)
+16:27	erickt	bstrie: sorta. I think we are a bit more effective as a team if we can concentrate on certain areas, like the survey
+16:28	bstrie	one of my personal goals is to start building rust communities on new continents, which implies growing the community team even more
+16:28	erickt	I certainly don't want to overplan all our work since most of us are doing this in our free time
+16:28	erickt	bstrie: great point
+16:29	erickt	having us come up with common directions like that would help
+16:29	bstrie	i.e. we need to find the skade_ equivalent for africa, south america, se asia, etc
+16:29	edunham	I think our planning would be successful if we came up with a set of roadmap issues with clear action items that interested community members could take to help us out
+16:29	erickt	with respect to rustbridge, that'd be us trying to translate our docs into other languages
+16:30	erickt	totally agree with the both of you
+16:30	booyaa	i'm excited about the mentoring, interested to see how we'll achieve it beyond beginners (rustbridge)
+16:31	edunham	(I think the success or failure of remote communites relies a lot on people who're actually in the area, and the community team's job is to set our side up in a way that makes them the likeliest to succeed)
+16:32	erickt	edunham: to do that, we ought to make things that make it easier to form local groups. like meetup starter packages
+16:32	erickt	we've talked about having a meetup speaker database
+16:32	frewsxcv	Might be helpful if there existed something like people.djangoproject.com
+16:32	erickt	frewsxcv: we've talked about things like that.
+16:32	booyaa	yeah i saw some mails to the community team about assistance in amplifying their presence (re: south korea group)
+16:33	erickt	frewsxcv: www.rustaceans.org
+16:33	frewsxcv	www.rustaceans.org/search/new%20york
+16:33	erickt	I think nrc said we could probably take that over and enhance it
+16:34	edunham	that looks like something we could extend rustaceans to
+16:34	booyaa	+1
+16:34	erickt	another angle is to try to encourage people towards important projects
+16:34	edunham	yesterday I looked into porting rustaceans to our hosting -- I have the frontend up at rustaceans.rust-lang.org and need to pick nrc's brain on how backend setup works once he gets here
+16:35	erickt	though games, friends of the forest, twir, and etc
+16:35	erickt	edunham: nice!
+16:35	edunham	I'd <3 a database of projects-who-want-newbies, which I think we're starting to build with the matchmaking thing at the booth
+16:35	erickt	+1
+16:36	erickt	we can start drafting up a plan at the conf
+16:36	erickt	the 2017 version of internals.rust-lang.org/t/announcing-the-community-subteam/2248
+16:37	erickt	any other ideas? if not, we can wrap up this meeting early :)
+16:38	edunham	oh yeah, I'd like thoughts on how to tl;dr the team mission
+16:38	edunham	ideally 1 long sentence or 2 short ones
+16:38	edunham	for the website
+16:38	erickt	yeah
+16:39	erickt	ok well I'm formally calling this meeting to a close. you're all welcome to keep talking of course :)

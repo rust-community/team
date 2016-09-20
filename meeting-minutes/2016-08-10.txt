@@ -1,0 +1,210 @@
+16:00	erickt	Oh hey it's time!
+16:00	* llogiq waves back
+16:00	Manishearth	o/
+16:00	erickt	Hi everybody!
+16:00	erickt	Hi vice Erick!
+16:01	badboy	hi!
+16:01	erickt	I'm still on my phone for a minute so I might be slow
+16:01	llogiq	Ha, me too.
+16:01	erickt	But first off! Got another secret item. edunham has accepted our offer to join the community team!
+16:02	erickt	Huzzah!
+16:02	carols10cents	\o/!!!!
+16:02	frewsxcv	Congrats!
+16:02	erickt	So we should be seeing her around here more permanently :D
+16:02	edunham	:D thank you!
+16:02	llogiq	Congrats^2!!
+16:02	bstrie	hello
+16:02	erickt	(Because there is no way to leave the team... Muwahhaha)
+16:03	edunham	haha, now you tell me that part :P
+16:03	bstrie	erickt is going to force us all to get tattoos of his face somewhere on our bodies
+16:03	* llogiq thinks about leaving while there's still time...
+16:03	bstrie	so that he can watch over us... forever
+16:03	erickt	Nooo I'm totally just kidding
+16:03	brson	oh hi llogiq!
+16:03	llogiq	:-P
+16:03	carols10cents	bstrie: lolololol
+16:03	erickt	The tattoo is in a discrete location
+16:04	llogiq	Hi brson.
+16:04	erickt	If any of you all out there think you can dedicate time to our stuff let me know
+16:04	erickt	I can get you indoctrinated
+16:05	bstrie	llogiq: are you joining us as well on the community team? :)
+16:05	dikaiosune	indoctrination sounds painful
+16:05	carols10cents	it doesn't hurt for very long
+16:05	llogiq	I'm thinking about it.
+16:05	erickt	Ok got to grab an elevator. Back in a moment
+16:06	erickt	Feel free to start talking bors if you want :)
+16:06	* llogiq throws an elevator at erickt
+16:06	edunham	not a lot of new news on Bors; I was supposed to help out a bit but work got in the way
+16:06	erickt	Back!
+16:07	llogiq	Thanks! ;-D
+16:07	bstrie	edunham: what work needs to be done/is being done on bors that the community team should be involved with?
+16:07	erickt	edunham: I'd complain about work but you're making the rust ecosystem better so I'm conflicted
+16:07	* jntrnr is only kinda here
+16:08	erickt	Hello ghost of jntrnr !
+16:08	jntrnr	boo!
+16:08	erickt	👻
+16:08	edunham	booyaa: did we miss any of your bors thoughts last week?
+16:08	erickt	It locks if you are in today?
+16:09	frewsxcv	From #bors: "Lock: I don't have anything on bors for the community meeting :("
+16:09	frewsxcv	s/Lock/locks/
+16:10	bstrie	what's going on with bors?
+16:10	* bstrie so lost
+16:10	frewsxcv	No one has been successful thus far in setting up the existing codebase in Heroku
+16:10	erickt	back on a real computer
+16:10	erickt	frewsxcv: drat
+16:10	carols10cents	bstrie: the community team plus some ember folks are taking over bors!
+16:11	frewsxcv	Problem being the codebase, from what I understand, less-so Heroku
+16:11	bstrie	carols10cents: as in taking stewardship of the code, or taking over the specific instance that runs the rust stuff?
+16:11	frewsxcv	I'm getting more optimistic about github.com/AelitaBot/aelita though
+16:11	edunham	there exists an incomplete Rust rewrite, and one option would be to funnel resources into getting that working then figure out hosting later
+16:11	edunham	^^ that :)
+16:12	erickt	bstrie: we're forking bors. unfortunately barosl has gone offline, and homu.io isn't in a healthy state at the moment
+16:12	edunham	I'm not sure where the requirement for Heroku hosting actually came from; it's nicer to manage permissions on than AWS but we could make it work fine without Heroku
+16:12	bstrie	hmm, wasn't aware that barosl had vanished
+16:12	erickt	yeah :(
+16:13	frewsxcv	edunham: I don't think Heroku is the issue here though, we still have to figure out how to run it
+16:13	erickt	we tried reaching out to him through a few channels a month or two ago, but didn't get through
+16:13	bstrie	I do agree that a rust-based version makes sense in the long term, but I don't have a good sense of how monumental a task that is
+16:13	edunham	bstrie: see github.com/barosl/homu/issues/122 about barosl's circumstances
+16:13	dikaiosune	bstrie: it's like <1000 lines of python
+16:14	frewsxcv	1000 lines of Python can be quite a bit of complexity :)
+16:14	dikaiosune	indeed
+16:14	dikaiosune	but it's not a complete beast :)
+16:14	bstrie	but homu's also built on buildbot, which I think is more than 1k lines...
+16:14	locks	In a meeting, the update is there aren't updates 😞
+16:15	erickt	locks: no worries
+16:15	dikaiosune	anyways, i'm not sure assessing the difficulty of a rust rewrite is useful, because there's one that is coming along (aelita, above)
+16:15	locks	booyaa tried to get it working but couldn't
+16:15	bstrie	dikaiosune: how can we gauge aelita's progress towards being capable of relacing homu?
+16:15	erickt	booyaa: did you see whether or not github was at least trying to reach out to your service on heroku?
+16:15	edunham	it'd be technically possible to get a Homu in a matter of hours by just cargo-culting the current Rust setup, but I wouldn't be comfortable giving it push access to random peoples' repos without looking harder at the security issues and threat models that emerge with shared access
+16:16	frewsxcv	The author of aelita is on IRC (notriddle) though they aren't in here. They're a contributor to Servo
+16:16	dikaiosune	bstrie: iirc, larsberg had some thoughts on it being close on #rust-tools
+16:16	locks	We've discussed aelita, it poses additional problems I believe
+16:17	erickt	locks: do you remember what they were?
+16:17	dikaiosune	it doesn't use DB transactions atm
+16:18	* erickt waves at aepsil0n
+16:19	frewsxcv	Does Bors/Homu even use DB transactions?
+16:19	* aepsil0n waves back.
+16:19	* aepsil0n needs to fix some broken java app in production though… :(
+16:19	carols10cents	who needs integrity anyway? ;)
+16:20	erickt	hm. booyaa, do you have a sense of how much time it might take to get the heroku thing working?
+16:20	dikaiosune	well it's only an issue with a multi-node deploy, i'd think
+16:20	dikaiosune	(which is probably not necessary to start)
+16:20	erickt	once we get a basic thing working, we could probably get some help from sgrif to port aelita to diesel.rs
+16:20	bstrie	the waters here seem pretty murky, I think someone familiar with what's happening in this space should put together a summary of the situation and possible routes of action
+16:20	bstrie	since it seems like we're just kind of stumbling around right here and not making much headway
+16:21	erickt	+1
+16:22	bstrie	I have a pseudo-agenda item, if we'd like to move on
+16:22	frewsxcv	"I think someone familiar with what's happening" In my opinion, finding a person who fits this isn't too straightforward, unless maybe edunham?
+16:22	erickt	any of the bors folks, could one of you write up the current state of things in github.com/rust-community/bors/issues/6?
+16:23	dikaiosune	sure thing
+16:23	erickt	thanks!
+16:23	edunham	I'll write up the current state of Rust and Servo's Homu instances, not sure what's up with the Heroku integration though
+16:23	erickt	alright lets take bstrie's item since he chimed up :)
+16:23	booyaa	erickt: sorry just got connected, re: heroku. i think i reached a bit of a dead end.
+16:23	edunham	eta Saturday
+16:23	locks	we can move a more thorough discussion to #bors and go from there
+16:23	erickt	locks: sounds good
+16:23	booyaa	i could see homu could see the prs but not responding to bot commands +r
+16:24	bstrie	I sorta just wanted to call out jntrnr's metabug at github.com/rust-lang/rust/issues/35233 as being tremendously successful at reaching out to new contributors
+16:24	jntrnr	bstrie: !!
+16:24	jntrnr	that was a surprise to me :D
+16:24	jntrnr	but a happy surprise
+16:25	bstrie	might be worth writing a blog post about it, if someone can think of a juicy angle
+16:25	llogiq	Easy issues + Tutorial = WIN!
+16:25	erickt	that's true! great job with that
+16:26	jntrnr	bstrie: yup! I'm writing up one now on just the new errors
+16:26	jntrnr	but might be nice to also have a blog just about the community piece
+16:27	jntrnr	btw, fun fact, if you update to the latest nightly, the new error format is now on by default
+16:27	edunham	jntrnr++ that's awesome!
+16:27	bstrie	jntrnr: yes, maybe once all is said and done and we can reflect on how many new names are in the contributors list :)
+16:27	erickt	jntrnr: that's great
+16:27	jntrnr	:D
+16:27	llogiq	Hooray!
+16:28	bstrie	jntrnr: oh, it's on by default? so great :)
+16:28	bstrie	mir and new errors, it's going to be an important nightly
+16:28	jntrnr	yeah, will be fun to get that release out the door
+16:28	jntrnr	t-minus ~7 weeks
+16:28	llogiq	And I just aliased cargo to 'RUST_NEW_ERROR_FORMAT=true cargo...
+16:29	bstrie	jntrnr: think we'll get all those error messages updated before the beta cuts in a week? :P
+16:29	jntrnr	haha, at least some will go in
+16:29	jntrnr	but some will wait
+16:30	bstrie	anyway, that's all. erickt, you're up
+16:30	erickt	thanks
+16:30	erickt	next up is just a quick thing on bridge
+16:31	erickt	(aepsil0n feel free to add anything)
+16:31	erickt	hannelita down in sao paolo presented some ideas on how to do workshop material
+16:31	erickt	err, where's that link
+16:31	erickt	github.com/rust-community/rustbridge/issues/20
+16:32	erickt	she wrote up the comments there if you're interested.
+16:32	erickt	made a nice intro slide deck too: slides.com/hannelitavante-hannelita/rust-html-parsing
+16:32	booyaa	will be doing a similar pitch to my group tomorrow wish me luck ;)
+16:32	erickt	anyway, the SF meetup is meeting this saturday to build out more tutorials if any of you are around
+16:32	erickt	oh great!
+16:33	llogiq	Good luck booyaa
+16:33	erickt	I don't know if we'll have video streaming, but we'll at least be on irc if you want to participate: www.meetup.com/Rust-Bay-Area/events/232904115
+16:33	erickt	it's 10am PST to 4pm PST
+16:33	booyaa	cheers :D
+16:33	erickt	ish
+16:33	brson_	erickt: did they have a workshopathon last weekend?
+16:33	badboy	looking forward to having all that workshop material!
+16:33	brson_	is slides.com/hannelitavante-hannelita/rust-html-parsing# the thing they made?
+16:34	erickt	brson_: turned out she didn't do a workshop, she built that herself and walked through the materials she made
+16:34	brson_	oh that seems like a slide to motivate the workshopathon
+16:34	booyaa	erickt: have you decided on an irc channel?
+16:34	erickt	if I understand correctly
+16:34	bltavares	brson_: it was the pitch for the presentation
+16:34	bltavares	sorry to jump in, I was at the presentation (:
+16:35	edunham	erickt: I've been trying to keep the last section of github.com/ctjhoa/rust-learning/blob/master/README.md up to date with tutorials, but "so you want to do a Rust workshop" might be good material for community team to distribute eventually as well
+16:35	erickt	booyaa: I haven't. perhaps we should do #rustbridge to build up that channel
+16:35	brson_	bltavares: thanks, sorry i am not at all up to speed, but i want to understand what sf is supposed to accomplish this weekend
+16:35	booyaa	erickt: sounds good
+16:35	bltavares	She was asking for feedback if people would like to attend a workshop on how to scrap a webpage, and this feedback would be used to produce a material for workshops
+16:35	erickt	brson_: for SF, I figured we'd actually be hacking out tutorials
+16:35	bltavares	But I'm not sure what the state of everything is. I just made some notes on post-its with feedbacks
+16:36	brson_	erickt: should we try to align our tutorial with the content of that slide deck?
+16:36	bltavares	But I could help as well, I'm just short on time to commit to it hehe
+16:36	brson_	like 'how to perform a GET request'
+16:37	brson_	or asked another way, are all our meetups trying to collaborate on one tutorial, or are we working independently?
+16:37	erickt	I see us working in small teams on multiple materials
+16:37	bltavares	brson_: there is some code already on that, but not on slide format
+16:37	bltavares	brson_: github.com/galois1/demo/blob/improv1/src/main.rs
+16:38	erickt	so we'd split up into groups of 3-4, build out a series of commits like ^
+16:38	erickt	then start building out a slide deck and teaching materials to go with it
+16:38	bltavares	the repo has different branch with states of the code
+16:38	erickt	brson_: sort of like installfest.railsbridge.org/installfest/installfest
+16:39	erickt	(speaking of which, we also need something like that for rust)
+16:40	brson_	ok. i like the idea of building on bltavares's existing work, or somebody's, not just continually restarting half-efforts
+16:40	erickt	definitely. I want to strongly encourage folks to work more on the web scraper
+16:40	brson_	is github.com/galois1/demo/blob/improv1/src/main.rs the scraper?
+16:40	bltavares	(that was @hannelita's, I'm just giving feedback btw hehe)
+16:41	bltavares	brson_: github.com/galois1/demo/blob/improv2/src/main.rs
+16:41	bltavares	improv2
+16:41	bltavares	I've suggested to introduce some more intermediate steps
+16:41	brson_	bltavares: oh each branch is a different project?
+16:41	bltavares	no, the same, but with more things
+16:41	bltavares	imrpvo1 just make a get
+16:41	bltavares	improv2 is parsing the content
+16:42	brson_	ok
+16:42	erickt	it might make sense to merge things into one repo
+16:42	erickt	to make it a little more clear
+16:42	bltavares	I would suggest an improve1.5, with things more verbosely, like more variables instead of using everything on the argument call
+16:42	brson_	maybe reflect the progress in the commit history, not branches
+16:42	brson_	whatever, details
+16:43	brson_	i think i'm more-or-less up to speed
+16:43	brson_	thanks
+16:43	erickt	cool
+16:43	erickt	if there's nothing else on this
+16:43	erickt	the last bit is if there's anything from last week that we need to talk about
+16:43	bltavares	brson_: I'm can syncup with hannelita, let her know there was a discussion here
+16:44	erickt	like github.com/rust-community/team/issues/53
+16:44	erickt	I still haven't quite caught up with everything yet
+16:44	* erickt waves at skade
+16:45	bltavares	oh, isn't this channel covered by botbot.me?
+16:45	erickt	bltavares: no, they never responded to our request :( we got logs.glob.uno/?c=rust-community
+16:46	erickt	it sounds like there's nothing from last week to talk about :)
+16:46	bltavares	q/window bare
+16:46	erickt	anyone else have anything else they want to talk about?
+16:47	bltavares	erickt: thanks
+16:47	erickt	if not, then I release you back to the human world!

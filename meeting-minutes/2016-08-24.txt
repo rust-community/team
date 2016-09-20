@@ -1,0 +1,260 @@
+16:00	erickt	hello everyone!
+16:00	erickt	thanks for coming!
+16:00	erickt	so we got a pretty big agenda: github.com/rust-community/team/issues/57
+16:00	jntrnr	lol
+16:00	erickt	I doubt we'll get through everything
+16:01	hjr3	o/ morning erickt
+16:01	erickt	so lets first talk about our robotic overlords
+16:01	erickt	(ps if you have any agenda items, please comment on the ticket)
+16:01	erickt	brson: you around?
+16:01	jntrnr	I wonder if acrichto should chime in on this too
+16:01	jntrnr	since he also has a vested interest
+16:02	erickt	jntrnr: want to ping him?
+16:02	jntrnr	sure
+16:02	erickt	anyway, so we got a new guest here today, notriddle, who is working on aelita bot
+16:02	erickt	another post-bors bot
+16:02	jntrnr	nice
+16:02	notriddle	Wʜᴀᴛ ʀᴏʙᴏᴛɪᴄ ᴏᴠᴇʀʟᴏᴀᴅs? Tʜᴇʏ'ʀᴇ ᴏᴜʀ ᴘʀᴏᴛᴇᴄᴛᴏʀs!
+16:02	jntrnr	welcome :)
+16:03	erickt	aelitabot.xyz / github.com/AelitaBot/aelita
+16:03	erickt	we also have locks and edunham here (and maybe frewsxcv?) who have sorta been working on getting homu setup
+16:03	erickt	locks, you came from the ember community, right?
+16:03	locks	booyaa should be around too
+16:03	locks	confirm
+16:04	erickt	heh, I can hear the wycats influence in your response ;)
+16:04	steveklabnik	hehe
+16:04	erickt	locks you also mentioned a eeyore
+16:04	locks	xD
+16:04	jntrnr	confirm
+16:04	locks	I originally came in with nathan hammond who was going to actually work on the infra, but work's occupying him
+16:04	erickt	work is the worst
+16:05	locks	tell me about it
+16:05	erickt	so I wanted to bring us together (and track down who is the folks on eeyore) so we can collaborate together
+16:05	erickt	rather than duplicate work
+16:05	steveklabnik	eeyore was a carol and i joint
+16:05	steveklabnik	but then we both got super busy
+16:05	steveklabnik	or at least, i know i did
+16:05	brson	erickt: yes, sorry
+16:05	brson	distracted
+16:06	locks	eeyore is a issue triaging helper bot, labelling and such
+16:06	locks	this interests me as we have an issue triage team at ember, and I was thinking of proposing those features to bors in the future
+16:06	steveklabnik	yeah i mean, putting it in bors could work too
+16:07	erickt	so first things first, notriddle, as I mentioned before, we as the community team aren tied to any technology, we just want the functionality
+16:07	edunham	highfive would also be a good candidate
+16:07	erickt	*aren't*
+16:07	edunham	(for triage features, that is)
+16:08	erickt	edunham: +1
+16:08	bstrie	erickt: I'm here!
+16:08	erickt	morning!
+16:08	notriddle	I wholeheartedly agree.
+16:08	jdm	edunham: as written, I'm not sure - it's built around responding to github notifications, and triage may not fit into that
+16:09	erickt	notriddle: so I think one thing you need to figure out if you're going to go the whole aelitabot-as-a-company, or if you'd want the community to help manage it
+16:09	jdm	oh, maybe I'm misunderstanding what triage means here
+16:09	notriddle	erickt: To start with, I do not plan to close-source aelita in whole or in part.
+16:10	edunham	(jdm: yeah, AIUI Eeyore is just responses to magic comments on PRs, where responses includes labeling)
+16:10	steveklabnik	yes
+16:10	erickt	(eeyore link: github.com/eeyorebot/eeyore)
+16:10	notriddle	erickt: If I end up offering a for-pay-for-private-repos version, that shouldn't interfere with the same code backing bors.io.
+16:11	erickt	morning acrichto!
+16:11	acrichto	good morning!
+16:11	erickt	notriddle: so our plan with bors.io was to also have a hosted service, just like homu.io
+16:11	notriddle	Because, clearly, if the community team want's to run a gatekeeper bot, it should go under the name bors.
+16:12	bstrie	to be clear, eeyore and aelita wouldn't be competing, right? they seem like they do different things
+16:12	notriddle	bstrie: Yeah, they aren't competing.
+16:12	notriddle	bstrie: We don't have anything competing with eeyore, and the only thing aelita competes with really is homu.
+16:13	notriddle	erickt: Yeah, I understand what bors.io is supposed to be.
+16:14	notriddle	erickt: But I assume bors.io would also only be available for public repos.
+16:14	acrichto	erickt: I'm told that there's some questions about bors hosting?
+16:14	erickt	notriddle: yes I believe so
+16:14	erickt	acrichto: we're talking about our growing bot ecosystem, like bors, highfive and etc
+16:14	erickt	acrichto: if you want to catch up: logs.glob.uno/?c=rust-community
+16:15	erickt	notriddle: what infrastructure is aelita running on?
+16:15	notriddle	erickt: Google Container Engine.
+16:15	erickt	cool, I like gke
+16:15	bstrie	erickt: what specifically is the community team's role in setting up these services? it seems a bit more technical than what we usually traffic in
+16:16	notriddle	github.com/AelitaBot/aelita/tree/master/infra
+16:16	erickt	bstrie: I see us more as rallying the community to implement things for said community
+16:16	acrichto	erickt: would it be helpful to mention what I was thinking would play out as?
+16:17	locks	<- cheerleader from Ember-land
+16:17	acrichto	I'm still missing context though, so it may just be repeating things already said
+16:17	erickt	so I don't necessarily see our team as having to implement them, but help guide them to completion
+16:18	erickt	acrichto: we're trying to figure out how to run the rust bots for our broader community. jntrnr thought you might want to participate since you have written some of the bots
+16:19	erickt	so I wanted to bring everyone here to do the initial meet, but maybe at this point we should shift this over to #bors after the meeting?
+16:19	carols10cents	hi sorry i'm late i'm here now :)
+16:19	acrichto	erickt: oh sure yeah, what's the current tl;dr; of the conclusion?
+16:19	bstrie	carols10cents: I missed my chance to troll you by texting you to wake up :P
+16:19	booyaa	hi back again (travelling)
+16:19	carols10cents	bstrie: hahahah :) also good job at being here with me forgetting to text you! :)
+16:20	bstrie	erickt: in the future with a nebulous topic like this it would probably help to have a dedicated issue on the tracker ("community bot initiative") which could summarize the topic out-of-band and centralize discussion outside the meeting time
+16:20	bstrie	carols10cents: only seven minutes late!
+16:20	erickt	acrichto: tldr is I think we're all interested in collaborating, and we can explore using aelita as the base for future bors stuff, and maybe build other bots on the infrastructure we do for aelita?
+16:21	erickt	bstrie: yeah
+16:21	erickt	that's a good diea
+16:21	erickt	err
+16:21	erickt	idea
+16:21	acrichto	erickt: seems reasonable! my only thoughts were that it'd be cool if there were a "deploy to heroku" button so everyone could run their own version for free
+16:21	acrichto	or basicaly some button for everyone to run their own for free
+16:22	acrichto	that could be configured however they need
+16:22	notriddle	acrichto: That's the big downside to using aelita as a base.
+16:22	notriddle	Heroku doesn't do Rust.
+16:22	locks	no buildpack?
+16:22	erickt	the other thing thats more community focused, I want to do a bot-a-thon so we can get together in physical/virtual space and hash this out
+16:22	acrichto	crates.io is deployed on heroku?
+16:22	steveklabnik	i mean, custom buildpack
+16:22	bstrie	erickt: I'll make the issue right now
+16:22	erickt	bstrie: <3
+16:22	notriddle	Is crates deployed in heroku?
+16:22	erickt	y'all interested in more -athons?
+16:23	locks	erickt: I know a great place in Porto
+16:23	acrichto	notriddle: yeah
+16:23	acrichto	as steveklabnik w/ custom buildpacks we can get rust on heroku
+16:23	steveklabnik	(but the content of the crates is on s3, but the app itself is on heroku)
+16:23	acrichto	but I'm not interested in heroku specifically, just "run your own instance for free"
+16:23	booyaa	re: build packs hoverbear did one a while back
+16:23	notriddle	Wow, I wish I had known that awhile back.
+16:23	booyaa	github.com/Hoverbear/heroku-buildpack-rust
+16:23	erickt	locks: I'll book some time on the RustJet!
+16:24	carols10cents	bstrie: would you read said summary issue before said meeting tho? ;)
+16:24	bstrie	carols10cents: I would if they were linked from the meeting agenda!
+16:24	carols10cents	and ya there are multiple rust buildpacks for heroku
+16:24	erickt	bstrie: I'm all in favor in more people helping to prep for our meetings ;)
+16:24	bstrie	carols10cents: the alternative is that I spend half the meeting pestering people about what the heck we're talking about :P
+16:25	locks	sorry for being short, but the conclusion is we'll refocus on using aelita over the current bors?
+16:25	locks	details to be hashes out in #bors
+16:25	erickt	locks: unless of course you have counter proposals
+16:26	locks	not atm, I couldn't find anyone to help out with the actual coding so I'm stalled for progress
+16:26	carols10cents	bstrie: and that info *is* in the transcripts for the meetings, which are in github, which you could read before the next meeting ;)
+16:26	erickt	anyway, everyone who wants to participate in that conversation should head over to #bors, and acrichto if you have pointers on setting up the heroku link that'd be helpful
+16:26	booyaa	does this include eeyore?
+16:26	carols10cents	so uh
+16:27	carols10cents	eeyore came up last night because locks said crates.io's issues weren't well triaged
+16:27	steveklabnik	yeah
+16:27	erickt	booyaa: I say bots in general would be subject to that topic
+16:27	carols10cents	and eeyore is an idea steve had
+16:27	carols10cents	a while ago
+16:27	steveklabnik	and then we never really did it :(((
+16:27	carols10cents	that i worked on a bit but then got busy and attacked by yaks
+16:27	steveklabnik	i don't know if and when i'll have time to work on it
+16:27	hjr3	damn yaks
+16:27	carols10cents	it seems like i might have successfully transferred the yaks to locks???
+16:27	* locks softly cries
+16:28	carols10cents	i would be ecstatic if people made it work because i still really want to be able to help/have others able to help with triage of issues without needing push rights on a repo
+16:28	locks	I have small amounts of time to put into it, I'll try to grab someone from our infra group
+16:28	carols10cents	so yeah, we can take discussion to #bors or wherever and i'm happy to answer questions and poke at things here and there?
+16:29	erickt	yeah
+16:29	erickt	ok so moving on to the next item
+16:29	erickt	general request for help: rustfest is planning on doing a rustbridge workshop at their conference
+16:29	erickt	which is in about a month
+16:30	erickt	so if anyone wants to help iterate on github.com/rust-community/rustbridge/tree/master/workshops
+16:30	erickt	it'd be really helpful to get those materials usable
+16:30	erickt	they're not expecting to get brand new coders at this point, but quite possibly a bunch of people new to rust
+16:31	erickt	the other thing is we might also migrate from having a dedicated rustbridge meeting, and squash it into this one to help raise awareness
+16:31	booyaa	do we have any existing feedback forms? i was hoping to quantify the experience with the workshops. i appreciate these are ppl with prior programming experience.
+16:31	bstrie	notriddle: you're behind aelita? if so, could you please leave a short comment on github.com/rust-community/team/issues/58 so that we can get up to speed faster in future meetings?
+16:31	bstrie	erickt: who's behind eeyore?
+16:31	erickt	bstrie: carols10cents / steveklabnik / locks
+16:31	booyaa	carols10cents: steveklabnik i think
+16:32	erickt	booyaa: we do not, but I did see a feedback form from railsbridge
+16:32	erickt	booyaa: I'll find you a link
+16:32	booyaa	cool i can rustify it
+16:32	erickt	anyone from bridge have anything to add?
+16:32	bstrie	carols10cents steveklabnik locks: could you leave a brief comment regarding eeyore at github.com/rust-community/team/issues/58 for the future edification of the community team?
+16:33	carols10cents	bstrie: on it
+16:33	erickt	booyaa: docs.railsbridge.org/workshop/closing
+16:33	booyaa	erickt: did we think the rustfesters are going for url shortener or the webscraper material?
+16:33	erickt	ok moving on!
+16:33	jntrnr	I think I'm next?
+16:34	booyaa	might help to focus the polishing of workshops
+16:34	erickt	booyaa: I think web-scraper may be further along, but we really need people to go through the docs
+16:34	erickt	and help polish
+16:34	erickt	jntrnr: yessir!
+16:34	erickt	(anyone want to volunteer to go through the bridge materials?)
+16:34	jntrnr	so I worked with brson, Manishearth, and carols10cents and have the outreach list coming together
+16:34	erickt	\o/
+16:34	carols10cents	(i did nothing)
+16:34	jntrnr	the next step would actually, you know, do said outreach
+16:35	jntrnr	will probably start emailing people here in the next week or so to line up some call-outs
+16:35	erickt	jntrnr: great! I think we talked last week about also organizing speaker volunteers
+16:36	hjr3	train is arriving. i am afk for ~10 min
+16:36	jntrnr	speaker volunteers?
+16:36	erickt	yeah, to go to companies and give a presentation on rust
+16:36	jntrnr	ahh yes, that's another good idea
+16:36	jntrnr	but I'm more talking about the outreach to the business users
+16:36	jntrnr	of rust
+16:37	jntrnr	there's also the people who replied that they had business interest in rust in the survey but we haven't reached out to
+16:38	jntrnr	hehe
+16:38	jntrnr	It feels like erickt was like "wait, that's not the item on the agenda"
+16:38	jntrnr	:)
+16:38	erickt	heh
+16:38	erickt	jntrnr: any other next steps?
+16:38	jntrnr	we should also see if we can rally people to give talks but that item wasn't on my immediate radar
+16:38	erickt	heh
+16:38	jntrnr	doing the emails is the next steps
+16:39	erickt	it's fun giving rust talks at companies
+16:39	erickt	cool. anything else? or shall we move on to the next stuff?
+16:39	jntrnr	nothing else on my side
+16:39	erickt	brson: you're up about the participation event
+16:40	brson	ok
+16:40	brson	thread is here discourse.mozilla-community.org/t/…ivate-mozilla-dive-into-rust/10073
+16:41	brson	current state is the initiative is 'live'
+16:41	brson	and we are encouraged to spread the word
+16:41	brson	i think they could use our help
+16:41	brson	i've asked around a bit and the way i think this works is pretty freeform
+16:42	brson	participation team is setting out objectives, providing only moderate support
+16:42	brson	actual work is conducted by the 'mozilla reps'
+16:42	brson	and they are motivated individually according to their own whims
+16:42	brson	so istm there is opportunity for us to support the reps in this
+16:42	brson	or become reps
+16:42	brson	etc
+16:43	brson	show them why this is a great activity to pursue and how
+16:43	brson	if you click through the link in the op you can see the objectives
+16:43	erickt	brson: is this an in person event, or virtual outreach?
+16:43	brson	and they are pretty agressive
+16:43	brson	in person events
+16:43	brson	afaik
+16:44	erickt	oh ok so it's feeder for organizing events. I totally can see some collaboration
+16:44	brson	i've been in communication with somebody about t-shirts, and we seem to have the ability to send a few hundred t-shirts out to key hubs
+16:44	brson	but i've dropped the ball on making this happen
+16:44	erickt	this would be a great way to help develop and run bridge events, -athons, and other things
+16:44	brson	ok, that's a brain dump of the state of things. i have ideas about next steps, but any thoughts?
+16:45	bstrie	brson: I'd like to know which reps are interested in rust and how we can coordiate with them
+16:45	erickt	+1 this seems to be a general call-to-action, but I'm not yet sure how we engage them, or even who we engage with
+16:46	erickt	any chance we could invite someone to our next meeting?
+16:47	brson	i will take an action item to find somebody to bring to the meeting
+16:47	brson	i have a link for finding reps one sec
+16:47	brson	reps.mozilla.org/people/#
+16:47	erickt	Manishearth: weren't you a part of the whole Mozilla Reps thing?
+16:47	brson	a good thing for us to do is connect rust meetups organizers to those people
+16:48	Manishearth	erickt: I interacted with it. Never got involved "officially"
+16:48	Manishearth	erickt: I mostly helped out at firefox events, and later started organizing rust ones
+16:48	brson	i also have a todo to post to url about this, but i'd be happy for someone else to drive
+16:50	erickt	we also need something like this on our github page: activate.mozilla.community/developer-engagement/rust-hack
+16:50	erickt	that we can point to
+16:50	erickt	which sorta leads into the next topic about websites
+16:51	bstrie	brson erickt: if the mozilla participation team has someone in a leadership position who's interested in rust, I'd like to invite them to a meeting
+16:51	erickt	we need a better website that can help direct our efforts
+16:51	erickt	github.com/rust-community/team is pretty barebones
+16:52	brson	bstrie: unless you want to take the lead on that, i'll take an action item to find participation/reps folks to pull in to the next meeting
+16:52	bstrie	brson: I'd prefer someone within mozilla itself to take the lead on that
+16:53	brson	ok
+16:53	erickt	so, anyone want to build us a website?
+16:54	erickt	we could just use jekyll like github.com/rust-lang/rust-www, but we need proper content
+16:54	carols10cents	👃🏽👈🏽
+16:54	erickt	carols10cents: I think by touching your nose first, it means you volunteer?
+16:54	carols10cents	NO
+16:54	carols10cents	THE OPPOSITE
+16:55	erickt	that's not how I play
+16:55	brson	oh also reps are in #remo
+16:56	locks	I agree with erickt
+16:56	erickt	carols10cents: two against one!
+16:56	locks	it means the suggestion was so on the nose that you'd like to take it
+16:57	carols10cents	I WILL BUILD THE UGLIEST SITE YOU HAVE EVER SEEN AND THEN YOU'LL BE SORRY
+16:57	erickt	yay!
+16:57	carols10cents	what should the site say?
+16:58	erickt	carols10cents: I think we can draw a lot of inspiration from activate.mozilla.community/developer-engagement/rust-hack
+16:58	erickt	where we have some links to meetups, and we list our current projects and how people can participate
+16:59	erickt	also www.railsbridge.org
+16:59	erickt	and www.ruby-lang.org/en/community
+17:00	erickt	ok and that's time!
+17:00	erickt	thanks everyone!
+17:01	erickt	I'll bump friends-of-the-forest and the rust orphanage to next week, but anyone is welcome to work on em

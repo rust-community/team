@@ -1,0 +1,233 @@
+16:00	erickt	hello friends
+16:00	erickt	it's time for your friendly community team meeting
+16:00	frewsxcv	Good afternoon
+16:00	* erickt puts on sweater and comfy shoes
+16:00	jntrnr	lol
+16:00	* edunham pours some tea
+16:01	carols10cents	it's a beautiful day in the rustberhood
+16:01	* jntrnr hums the Rust community theme song
+16:01	erickt	carols10cents: I'm going to be in your neighborhood this weekend!!
+16:01	carols10cents	erickt: I KNOW I'M SO EXCITED!!!!
+16:01	badboy	I'm around for about 10mins
+16:02	erickt	ok so agenda: github.com/rust-community/team/issues/65
+16:02	erickt	starting off, rustconf was amazing
+16:02	erickt	and we decided to hold one every month
+16:02	erickt	and by we, I mean me
+16:02	carols10cents	ahahahaha
+16:02	hjr3	agreed
+16:02	Manishearth	This year I'm missing everything, but I promise next year I'll be in all you're neighborhoods :p
+16:02	carols10cents	that's a funny joke
+16:02	badboy	was there any specific things regarding rustfest you wanted to know?
+16:02	Manishearth	*your
+16:03	carols10cents	badboy: how's it going? and how's rustbridge going?
+16:03	carols10cents	is what i want to know
+16:03	erickt	badboy: oh good point, lets go with you first since you have to leave
+16:03	erickt	badboy: we did send steveklabnik off with a table runner for you
+16:03	erickt	so we could do a community table if there's room
+16:04	badboy	ok!
+16:04	erickt	that turned out to be quite successful.
+16:04	badboy	so: we are officially full
+16:04	badboy	and super busy fixing last things
+16:04	erickt	edunham, hjr3, and I were quite busy
+16:04	erickt	\o/
+16:04	hjr3	during the short time i was at the community booth, i met a number of people asking about starting or finding meetups. so i would say that is success
+16:04	badboy	not sure about space for a full table at the conf, but I'll check on that
+16:04	badboy	we will just point people to him if there's community things
+16:05	carols10cents	i loved edunham's story of connecting the right people about the seattle meetup
+16:05	badboy	no idea about rustbridge though other than we got signups!
+16:05	erickt	yeah. Worst case we could just get a sheet of paper or something to hang on a wall
+16:05	badboy	~19 people as I see it
+16:05	erickt	awesome
+16:05	carols10cents	yay signups!
+16:05	erickt	badboy: how many have signed up for the conference?
+16:06	badboy	uff, so we will more or less fill the venue (200 max)
+16:06	carols10cents	yay!!!! congrats!!!
+16:06	hjr3	awesome
+16:06	* erickt wishes berlin was closer
+16:06	badboy	that brings us to about 150 pure attendees I think (please don't take these numbers as the right ones)
+16:06	* carols10cents wishes for 200 attendees
+16:06	* carols10cents wishes for more wishes
+16:07	badboy	carols10cents: we will push you towards that after rustfest!
+16:07	erickt	+1
+16:07	carols10cents	<3
+16:07	badboy	we had kinda trouble with things, but we will have an internal and an external post mortem on that after the conf
+16:07	erickt	badboy: anything we can do to help?
+16:07	badboy	apart from cheering and booking flights TO MAKE IT IN TIME TO BERLIN not that I can think of
+16:08	erickt	hehe
+16:08	erickt	who is doing the bridge workshop?
+16:08	erickt	we could help review that and fix bugs or something
+16:08	badboy	Eduard Bopp, johannh, and hanneli I think?
+16:08	carols10cents	yeah which workshop are yinz using?
+16:09	badboy	that's probably good, I will check with them and post an update here
+16:09	badboy	or if johannh knows more he can do that
+16:09	badboy	carols10cents: no idea, I'm not involved in that part atm
+16:09	carols10cents	no problem :)
+16:09	erickt	badboy: are you recording the talks?
+16:09	badboy	yes!
+16:09	badboy	we will
+16:09	erickt	yay!
+16:10	badboy	(though no livestream, because ... that's so much work)
+16:10	johannh	Yeah I mostly neglected to check in with the other two as well, it's still WIP
+16:10	erickt	johannh: let us know what we can do
+16:10	carols10cents	yes, i can't believe people expected rustconf to be livestreamed and the talks to be up already!!
+16:10	johannh	But things are falling into place for RustFest, which is cool
+16:10	erickt	we can whip out sides and stuff
+16:11	badboy	carols10cents: people expect a lot.
+16:11	carols10cents	yup
+16:11	carols10cents	true fact
+16:11	erickt	carols10cents: I heard from leah that it might take a few weeks to get the videos up
+16:11	carols10cents	which is still awesome!!
+16:11	carols10cents	people need to be patient, lol
+16:12	badboy	ok, with that, I have said everything and I'll head out now!
+16:12	johannh	I'm on mobile rn but badboy uploaded a picture of a rust contribution cheat sheet that we will hand out at RustFest
+16:12	johannh	Earlier in this channel
+16:12	erickt	thanks badboy!
+16:12	badboy	oh yeah here it is: pbs.twimg.com/media/CsORFkeWcAA6qzn.jpg:large
+16:12	badboy	(with the awesome travis stickers)
+16:13	erickt	badboy / johannh: we also sent steve with some of the business cards she made
+16:13	hjr3	very nice
+16:13	erickt	edunham: where is the template you had?
+16:13	johannh	It's being paid for by Mozilla, along with a Rust themed bag
+16:14	erickt	johannh: since you're here, now's a wonderful time to point you at rust-community.github.io
+16:14	erickt	in case you didn't see it
+16:14	edunham	erickt: I haven't published it yet but I'll drop it in the repo later today
+16:14	erickt	it's a useful url to hand out to people at the conf
+16:14	johannh	erickt: it's on the sheet :)
+16:14	carols10cents	BUSTED
+16:15	johannh	With /resources though
+16:15	edunham	(also we do still need a 1-sentence description of ourselves for the root site)
+16:15	bstrie	brson: I see that there's a rustconf talk about VLC using rust, we should get that organization on the friends page :)
+16:16	johannh	Let's see what the talk says bstrie :D
+16:16	johannh	"To conclude, Rust really isn't for us"
+16:16	erickt	johannh: :) no they didn't say that
+16:16	erickt	I don't think it's actually landed yet
+16:17	erickt	if I recall correctly
+16:17	brson	bstrie: it's not a done deal yet, but close
+16:18	erickt	lets get back on the agenda
+16:18	erickt	so the other bits I wanted to specifically talk about from the conference was the whole friends-of-the-forest
+16:19	erickt	which was quite popular.
+16:19	erickt	I figure we'll do a twir update and include all the folks from github.com/rust-community/team/issues/77
+16:19	brson	put the photo in the twirs
+16:19	erickt	johannh: this might also be a really nice thing so to at rustfest
+16:19	erickt	brson: ooooh
+16:20	brson	i should have taken more photos...
+16:20	jntrnr	oh btw - did anyone do a rustconf survey?
+16:20	erickt	jntrnr: I forgot to write one up ;_;
+16:21	erickt	we also had a number of people submit looking for contributors in github.com/rust-community/team/issues/74
+16:21	erickt	could be a nice section we could maintain on our website
+16:21	hjr3	erickt especially since people keep adding to the list ;)
+16:21	erickt	hehe
+16:22	erickt	I figure we can explicitly call out for a "please add a link to an easy issue list, or an intro to hacking like servo" link
+16:22	erickt	that sound good, or anyone have a better idea?
+16:23	carols10cents	👍
+16:24	hjr3	good to me. get lots of people posting and coming to find issues first. we can smooth any process issues later.
+16:24	hjr3	i might use this for my meetup
+16:24	erickt	third thing I had was a silly fun project. some folks were complaining about how hard it was to come up with a crate name and wishing we had $username/$crate style namespaces.
+16:24	carols10cents	UGH
+16:24	booyaa_	nooo!
+16:24	erickt	so I said we can start a "help me name my crate" project
+16:24	carols10cents	JUST USE $username-$crate if you want that!!!!!!!!
+16:24	booyaa_	they can message me i'm fab at naming
+16:25	erickt	exactly
+16:25	hjr3	github has that name generator too
+16:25	erickt	!
+16:25	erickt	we should do that. just file a ticket or something and we'll come up with good names
+16:25	hjr3	and people create a repo _before_ a crate so...
+16:25	edunham	I think it'd be neat to have a page with a few different options -- a markov chain, a thesaurus on your project description, and the option to default to bstrie
+16:25	booyaa_	heh
+16:25	erickt	haha I totally threw bstrie out there for naming things
+16:26	bstrie	haha
+16:26	erickt	(beer might have been involved in this conversation)
+16:26	bstrie	that's the premium naming service
+16:26	bstrie	I accept dogecoin and belgian lambics
+16:26	jntrnr	hahah
+16:26	erickt	mmm
+16:26	carols10cents	hehehe
+16:27	erickt	i think that's all I got from the conf, other than it was amazing. anyone else have anything?
+16:27	hjr3	the different colored rust logos were a big hit
+16:28	erickt	oh right. johannh, we also sent steve with stickers
+16:28	edunham	and a table cover, I think
+16:28	edunham	(with the Rust logo on it)
+16:28	erickt	yep
+16:28	bstrie	discuss: we need an official sticker strike team
+16:28	edunham	two of those exist, so hopefully that one can get passed around the European confs and the other can stay in north america
+16:28	bstrie	I nominate edunham as head of the sticker strike team
+16:29	hjr3	second that nomination!
+16:29	edunham	what types of tasks do you regard as falling into the "striking stickers" category?
+16:29	bstrie	edunham: whatever you want, we just need to make sure we have stickers where we need them :P and a sticker fund! make mozilla buy us stickers!
+16:30	bstrie	I'm still kicking myself for not bringing more stickers to OSCON
+16:31	* frewsxcv wonders if it's too late to add a nomination for someone in FOFT
+16:31	edunham	frewsxcv: just add it to the issue :)
+16:31	hjr3	@frewsxcv just post it. i added one late
+16:31	edunham	bstrie: hmm sounds like we need a central source of ideas on how many stickers of what types we need at what event
+16:32	erickt	frewsxcv: of course not!
+16:32	erickt	we're gonna keep doing this forever
+16:32	bstrie	erickt: oh, do you need someone to run the meeting next week? I can do it, as long as carol makes sure to wake me up in time as usual
+16:32	erickt	bstrie: sold
+16:33	erickt	all praise bstrie, substitute erickt for the week of 9/21
+16:33	hjr3	hail bstrickt
+16:34	bstrickt	I can feel the transformation beginning
+16:34	carols10cents	:)
+16:34	jntrnr	lol
+16:34	erickt	may his glorious rainbow jacket lift us all into the sky
+16:34	bstrickt	jntrnr: tell us about corporate outreach
+16:34	erickt	yes yes
+16:35	jntrnr	so since last update, we've put the names together, drafted up emails, and I've emailed all the friends
+16:35	jntrnr	I'm *most* of the way through emailing the contacts we got from the survey also
+16:35	jntrnr	already starting to get responses on the commercial survey. Seems like 8 so far?
+16:36	jntrnr	will probably let them collect for a while then start scheduling from there
+16:36	erickt	woot
+16:36	erickt	I also have some business cards to share with you
+16:36	erickt	jntrnr: are we going to do the whole "have a phone chat / onsite visit" rounds like we did last time?
+16:36	* frewsxcv adds his nominations
+16:37	jntrnr	erickt: yup, that's the plan
+16:37	erickt	I also heard from a number of people they'd be pretty receptive to us going to companies to give tech talks
+16:37	jntrnr	erickt: did you get contact info?
+16:38	jntrnr	I managed to snag a few contacts, but would love to gather as many as we can
+16:38	erickt	from a few people, I think a lot of them are already on the list like folks from dropbox
+16:38	jntrnr	cool
+16:38	erickt	but this would be helping to spread the word to those untouched by ferris's grace
+16:39	erickt	but we should be pushing this as a service to these orgs
+16:39	erickt	and to various universities
+16:39	hjr3	oh, i like "by the grace of ferris"
+16:39	erickt	people seem quite receptive to the idea
+16:40	erickt	mainly because I keep offering it, rather than them asking for it
+16:40	hjr3	what would the university outreach look like?
+16:40	jntrnr	hjr3: we could go speak at their programming classes
+16:40	hjr3	is it or uni's that already have a rust program/class?
+16:40	hjr3	s/or/for
+16:40	hjr3	got it
+16:40	jntrnr	reach out to the teachers teaching topics like network programming, systems, OSes, etc
+16:41	hjr3	i wasn't sure if it was trying to promote a rust class for those places that did not have it
+16:41	erickt	hjr3: I see us having two forms of these things. beginner talks like the whole "beginner class" that we had at rustconf
+16:42	erickt	then more advanced ones on the future of the whole project that help give organizations confidence in choosing us
+16:42	hjr3	so i have done a rust talk at UCLA already and live very close to Harvey Mudd. i don't think they have rust classes, but i am happy to help establish contacts where i can
+16:42	erickt	that sounds great!
+16:43	carols10cents	yup, i've done a talk at pitt, i have a professor friend who loves rust :)
+16:43	erickt	jntrnr: when do you think the phone calls are going to start happening?
+16:44	hjr3	i have to leave a little early today. thanks everyone!
+16:44	* erickt waves
+16:44	jntrnr	erickt: when we get enough people signed up
+16:44	jntrnr	so I should have a better idea here by the end of the week
+16:44	erickt	great
+16:45	erickt	well I think that's all I got this week, anyone have anything else?
+16:45	edunham	nope, other than the nag that we still need a summary of what the community team is for in like 1-2 sentences
+16:45	* carols10cents hides
+16:45	erickt	oh and we need start to come up with some formal milestones with this whole 2017 planning stuff
+16:46	carols10cents	ewwww milestones???
+16:46	edunham	so if anybody's feeling inspired, github.com/rust-community/team/issues/69
+16:46	erickt	carols10cents: :)
+16:47	edunham	erickt: where should we brainstorm milestones, maybe an etherpad?
+16:47	carols10cents	can our important work with unpredictable people really be shoehorned into constricting "milestones"?
+16:47	* edunham thinking "meetup starter kit" is concrete+relevant
+16:48	booyaa_	+1
+16:48	erickt	edunham: sure, or a google doc. I find the multiple colors sometimes getting distracting :)
+16:48	* carols10cents has corporate stuff that still burns
+16:48	erickt	carols10cents: hehe we've met some informal things though, we just need to claim credit
+16:49	erickt	plus maybe it'll trick me into actually organizing the underhanded rust
+16:49	erickt	contest
+16:49	carols10cents	DO IT
+16:49	mbrubeck	you can turn off the colors on an etherpad
+16:49	mbrubeck	"authorship colors" in the pad settings dialog (gear icon at top right)
+16:50	erickt	edunham: public.etherpad-mozilla.org/p/rust-community-milestones-2017
+16:51	erickt	with this, I'm going to close our meeting and play in that etherpad for a bit, please feel free to add to help out

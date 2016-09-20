@@ -1,0 +1,314 @@
+16:00	skade	sooo, everyone
+16:00	* bstrie barely awake
+16:00	skade	welcome to the last rust community meeting!!!!
+16:00	* skade takes a deep breath
+16:00	bstrie	the last!!
+16:00	skade	in august
+16:00	steveklabnik	lol
+16:00	carols10cents	:P
+16:00	jntrnr	lol
+16:00	edunham	(the last one to have occurred so far!)
+16:01	skade	Agenda here github.com/rust-community/team/issues/60
+16:01	bstrie	we're disbanding (the month of august)
+16:01	skade	So, let's get started: Booth at RustConf
+16:01	bstrie	I'm unaware of what sort of booths rustconf will have
+16:02	skade	I love having a community team representation at RustConf, but I'm not gonna be there, so I have not a lot to say about that. Who of us will be there?
+16:02	bstrie	erickt will probably be there, I imagine?
+16:02	skade	It's probably going to be a table with a sign or a poster.
+16:02	bstrie	oh and edunham
+16:02	hjr3	i will be at rustconf
+16:02	jntrnr	I'll also be there
+16:02	carols10cents	i will not be at rustconf
+16:02	* edunham has resources cheat sheets and stickers in the mail. Also threw together rust-community.github.io/resources.
+16:03	Manishearth	edunham++
+16:03	steveklabnik	i will be there
+16:03	edunham	(please please PR or just push straight to that resources thing if it's wrong/lacking/poorly-organized)
+16:03	carols10cents	oh hey edunham i think we can close this then! <3 <3 <3 github.com/rust-community/team/issues/59
+16:04	badboy	aaalright, I'm here!
+16:04	erickt	Bstrie I'll be there!
+16:04	edunham	carols10cents: I don't think resources meets all the recommendations of that issue yet
+16:04	bstrie	edunham: btw, aldeka has a new version of the rustacean, for future sticker reference: i.imgur.com/WTwDr9V.png
+16:04	carols10cents	edunham: ok, may i add the other stuff to your page instead of making another site?
+16:04	edunham	bstrie++ omg so cute
+16:05	skade	okay, so mainly, what I see missing there is having the community booth as a place where people interested in community action can go to have a chat
+16:05	erickt	bstrie / carols10cents: odds are increasing for me to go to Pittsburgh too
+16:05	carols10cents	!!!!! <3 <3 <3
+16:05	carols10cents	i'm into having a community table at rust belt rust too, if yinz like this!
+16:06	edunham	carols10cents: I'd rather the community team thing live at rust-community.github.io proper -- I'll throw together a thing for it real quick
+16:07	erickt	carols10cents: r+
+16:07	skade	okay, so any more comments on the table? I think we should have it and people should make sure there's people there regularly that can answer questions.
+16:08	hjr3	is someone going to have a schedule so we can make sure it is always staffed?
+16:08	jntrnr	what hjr3 says :)
+16:09	badboy	rustconf.com/schedule.html < there's a schedule already
+16:09	hjr3	badboy i meant a schedule of volunteers staffing the community booth
+16:09	badboy	ah, yeah, sorry. there's the talk schedule, which can be used to organize the community booth staffing schedule
+16:10	bstrie	what sort of things will we be doing at the booth?
+16:10	skade	hjr3: who are you on github?
+16:10	hjr3	skade hjr3 ;)
+16:10	Manishearth	hjr3: suggestion: use a round table, have extra chairs, let others sit and sometimes take over!
+16:10	Manishearth	it's community -- and I bet there will be a lot of folks organizing meetups or w/e
+16:10	hjr3	skade github.com/hjr3
+16:10	Manishearth	at the conf
+16:11	skade	hjr3: perfect, thanks
+16:11	hjr3	Manishearth of course. the more the better
+16:11	skade	I am, by the way, planning a community workshop at RustFest, too
+16:11	skade	if I can take 2 hours off...
+16:11	hoverbear	skade: I'm sure your boss won't mind
+16:12	skade	next up: conference surveys: github.com/rust-community/team/issues/61
+16:13	skade	can we come up with a good survey on 10 days, also, can we avoid some of the problem the last one had?
+16:13	skade	(output data was really hard to parse)
+16:13	jntrnr	skade: yeah, I'm kinda doubtful, unless we shoot for only a few questions
+16:13	skade	would it be acceptable to run the survey after rust belt rust closes?
+16:13	hoverbear	Short surveys get the most responses anyways no?
+16:13	skade	hoverbear: yes
+16:14	skade	we will definitely run our own survey for rustfest, I'm pretty sure of that
+16:14	hjr3	the question(s) the survey is trying to answer will dictate the structure. maybe we can get away with multiple choice or maybe we cannot
+16:15	carols10cents	yes, what is the overall goal of this survey?
+16:16	carols10cents	github.com/rust-community/team/issues/61 says "ask questions from our community about their experience" and "help guide the community towards working on various projects"
+16:16	carols10cents	but to what end?
+16:16	carols10cents	to improve the conferences?
+16:16	carols10cents	to improve what the community does?
+16:16	hoverbear	So we can see what to do better next year
+16:17	hoverbear	(In regards to conferences)
+16:17	skade	I think improvement of the conferences would be helpful, but on the other hand, every of this conferences is working in a different fashion, so it is also hard to find a lowest common denominator
+16:17	carols10cents	right
+16:17	hoverbear	skade: Right, and this is a chance to get feedback and learn which ways are working best
+16:17	skade	maybe it would be better to come up with a set of questions that all conferences can put into their survey should they run a post-conf survey
+16:18	hjr3	the more focused the better though. is there a particular thing about conferences we are trying to improve? attendance? talk quality? diversity?
+16:18	carols10cents	so what do we as the community team want to know about all the conferences?
+16:18	hoverbear	skade: it depends if we are trying to get answers from people who did go to conferences, or who couldn't go. If each conference asks their own then we will likely only get responses from those who went
+16:19	carols10cents	i know what i'd want with my conference organizer hat on but i'm having trouble thinking about what the community team in general could take action on
+16:19	skade	carols10cents: no more then giving recommendations
+16:20	skade	"we know XYZ was a problematic topic at conf B, so keep that in mind"
+16:20	skade	I'm not fully sure
+16:20	carols10cents	sooo unless someone can come up with questions that every conf should have on their survey, i'd like to propose that each conf run their own and report back to the group so we can all learn from each other
+16:20	carols10cents	and maybe we revisit this after they're all over and do a survey that asks more about why people couldn't make it to any?
+16:21	carols10cents	couldn't/didn't
+16:21	edunham	carols10cents: I think the conf organizer hat is useful; I'd love the community team to eventually be able to publish a "how to do a rust conference" guidance thing with collected lessons
+16:21	skade	I have a Rust conference RFC in the working, although thats for official project conferences.
+16:21	edunham	so I'd at least like to hear what the attendees liked / would improve, and what the organizers feel went well / should improve
+16:22	skade	hm, so maybe a writeup of the organisers to the community team is more what we want?
+16:22	carols10cents	edunham: i'm into that, as long as it's "tips/ideas/advice/resources for running a conference about rust" and not "what you must do to be allowed to run a rust conference", unless we're getting into the franchising thing which i don't want to reopen right this second :)
+16:23	skade	carols10cents: seconded :)
+16:23	carols10cents	skade: that's pretty much what i'm proposing, yeah
+16:23	carols10cents	the writeup of organizers post-conference to the community
+16:24	carols10cents	i'm going to make some issues to remind us
+16:24	carols10cents	who would like to be assigned the one for rustconf?
+16:24	skade	I'm going to create a topic for RustFest
+16:24	skade	issue
+16:25	edunham	carols10cents: yes, that's what I was thinking, though I used unclear words :)
+16:25	carols10cents	skade: beat you github.com/rust-community/team/issues/66
+16:25	badboy	hm, I seem to not have write acces to the repo, so if you can assign me as well, that would be great
+16:26	carols10cents	aturon is getting the one for rustconf
+16:26	aturon	carols10cents: 👍
+16:26	skade	okay, next up: rustbridge
+16:27	skade	there's going to be a beta workshop for rustbridge at rustfest
+16:27	skade	target group is people that don't know rust, are junior programmers and have a little experience with such workshops, if preferred
+16:27	skade	the intention is to gather feedback on the current workshops
+16:28	skade	it is also made clear to those people that the final target group is people that have 0 experience with coding, so we are trying to work our way down from there
+16:28	carols10cents	badboy: try something that needs write access now?
+16:29	badboy	carols10cents: ✓ thanks
+16:30	skade	Also, AFAIK, the rustbridge team has voted to join these meetings instead of having their own, as they don't have that many things to sync on on the regular checkins. Is that fine with everyone?
+16:31	carols10cents	👍🏽
+16:32	Manishearth	wfm
+16:32	Manishearth	in that case we should start off with the rustvridge stuff in each meeting
+16:32	bstrie	skade: yes, I think that's a good idea
+16:32	skade	okay, perfect
+16:33	erickt	Manishearth: yeah. biggest thing now is to get help with getting the beta workshops ready
+16:33	erickt	(a wild erickt appears!)
+16:33	* badboy throws a pokeball at erickt
+16:33	skade	next up, this will all be tough for us: this is the last meeting of the community team, as we are all going to be replaced by robotic overlords
+16:33	erickt	ack!
+16:34	skade	github.com/rust-community/team/issues/58
+16:34	hoverbear	skade: I vote we vote them in perl so it's not a threat
+16:34	badboy	sounds ok to me
+16:34	erickt	booyaa / locks: any luck with notriddle and aelita?
+16:35	carols10cents	everyone wrote the "assert!(!takes_over_the_world());" test first, right?
+16:35	skade	so, the problem here is that there's an uptake in bot writing again and here's the question: can we help those efforts somewhat?
+16:35	skade	Is this some kind of switchboard thing again, where we just have to plug the right people to the right people?
+16:36	erickt	skade: yeah
+16:36	skade	has anyone considered forming an umbrella group like a github org where people can have all of these under one common name?
+16:36	Manishearth	most of these folks are already connected
+16:36	erickt	we've been trying to connect all the post-homu.io folks together to get something up and running
+16:36	booyaa	erickt: no luck i'm afraid
+16:36	erickt	skade: github.com/rust-community/bors
+16:36	Manishearth	erickt: i can try to carve a chunk of time out of tomorrow to set homu up
+16:37	skade	would rust-community be the right place for that?
+16:37	Manishearth	just need credentials
+16:37	Manishearth	but never have used heroku
+16:37	jntrnr	in general, the bots conversations should probably go through #rust-tools
+16:37	erickt	but then we found aelitabot.xyz, which is an independently developed homu replacement
+16:37	jntrnr	since they're the ones responsible for the bots
+16:37	carols10cents	or #bors
+16:37	erickt	that's also open source
+16:38	jntrnr	it's not really part of the community team charter, aiui
+16:38	Manishearth	"switchboard" is
+16:38	Manishearth	but theyre already connected
+16:38	erickt	+1
+16:38	erickt	the main reason why I keep bringing it up here is to make sure they're making progress
+16:38	skade	okay, any actions we should take?
+16:39	jntrnr	can we just move that action item over to the tools team?
+16:39	jntrnr	and let them oversee it?
+16:39	skade	just keep an eye out and postpone to check back on them?
+16:39	brson	i can take it...
+16:39	skade	jntrnr: that sounds good
+16:39	jntrnr	thanks brson
+16:39	locks	apologies was out
+16:39	brson	does anybody have opinions of next steps for me?
+16:39	erickt	jntrnr: think rust-tools is appropriate for using the bots outside of core rust development?
+16:39	locks	we've also made eeyore run again
+16:40	steveklabnik	'again'
+16:40	erickt	great!
+16:40	steveklabnik	as if it ever did :p
+16:40	jntrnr	erickt: bots outside of core rust development probably are outside of their (and our) purview
+16:41	jntrnr	brson: looks like there are a few homu replacement projects and some folks here hope to continue growing
+16:41	erickt	jntrnr: I disagree for it's out of our purview. It's definitely helps our ecosystem to have better development tools
+16:41	brson	who all is involved: locks, booyaa, notriddle? others?
+16:41	Manishearth	aLl
+16:41	erickt	and we want to make sure that they're developed and administrated safely
+16:42	brson	my main concern is establishing a path forward for rust-lang's ci
+16:42	jntrnr	erickt: yup, having better tools is great for Rust... just not something really that the community team specifically should spend community meeting time trying to manage (imho)
+16:42	skade	okay, we should also, at some point, create a guideline (or template) for a standard rust open-source porject
+16:42	erickt	brson: also frewsxcv
+16:42	brson	but i think if bors-next can ervice rust-lang well that's a good barometer
+16:43	jntrnr	brson: +1
+16:43	erickt	jntrnr: yeah, ultimately things like this should be spun out and run separately.
+16:43	erickt	got to run though, conference is starting :(
+16:43	jntrnr	erickt: thanks for dropping in
+16:44	skade	erickt: it should, probably, but we should find ways to make sure we can take over projects when the maintainer has to drop them
+16:44	skade	to avoid another homu/are-we-web-yet situation
+16:45	skade	okay, can anyone make a quick writeup of that?
+16:45	skade	(sorry for rushing on the agenda)
+16:46	skade	brson: friends-of-the-forest is next, do we have an update on that/
+16:46	brson	i can say a few things
+16:47	Manishearth	fwiw servo is maintaining and using the fork
+16:47	brson	i've mentioned the idea in several forums recently hoping it would spark some interest, but no bites yet
+16:47	brson	Manishearth: what's the link to your fork?
+16:47	Manishearth	just not a hosted versikn which you can join
+16:47	Manishearth	brson servo/homu
+16:48	brson	i think all that's needed to do with fotf is to make a decision on the format and just do it
+16:48	brson	it's a pretty low-maintanence activity
+16:48	brson	github.com/rust-community/team/issues/51
+16:49	brson	that's all i have to say about it
+16:49	skade	Okay, I think we should go ahead with that and just put our notes on the issue.
+16:50	brson	vaguelly related cmr mentioned that he's interested in contributing to twir again, so he might be pursuaded to do the twir work
+16:51	skade	great
+16:51	skade	next up: rust community team website
+16:51	edunham	oh, uh, I kind of just github.com/rust-community/rust-community.github.io in the past few minutes
+16:52	hoverbear	edunham: An hero!
+16:52	edunham	it is not good by any stretch of the imagination but now people can fix individual pieces I hope
+16:52	edunham	hoverbear: nooooo, I will not an hero
+16:52	hoverbear	edunham: You already was mine, you must suffer. :(
+16:53	skade	okay, so this is mainly a "there's something" notification?
+16:53	skade	I really like having one, especially to showcase what we already have
+16:53	skade	beats having to do that improptu all the time.
+16:54	edunham	skade: at the time the meeting started it was a "we need a thing" notification
+16:54	edunham	as of right now it's a "we have a thing that we need to fix up" notification
+16:54	skade	edunham: great :D
+16:54	edunham	oh yeah and we need a 1-sentence summary of what the community team actually does
+16:54	edunham	like internals.rust-lang.org/t/announcing-the-community-subteam/2248 is great but long
+16:54	carols10cents	edunham ++++++++++
+16:55	skade	yeah, i'd prefer if more of these things moved to respective subpages, many policies and descriptions never move beyond the rust-lang forums
+16:55	skade	(e.g. the cargo policies)
+16:55	skade	does anyone mind if we run 5-10 minutes over, but make the whole agenda?
+16:55	edunham	not i
+16:56	hjr3	fine with me
+16:56	edunham	(er, I don't mind, that is)
+16:56	jntrnr	sure
+16:56	carols10cents	go go go
+16:57	skade	github.com/rust-community/team/issues/69
+16:57	skade	okay, business outreach
+16:57	skade	issue is missing, the description links to the agenda
+16:57	skade	jntrnr: ?
+16:57	jntrnr	we met this week and the next item is to draft up emails for outreach
+16:57	jntrnr	it's on my todo list
+16:57	jntrnr	we have the contact info for people we're reaching out to via email
+16:57	jntrnr	from there we'll set up call-outs
+16:58	bstrie	what does business outreach entail?
+16:58	jntrnr	this is what we did... a year ago?...
+16:58	skade	bstrie: AFAIK, it's mostly calling up production users and find out their pain points, as we did last year
+16:58	jntrnr	what skade said :)
+16:59	hoverbear	We have several more now.
+16:59	jntrnr	hoverbear: indeed :)
+16:59	bstrie	ok
+16:59	bstrie	wasn't sure if it was something new :P
+16:59	skade	okay, so "things are on track, let's revisit next week?"
+16:59	hoverbear	I'm happy to volunteer to talk to a few in Europe
+17:00	skade	There's a coupl
+17:00	skade	couple attending RustFest
+17:00	hoverbear	Already have a meeting in the planning stage with Wire xD
+17:00	jntrnr	skade: yup
+17:00	skade	Okay, so, last two topics: mozilla participation event update, @brson
+17:01	hoverbear	brson is their own topic? o.O
+17:01	brson	last week i basically decided i can't devote much time to this initiative
+17:01	brson	that our strategy is to tell reps to come to us for help
+17:01	brson	we're not going to actively reach out to them
+17:01	brson	so i posted this to their forum discourse.mozilla-community.org/t/…te-mozilla-dive-into-rust/10073/14
+17:02	brson	saying contact the community team (and I unwisely said "or contact me")
+17:02	skade	I would, in general, prefer if mozilla would announce two day meetings on weekends more then a month in advance, especially if they have them just before their main conference. Not a lot of people are aware, too.
+17:02	skade	brson: forward them :)
+17:02	brson	so two people have followed up asking for help
+17:02	brson	and of course they are not contacting us
+17:02	brson	just saying 'help'
+17:02	brson	not sure what to do
+17:02	brson	you can see what they are saying on that thread
+17:02	brson	nobody volunteered to attend today's meeting
+17:03	skade	okay
+17:03	skade	we have a couple of people in our inbox, though
+17:03	brson	oh? that's good
+17:03	brson	i haven't seen
+17:04	skade	someone from mexico and someone from the phillipines if I remember right
+17:04	brson	well that's great
+17:04	brson	so we're kind of on the hook to do something helpful
+17:04	skade	Hugo Acosta (Bolivia)
+17:04	brson	or at least i am since i got us into this
+17:05	brson	which one tutorial / slide deck should we point them to?
+17:05	skade	yes, it's mostly giving them some tips, a lot of people don't feel like they have enough experience
+17:05	brson	i feel like we still don't really have anything solid training wie
+17:05	skade	well, I generally recommend running just meetups at first
+17:05	brson	maybe there are peole with experience that can co-organize with the reps?
+17:06	skade	the reason johannh and me started the rust hack & learn was precisely because we didn't know rust and wanted to have others to learn with
+17:06	brson	that's a great suggestion
+17:06	skade	well, bolivia is nice, but far away :D
+17:06	brson	i don't know anyone in bolivia offhand...
+17:06	skade	isn't thoughtworks quite present there?
+17:07	skade	Ecuador :/
+17:07	skade	okay, anyone volunteering on writing them back?
+17:07	skade	(if not, I'll be doing that at rustfest latest)
+17:08	skade	Sorry for the mixup before, I was thinking about the participation meeting in europe on september 10th and 11th, by the way.
+17:08	brson	i'd love it if somebody else could write up something helpful for these reps, but if not i will take the action item
+17:08	carols10cents	i will write two emails
+17:09	skade	okay, I assigned the topic to me, so I will sweep up everything that's left
+17:09	brson	carols10cents: for the reps? <3
+17:09	skade	please make sure you CC rust-community on any of those communications and don't let your email linger for too long, so there's no doubled work :)
+17:09	skade	github.com/rust-community/team/issues/70
+17:10	carols10cents	skade: brson: yep, i will respond to the 2 folks who emailed us, and will cc rust-community so anyone else can chime in if i miss anything
+17:10	brson	thanks carols10cents and skade
+17:10	carols10cents	in general will remind them of our meetings here and point them to rust-learning
+17:10	skade	finally, orphanage is on the agenda
+17:10	carols10cents	and recommend starting with a low-key hacking/learning meetup
+17:11	skade	carols10cents: thanks <3
+17:11	edunham	skade: Manish and I went ahead and made github.com/rust-unofficial for a temporary solution to the orphanage problem
+17:12	skade	okay, so you ask people to transfer maintainer access to you?
+17:12	edunham	in the 1 case so far, I had already been handed maintainer access. I transferred the repo to the org so I could give others full maintainer perms.
+17:13	skade	okay, do you want us to further announce that?
+17:13	skade	I think it is a nice thing that we can just document on the rust-community page
+17:13	edunham	I imagine the eventual solution as having a team or two per repo, and granting much wider access to the code than official projects and the nursery can...
+17:13	edunham	yeah, I'd just document it for now
+17:13	skade	okay, can you give others from the community team access to the org?
+17:13	edunham	I don't want to personally adopt a lot of projects, but we can use the org to help people do better team management
+17:13	edunham	absolutely
+17:14	carols10cents	added that item to the website issue
+17:14	skade	yes, I don't want to be personally involved, but maybe someone wants to take over stuff, in which case we can remove it from there again
+17:14	skade	perfect. I guess that covers most of the things.
+17:14	skade	any open questions?
+17:16	skade	edunham: I'll write an announcement to twitter and URLO, if you don't mind?
+17:16	edunham	nope! I'd like to get a single-sentence description of what the community team is at some point
+17:17	edunham	skade: gimme a couple minutes to get everyone on the community team invited
+17:17	edunham	and actually I should write down some basic guidelines for how the unofficial org shoudl work, first
+17:17	edunham	I'll write that up and ping you when they're ready, then you can announce :)
+17:17	skade	I'll definitely need some time for that anyways :)
+17:17	skade	thanks :)
+17:18	skade	github.com/rust-community/team/issues/71
+17:19	edunham	(everyone is invited now)
+17:19	skade	okay, so I'm closing this for today, happy rusting everyone :)

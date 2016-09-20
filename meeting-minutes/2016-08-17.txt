@@ -1,0 +1,343 @@
+16:00	erickt	hello everyone!
+16:00	skade	soooo.
+16:00	skade	i'd like to open a question?
+16:01	erickt	anyone else in?
+16:01	skade	are we big in japan yet? www.youtube.com/watch?v=0n-o34G3iTc
+16:01	skade	(seems to be an 80s style meeting)
+16:01	carols10cents	hi
+16:01	erickt	hehe
+16:02	erickt	so hi everyone
+16:02	jntrnr	skade: lol omg that keyboardist
+16:02	brson	i'm here
+16:02	erickt	we got an agenda somewhere
+16:02	erickt	github.com/rust-community/team/issues/56
+16:02	erickt	skade: want to start?
+16:02	skade	yep
+16:02	skade	so, let's do that as generically as possible
+16:03	skade	We regularly run into problems with doing anything with Mozilla over here. I'm not sure how the impression on the other side of the ocean is, but working with Mozilla is incredibly hard.
+16:04	jntrnr	skade: what in particular?
+16:04	skade	Many things, they are generally unreliable as a partner, so threads get started and never followed through and things get agreed on which cannot be hold.
+16:04	skade	Up to Mozillans agreeing to things they haven't checked back, without indicating though.
+16:05	skade	Or people getting assigned to you as contacts and then not replying to emails for months.
+16:05	jntrnr	I'm more asking for specific examples
+16:05	skade	I can't speak about the current one because it involves business details, but I give a few others.
+16:06	aturon	skade: just to be clear -- i know this had been a problem from the Rust team for a while, but we've tried to be more responsive and also shift more to the community team; do you still feel there's a problem on the Rust side?
+16:06	skade	aturon no, strictly mozilla
+16:06	aturon	ok
+16:06	skade	We were approached by the participation team (George Roter in person) about working together and agreed on a few action points after that. I wrote an email for each action item after that and after two bumps still don't have a reply.
+16:07	skade	one of them was as simple as "you wanted to introduce me to your diversity contact"
+16:07	skade	I later figured out who the diversity contact is and approached her about rustbridge and still don't have a reply.
+16:07	skade	it sometimes works if you find a mozilla employee that then bounces the issue towards the person
+16:08	skade	which is what we ended up doing when johann joined mozilla
+16:08	erickt	I wonder if it'd be worthwhile cc-ing one of the mozilla rust core team folks on your communication with mozilla corp
+16:09	jntrnr	yes please
+16:09	aturon	yeah, i'm always happy to bounce/signal boost
+16:09	skade	I had CCed the local community contact (flaki) on that.
+16:09	erickt	does flaki work at moz?
+16:09	skade	flaki is heavily involved at leat and I think he does currently?
+16:10	johannh	we have a commitment from diversity about RustBridge
+16:10	skade	johannh yes, after trying to get in touch for months
+16:10	johannh	yes it's unfortunate that you sometimes have to ping people via email, irc and even in person
+16:11	johannh	but consider that this is a lot of individual projects mostly without any higher-up buy in
+16:12	skade	yep, so, in general, I still have the feeling that the whole story of the rust-project and mozilla relationship is still badly clarified
+16:12	aturon	skade: can you expand on that part?
+16:12	skade	and with mozilla europe being generally considered very bad on the community side of things, we'd have to find a way around this
+16:13	Manishearth	skade: I think that's because you're visualizing mozilla as One Unit. There is a clear relationship between the rust project and the folks helping with community stuff in their official capacity as mozilla employees (aaron and brian mostly)
+16:13	skade	sure, Rust is a Mozilla project and when speaking to Mozillians, they often seem to expect that the Rust community is close to Mozilla, which it actually isn't
+16:13	skade	Manishearth no, we've been through that discussion
+16:13	Manishearth	There is less clear of a relationship between Rust and the participation stuff
+16:14	skade	a) Mozilla is one entity for everyone outside and b) outsiders shouldn't pay for the internal incoherence
+16:14	jntrnr	skade: umm, that doesn't strike me as correct honestly
+16:14	Manishearth	yes
+16:14	skade	Oracle is a much larger entity, but if I want to run community action in Germany, I know who to contact
+16:14	jntrnr	skade: any large-ish company is going to have that issue
+16:14	steveklabnik	"Rust is a mozilla projet" is not really exactly consistent with the way that i see it
+16:14	jntrnr	it takes time to find the right person who puts you at the right priority
+16:15	steveklabnik	rust is a project mozilla contributes heavily to
+16:15	jntrnr	Mozilla funds a small team to work on Rust is more accurate
+16:15	skade	steveklabnik you're right, that's probably the better interpretation of it, but the other interpretation is the more perceived one
+16:15	Manishearth	skade: this is not internal incoherence -- you're contacting people who are not exactly related to rust. you can't expect them to be on top of everything that goes on at mozilla
+16:15	skade	jntrnr I interacted with at least 10 companies of that size for community events and Mozilla is by far the worst
+16:16	skade	Manishearth I am also contacted by mozilla people
+16:16	aturon	skade: but the distinction matters, because the Rust Project has its own leadership and management (like this subteam :) and that's the main way that we can/should get things done
+16:16	Manishearth	fair
+16:16	skade	you know what? we're back to a discussion we had 3 month ago
+16:16	jntrnr	skade: ?
+16:17	johannh	skade: what is your desired outcome of the discussion? I think we all agree that we want non-research people in Mozilla to focus more on Rust
+16:17	aturon	so i think everyone understand the frustration, but is there a particular step you're hoping to take?
+16:17	jntrnr	we're trying to help
+16:17	Manishearth	I mean, if you want to get something done, pinging aturon or brson is the way to go.
+16:17	jntrnr	but we're not looped in on the threads you're talking about
+16:17	skade	jntrnr the issue isn't exactly new and I don't want to have the "mozilla is a large company" discussion again
+16:17	Manishearth	Larissa/geroter may be able to help too, but it depends on what they're focusing on and how busy they are
+16:17	steveklabnik	win 22
+16:17	skade	Manishearth note that groter approached me, no the other way around
+16:17	steveklabnik	fffuu
+16:18	erickt	(hehe)
+16:18	Manishearth	skade: okay, I guess we're lacking context here
+16:18	jntrnr	yeah, quite a bit it seems
+16:18	jntrnr	not sure how best to help
+16:18	jntrnr	a) we want to help here, clearly
+16:18	skade	okay, then let's just quit that discussion
+16:18	jntrnr	b) skade is very frustrated
+16:18	aturon	skade: i'd be glad to reach out to groter or anyone else you're having issues with
+16:19	skade	Manishearth sure, but we're back to discussion if my word on mozilla being a far worse entitiy to work with that any I ever experienced holds true
+16:20	jntrnr	skade: then work more with the Rust subteams and get them to amplify the signal?
+16:20	erickt	skade: I don't think anyone is disagreeing with you :)
+16:20	jntrnr	I get that the contacts you have are not helpful
+16:20	aturon	skade: again, i think everybody understands the frustration, but it's not clear what action(s) you're hoping for
+16:20	aturon	people have offered to help in whatever specific cases come up
+16:21	skade	I'm also out of ideas, honestly, that's why my fundamental point is that the current relationship between the two entities does not work out (at least over here) and should be better clarified.
+16:21	jntrnr	skade: at the very least, looping people in on the threads that are causing you trouble at least lets us amplify
+16:22	jntrnr	it sucks it's been that bad of an experience
+16:22	aturon	hm, i'm still not sure what you mean about clarifying the relationship
+16:22	carols10cents	it sounds like you should proceed as if there is no current relationship
+16:22	carols10cents	and adjust your expectations accordingly
+16:23	edunham	skade: are there particular places you'd suggest we document or explain the current relationship to help other event organizers?
+16:23	aturon	skade: fwiw, whenever the Rust team works with another part of Mozilla, the first conversation we have is along the lines of "Rust is an independent organization with its own management, and Mozilla needs to respect that"
+16:23	skade	edunham I wouldn't know what to document :)
+16:23	skade	aturon sure, but that message doesn't seem to have reached many parts of mozilla
+16:23	carols10cents	skade: what are your expectations for a document to contain?
+16:24	edunham	skade: "don't assume $MOZ_OUTREACH is on the same page as rust team, always loop a moz-employed core team member into important discussions, etc?
+16:24	skade	carols10cents a point of contact for example, or a writedown on what mozilla wants to support
+16:24	skade	or a clarification of mozilla what they want
+16:24	carols10cents	it sounds like there would be many points of contact depending on the project and geographical area
+16:24	johannh	skade: you have a very direct contact with many people in leading positions at Mozilla, that sometimes involves having to ping them a second or third time, I wouldn't know any other organization where internal communication works perfectly
+16:24	johannh	skade: I think you are just mistaking internal and external communication
+16:25	skade	carols10cents sure, i'd be fine with that, there's currently no community contact for Germany at all, for example
+16:25	johannh	having direct access to these people means internal communication, you're a contributor
+16:25	carols10cents	but still having points of contact doesn't ensure a SLA for getting answers to your emails
+16:25	skade	johannh I have yet to receive a reply on any of my inquiries and cannot always get a person with a @mozilla.com-adress to vouch for an inquiriy
+16:26	skade	if I were a contributor and mozilla would care, they would reply
+16:26	skade	and yes, I send monthly replies
+16:26	skade	pings
+16:26	skade	carols10cents you are interpolating my statements in the wrong direction
+16:27	carols10cents	sorry, please clarify
+16:27	skade	if for example the head of participation approaches me and we come out with action items, I think I am in a position to expect a reply after 1) notifying him 2 times, 2) notifying that mozillian that made contact (Till schneidereit), 3) asking johann to ping him
+16:28	Manishearth	skade: ah, cool. That's the context we were missing
+16:28	skade	even if the reply is "sorry, I misjudged my time and have to pass this on"
+16:29	erickt	that sounds like a place where someone like aturon can escalate things through the r/d management chain to get some action done
+16:29	jntrnr	confirm
+16:29	jntrnr	it also sounds like it's missing the pm/oversight piece
+16:29	erickt	since mozilla r/d has a vested interest in rust
+16:29	jntrnr	so finding that person would also be good
+16:29	erickt	yeah
+16:30	erickt	skade: want to cc aturon on your outstanding emails, and he can help get some clarity on them?
+16:30	skade	erickt they are void now, so that doesn't help
+16:30	* erickt enjoys volunteering people to do things. you're next Manishearth!
+16:30	johannh	skade: the more people in an email thread, the better, obviously. I think rust-community and at least me would be interested in the ideas you sent to George
+16:30	Manishearth	yes
+16:31	skade	johannh I don't CC people to "You wanted to introduce me to person A"
+16:31	aturon	erickt: :P
+16:31	erickt	skade: future communications then
+16:31	erickt	skade: I think that's fine. I've seen that done a number of times in my professional career
+16:33	erickt	I suggest we table this thread for now until after the meeting since we have a few other agenda items to go through
+16:33	johannh	ok folks sorry I have to leave now
+16:33	* erickt waves
+16:33	skade	yeah, also, i'd like to note that it took the usual direction of moving structural problems towards the person raising it
+16:34	erickt	skade: I'm sorry you feel that way. I think we at least we can have some movement if we can leverage the r/d management to fix the mozilla participation issues you've been running into
+16:35	skade	erickt reminder that last time r/d promised doing something, it ended up in a mess, too.
+16:35	jntrnr	skade: ?
+16:36	jntrnr	skade: it feels like you're just attacking
+16:36	skade	jntrnr i don't want to hold up the meeting, but I can clarify that to you later, if you want to
+16:36	skade	yeah, I have to admit that I promised not to raise old issues
+16:36	skade	sorry for that one
+16:36	erickt	lets talk after the meeting if you got time
+16:37	skade	yep
+16:37	erickt	we had a SF shopathon this past weekend and produced a ton of stuff for rustbridge: github.com/rust-community/rustbridge/tree/master/workshops
+16:37	skade	\o/
+16:37	steveklabnik	:D
+16:37	jntrnr	yeah brson was saying it went quite well
+16:37	badboy	that's cool! already looked through it a bit
+16:37	erickt	not quite everything has landed, we haven't quite gotten yet the web scraper landed
+16:37	jntrnr	very cool
+16:38	hjr3	nice!
+16:38	erickt	big items we got a "starting from scratch" installfest guide, a beginners tutorial to introduce basic concepts of rust
+16:38	Manishearth	I saw the code, very nice
+16:38	skade	I like the images one :)
+16:38	brson	at the least everybody in attendence was very positive and had a good experience
+16:38	Manishearth	erickt: could you publish notes about how this event was structured/executed so that it can be replicated?
+16:39	erickt	and a few applications: the web scraper, a url shortener a la bitly, a text adventure, and a machine learning guide
+16:39	booyaa	i found the url shortener one interesting too
+16:39	booyaa	different approach to the one we plan to take
+16:39	badboy	we probably should re-use those tutorials for RustFest as well :)
+16:39	erickt	Manishearth: yeah I need to write these up
+16:39	Manishearth	thanks
+16:39	erickt	if you look through it, we do have some docs, but we need to collect them into proper slides and teacher's guides
+16:40	erickt	so steveklabnik, this is one area the doc team might help if they got free cycles :)
+16:40	steveklabnik	:)
+16:41	erickt	we also have some tech choices on how to comprise all this stuff, like should we use reveal.js or pnkfelix's tangle or something
+16:41	erickt	so this is a general appeal for help if you got ideas :)
+16:42	erickt	if there's nothing else
+16:42	skade	well, usually, the workshop itself is guided with a trainer and without slides, so I'm not sure how much that is an issue
+16:42	erickt	skade: ah ok
+16:42	erickt	jntrnr: drat you left didn't you
+16:42	skade	a written handout would be great, though!
+16:42	skade	maybe produced by pandoc or something
+16:42	erickt	skade: yeah!
+16:42	skade	or as a website
+16:43	jntrnr	I'm here!
+16:43	jntrnr	sorry, was grabbing snack
+16:43	erickt	oh hey! want to talk about outreach?
+16:43	jntrnr	outreach...?
+16:43	booyaa	outreachy?
+16:43	jntrnr	oh right to the commercial interests
+16:43	jntrnr	waking up slow today apparently :p
+16:43	erickt	:)
+16:44	jntrnr	so yeah, apparently we did this a while back where we did roundtables with people using Rust commercially
+16:44	jntrnr	we have a lot of new names on the friends list these days
+16:44	jntrnr	also... we have names of potentially commercial interests in the survey
+16:44	jntrnr	I was hoping to put something together like the roundtable we had before, and also include a round of outreach with emails to those who wanted to be contacted
+16:45	jntrnr	the later mainly opening any communications to help field questions they may have
+16:45	erickt	Sounds like a wonderful idea
+16:45	jntrnr	and maybe get people pointed to good training materials for their teams, etc
+16:46	erickt	jntrnr: hosting lunch talks at those places could be a good use of our time too
+16:46	brson	jntrnr: i was just brainstorming this week about ideas for a consistent training session for potential production users. maybe we can brainstorm together
+16:46	jntrnr	yeah, if we have local people, that'd be great!
+16:46	jntrnr	brson: definitely
+16:47	jntrnr	rust learning materials strike team?
+16:47	erickt	brson: you should submit anything you do to github.com/rust-community/rustbridge/tree/master/workshops ;)
+16:47	carols10cents	i am v interested in this as both a community team member and as a rust consultancy owner :)
+16:47	erickt	I am *shocked*, carols10cents
+16:47	carols10cents	i do want to be clear which hat i'm wearing when tho, i don't want to appear like i'm taking advantage of the community team to get business,
+16:48	jntrnr	haha
+16:48	erickt	;)
+16:48	carols10cents	but at the same time.... we are an available resource ;)
+16:48	skade	carols10cents let's collaborate, I was approached for a 3 day workshop :)
+16:48	carols10cents	oo!
+16:48	carols10cents	skade: i promise to email you back ;)
+16:48	skade	(november)
+16:48	skade	I frame it like that: the material is open, but the teacher is paid.
+16:49	Manishearth	sounds like the open source saas model
+16:49	jntrnr	haha
+16:49	jntrnr	teachers as a service?
+16:49	skade	:d
+16:49	jntrnr	that's it from my end
+16:49	brson	jntrnr: a round of outreach doesn't require a lot of upfront work. do you have concrete plans?
+16:49	erickt	jntrnr: I think those are just called "teachers"
+16:49	skade	I think being open to commercial approaches is always a good approach.
+16:49	jntrnr	brson: umm, they are firming up
+16:49	jntrnr	mostly just what i said but no schedule yet
+16:50	skade	they are going to happen anyways
+16:50	jntrnr	skade: +1
+16:50	jntrnr	hopefully getting the mailing contacts part of the outreach together... next week? then go from there
+16:51	erickt	great. I'll put this for a status update for next week :)
+16:51	jntrnr	hehe
+16:51	jntrnr	keep me honest, I like it :)
+16:51	erickt	anyone on here also want to participate (and thus try to have a work meeting on irc?)
+16:51	jntrnr	yes please :)
+16:52	steveklabnik	brb
+16:52	carols10cents	me me me
+16:52	jntrnr	done
+16:52	jntrnr	:) anyone else?
+16:53	hjr3	where do you find the time carols10cents !? i _want_ to, but i better not. Q3 is really busy for me and i am still working on my rust belt rust workshop
+16:53	erickt	please add agenda items to github.com/rust-community/team/issues/57
+16:53	carols10cents	hjr3: my secret is not having a full time job hahahah
+16:53	badboy	hjr3: wait working on that already? oh my… I really need more time :D
+16:53	Manishearth	erickt: in the outreach meeting? I'd love to participate
+16:54	erickt	since we're getting close to wrapping up today, does anyone have some time to help out with bors?
+16:54	erickt	they've been struggling a lot to get things up and running
+16:54	skade	sadly not, after rustfest maybe
+16:54	badboy	yeah, same here. until after RustFest I can't commit tothat
+16:54	edunham	I'll continue attempting and mostly failing to find them some time this week
+16:55	skade	but I can offer trying to find people working on it on Rust Hack & Learn and RustFest workships
+16:55	jntrnr	erickt: oh man, I'd love to replace it :-/
+16:55	hjr3	erickt is there a list of the problems somewhere? i can see if anyone over here wants to help
+16:55	jntrnr	maybe we need a bors-a-thon
+16:55	erickt	we do
+16:55	erickt	that's actually a great idea
+16:55	jntrnr	and we have all the juicy new futures things to build it on
+16:55	badboy	I will bring this up at our meetup as well, we have some people wanting to use homu/bors, so maybe someone wants to help make it happen
+16:56	erickt	acrichto is actually doing something in github.com/alexcrichton/bors2
+16:56	jntrnr	I don't mind throwing a few hours at it
+16:56	badboy	but that's not for another 3 weeks
+16:56	jntrnr	count me in
+16:56	brson	huh, bors2 seems like a lot of duplicate work
+16:56	jntrnr	erickt: lol, I think that might just be a spike for fun
+16:56	brson	there are now 3 potential bors-nexts
+16:56	jntrnr	I don't know if he's serious yet
+16:56	brson	does he know about the other one?
+16:56	skade	I have another one: the person building the RustBridge website is currently not responding. Would anyone know someone who could help out there?
+16:57	jntrnr	skade: we were just talking about Rust sites needing an update
+16:57	erickt	skade: oh that's too bad
+16:57	jntrnr	I wonder if there are contacts that can help other Rust sites as well
+16:58	carols10cents	has anyone ever seen acrichto sleep?
+16:58	booyaa	heh
+16:58	booyaa	to be honest after i met some of you this june i doubt any of you sleep
+16:58	badboy	carols10cents: I saw him in a ballpit once, that was as close to sleep as it gets with hi
+16:58	skade	if not, let's just set up a GH page quickly at some point :)
+16:58	carols10cents	i want to know HIS secret
+16:58	badboy	*him
+16:58	skade	i'll notify the rustbridge team, too, let's see
+16:58	booyaa	you're just in your pods drip fed solyent green
+16:59	jntrnr	hahaha
+16:59	jntrnr	and lots of en.wikipedia.org/wiki/Stroopwafel
+16:59	badboy	hm, should I bring some to RustBeltRust?
+17:00	erickt	skade: added website to rustbridge agenda: github.com/rust-community/rustbridge/issues/37
+17:00	carols10cents	badboy: stroopwafel? YES
+17:00	erickt	and also the rust community agenda
+17:00	Manishearth	skade: edunham once got some awesome contributors to build the servo website -- she might know people who want to help
+17:00	skade	erickt thanks, I will try to be there next week
+17:00	erickt	great
+17:00	edunham	Manishearth: I can absolutely ping some people once an issue is open :)
+17:00	badboy	carols10cents: yup, I live ~2km from the netherlands :D
+17:00	Manishearth	we wanted one person, she got two. clearly she has skills
+17:00	badboy	I'll put it on my packing list
+17:00	Manishearth	:p
+17:00	skade	Manishearth yeah, push comes to shove, we can do single announcements for the individual workshops
+17:00	erickt	obviously we need to also have a websiteathon
+17:01	carols10cents	badboy: YAAAYYY!!!!!
+17:01	erickt	athon all the things!
+17:01	edunham	everythingathon
+17:01	* badboy cancels his workshop and brings lots of stroopwafels instead
+17:01	carols10cents	stroopwafelathon
+17:01	erickt	edunham: put that on a tee shirt!
+17:01	erickt	mm stroopwafels
+17:01	jntrnr	carols10cents: I'm so +1 that
+17:02	carols10cents	jntrnr: are YOU coming to my conference??
+17:02	* jntrnr thinks we need a sekrit project just to call it stroopwafel
+17:02	jntrnr	carols10cents: sadly not.. trying to move to NZ... omg long story
+17:02	carols10cents	0_0
+17:02	erickt	jntrnr: definitely
+17:02	carols10cents	no stroopwafel for you!
+17:03	jntrnr	:(
+17:03	erickt	jntrnr: we could just hang a "Welcome to New Zealand" sign up at rustbeltrust
+17:03	jntrnr	hahahah
+17:03	erickt	that might be easier for you
+17:03	jntrnr	erickt: so true
+17:03	carols10cents	yeah, just move to pittsburgh instead
+17:03	carols10cents	they're basically the same
+17:03	jntrnr	carols10cents: I like pittsburgh...
+17:03	jntrnr	hmmm
+17:04	skade	jntrnr always wanted to speak at a rust conference in new zealand
+17:04	jntrnr	I think aturon keeps secretly wishing I'd stay in SF
+17:04	erickt	ah pittsburgh, where they turn churches into beer gardens...
+17:04	carols10cents	and tattoo parlors!
+17:04	jntrnr	haha
+17:04	jntrnr	that sounds very seattle
+17:04	erickt	jntrnr: do you keep finding "I <3 the golden gate bridge" mugs on your desk?
+17:04	carols10cents	no no no no it's WAY better than seattle
+17:04	badboy	I heard beer garden?
+17:05	jntrnr	lol
+17:05	carols10cents	badboy: churchbrew.com
+17:05	badboy	:O
+17:05	carols10cents	oooh maybe i should have the speaker's dinner there
+17:05	jntrnr	carols10cents: that's gorgeous!
+17:05	erickt	that's where I met carols10cents and bstrie for the first time!
+17:05	carols10cents	:)
+17:05	erickt	they were on a wall
+17:05	jntrnr	"they were on a wall"
+17:06	jntrnr	I don't even...
+17:06	carols10cents	erickt: outside?
+17:06	erickt	yeah!
+17:06	carols10cents	ah yeah
+17:06	jntrnr	oooooh
+17:06	carols10cents	there's walls outside
+17:06	carols10cents	we were waiting
+17:06	jntrnr	I thought you meant like hanging... on a wall... in a church...
+17:06	erickt	it's true
+17:06	erickt	it's a great restaurant
+17:06	carols10cents	no, no crucifixions
+17:07	booyaa	heh
+17:07	jntrnr	lol, and on that note... ;)
+17:08	erickt	well so on that note of crucifixions, I declare this meeting done!
