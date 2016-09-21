@@ -1,0 +1,338 @@
+ 16:02	bstrie	to reiterate, here's the agenda for today: github.com/rust-community/team/issues/80
+16:02	bstrie	skade_: would you like to start?
+16:03	* johannh still needs to catch up after rustfest :(
+16:03	jntrnr	oh, btw, steve's not here (but said RustFest was awesome)
+16:03	bstrie	yes, tell us how rustfest was!
+16:03	skade_	RustFest went well, everyone was happy and the talks were good
+16:03	johannh	people seemed really really happy
+16:03	skade_	next edition, as we said, will be in kiew
+16:04	skade_	the team will be a different one, though,
+16:04	bstrie	is there a blog post somewhere to summarize its proceedings?
+16:04	Manishearth	the emoji on github.com/rust-community/team/issues/80#issuecomment-248613231 tell a beautiful story
+16:04	skade_	not yet
+16:04	johannh	there was a nice blog post by someone about how organized everything was
+16:05	johannh	(although opinions on that may vary depending on if you ask organizers or attendees)
+16:05	bstrie	Manishearth: I presume the thumb-down there is because the videos from rustbeltrust cannot be ready yet, because the talks will not happen for over a month :P
+16:05	skade_	some of the things didn't go as well as planned, e.g. this years mentorship program run was very disorganized (that's my fault)
+16:05	Manishearth	bstrie: yeah
+16:05	skade_	and it got me thinking whether it would be better to maybe provide such a service (talk and abstract review) on top of the conferences
+16:06	bstrie	skade_: yes, I'd love to read a blog post with your comprehensive thoughts about these sorts of things
+16:06	johannh	I liked the idea of having it conference-internal, maybe finding mentors should be more centralized
+16:06	carols10cents	bstrie: and because everyone keeps asking for the darn videos
+16:06	skade_	in general, everything went fine, we would have preferred mozilla to be less flakey on their commitment, but as you saw, I spoke to sandra persing about that
+16:07	skade_	so, that's about it. can anyone tell us something about RustConf?
+16:07	johannh	carols10cents: I see you doing something online while you should be personally transcoding conference videos, let me complain
+16:07	bstrie	I wasn't there :P
+16:07	* frewsxcv has heard good things from people about RustConf, nothing first-hand though :)
+16:07	edunham	it seemed to go great, full room, many tutorial attendees
+16:07	badboy	woops, i'm here now
+16:08	edunham	communith table talked to lots of prople
+16:08	carols10cents	johannh: >:P
+16:08	edunham	*community
+16:08	jntrnr	yeah, RustConf went really well. Probably one of the best confs I've been to, to be honest
+16:08	jntrnr	the tutorials were well-attended and had positive feedback
+16:09	jntrnr	and I loved the speaker selection we ended up with. Diverse, lots of styles/ideas in the mix
+16:09	edunham	if any issues arose, they were handled in a way that was totally invisible to attendees :)
+16:09	skade_	oh, that's the usual :)
+16:10	skade_	we had _lots_ of issues of that kind
+16:10	johannh	oh yeah
+16:10	skade_	tutorials and free-form parts seem to be very well received
+16:10	bstrie	skade_: let's move on to the video channel bullet point
+16:12	skade_	okay, so, as we all have videos coming up and RustFest was setting up a Youtube channel anyways, I suggested to just have a rust channel
+16:12	skade_	details can be found here: github.com/rust-community/team/issues/84
+16:12	bstrie	good point, where have all our prior videos been uploaded?
+16:12	bstrie	I feel like we've had some official videos before, surely?
+16:12	jntrnr	+1 on having a rust youtube channel
+16:12	skade_	rustcamp was uploaded at confreaks
+16:12	skade_	I already added a couple
+16:13	skade_	I already added a couple of old videos to playlists and added a twitter account @rustvideos that tweets those additions out.
+16:13	bstrie	I think this is a good idea, but I'd like someone well-versed in youtube to handle it
+16:13	carols10cents	skade_ seems to be pretty versed
+16:13	jntrnr	yeah, it's looking pretty good so far
+16:13	bstrie	skade_: is that twitter bot automatic, or does it require manual tweeting?
+16:14	skade_	adding videos is rather simple, if you are logged in with the "brand account" (use the switcher), you can use the "add" interface under the video
+16:14	skade_	bstrie: automatic
+16:14	bstrie	good
+16:14	bstrie	for the usual security purposes I'd say let's limit the number of people with access to the account
+16:14	skade_	open questions: connecting to Google+ and Facebook is also possible, but we have no venue there
+16:14	bstrie	we do have a Google+ page, we've had it for a long time
+16:14	edunham	this ties intot he other agenda item of too many accounts :)
+16:14	edunham	*into
+16:15	frewsxcv	:P
+16:15	bstrie	or rather, there's a rust page in google+, not that there's an official rust community account
+16:15	bstrie	I don't particularly want to expand to facebook at this time
+16:15	skade_	ah, interesting
+16:15	bstrie	unless there's a way to disable all comments on facebook pages
+16:15	frewsxcv	(for the record plus.google.com/communities/115152292505513839896)
+16:15	bstrie	too much moderation work
+16:16	skade_	yes, that's kind of the problem with facebook. but it does have a lot of reach
+16:16	jntrnr	that it does
+16:17	johannh	for meetups facebook is surprisingly effective in reaching audiences that meetup.com would never get to
+16:17	johannh	but we're not talking about meetups I guess
+16:17	bstrie	can we disable all comments to the facebook page? otherwise, I stand by my reticence to have an official facebook presence
+16:17	bstrie	that's a job for several full-time paid moderators
+16:17	Manishearth	+1
+16:18	bstrie	it's counterproductive to have a far-reaching presence filled with toxic people
+16:18	johannh	I agree
+16:18	booyaa	hi everyone!
+16:18	bstrie	hola
+16:18	skade_	okay, so it seems like the way to disable comments on a facebook page is to mark every word in english as a bad word: www.christiankonline.com/disable-facebook-comments
+16:18	bstrie	haha
+16:18	skade_	technology!
+16:18	bstrie	awful
+16:18	jntrnr	lol
+16:18	skade_	okay, shall we split that off?
+16:18	bstrie	let's put that as a far-future enhancement, yes
+16:19	johannh	I take A - F
+16:19	bstrie	in the meantime, we can try to contact the moderators of the google+ account and see if we can expand our presence there, since it at least seems marginally more civil than facebook (I've followed it lightly over the years)
+16:19	mbrubeck	www.youtube.com/watch?v=GlTEjlHXXkw
+16:19	bstrie	and a youtube channel is a good idea, and of course we can disable comments completely there
+16:19	frewsxcv	I can try to contact them if no one else wants to
+16:20	bstrie	frewsxcv: the google+ rust mods?
+16:20	frewsxcv	Yeah
+16:20	skade_	frewsxcv: that would be nice
+16:20	bstrie	frewsxcv: I'm willing to contact them as well
+16:20	bstrie	(google+ communities have mods, right?)
+16:21	frewsxcv	Well, it seems redundant to contact them twice ;) But I'm not on any Rust team, so it might be more authoritative if you did it I guess
+16:21	* frewsxcv shrugs
+16:21	bstrie	I'll do it then
+16:21	skade_	frewsxcv: well, you can just say that you picked up the task
+16:21	bstrie	skade_: with my complete lack of authority, I hereby authorize you to create a rust youtube account
+16:21	skade_	:D
+16:22	bstrie	frewsxcv: are you big into google+?
+16:22	frewsxcv	I use it occasionally, which probably means I'm in the top 0.001% of users
+16:22	frewsxcv	So....maybe? ;)
+16:23	bstrie	skade_: don't go giving out the credentials to a lot of people, but please do give them to aturon or someone else in charge of rustconf so they can start putting up their own videos
+16:23	skade_	github.com/rust-community/team/issues/86
+16:23	skade_	bstrie: yep, it's currently just community team members
+16:23	skade_	I pinged leah on that issue, i expect that's the right person?
+16:24	frewsxcv	bstrie: I think YouTube accounts are now associated with Google+ accounts?
+16:24	frewsxcv	Regarding Skade's comment
+16:24	bstrie	frewsxcv: I presume there's something special about organization accounts on youtube
+16:24	frewsxcv	...or the conversation can just happen there instead of here
+16:24	bstrie	not sure if those cost money
+16:24	bstrie	anyway, yes, let's move the youtube conversation to issue #86, and keep the meeting rolling
+16:24	carols10cents	bstrie: i think skade_ just made a youtube *channel*, not an *account*? is that true?
+16:25	bstrie	carols10cents: I don't know how youtube works :P
+16:25	carols10cents	so you dont have to give out creds to an account
+16:25	carols10cents	just add people to a channel
+16:25	carols10cents	it's like github :P
+16:25	booyaa	prolly involves tubes
+16:25	skade_	carols10cents: it's a "brand account"
+16:25	jntrnr	and yous
+16:25	bstrie	skade_: next bullet point, growing the moderation team
+16:26	bstrie	I agree that if we expand into more venues then we're going to stretch the moderation team thin
+16:26	Manishearth	yes
+16:26	skade_	yep, there has been the discussion about slack (and google+ and facebook) and I think the general consensus is that this is all possible, but not with the current moderators
+16:26	carols10cents	skade_: ah, but like you gave my account access to that, not share creds
+16:26	bstrie	though we can have community-local moderators who are not on the moderation team itself
+16:26	skade_	carols10cents: yes
+16:26	Manishearth	I like the community-local idea
+16:26	skade_	also, we shouldn't have people moderating something they don't use
+16:27	Manishearth	the mod team doesn't have a leader by design, but this means that if the team is too large decision making is untenable
+16:27	carols10cents	wait what would "community-local moderators who are not on the moderation team itself"
+16:27	bstrie	but we do need at least *one* of the moderation team members in each "official" venue
+16:27	carols10cents	mean
+16:27	skade_	well, we could contact them
+16:27	bstrie	carols10cents: like, we have plenty of people with +o on IRC who are not on the moderation team
+16:27	Manishearth	so if we grow the team we need to add a team leader. which we could do. but it's best if it stays leaderless
+16:27	carols10cents	community as in rust-community/community team, the thing we are, or community as in slack community, irc community, facebook community
+16:27	Manishearth	similarly only two /r/rust mods are actual mods
+16:27	carols10cents	or community as in something else
+16:28	jntrnr	I honestly don't know what all moderation covers
+16:28	Manishearth	though /r/rust isn't official
+16:28	bstrie	Manishearth: /r/rust isn't an official venue
+16:28	Manishearth	bstrie: it's "unofficial" :)
+16:28	jntrnr	wait what?
+16:28	jntrnr	how is /r/rust not official?
+16:28	jntrnr	that's... scary
+16:28	bstrie	jntrnr: because I'm the admin, and I say so :P
+16:28	frewsxcv	"And nearly everything happening in Rust is discussed on the unofficial subreddit, /r/rust."
+16:28	frewsxcv	www.rust-lang.org/en-US/community.html
+16:28	bstrie	and really because reddit is completely out of our control, and also generally a terrible thing to be associated with
+16:28	jntrnr	haha
+16:28	brson	something like that yeah
+16:29	carols10cents	wait is the community team in charge of the moderation team? can we just declare more people members of the moderation team? that seems strange
+16:29	brson	it's sorta historically unoficcial
+16:29	skade_	carols10cents: no, we are not
+16:29	carols10cents	so why are we discussing this
+16:29	carols10cents	if we dont have the authority
+16:29	bstrie	carols10cents: we are not in charge of them, but if we want to grow to new venues, we put a burden on the moderation team
+16:29	Manishearth	carols10cents: it's not
+16:29	skade_	but we are responsible for possibly communicating that we search for new people
+16:29	frewsxcv	Is it correct to say the moderation team doesn't have regular meetings?
+16:29	Manishearth	carols10cents: but. there is overlap between the teams, AND adding more official venues falls under the community team's jurisdiction
+16:30	carols10cents	so the action item should be "tell whoever is in charge of adding to the moderation team that the community team requests a discussion about adding more moderators"
+16:30	Manishearth	frewsxcv: yes
+16:30	bstrie	jntrnr: to answer your question, the point of having a dedicated moderation team is that dealing with troublesome people has to be *someone's* explicit job, or it never gets done
+16:30	brson	i pinged mbrubeck about this yesterday
+16:30	Manishearth	frewsxcv: we discuss incidents over email, sometimes over irc
+16:30	bstrie	or at least, risks never getting done. "not my problem" and all
+16:30	brson	i think they'll be open to adding mods
+16:30	jntrnr	bstrie: oh I'm very pro-moderation, I just don't know their official purview
+16:30	Manishearth	jntrnr: banning all the people
+16:30	bstrie	it's not that the moderation team has to greenlight any moderator action, they're just there as a resource
+16:31	jntrnr	Manishearth: on which platforms? we just said /r/rust wasn't official
+16:31	Manishearth	jntrnr: basically, we moderate both individual incidents and recurring behaviors
+16:31	Manishearth	"community local" mods only moderate the first
+16:31	brson	oh heh Manishearth is a mod... didn't realize
+16:31	carols10cents	if r/rust isn't official, then i dont think slack should be official
+16:31	bstrie	we can do that
+16:31	edunham	perhaps a pull-based moderation model, where people have a single channel to request action, would allow the mod team to handle more venues than the current apparent "please read everything in all these places" one?
+16:31	carols10cents	if we've even decided to have a slack
+16:31	Manishearth	jntrnr: IRC, discourse, github
+16:31	jntrnr	carols10cents: that's on the agenda :)
+16:31	Manishearth	carols10cents++
+16:31	frewsxcv	(there's already a Slack up for what it's worth)
+16:31	edunham	errrr... no, that'd be push-based. (insufficient coffee)
+16:31	brson	carols10cents: well, what i want out of this is a good place for beginners that isn't technically intimmidating
+16:32	brson	we can do that unofficially, but it's kinda awkward
+16:32	bstrie	carols10cents: but also, even if a community isn't official, if it gets big enough and happens to be a shitshow, that still looks bad on us :P why else do you think I care about reddit so much, despite it being terrible
+16:32	jntrnr	frewsxcv: in addition to the one I put up?
+16:32	frewsxcv	jntrnr: That's the one I'm referring to
+16:32	brson	i would hope that slack/whatever-beginners becomes _the place_ for beginners
+16:32	jntrnr	okay I'm losing track of the conversatinos
+16:32	carols10cents	bstrie: but what do we even have the authority to do here
+16:32	brson	yeah this is sprawling
+16:32	bstrie	yes, let's everyone time out for a moment
+16:33	bstrie	I have the talking stick
+16:33	Manishearth	there are two mostly orthogonal parts of "official". One is that we say it's official and the official mod team officially moderates. The other is that mostly everyone hangs out there. We need to figure out which of these two (if not both) we want for Slack
+16:33	Manishearth	/r/rust has the latter
+16:33	bstrie	carols10cents: what we're doing here is coordinating with the moderation team ( Manishearth) to see if their current burden makes adding new community venues infeasible without adding new moderators
+16:34	bstrie	the moderation team meets privately, so I have no clue how much free time they spend moderating or how much workload they experience
+16:34	mbrubeck	carols10cents: If the community team can help identify potential new mods, that would be very welcome. Officially it's the core team that appoints people to the moderation team, but so far they have been happy for us (the mod team) to nominate new members.
+16:34	bstrie	now, has anyone set up a slack yet?
+16:34	Manishearth	bstrie: fwiw I can't speak for the other mods
+16:34	frewsxcv	bstrie: jntrnr has.
+16:35	jntrnr	but it's not public
+16:35	bstrie	Manishearth: well nobody can, but you can tell me how busy you all are :P
+16:35	Manishearth	bstrie: that said, while the mod load is pretty light, I'm pretty sure having to check more venues will take more time
+16:35	mbrubeck	And yes, I think the mod team needs to grow as we add new venues, though we don't need to do it urgently (yet).
+16:35	Manishearth	it's not moderating that takes time, it's checking to see if everything is ok :)
+16:35	carols10cents	bstrie: you didn't see the whole email thread?
+16:35	Manishearth	agree with matt
+16:35	bstrie	Manishearth: I kind of expect the moderation team to be reactive instead of proactive, given the sheer volume. leave proactive moderation to local moderators
+16:35	bstrie	carols10cents: apparently not
+16:35	Manishearth	bstrie: yes. though at least I've tried to be proactive so far
+16:36	Manishearth	wrt discourse -- I don't open discourse as often for reading as I do for flag-handling
+16:36	Manishearth	(though I've not done that for a while)
+16:36	Manishearth	bstrie: but yes, perhaps we should switch to full-reactive mode
+16:36	bstrie	jntrnr: one thing I'm concerned about with any new venue is that even if we have token moderators there, we also need friendly people there who *Want* to be in there and who can keep things civil and friendly
+16:37	jntrnr	bstrie: right, I think that was brought up on the thread as well
+16:37	bstrie	clearly I should read this thread :P are there any lingering questions?
+16:37	Manishearth	yes
+16:37	jntrnr	which is why we want to at least have some interaction from the teams
+16:37	* frewsxcv wonders what thread people are referring to
+16:37	jntrnr	though it can be unofficial in the same way /r/rust is
+16:37	carols10cents	frewsxcv: to the rust-community@ email
+16:37	skade_	the problem is also that slack has no explicit moderation functions
+16:38	bstrie	jntrnr: it's fine leaving it "unofficial" for now, as long as someone official has admin rights we can make it official later
+16:38	carols10cents	skade_: what functions doesn't it have?
+16:38	bstrie	skade_: hm?
+16:38	bstrie	that's problematic
+16:38	skade_	carols10cents: reporting
+16:38	bstrie	are you kidding me, dammit slack
+16:38	carols10cents	i mean... irc doesn't either
+16:38	Manishearth	skade_: ..............
+16:38	jntrnr	what carols10cents said
+16:38	Manishearth	yeah
+16:38	bstrie	carols10cents: banning and muting is at least a start :P
+16:38	jntrnr	it's basically irc with some wizbang features
+16:39	carols10cents	bstrie: banning and muting are not reporting
+16:39	skade_	carols10cents: sure, but that's what I mean that moderators must be people that stick around the place
+16:39	bstrie	can we ban/kick/mute/ignore people on slack?
+16:39	carols10cents	or people message the mods
+16:39	* frewsxcv is constantly on Slack if moderators are desired
+16:39	bstrie	carols10cents: who is it reporting *to*? :P
+16:39	carols10cents	bstrie: there is no reporting
+16:39	carols10cents	is what i'm saying
+16:40	skade_	in any case, lot's of open questions, who would like to collect them?
+16:40	skade_	and maybe put the issue up for debate again, possibly on URLO?
+16:40	bstrie	jntrnr: would you be willing to file an issue in the community team repo about answering questions regarding a new slack channel? alternatively, you can just leave it as an email thread if you think that suffices
+16:41	jntrnr	yeah, I'll make it a community issue, though please make sure I get everything since there are a lot of points flying around
+16:41	bstrie	do we usually post the meeting minutes somewhere?
+16:42	carols10cents	*facepalm*
+16:42	skade_	yes
+16:42	bstrie	okay, next agenda item
+16:42	skade_	github.com/rust-community/team/tree/master/meeting-minutes
+16:42	bstrie	skade_: meetup
+16:42	skade_	yeah, so every couple of weeks, someone comes around and searches for other ways of hosting meetup info then meetup.com
+16:43	skade_	the problem got bigger since meetup raised charges to around 60$ per 6 months for up to 3 meetups
+16:43	bstrie	I was honestly under the impression that meetup.com was free :P
+16:44	bstrie	who has business models these days??
+16:44	bstrie	skade_: do you have an alternative to suggest?
+16:44	skade_	the ruby community has an app for that that could be used: www.rug-b.de
+16:44	skade_	which is actually quite well suited for the task, with talk submission and such stuff
+16:45	skade_	pro: open-source, con: not quite as good in audience-building and needs to be hosted
+16:45	skade_	(it is multi-tenant capable, though)
+16:45	bstrie	we'd need to host this ourselves, right? paging edunham :P
+16:45	carols10cents	cons: network effects
+16:45	frewsxcv	Just going to say, that as a meetup organizer, I'd rather pay for meetup.com than have to do outreach
+16:45	skade_	currently no self-signup, though, but it is a maintained and modern rails app that can be extended
+16:46	skade_	carols10cents: that's what I meant by audience-building
+16:46	edunham	bstrie: a "pay someone else to host a FOSS thing for us" solution is optimal, but we can self-host if it's essential
+16:46	skade_	well, I think the hosting could be arranged
+16:46	edunham	(basically the Discourse model is optimal)
+16:46	frewsxcv	If cost is a concern, maybe some meetup organizers (including myself) could share a paid account
+16:46	skade_	including approaching onruby if we could just hop on their instance
+16:46	bstrie	edunham: I almost feel like we need a rust-infrastructure team
+16:46	skade_	frewsxcv: 3 meetups max, that's still 40 $ per year per team
+16:47	* skade_ is a meetup power user with two of them :/
+16:47	edunham	bstrie: tools has kind of adopted those tasks, but I agree that tools is not the same as infra
+16:47	frewsxcv	Again, I'd rather pay $40 a year than actively find people to use our dedicated site
+16:47	bstrie	agreed that making people sign up for yet another service is a pain in the butt
+16:47	skade_	frewsxcv: you do, others don't, as I said, we frequently get people asking
+16:47	bstrie	frewsxcv: however, could we take the cargo route and leverage github accounts?
+16:47	frewsxcv	meetup.com is pretty effective (due to the network effect) for finding new users
+16:47	skade_	bstrie: well, it's GH and twitter signup
+16:48	edunham	things which accept github login for RSVP aren't really Yet Another Login
+16:48	brson	i'd be reluctant to move away from the tool that everybody knows to something rust specific
+16:48	brson	we don't have the resources to maintain the infra we have
+16:48	bstrie	frewsxcv: I don't think we need to discourage people using meetup entirely, it's up to the organizer of each meetup whether they can afford to shell out $120/year in order to reach a wider audience
+16:48	edunham	could someone take on the task of identifying possible solutions, identifying the target audience for this, and comparing their needs to the tools' functions?
+16:48	skade_	and integration into meetup could also be written, the biggest problem is that RSVPs on two sites is ugly
+16:49	skade_	Okay, I'll make a better writeup of this.
+16:50	bstrie	brson: I'll talk to you about infra later :)
+16:50	bstrie	for now we'll say that we keep it steady as she goes with meetup, and this can be an option if things get out of hand (further price hikes, etc)
+16:50	bstrie	skade_: next bullet point, stray accounts
+16:51	booyaa	skade_: this might be worth a look too attending.io
+16:51	skade_	yes, so we got quite a couple of accounts at a lot of places
+16:51	skade_	booyaa: no recurring events, no talk management
+16:52	skade_	TBQH, I'm not even sure which kind of properties we have where
+16:52	bstrie	skade_: examples?
+16:52	skade_	I have the youtube account and the twitter account attached to it
+16:53	skade_	we have the rust-community org, a still-unofficial slack etc.
+16:53	bstrie	well, I think the first step is to enumerate all the accounts we have
+16:53	frewsxcv	bstrie: Just saw your message; I agree, sounds good
+16:53	skade_	I think we should make a writeup of that and maybe make sure that there's some sort of handover possible in case people suddenly vanish or such
+16:54	skade_	this is more like a "I see that problem" thing
+16:54	bstrie	I don't know large organizations handle accounts like this, I hope it's more sophisticated than a text document on a server somewhere
+16:54	bstrie	I feel like other rust teams might have this problem too
+16:54	dikaiosune	password managers (hosted, gpg-encrypted, w/e) seem very common for sharing team-based creds
+16:55	skade_	yes, I agree on that
+16:55	dikaiosune	if the database is hosted centrally, you can cycle credentials and no one will even notice
+16:55	dikaiosune	same for adding new accounts, etc
+16:56	bstrie	skade_: if you want to write up a proposal for managing all of our accounts, I'd receptive. in the meantime, I acknowledge that it's a problem, but I'm not sure what we can do about it other thank deal with it somehow (iow reducing the number of accounts we have isn't really feasible)
+16:56	bstrie	or have dikaiosune write up the proposal :P
+16:56	skade_	dikaiosune: yep, I think solutions are not the problem :)
+16:56	dikaiosune	:)
+16:57	skade_	bstrie: well, I'm more calling for trying to make a sort of inventory
+16:57	bstrie	we'll make that the first step then
+16:57	bstrie	but in the meantime maybe don't make that inventory public, since I'd be concerned about people trying to take over accounts that aren't secured properly
+16:57	bstrie	up to you, maybe I'm just paranoid
+16:58	bstrie	I think that's all that we have time for this week! thanks for coming everyone :)
+16:58	* jntrnr waves
+16:58	edunham	thanks for meeting-ing :)
+16:59	bstrie	I'll carry over the remaining agenda items into a new issue, and post actionable tasks in the comments of the current one
+16:59	skade_	well, if it is a public account, I don't see many problems, but yes
+16:59	skade_	oh, carols10cents, rustbridge: bumpy, but okay
+16:59	booyaa	o/`<GO TEAM!>`\o (sorry, not sorry)
+16:59	skade_	as far as I heard
+17:00	skade_	booyaa: \o/
+17:00	carols10cents	skade_: yeah i just found github.com/rust-community/rustbridge/issues/60, i'm going to ask my questions on there :)
+17:01	skade_	finally, a question I wanted to ask in the beginning, but forgot: anything that we can do to support rustbeltrust?
+17:01	bstrie	whose job is it to copy over the meeting minutes?
+17:01	skade_	as a community team?
+17:01	bstrie	skade_: I bet we can use help with rustbridges
+17:01	bstrie	skade_: I'll post that as an agenda item for next time
+17:01	frewsxcv	jntrnr: Is there any value in sharing the link to the Slack signup in here?
