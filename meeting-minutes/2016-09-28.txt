@@ -1,0 +1,263 @@
+17:00 * erickt waves uncontrollably                                                                              
+17:00 < jntrnr> o/                                                                               
+17:00 < badboy> good morning, good afternoon, hello and moin!                                                                         
+17:00 < badboy> can someone poke erickt? or reboot him?                                                                         
+17:00 < erickt> hey hey it's meeting time!                                                                           
+17:00 < erickt> hehe                                                                               
+17:00 < badboy> ah, works.                                                                              
+17:01 < erickt> it's nice to be back! thanks bstrie for covering for me while I had many fun hours in the Pittsburgh airport                                                           
+17:01 <~skade> o/                                                                                
+17:01 < erickt> who's here today?                                                                             
+17:01 < edunham> o/                                                                               
+17:01 < badboy> o/                                                                               
+17:01 < hjr3> o/                                                                               
+17:01 < carols10cents> o/                                                                               
+17:01 * skade is in brandenburg, which probably counts as "not being anywhere"                                                                        
+17:01 < jntrnr> Here :)                                                                              
+17:01 < erickt> o                                                                               
+17:02 < erickt> awesome, sounds like a good quorum                                                                          
+17:02 < erickt> so we gots our agenda, provided by the lovely meetingbot from earlier: https://github.com/rust-community/team/issues/89                                                                   
+17:02 < erickt> anyone want to go first due to time constraints?                                                                       
+17:03 < erickt> if not, we can start with the action items from last week: https://github.com/rust-community/team/issues/80#issuecomment-248684846                                                                   
+17:03 < erickt> skade, you had two, youtube and herding stray rust accounts                                                                      
+17:03 < steveklabnik> :D                                                                               
+17:03 <~skade> so, herding, I didn't get to it :)                                                                         
+17:04 <~skade> youtube: I did a little cleaning up and such and am now waiting for videos                                                                  
+17:04 < erickt> but we do have a youtube channel, which is great. we just need to start getting videos on it                                                             
+17:04 * badboy hides                                                                               
+17:04 <~skade> we already have 3000 minutes watched and 300 followers, which is great                                                                     
+17:04 < erickt> sweet!                                                                               
+17:05 <~skade> so, people _are_ watching the stuff we put there                                                                        
+17:05 < erickt> https://www.youtube.com/channel/UCaYhcUwRBNscFNUKTjgPFiA for others                                                                             
+17:05 <~skade> I still have not contact to rustconf...                                                                          
+17:05 < erickt> oh? I'll reach out to leah                                                                          
+17:05 <~skade> we need to wait for 30 days until we can get a vanity URL                                                                   
+17:05 <~skade> hm, I wrote an email and pinged her on the issue, that should be enough                                                                  
+17:06 <~skade> so, that's about it                                                                             
+17:06 < edunham> skade: what's workflow for meetups to add talk recordings?                                                                       
+17:06 <~skade> I'm currently writing reports to mozilla about RustFest                                                                         
+17:07 <~skade> edunham: they can just upload them there to a playlist or we can re-publish their playlist to the channel                                                              
+17:07 < erickt> skade: we also should reach out to air.mozilla on getting our videos up there too                                                                 
+17:07 <~skade> (an example would be how the rustcamp videos from last year were handled)                                                                    
+17:07 < badboy> oh right, I want to upload our meetup videos                                                                       
+17:08 < jntrnr> erickt: can we upload the SF meetup videos too?                                                                       
+17:08 < edunham> skade: ok, i ask because i've been using archive.org for pdxrust and it's pretty great                                                                 
+17:08 < erickt> skade: filed a https://github.com/rust-community/team/issues/92 to document submission process                                                                        
+17:09 < erickt> jntrnr: yeah, I was just about to open that ticket too                                                                     
+17:09 <~skade> edunham: well, we (rustfest) are planning to have our videos at archive.org, too                                                                    
+17:09 < jntrnr> It'd <3 to see all of our videos in one place                                                                     
+17:09 < erickt> jntrnr: https://github.com/rust-community/team/issues/93                                                                              
+17:09 <~skade> basically, have people watch whereever they want :)                                                                         
+17:09 < edunham> :) sounds good                                                                             
+17:10 < erickt> fyi I'm taking action item notes to https://public.etherpad-mozilla.org/p/rust-community                                                                        
+17:11 < erickt> to try to be a little more organized this time around                                                                     
+17:11 < erickt> ok so next up                                                                            
+17:12 < badboy> (orrrr youtube accounts are so broken)                                                                          
+17:12 < erickt> jntrnr: got anything new on the slack conversation?                                                                        
+17:13 < jntrnr> I sent out an email yesterday summarizing where we are.                                                                      
+17:14 < jntrnr> Would love to hear people's thoughts on the straw man                                                                      
+17:14 < erickt> ah, missed that :)                                                                            
+17:14 < frewsxcv> Is there a way for the public to see rust-community email threads?                                                                    
+17:14 < jntrnr> I don't think so                                                                            
+17:14 < frewsxcv> :(                                                                               
+17:14 < locks> sorry was in a meeting                                                                           
+17:14 < carols10cents> jntrnr: could you (or could i) repost your email on the gh slack issue?                                                                  
+17:14 < erickt> it might time to move this chat to urlo                                                                       
+17:14 < jntrnr> Sure that's cool. Currently on phone so feel free                                                                       
+17:15 < carols10cents> i got u fam, 1 min                                                                          
+17:15 < jntrnr> Sure, we can do. I just wanted to be sure that none of us were strongly opposed                                                               
+17:16 <~skade> well, I'm fine with that                                                                            
+17:16 < jntrnr> Though this is like a new website in a way                                                                      
+17:16 < erickt> frewsxcv: you could always join the community team if you can dedicate some time to our projects :)                                                              
+17:16 <~skade> maybe some people will volunteer to help out                                                                         
+17:16 < locks> are we _in_ the meeting?                                                                           
+17:17 < erickt> locks: howdy! and yeah!                                                                            
+17:17 < badboy> locks: yes, we are.                                                                            
+17:17 < jntrnr> The meeting is happening around us and we are part of it                                                                    
+17:17 * locks looks at the bot suspiciously                                                                           
+17:17 < locks> <DFW voice>this is water                                                                            
+17:17 < carols10cents> https://github.com/rust-community/team/issues/87#issuecomment-250217495                                                                               
+17:18 < jntrnr> I'll take action item to urlo it                                                                         
+17:19 < erickt> jntrnr: that all sounds pretty reasonable                                                                          
+17:19 < erickt> what would happen after 30 days if we decide it's not working out?                                                                   
+17:19 < erickt> do we tear it down, or just stop paying attention to it?                                                                    
+17:20 < edunham> (abandoning it)--                                                                              
+17:21 < booyaa> you could add slackbot responses to hi/hello/help to fire off an automated response that the channel is no longer being monitor and give links to alternative means of communciation                                                   
+17:21 < frewsxcv> Anyone know if it's possible to block further discussions for a channel?                                                                    
+17:21 < steveklabnik> :)                                                                               
+17:21 < booyaa> i reckon it'll be popular though, everyoe <3 slack atm                                                                      
+17:21 < jntrnr> Yeah, if it's bad we abandon it                                                                         
+17:21 < frewsxcv> *Slack channel                                                                              
+17:22 < frewsxcv> (unless that's also not desired)                                                                           
+17:22 < hjr3> abandon means "stop paying attention?"                                                                             
+17:22 < jntrnr> No, close it down                                                                            
+17:22 < hjr3> got it, thanks                                                                             
+17:22 < frewsxcv> Oh, I interpreted abandon to also mean "stop paying attention"                                                                        
+17:23 < jntrnr> Oh dialect words...                                                                             
+17:23 < erickt> anything else we ought to talk about on slack?                                                                       
+17:24 < jntrnr> that's it on my side                                                                           
+17:24 < jntrnr> for slack                                                                              
+17:24 < erickt> cool, if there's nothing else, jntrnr want to talk about hacktoberfest? https://twitter.com/digitalocean/status/780905259191377920                                                                    
+17:24 < badboy> enable the irc bridge of slack itself!                                                                         
+17:24 < badboy> then people can join using irc clients (people like me…)                                                                      
+17:24 < jntrnr> sounds like badboy wants to take an action item :)                                                                      
+17:24 < edunham> (er yeah, i also heard abandon as "cease moderating but leave extant)
+17:25 < badboy> I'd need an account there and be admin, but … well, I guess I can :D
+17:25 < jntrnr> that can certainly be arranged
+17:25 < jntrnr> okay, so oh one quick item before I forget
+17:26 < jntrnr> commercial outreach is on-going.  We got a fair amount of responses... something like 33 in total
+17:26 < frewsxcv> 🎊
+17:26 < jntrnr> so we're about to email them out the first questionaire to get the interviews going
+17:26 < edunham> (badboy: irc bridge instructions are bad in slack; we should publish our own if it's something we encourage. i can write it up if someone nags me or files an issue)
+17:26 < erickt> jntrnr: awesome! do we have a questionaire already? I don't think I've seen it yet if we do
+17:26 < erickt> but I'm far behind in my email ;_;
+17:27 < jntrnr> erickt: we've been just working with the people who volunteered to be part of the commercial outreach
+17:27 < erickt> jntrnr: great
+17:27 < erickt> I wanted to also make sure they were involved :)
+17:27 < badboy> (edunham: that would probably be a good idea, I need to take a look at their instructions)
+17:27 < jntrnr> which is carols10cents, brson, Manishearth, and myself
+17:27 < steveklabnik> jntrnr: commerical outreach?
+17:27 < jntrnr> steveklabnik: people who use Rust commercially or who would like to
+17:27  * steveklabnik has been a bit out of the loop in the last month
+17:27 < steveklabnik> omg so many emails
+17:28 < steveklabnik> ah, excellent, i didn't know you were doing that
+17:28 < erickt> steveklabnik: remember what brson did about a year ago?
+17:28 < steveklabnik> erickt: yeah, totally
+17:28 < steveklabnik> sounds great
+17:28 < jntrnr> okay, so that's the status update on that
+17:28 < jntrnr> next, digitalocean
+17:28 < steveklabnik> i've been slowly adding people to the friends page
+17:28 < steveklabnik> but yeah, DO
+17:28 < jntrnr> so they're doing this hacktoberfest thing
+17:28 < carols10cents> erickt: the questionnaire jntrnr is talking about is just 4 really general questions to get the conversation going with each company
+17:28 < jntrnr> which sounds like it's picking up a bit of momentum, judging from my twitter feed
+17:29 < jntrnr> what carols10cents says :)
+17:29 < jntrnr> stuff like how" much do you love Rust? No, really, how much do you *really* love Rust?"                                                          
+17:29 < erickt> on a scale of one to rust, how rust is your rust?                                                                    
+17:29 < jntrnr> it sounds like digitalocean is interest in us participating                                                                       
+17:29 < booyaa> lol                                                                               
+17:29 < jntrnr> erickt: exactly                                                                              
+17:30 < jntrnr> I'm not sure what all we have to do, but I wanted to at least bring it up here in case it's pretty low barrier to entry for us                                                   
+17:30 < erickt> jntrnr: sounds great. so how do we get involved, and how involved do we have to be?                                                               
+17:30 < jntrnr> erickt: great questions! these answers I don't know short of reading the tweet they sent us                                                                
+17:31 < jntrnr> and starting the conversation with them                                                                          
+17:31 < jntrnr> does anyone want to volunteer?                                                                           
+17:31 < booyaa> have i understood right it would increase participation in our rust tools?                                                                    
+17:31 < steveklabnik> i believe what we have to do                                                                         
+17:31 < steveklabnik> is tag issues                                                                             
+17:31 < jntrnr> and probably mentor people                                                                            
+17:31 < jntrnr> ?                                                                               
+17:32 < steveklabnik> probably                                                                               
+17:32 < jntrnr> which we do anyway                                                                            
+17:32 < jntrnr> so it sounds like something we might be able to absorb                                                                     
+17:32 < steveklabnik> actually                                                                               
+17:32 < steveklabnik> it looks like that's not even a requiremnet                                                                        
+17:32 < erickt> jntrnr / steveklabnik: yeah, this seems pretty easy for us to do                                                                    
+17:32 < booyaa> would be poor form to corral them (volunteers) in #rust-beginners/gitter/slack?                                                                      
+17:32 < steveklabnik> https://hacktoberfest.digitalocean.com/ <- scroll to "what you need to know"                                                                           
+17:33 < erickt> especially servo, which already have a bunch of guides on contributions                                                                     
+17:33 < steveklabnik> Have questions?                                                                              
+17:33 < dikaiosune> steveklabnik: b/c their default discoverability mechanism is an issue/label search, i think labelling the issues is meant to help people find the project to start contributing to                                                     
+17:33 < steveklabnik> Get in touch with our team by sending an email to hacktoberfest@digitalocean.com.                                                                    
+17:33 < steveklabnik> ^                                                                               
+17:33 < steveklabnik> dikaiosune: ah, right                                                                             
+17:33 < badboy> basically we just need to tag issues so people know what to contribute to.                                                                  
+17:33 < frewsxcv> Isn't E-Easy already a thing?                                                                           
+17:33 < badboy> I guess, yeah                                                                             
+17:34 < edunham> we could be mediocre participants in hacktoberfest without any new work on triage, imo                                                                  
+17:34 < erickt> frewsxcv: exactly                                                                              
+17:34 < frewsxcv> https://github.com/rust-lang/rust/issues?q=is%3Aopen+is%3Aissue+label%3AE-easy                                                                               
+17:34 < steveklabnik> yeah looks like atom doesn't even have a label                                                                       
+17:34 < erickt> I'm guessing it really only matters if we want to have a featured project                                                                  
+17:35 < edunham> or we could triage more and file more low hanging fruit in the nursery and peripheral repos, write up a hacktoberfest-specific guide, and be awesome :)                                                      
+17:35 < carols10cents> will DO add rust as a language heading under "featured project?"                                                                      
+17:35 < jntrnr> carols10cents: I would hope so. would be a good question to ask them                                                                   
+17:35 < erickt> oh, it looks like servo already reached out to them: https://twitter.com/ServoDev/status/781064303784984576                                                                     
+17:36 < erickt> Manishearth: was that you? ^                                                                           
+17:36 < badboy> and of course flaki started it all…                                                                         
+17:36 < frewsxcv> That might be larsberg                                                                            
+17:36 < jntrnr> okay, lemme take the action item to reach out to them                                                                     
+17:37 < jntrnr> so we can move on to other items (if we have any)                                                                    
+17:37 < erickt> jntrnr: great                                                                              
+17:37 < erickt> speaking of this, this does flow into another subsection of the website I want to build                                                                
+17:37 < erickt> where we gather up links to all the E-Easy-style tickets in our subprojects                                                                   
+17:37 < badboy> wasn't there a page for that?                                                                          
+17:38 < erickt> edunham: did you already do that?                                                                          
+17:39 < erickt> ah, https://github.com/rust-community/team/issues/74, but we don't actually have it on rust-community.github.io                                                                      
+17:39 < frewsxcv> All e-easy issues in rust-lang org: https://github.com/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+org%3Arust-lang+label%3AE-Easy+                                                                         
+17:40 < erickt> I'll take as an action item to get #74 converted into a page                                                                   
+17:40 < edunham> erickt: yeah, we have a starters page...                                                                         
+17:40 <@brson> there's this irlo thread too https://internals.rust-lang.org/t/help-wanted-rust-starters-a-website-to-aggregate-tasks-for-rust-newbies/3783                                                                           
+17:40 <@brson> several people are interested in creating something like servo-starters                                                                        
+17:40 < erickt> edunham: where's that?                                                                             
+17:41 < badboy> (just in from our video editor: video 2 is in processing :D)                                                                    
+17:41 < erickt> brson: cool                                                                              
+17:41 < frewsxcv> https://starters.servo.org/                                                                               
+17:41 < edunham> http://edunham.github.io/rust-starters/ (sorry, had to switch from phone to laptop)                                                                       
+17:41 < badboy> brson: ah that's what I was thinking of                                                                        
+17:41 < erickt> brson: added that link to https://github.com/rust-community/team/issues/74                                                                          
+17:42 < erickt> edunham: added to website                                                                            
+17:42 < erickt> err, ticket                                                                              
+17:42 < erickt> (badboy: great!)                                                                              
+17:43 < erickt> ok anything else on hacktoberfest and starter projects?                                                                        
+17:43 < erickt> if not, next item...                                                                            
+17:43 < erickt> so as just a general awareness thing, I finally submitted the friends-of-the-forest to twir                                                                  
+17:44 < erickt> https://github.com/cmr/this-week-in-rust/pull/318                                                                               
+17:44 < erickt> so now we need to start watching the nomination thread: https://users.rust-lang.org/t/twir-friends-of-the-forest/7295                                                                     
+17:44 < badboy> wuih, that's quite a list                                                                           
+17:44 < hjr3> awesome!                                                                               
+17:44 < erickt> badboy: yep! rustconf folks had a lot of fun nominating people                                                                     
+17:45 < badboy> Yeah, saw that before. didn't realize we will submit the whole list at once                                                                  
+17:47 < erickt> skade: I say give it a few rounds to see how things shakes out                                                                  
+17:47 < hjr3> skade i have seen some of your comments, but i am still not sure what the concerns are. is it that we are only honoring people who write code?                                                   
+17:47 -!- Irssi: Join to #rust-community was synced in 27 secs                                                                        
+17:47 < erickt> I want to make sure we encourage more than just honoring coders                                                                    
+17:47 <~skade> erickt: i don't think that will happen :)                                                                         
+17:48 <~skade> hjr3: yes, that's precisely the problem, getting recognized for something that is not code is really hard                                                                
+17:48 < frewsxcv> erickt: Confirmed the tweet was from Manishearth                                                                         
+17:48 <~skade> for example, I would have hoped for people to add leah to that list, but hey                                                                 
+17:48 < hjr3> skade i think that is a good point                                                                        
+17:48 < erickt> that's where we need to help out                                                                         
+17:48 <@mbrubeck> the old Friends of the Tree had a number of people featured for writing docs, infrastructure, RFCs                                                                
+17:49 < erickt> skade: we should! someone want to write up a leah nomination? and anyone else who helped out organizing rustfest?                                                             
+17:50 < hjr3> Leah was working as part of tilde. i assumed they were paid to run the conference. if so, that is seems odd to me                                                        
+17:50 < erickt> aturon: ^ you probably worked closest with her on it                                                                      
+17:50 < erickt> hjr3: I think she was probably paid, but still, she organized a quality conference                                                                  
+17:51 < hjr3> agreed. it was an awesome conf                                                                          
+17:51 <@mbrubeck> FotT also included a number of people who were paid for their work                                                                    
+17:52 <~skade> well, payment isn't the issue :)                                                                           
+17:52 < hjr3> i did not realize that. i thought FotF was for volunteer work. my mistake                                                                  
+17:53 <@mbrubeck> Some of the old Friends of the Tree callouts for non-coding work https://irccloud.mozilla.com/pastebin/8LSOQe6g/                                                                    
+17:53 < erickt> since we only have a few minutes left, I want to switch topics to sync up with locks and booyaa                                                            
+17:53 < erickt> did either of you want to talk anything about bots?                                                                      
+17:53 < erickt> I wasn't sure if there was anything we queued up for discussion                                                                    
+17:56 < frewsxcv> (booyaa just joined)                                                                             
+17:56 -!- Irssi: Join to #rust-community was synced in 23 secs                                                                        
+17:56 < erickt> I vaguely remember brson (or jntrnr?) talking about having the rust-tools team helping out with the bots                                                               
+17:56 < carols10cents> from the logs, it seemed like there was a decision to move bots to tools? did anyone tell the tools team?                                                           
+17:56 < jntrnr> erickt: yeah, that's one of their responsibilities iirc                                                                        
+17:56 < jntrnr> carols10cents: yeah, they know                                                                            
+17:56 < booyaa> sorry my connection is really flakey atm                                                                         
+17:56 < jntrnr> acrichto is how manages the bots atm                                                                         
+17:57 < jntrnr> the build bots                                                                             
+17:57 < booyaa> eeyore (issue triaging bot) is making progress slowly. should be able to assign labels by next week.                                                               
+17:57 < erickt> jntrnr: are they working with locks and the aelitabot folks?                                                                      
+17:57 < jntrnr> erickt: who they? I'm not on the tools team                                                                       
+17:58 < jntrnr> I'm just saying that locks and aelitabot should be working with the tools team                                                                  
+17:58 < erickt> jntrnr: why don't you know everything I want to know? waah                                                                     
+17:58 < erickt> k                                                                               
+17:58 < jntrnr> hehe                                                                               
+17:58 < booyaa> we asked for bors to be brought up again, are we going with aelitabot or still trying to get homu working?                                                           
+17:58 < frewsxcv> aelitabot is put together by notriddle, who is active with Servo                                                                     
+17:58 < booyaa> locks right?                                                                              
+17:58 <@brson> erickt: i took an action item to organize something but have not                                                                     
+17:59 < booyaa> erickt: got one quick qustion about meetingbot                                                                         
+17:59 < erickt> booyaa: sure                                                                              
+17:59 < booyaa> can i place the meetingbot project (setup instructions + shell script) in the team repo?                                                                 
+17:59 < erickt> brson: I'll add another action item to make sure it happens :)                                                                    
+17:59 < booyaa> ty                                                                               
+17:59 < erickt> booyaa: sounds reasonable to me                                                                           
+18:00 < badboy> booyaa: in its own repo under the rust-community I guess?                                                                      
+18:00 < erickt> badboy: what I was gonna say                                                                          
+18:00 < booyaa> that's fine too                                                                             
+18:00 < booyaa> k on it                                                                             
