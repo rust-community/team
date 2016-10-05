@@ -1,0 +1,284 @@
+<erickt> Erick Tryzelaar hey hey meeting time!
+9:00 AM C<carols10cents> it was so much fun!
+9:00 AM E<erickt> Erick Tryzelaar hey everybody! who's in today?
+9:00 AM B<badboy> o/
+9:00 AM C<carols10cents> o/
+9:00 AM C<christos> o/
+9:01 AM E<erickt> Erick Tryzelaar hehe
+9:01 AM L<lucyeoh> o/
+9:01 AM S<steveklabnik> sup
+9:01 AM C<carols10cents> UGH steveklabnik you broke the chain
+9:01 AM S<steveklabnik> \o
+9:01 AM E<erickt> Erick Tryzelaar no!
+9:01 AM C<carols10cents> D:
+9:01 AM S<steveklabnik> |
+9:01 AM o
+9:01 AM :p
+9:02 AM E<erickt> Erick Tryzelaar now that's just silly. go write twenty tweets in penance
+9:02 AM B<bstrie> \q
+9:02 AM C<carols10cents> that's not penance for steveklabnik, he likes it :P
+9:02 AM E<erickt> Erick Tryzelaar well I didn't want to be cruel
+9:03 AM so we got ourselves a special guest today, lucyeoh, from https://github.com/rust-community/team/issues/94
+9:03 AM L<lucyeoh> Hi Y'All!
+9:03 AM E<erickt> Erick Tryzelaar lucyeoh: want to give a quick summary of what you're looking for? we can help point you to resources
+9:04 AM L<lucyeoh> Sure!
+9:04 AM E<erickt> Erick Tryzelaar oh, you've already got a bunch of stuff planned out in https://mozilla.github.io/activate.mozilla.community/developer-engagement/rust-hack/
+9:04 AM L<lucyeoh> christos and I are working to build a new student program (Campus Clubs) to get CS students all over the world involved in Open Source
+9:04 AM E<erickt> Erick Tryzelaar (oh hi christos! I didn't know you were also connected with lucyeoh)
+9:05 AM L<lucyeoh> Our hope is that students will start Clubs on their campus and meet on a regular basis to work on projects and activities related to Mozilla's mission and open source
+9:05 AM E<erickt> Erick Tryzelaar great! that sounds very similar to our mission
+9:05 AM L<lucyeoh> Obviously Rust seems like an awesome fit for an activity that is useful for CS students (learn new skills, contribute to new technologies)
+9:06 AM we want to build an activity that students could work on in groups over several meetings
+9:06 AM that is appealing to someone who has never heard of Rust but cares about the open web
+9:06 AM We have design and distribution resources but would love to find some Rustaceans to collaborate with on building the activities
+9:07 AM E<edunham> lucyeoh: are you thinking more of a class activity where everyone builds the same toy piece of code at once and helps each other, or hackathon-style go-contribute-to-a-project exercises?
+9:07 AM E<erickt> Erick Tryzelaar or to get people contributing to OSS?
+9:07 AM because we're trying to develop both
+9:07 AM L<lucyeoh> We already have a few general OSS projects like we're promoting hacktoberfest 
+9:08 AM I think it would be awesome to have like a 5 meeting activity that guides a group through the initial stages to contributing to rust
+9:08 AM E<erickt> Erick Tryzelaar lol we too have been talking with hacktoberfest
+9:08 AM we're going to be best of friends
+9:08 AM L<lucyeoh> and then sets them free doing whatever you guys would find useful or think would be a good fit for students
+9:08 AM +1000 We are definitely going to be the best of friends!
+9:09 AM E<erickt> Erick Tryzelaar so the main resources we can point you to if you haven't seen it are: 1) rustbridge: https://github.com/rust-community/rustbridge
+9:10 AM our workshop-in-a-box series of tutorials to help new folks to use rust
+9:10 AM L<lucyeoh> Cool! 
+9:10 AM E<erickt> Erick Tryzelaar 2) looking-for-contributors: https://github.com/rust-community/team/issues/74
+9:10 AM M<•Manishearth> there's also http://intorust.com/, which is new
+9:10 AM not exactly workshop-in-a-box, but easy to base workshops off of
+9:10 AM S<steveklabnik> ag_dubs also recently ported her Node curriculum into Rust
+9:11 AM for Node Together
+9:11 AM there's an issue in rustbridge about it
+9:11 AM but i don't think anyone commented yet
+9:11 AM E<erickt> Erick Tryzelaar which is really early, but is trying to be a living guide that projects can route people to starter issues in projects
+9:11 AM M<•Manishearth> I have based rust intro talks off of stolen chunks of niko's into_rust talks in the past (though they weren't on into_rust at the time)
+9:11 AM E<erickt> Erick Tryzelaar there's also http://exercism.io/languages/rust
+9:12 AM M<•Manishearth> yeah
+9:12 AM L<lucyeoh> this is all awesome! I think we could definitely start developing something based on all this! 
+9:12 AM E<erickt> Erick Tryzelaar oh yeah, I talked to liz at rustconf to try to get her to help integrate those tutorials into rustbridge
+9:12 AM C<christos> Can I ask something? What is your immediate goal? To build a community around rust, spread the word of Rust or have core contributors working on rust issues?
+9:13 AM M<•Manishearth> I think the first one would be it
+9:13 AM E<erickt> Erick Tryzelaar christos: i think our 2017 milestone theme is something along the lines of "growing the rust community"
+9:13 AM so for newbies, it's helping to build tutorials to make it easier to learn rust
+9:13 AM L<lucyeoh> +1 to Christos question as we're designing this it would be good to be subtly moving people towards a position where they can best contribute to your goals too. 
+9:13 AM M<•Manishearth> I don't think we have the bandwidth for handling that many new core contributors :)
+9:13 AM I want to fix that, but not right now
+9:13 AM E<erickt> Erick Tryzelaar and for experience rusters, it's to help grow project communities
+9:13 AM C<carols10cents> Manishearth: but it takes time to build people up to being core contributors :)
+9:13 AM S<•skade> christos: we're basically a switchboard, connecting people
+9:14 AM C<carols10cents> so we should start now!
+9:14 AM E<erickt> Erick Tryzelaar (morning skade!)
+9:14 AM M<•Manishearth> carols10cents: heh yeah
+9:14 AM L<lucyeoh> So that's a good flag! Although each club will probably not work on all the activities this will potentially vastly increase the number of cs students who know code and are interested in contributing
+9:14 AM M<•Manishearth> carols10cents: I meant "bandwith for handling *that many* folks wanting to hack on rust"
+9:14 AM S<•skade> So, the community team rarely has the resources to create a curriculum, but get people together that want to
+9:14 AM E<erickt> Erick Tryzelaar +1
+9:15 AM S<•skade> (Yeah
+9:15 AM B<bstrie> but if lucyeoh wants things that are relevant to the open web, does that imply that we should try to funnel the people in these programs towards servo?
+9:15 AM L<lucyeoh> skade we can build or find ppl to help us turn those resources into curriculum but it would be great to get a few Rust people who can consult on it
+9:15 AM C<carols10cents> yup we should and can scale this out
+9:15 AM S<•skade> (I don't have that much time, just sitting outside of training)
+9:16 AM E<erickt> Erick Tryzelaar lucyeoh: yeah that'd be great
+9:16 AM M<•Manishearth> I'm actually about to create some resources for contributing to stylo, too
+9:16 AM S<•skade> lucyeoh: well, as said above, the rustbridge is probably a good place to cooperate
+9:16 AM L<lucyeoh> It depends if having ppl working on Servo is your goal. I think the 2017 goal would be around increasing the number of people who can use rust and are contributing to it, from what I've heard servo's not really ready for much contribution
+9:16 AM Is there someone or a few people from rustbridge I should connect with? 
+9:16 AM H<hjr3> good morning, sorry i am late
+9:16 AM M<•Manishearth> lucyeoh: we actually have a LOT of contribution in servo :)
+9:17 AM S<•skade> Well, the library ecosystem is a huge concern for rust, so people building stuff that they are interested in is quite okay.
+9:17 AM M<•Manishearth> ^ that
+9:17 AM S<•skade> It doesn't need to be rustc or servo
+9:17 AM E<erickt> Erick Tryzelaar lucyeoh: on rustbridge contacts, we do have the irc channel #rustbridge you can try
+9:18 AM E<edunham> lucyeoh: fwiw, Servo's easy-tagged issues last something like 2 hours on average before being claimed... though Servo is probably off the deep end for an average person who's never coded before to jump into
+9:18 AM S<SimonSapin> aturon, jntrnr: the 9th talk is up now
+9:18 AM E<erickt> Erick Tryzelaar skade, johannh, and I have worked on em. carols10cents is going to give a rustbridge talk at Rust Belt Rust as well
+9:18 AM C<carols10cents> we're doing a rustbridge workshop the weekend before rust belt rust specifically
+9:19 AM → booyaa|mobile joined (booyaa@moz-8js.rhc.205.213.IP)
+9:19 AM C<carols10cents> i'm still working on our curriculum
+9:19 AM B<booyaa|mobile> Lo again
+9:19 AM E<erickt> Erick Tryzelaar lucyeoh: our rustbridge tutorials still need a bit of polish, so helping out with them would be a great early goal
+9:19 AM S<SimonSapin> skade: re keeping the paris office over a weekend, you mean for a rust event? (conference?) I probably can, and if not maybe one of the regulars of the meetup
+9:19 AM L<lucyeoh> edunham - that makes sense to me I'm imagining a progress like  1) ppl do an intro to rust 2) some of those clubs really like it and choose to contribute to rust's library ecosystem 3) some of those clubs want to go even further and contribute  to servo 
+9:20 AM C<carols10cents> lucyeoh: you may be interested in https://github.com/rust-community/rustbridge/issues/60
+9:20 AM S<•skade> carols10cents: are you using any of the rustbridge material?
+9:20 AM E<erickt> Erick Tryzelaar lucyeoh: servo also has been really good about using the rust ecosystem, so there's a large amount of related projects that aren't servo-specific
+9:20 AM but help out servo
+9:20 AM S<•skade> S
+9:20 AM C<carols10cents> skade: i'm thinking about using the web scraper example
+9:20 AM E<edunham> lucyeoh: depending on the locations where you want tutorials, we could put you in touch with local Rust meetup leaders in the areas to see if they know people who'd enjoy volunteering to teach a lesson
+9:20 AM E<erickt> Erick Tryzelaar lucyeoh: Manishearth is a great contact about servo intro materials
+9:21 AM M<•Manishearth> well, IIRC she's in the same office as jdm ?
+9:21 AM C<carols10cents> and i'm planning on making some slides for a syntax whirlwind, and i'm going to put them in the rustbridge repo when they're done
+9:21 AM M<•Manishearth> that might be a better contact :)
+9:21 AM E<erickt> Erick Tryzelaar edunham: good idea. we also have a large meetup network that we could try to sync up with the local campuses
+9:21 AM E<edunham> Some people from the marketing side of Mozilla have also been working on a set of 5-minute "here's what Rust is and why you care" videos
+9:21 AM L<lucyeoh> It would be awesome if we could offer clubs the opportunity to connect with a local rustacean who can lead them through the first activity
+9:21 AM edunham - do you know who?
+9:22 AM M<•Manishearth> edunham: yeah, I saw those -- they're great!
+9:22 AM E<erickt> Erick Tryzelaar (Manishearth: what's taking your move so long? move over here!)
+9:22 AM B<badboy> edunham: I do look forward to those, I gave an interview for that as well :D
+9:22 AM S<•skade> carols10cents: \o/
+9:22 AM L<lucyeoh> edunham: do  you know who in marketing is working on those videos? 
+9:22 AM M<•Manishearth> erickt: oct 25
+9:22 AM E<edunham> lucyeoh: Brad Cohen has been my point of contact on it
+9:22 AM E<erickt> Erick Tryzelaar lucyeoh: you can see our rough meetup meetups table here: https://github.com/rust-community/talks
+9:23 AM E<edunham> (sorry, had to go fight SSO to get into phonebook to dereference first name and irc nick into a full name)
+9:23 AM L<lucyeoh> lol makes sense! Those videos would be awesome for helping engage students! 
+9:23 AM C<carols10cents> edunham: +1, SSO -1
+9:23 AM E<edunham> lucyeoh: but yeah, if groups with similar resources want to put together a "how to start contributing to Rust", most of the peopel from the videos would probably be happy to help out
+9:24 AM E— edunham , sample size of self, would be happy to contribute to a "how to get started" guide if the video editing is somebody else's problem
+9:24 AM E<erickt> Erick Tryzelaar lucyeoh: speaking of which, we do have a new youtube channel we're building up: https://www.youtube.com/channel/UCaYhcUwRBNscFNUKTjgPFiA
+9:24 AM E<edunham> lucyeoh: oh and if you haven't seen https://rust-community.github.io/resources/ yet, it might be of interest
+9:25 AM E<erickt> Erick Tryzelaar we need to wait a month for it to get a pretty name
+9:25 AM edunham: we really need to save all these links and put them up on resources :)
+9:25 AM S<•skade> 15 days now or something :)
+9:25 AM C<carols10cents> also https://github.com/ctjhoa/rust-learning/ has lots of stuff, including some slides that could be starting places 
+9:25 AM L<lucyeoh> Amazing! So I think our immediate take away's are to look through all the resources you shared especially the rustbridge one and start figuring out what an intro activity would look like and where we can build on the ones that are there, where we'd want to add a student specific intro etc. 
+9:26 AM E<erickt> Erick Tryzelaar lucyeoh: yeah that sounds good. it's where we got the most content at the moment
+9:26 AM lucyeoh: oh! you should also spread word about the http://www.rust-belt-rust.com/ conference!
+9:26 AM it's on october 27 and 28
+9:26 AM L<lucyeoh> I'll try and connect with some of the rustbridge people to figure out where they're going and what we can collaborate on building! 
+9:26 AM E<edunham> lucyeoh: yep, and feel free to drop by this channel whenever if you'd like second opinions on whether a given task is feasible to ask of a group of students in a certain time frame -- Rust does have a time-consuming learning curve to fluency.
+9:26 AM S<•skade> Okay, I'm leaving for 🎯, have a nice day.
+9:27 AM E<edunham> skade: have a good one :)
+9:27 AM E<erickt> Erick Tryzelaar later skade!
+9:27 AM L<lucyeoh> awesome! And if anyone is interested in being more deeply involved acting as a consultant etc. feel free to reach out to me! lucy@mozilla.com if I don't respond on IRC!
+9:27 AM E<erickt> Erick Tryzelaar carols10cents: ^
+9:27 AM ;)
+9:28 AM C<carols10cents> :)
+9:28 AM E<erickt> Erick Tryzelaar lucyeoh: carols10cents is a real-life rust consultant!
+9:28 AM L<lucyeoh> carols10cents!! \o/
+9:28 AM C<carols10cents> i'm available at carol.nichols@integer32.com -- if you have $ i'll take it, i will absolutely also share advice, recommendations, thoughts for free :)
+9:28 AM E<erickt> Erick Tryzelaar haha
+9:29 AM L<lucyeoh> thanks carols10cents I'll send an email. 
+9:29 AM I have to run to my next meeting but thank you all SO much! Looking forward to collaborating more with this group to build some cool stuff to get students into rust!
+9:30 AM E<erickt> Erick Tryzelaar us too!
+9:30 AM please let us know how else we can help
+9:30 AM ⇐ jedahan_ quit (jedahan@moz-b93ovs.res.rr.com) Quit: My MacBook has gone to sleep. ZZZzzz…
+9:30 AM C<carols10cents> and we're sorry for letting your issue sit so long <3
+9:30 AM S<steveklabnik> :D
+9:31 AM E<erickt> Erick Tryzelaar ok so next agenda item...
+9:31 AM https://github.com/rust-community/team/issues/96
+9:31 AM carols10cents: I wanted to check in with ya on rust belt rust
+9:31 AM C<carols10cents> things are chugging along!
+9:31 AM E<erickt> Erick Tryzelaar how's sales going? any ideas how we can help?
+9:32 AM C<carols10cents> edunham got us stickers!!!!!!
+9:32 AM sales are picking up a little bit!!!!!
+9:32 AM E<erickt> Erick Tryzelaar great!
+9:32 AM C<carols10cents> silly last minute people
+9:32 AM E<erickt> Erick Tryzelaar yeah
+9:32 AM C<carols10cents> i don't have too many ideas other than what i've already tried, haha
+9:33 AM i am ordering t-shirt sizes in 1 week so if people are on the fence but want to be sure they get their t-shirt size, mention that
+9:33 AM for some reason t-shirts really seem to motivate some people
+9:33 AM E<erickt> Erick Tryzelaar carols10cents: you should get yourself into https://this-week-in-rust.org/blog/2016/10/04/this-week-in-rust-150/.  I don't see you listed there
+9:33 AM until the con
+9:33 AM C<carols10cents> ugh i thought that was going to happen
+9:33 AM E<edunham> carols10cents: I wonder if a fancy, official whitepaper about how Rust skills make someone a better programmer would help folks sell Rust conference attendance to their bosses.
+9:33 AM C<carols10cents> but i guess it only happened once
+9:33 AM edunham: oooh maybe!
+9:34 AM that would be something that anyone could create and we could all share for future conferences hint hint
+9:34 AM help a frazzled conference organizer out
+9:34 AM E<erickt> Erick Tryzelaar edunham / carols10cents that's a good idea. I wonder if leah put one together for rustconf
+9:34 AM I know she mentioned something like that in her book
+9:34 AM carols10cents: do you need her contact info?
+9:35 AM C<carols10cents> nope
+9:35 AM but if yinz didn't see one, i doubt it exists
+9:35 AM L<locks> speaking of last minute, anyone coming to rubyconf pt?
+9:35 AM E<edunham> tbh I think core team, maybe aturon, would be the best voice of authority to publish something like that
+9:36 AM C<carols10cents> locks: you sole sgrif
+9:36 AM stole
+9:36 AM S<steveklabnik> locks: not this year :(
+9:36 AM C<carols10cents> IS THAT NOT ENOUGH
+9:36 AM E<erickt> Erick Tryzelaar carols10cents: I'll ping aturon on getting a rust whitepaper together
+9:36 AM C<carols10cents> erickt: <3
+9:37 AM C— carols10cents shouldn't talk since she stole tenderlove from cascadia ruby one year
+9:37 AM B<badboy> o_O
+9:37 AM C<carols10cents> (tenderlove is a person)
+9:37 AM E<erickt> Erick Tryzelaar hehe
+9:38 AM B<badboy> I do know tenderlove (I have a ruby background as well :D)
+9:38 AM B<booyaa|mobile> With a great avi
+9:38 AM C<carols10cents> i'm never sure who knows, was guessing which part of that was most o_O ;)
+9:38 AM B<badboy> all the stealing
+9:38 AM C<carols10cents> hehe
+9:38 AM it happens
+9:38 AM E— edunham forgets which of the cascadia* confs are indoors vs which are outside in a tent in the woods
+9:39 AM B<badboy> anyway, back to agenda: we keep mentioning RBR as best as we can?
+9:39 AM C<carols10cents> <3
+9:39 AM pretty much
+9:39 AM ⇐ booyaa|mobile quit (booyaa@moz-8js.rhc.205.213.IP) Connection closed
+9:39 AM E<erickt> Erick Tryzelaar and at least getting it into twir
+9:39 AM B<badboy> who takes care of that?
+9:39 AM E<erickt> Erick Tryzelaar and get jntrnr to mention it during the company checkins?
+9:39 AM → booyaa|mobile joined (booyaa@moz-8js.rhc.205.213.IP)
+9:41 AM E<erickt> Erick Tryzelaar badboy: I could. carols10cents you okay with "Tickets are now available for Rust Belt Rust Conference (27 & 28 October 2016, Pittsburgh, US)." verbage?
+9:41 AM L<locks> carols10cents: sgrif cancelled 💔
+9:41 AM C<carols10cents> erickt: sounds great!
+9:41 AM locks: oh no! baby related?
+9:42 AM L<locks> I only saw the conf announcement, no reason given
+9:42 AM C<carols10cents> :(
+9:42 AM i hope everything's ok
+9:42 AM L<locks> we do have yehuda, so we might have some Rust
+9:43 AM hopefully it's just to avoid that big a travel
+9:44 AM E<erickt> Erick Tryzelaar carols10cents: https://github.com/cmr/this-week-in-rust/pull/326
+9:45 AM anything else on rbr? if not we should probably move on
+9:45 AM J<jntrnr> I'm finally here
+9:45 AM C<carols10cents> move on. thank you1!!!!
+9:45 AM J<jntrnr> the company checkins are almost done
+9:45 AM E<erickt> Erick Tryzelaar jntrnr: hey! just the person I wanted to call on next
+9:45 AM C<carols10cents> oooh we had a GREAT one with stratum on monday
+9:45 AM they were so nice and said such nice things!!!!
+9:45 AM J<jntrnr> what carols10cents said :)
+9:45 AM E<erickt> Erick Tryzelaar ooh great
+9:45 AM C<carols10cents> we should have asked if we can quote them on things!
+9:46 AM J<jntrnr> +1
+9:46 AM C<carols10cents> and/or we should ask :)
+9:46 AM J<jntrnr> we're at... let's see...
+9:46 AM 7 commercial users interviewed
+9:46 AM would love to get a couple more in before we write it up
+9:46 AM but that's not bad
+9:47 AM E<erickt> Erick Tryzelaar that's great
+9:47 AM F<frewsxcv> Rust-lang.org front-page quotes would be neat :P
+9:47 AM J<jntrnr> frewsxcv: definitely
+9:47 AM the front page definitely does need a bit of a redo to incorporate all the new stuff
+9:48 AM E<erickt> Erick Tryzelaar jntrnr: definitely looking forward to a writeup
+9:49 AM when do you think you'll wrap up the interviews and start working on some drafts?
+9:49 AM J<jntrnr> let's see if we get any more over the next week
+9:50 AM E<erickt> Erick Tryzelaar feel free to use us to help review before you go public
+9:50 AM J<jntrnr> if we don't, probably good to start the writeup.  will work with carols10cents to see what quotes we want to use
+9:50 AM since we may want to use them for other things like slide decks and front page
+9:50 AM sounds good
+9:50 AM E<erickt> Erick Tryzelaar is there anything proprietary that ought to be shared with the various rust teams but not be public?
+9:50 AM E<edunham> frewsxcv: AIUI there's a great deal of pride taken in r-l.o fitting on a single page, so rephrasing the blurb to allow links to relevant content might be the best way to sidestep a debate
+9:51 AM E<erickt> Erick Tryzelaar or can we just anonymize anything proprietary?
+9:51 AM frewsxcv / edunham: but could be good material if we ever do a r-l.o redesign
+9:51 AM J<jntrnr> erickt: there's the raw interview notes.  Aaron mentioned sharing those at least with the core team at some point
+9:52 AM wishing we had a vault for the sensitive info that the subteams may want to refer to
+9:52 AM we could put the survey raw data there also
+9:52 AM E<erickt> Erick Tryzelaar jntrnr: we could make team-specific google drive spaces
+9:52 AM I think they just came out with that feature
+9:52 AM E<edunham> perhaps a FAQ, frequently <industry comments> or whatever, might be a good form for synthesizing the interviews into something anonymous and publishable?
+9:53 AM F<frewsxcv> edunham: Huh, interesting. Haven't heard about the desire for everything fitting in a (visually) single page
+9:53 AM J<jntrnr> frewsxcv: we've had requests for a "why Rust" whitepaper
+9:53 AM those tend to help management make decisions which comparing tech
+9:54 AM F<frewsxcv> Yeah, that makes sense. 
+9:54 AM J<jntrnr> I think this report will be like the survey one (or at least similar) but definitely want to keep a whitepaper like thing in mind also
+9:54 AM F<frewsxcv> I need to write up such a thing to my boss
+9:54 AM J<jntrnr> that's it from my end
+9:54 AM E<erickt> Erick Tryzelaar great
+9:54 AM hm. anyone else have anything in the last 6 minutes?
+9:55 AM J<johannh> hey folks, sorry couldn't attend tonight, I'll read through the backlog now. anything I can help with?
+9:55 AM E<erickt> Erick Tryzelaar I've started trying to hack together a looking-for-contributors (lfc?) but I've not made much progress wiht it
+9:56 AM johannh: you and others on rustbridge might get pinged by lucyeoh on https://github.com/rust-community/team/issues/94
+9:56 AM if nothing else, then I'll call the meeting here :)
+9:56 AM F<frewsxcv> Did a Slack discussion already happen?
+9:57 AM Just curious if anything has come to fruition
+9:57 AM E<erickt> Erick Tryzelaar frewsxcv: no conversation about it today
+9:57 AM J<johannh> erickt: oh yeah I saw that, thanks! I'll try to come up with a few ideas :)
+9:57 AM E<erickt> Erick Tryzelaar oh and I just saw this ticket about a european community code sprint: https://github.com/rust-community/team/issues/95
+9:57 AM F<frewsxcv> erickt: Gotcha
+9:57 AM E<erickt> Erick Tryzelaar johannh / booyaa: ^
+9:57 AM not sure who else is in the EU
+9:58 AM J<johannh> unfortunately the Mozilla office space is probably busy on the 5./6. Nov. weekend
+9:58 AM but I guess that's pretty late-notice anyway
+9:58 AM E<erickt> Erick Tryzelaar frewsxcv: slack conversation on urlo: https://users.rust-lang.org/t/a-possible-rust-slack-channel/7433/7
+10:00 AM alrighty thanks everyone for coming!
