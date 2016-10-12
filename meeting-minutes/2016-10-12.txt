@@ -1,0 +1,232 @@
+9:00 AM E<•erickt> Erick Tryzelaar it's party time!
+9:00 AM hi everybody!
+9:00 AM C<carols10cents> o/
+9:00 AM E<edunham> \o
+9:00 AM E<•erickt> Erick Tryzelaar who else is in today?
+9:00 AM E— edunham only half in
+9:00 AM B<badboy> I am here
+9:00 AM M<matthew-piziak-> *wave*
+9:00 AM E<•erickt> Erick Tryzelaar I saw skade and steveklabnik couldn't make it
+9:00 AM B<badboy> (thoough without the burger)
+9:01 AM E<•erickt> Erick Tryzelaar my heart (and arteries) weep for you
+9:01 AM J<jntrnr> o/
+9:01 AM ⇐ jedahan quit (jedahan@moz-b93ovs.res.rr.com) Ping timeout: 121 seconds
+9:01 AM B<badboy> (without another burger)
+9:02 AM E<•erickt> Erick Tryzelaar carols10cents: lets start with you
+9:02 AM C<carols10cents> hi!
+9:02 AM E<•erickt> Erick Tryzelaar rbr coming along? anything we can help with
+9:02 AM beyond me buying a plane ticket?
+9:02 AM C<carols10cents> you could buy your 
+9:02 AM :P
+9:02 AM E<•erickt> Erick Tryzelaar lol
+9:02 AM C<carols10cents> it's getting to the point where it's a lot of in-person stuff
+9:02 AM and speaker wrangling
+9:03 AM so i'm good :)
+9:03 AM E<•erickt> Erick Tryzelaar how's the rustbridge prep going?
+9:03 AM C<carols10cents> we're also working on 
+9:03 AM that
+9:03 AM E<•erickt> Erick Tryzelaar haha
+9:03 AM I'm so good
+9:03 AM B<badboy> *cough* https://github.com/RustFestEU/speakers-guide
+9:03 AM E<•erickt> Erick Tryzelaar badboy: nice!
+9:03 AM → jedahan joined (jedahan@moz-b93ovs.res.rr.com)
+9:03 AM B<badboy> not necessarily rbr, though maybe helpful as a resource for future conferences as well
+9:03 AM C<carols10cents> and it's going, we're probably not going to push content back up until after
+9:03 AM since we'll probably be editing it right before
+9:04 AM E<•erickt> Erick Tryzelaar need any help with editing?
+9:04 AM C<carols10cents> i'm still trying to decide whether to do a webapp like ashley's emergency compliments
+9:04 AM E<•erickt> Erick Tryzelaar haha really? where's that?
+9:04 AM C<carols10cents> or a web scraper starting from brson's in the repo
+9:04 AM E<•erickt> Erick Tryzelaar that sounds awesome
+9:04 AM C<carols10cents> https://github.com/ashleygwilliams/rust-emergency-compliment
+9:04 AM E<•erickt> Erick Tryzelaar brilliant
+9:04 AM C<carols10cents> we're probably going to do a syntax/concept intro in the morning, then project in the afternoon
+9:05 AM ashley also made https://github.com/ashleygwilliams/a-very-brief-intro-to-rust
+9:05 AM which we're also editing to our style
+9:05 AM E<•erickt> Erick Tryzelaar awesome
+9:05 AM C<carols10cents> and will contribute back to
+9:05 AM and something like that would be great to have in the rustbridge repo
+9:05 AM E<•erickt> Erick Tryzelaar +1
+9:05 AM C<carols10cents> i'm planning on chatting with ashley about it when she's here for the conf :)
+9:06 AM but yeah, we're making stuff and we're going to try to keep notes on what worked and what didn't
+9:06 AM E<•erickt> Erick Tryzelaar awesome. anything else or shall we move on to the next topic?
+9:07 AM C<carols10cents> that's it for me!
+9:07 AM E<•erickt> Erick Tryzelaar since this sorta leads into our 2017 milestones :)
+9:07 AM so the whole rust team 2017 milestone pre-rfc: https://internals.rust-lang.org/t/setting-our-vision-for-the-2017-cycle/3958
+9:07 AM we have "Rust's community should provide mentoring at all levels"
+9:08 AM which rustbridge is one component of it. the ask from core for us is to start figuring out actual milestones that we set out and try to achieve over 6 week periods
+9:08 AM I brought this up a few meetings ago
+9:09 AM anyway, we're now starting to be asked to plan to commit to things :)
+9:09 AM E<edunham> so, community team's thing is to... facilitate mentoring at all levels?
+9:09 AM E<•erickt> Erick Tryzelaar so first thing I wanted to encourage y'all to try to commit to organizing rustbridge events in your neighborhoods
+9:10 AM B<badboy> do we already have like a minimal guide on how to do that?
+9:10 AM E<•erickt> Erick Tryzelaar edunham: that's the subject that does align pretty well with us, but we do have some other things that make sense for us in other topics
+9:11 AM like under "Rust should be well-equipped for writing servers" we can emphasize getting people to contribute to server libraries, write tutorials to use pencil/iron/etc
+9:12 AM badboy: I believe we nearly have everything in place to organize these events, thanks to rustfest and now rbr :)
+9:12 AM I wanted to also see if any of you have ideas on things we ought to be doing
+9:13 AM E<edunham> erickt: I've been hearing a lot of desire for "find a Rust speaker in my area" -- I'm wondering if Rustaceans could be used for this
+9:14 AM include time zone field and "regions I'll travel to", small publicity blitz to encourage everyone to update their info
+9:14 AM B<badboy> erickt: ok, I guess like a short read on basic things like "get coaches, decide on the material, plan the installfest" would make it easier for people to get started 
+9:14 AM E<•erickt> Erick Tryzelaar edunham: I've thought about building a database for things like that
+9:14 AM ↔ jedahan_ popped in  
+9:14 AM B<badboy> the usual switchboard idea we had from the start of this team :D
+9:14 AM E<•erickt> Erick Tryzelaar but having it be something we can easily grow would be awesome
+9:14 AM badboy: yeah
+9:14 AM → jedahan_ joined (jedahan@moz-b93ovs.res.rr.com)
+9:15 AM E<edunham> is "nearest airport, cities I'll travel to" excessively PII to post publicly on http://rustaceans.org/?
+9:15 AM E<•erickt> Erick Tryzelaar edunham: yeah I'd be worried about excessive PII
+9:15 AM B<badboy> (what's PII?)
+9:15 AM E<•erickt> Erick Tryzelaar but a lot of people do list their city on github.com so it could be more of an opt-in thing
+9:15 AM E<edunham> personally identifying information
+9:16 AM B<badboy> ah
+9:16 AM E<edunham> erickt: I kind of think that anyone who speaks at meetups opts into "I am willing to speak in such and such a city" level of public disclosure
+9:16 AM E<•erickt> Erick Tryzelaar edunham: saying "airport / video conference / ask me directly" could work out
+9:16 AM yeah
+9:17 AM ⇐ jedahan quit (jedahan@moz-b93ovs.res.rr.com) Ping timeout: 121 seconds
+9:17 AM E<•erickt> Erick Tryzelaar how long do you all think it'd take to build this out? I suppose we could extend rustaceans.org to have it
+9:18 AM we did talk about trying to take that project over
+9:18 AM B<badboy> yeah, just make it explicit taht the info will end up on the page and that it might be used to contact you about a possible talk
+9:18 AM E<edunham> I'd argue that knowing I'm in PST and will travel to cities on the West coast of the US to speak tells you no more than you could have gotten by stalking my public online presence
+9:18 AM E<•erickt> Erick Tryzelaar yeah
+9:18 AM → booyaa_ joined (booyaa@moz-dg6.2rc.101.46.IP)
+9:18 AM E<edunham> yeah, only people who *say they'd consider talking at a meetup* should even be asked for it
+9:19 AM have, like, "please tell me if there's a meetup scheduled in $REGION" and "I'd be interested in speaking in $REGIONS" boxes to check
+9:19 AM E<•erickt> Erick Tryzelaar cool, so this can knock off the whole "find me a rust meetup" as well
+9:19 AM E<edunham> where $REGION can be as large or small as they specify -- I don't know off the top of my head the best way to do that but I'm sure there are ways
+9:20 AM booyaa → Guest53712, booyaa_ → booyaa  
+9:20 AM E<•erickt> Erick Tryzelaar to get things off the ground we can just have a list, or a map they can zoom in on
+9:21 AM E<edunham> plus we can probably get some of the engineering work for it done by throwing a stack of introductory bugs against rustaceans
+9:21 AM E— edunham volunteers to review code & mentor newbies for all this
+9:21 AM E<•erickt> Erick Tryzelaar I'm sure nrc has lots of free time ;)
+9:22 AM B<badboy> well, after rbr I will join all the open coding tasks of the team
+9:22 AM E<•erickt> Erick Tryzelaar so that leads into the next logical step. anyone want to take ownership of getting this implemented in 6 weeks-ish?
+9:22 AM +1
+9:22 AM or how we recruit people in the broader community to work on this?
+9:23 AM B<badboy> i'm afraid we have to kickstart this one first
+9:23 AM E<•erickt> Erick Tryzelaar one thing core is encouraging us is to write up some community RFCs
+9:23 AM that might be a good way of finding contributors
+9:23 AM B<badboy> ok, rbr is already in 2 weeks
+9:23 AM E<edunham> erickt: I think it goes "architect the thing, file stack of bugs, tweet a lot, review code"
+9:23 AM B<badboy> and maybe there will be a code sprint
+9:23 AM E<edunham> and I guess "architect the thing" is the RFC process
+9:23 AM B<badboy> I can take on an PoC implementation then
+9:24 AM and write up what we actually need before that
+9:24 AM E<•erickt> Erick Tryzelaar badboy: awesome. want to start an etherpad or google doc we can iterate on? I'd be interested in helping out
+9:25 AM ⇐ •brson quit (brson@moz-cfhap5.mtv2.mozilla.com) Ping timeout: 121 seconds
+9:25 AM E<•erickt> Erick Tryzelaar actually I'll make us a team folder on google drive and share it to our mailing list
+9:25 AM B<badboy> erickt: will follow up here: https://github.com/rust-community/team/issues/12
+9:25 AM E<•erickt> Erick Tryzelaar great
+9:25 AM B<booyaa> skade: re: doodle done
+9:25 AM E<edunham> badboy++
+9:25 AM B<badboy> (omg, what have I done?)
+9:26 AM (hm, I could write it in Rust and compile it to javascript)
+9:26 AM E<•erickt> Erick Tryzelaar you became even more awesomer!
+9:26 AM E<edunham> (volunteered!)
+9:26 AM E<•erickt> Erick Tryzelaar another thing that we've talked about is this whole looking-for-contributors website
+9:27 AM that may or may not blend with rustaceans.org
+9:27 AM E<edunham> "projects are people too"
+9:27 AM E<•erickt> Erick Tryzelaar https://github.com/rust-community/team/issues/74
+9:27 AM haha
+9:27 AM E— edunham wonders if crates.io would be a good place to keep that info
+9:27 AM E<•erickt> Erick Tryzelaar interesting!
+9:28 AM E<edunham> add an optional "looking for contributors" field that's either blank or links to a page with contributin and mentorship info
+9:28 AM E<•erickt> Erick Tryzelaar that's a nice idea
+9:28 AM E<edunham> i guess that'd be messing around in cargo.toml though
+9:29 AM I'll ask Alex about it later this week
+9:29 AM E<•erickt> Erick Tryzelaar yeah, that's a good long term goal. short term we can just have a basic static page
+9:29 AM E<edunham> that++
+9:29 AM E<•erickt> Erick Tryzelaar a la https://rust-community.github.io/resources/
+9:29 AM → •brson (opped) joined  
+9:30 AM E<•erickt> Erick Tryzelaar as a side note, we need a proper domain for us. how's https://community.rs sound?
+9:30 AM I wonder if that's available
+9:30 AM E<edunham> sounds fine to me
+9:30 AM B<badboy> [~]% whois community.rs
+9:30 AM %ERROR:103: Domain is not registered
+9:30 AM looks available :)
+9:30 AM E<•erickt> Erick Tryzelaar lol I just tried that
+9:30 AM B<booyaa> could the meetups live as a subdomain like london.community.rs
+9:30 AM +?
+9:30 AM E<•erickt> Erick Tryzelaar fun!
+9:30 AM E<edunham> booyaa++ that would be awesome
+9:31 AM even just redirects
+9:31 AM E<•erickt> Erick Tryzelaar ya
+9:31 AM E— edunham advocates a model where infra/DNS changes can be done by PR and autodeploy on r+, and will help build that when it's time
+9:31 AM B<booyaa> yup
+9:31 AM that would be nice
+9:31 AM E<•erickt> Erick Tryzelaar anyone here ever buy a .rs domain?
+9:31 AM B<booyaa> paging #bors :D
+9:31 AM E<•erickt> Erick Tryzelaar I remember it being complicated
+9:31 AM B<badboy> erickt: skade did
+9:32 AM it got easier recently afaik
+9:32 AM E<edunham> do both the cityname and the airport code on the same redirect... then have country pages to aggregate meetups
+9:32 AM B<badboy> (http://laze.rs/)
+9:32 AM E<edunham> usa.community.rs
+9:32 AM B<badboy> cologne.de.community.rs
+9:32 AM and soon we are java
+9:32 AM B<booyaa> lol
+9:32 AM E<•erickt> Erick Tryzelaar haha
+9:33 AM ok I'll hunt down buying that domain
+9:33 AM B<booyaa> it would avoid mishaps with london,ca and london,gb though
+9:34 AM E<•erickt> Erick Tryzelaar I'll also commit to getting the first lfc page up and running
+9:35 AM B<badboy> how does core team track their 6-week sprints? only milestons on rust-lang/rust?
+9:35 AM E<•erickt> Erick Tryzelaar I don't think they've quite figured it out yet
+9:35 AM B<badboy> ok
+9:35 AM E<•erickt> Erick Tryzelaar I think it'll be milestones on rust-lang/rfcs and rust-lang/rust
+9:36 AM B<badboy> ok
+9:36 AM E<•erickt> Erick Tryzelaar I made https://github.com/rust-community/team/milestone/1 as a rough template
+9:36 AM B<badboy> ok
+9:36 AM E<•erickt> Erick Tryzelaar we can start putting things into it that we think we can get done
+9:37 AM B<badboy> alright
+9:37 AM E<•erickt> Erick Tryzelaar any other things we want to try to commit to?
+9:38 AM ah the youtube stuff is almost done, I'll put it in there to make sure we document the upload process
+9:38 AM C<carols10cents> having a rustbridge and a conference in the next 6 weeks is something we're already doing that we could check off ;)
+9:39 AM E<•erickt> Erick Tryzelaar hehe well pdx got that covered, but sfo also needs a bridge event
+9:39 AM B<badboy> erickt: "give us the file, a title & description and we take care of it"
+9:39 AM E<•erickt> Erick Tryzelaar we also need to make sure we're supporting the original goal of bringing bridge events to the underrepresented people in tech
+9:40 AM badboy: ya it'll be really simple, just need to put it on community.rs :)
+9:40 AM B<badboy> yes
+9:40 AM we get this documented before the rbr videos go up
+9:41 AM (or the rustfest videos for what its worth...)
+9:43 AM E<•erickt> Erick Tryzelaar anything else on this subject?
+9:44 AM if not, badboy are you involved with the code sprint? anything we need to talk about with that?
+9:44 AM B<badboy> well, all I know is from skade.
+9:44 AM we need to decide on the date and if that's finished we can talk about content
+9:45 AM E<•erickt> Erick Tryzelaar ok, well I *think* that's all I got, unless there are action items from last week to chat about
+9:45 AM B<badboy> so if anyone from europe is still around and has not yet voted: do so. if we want to do that we should act fast
+9:45 AM E<•erickt> Erick Tryzelaar badboy: what's the vote on?
+9:46 AM B<booyaa> is this the moz devrel thing?
+9:46 AM B<badboy> afaik there's some sponsoring from DevRel possible, so we could probably cover food 
+9:46 AM booyaa: yup
+9:46 AM erickt: just the date
+9:46 AM E<•erickt> Erick Tryzelaar ah ok
+9:46 AM S<•skade> erickt: I also don't know much more, that's why searching a date and then a topic would be the strategy
+9:46 AM E<•erickt> Erick Tryzelaar (hi skade!)_
+9:47 AM skade: since your here, need any help with your rfc?
+9:48 AM B<badboy> ok, so we have answers from paris, berlin, london and cologne (not mozilla office [yet?])
+9:48 AM E<•erickt> Erick Tryzelaar if not, then I'm happy to wrap up this meeting a little early :)
+9:48 AM S<•skade> erickt: yep, I take feedback
+9:49 AM E<•erickt> Erick Tryzelaar skade: can you send me the link again? I can't find it
+9:50 AM B<badboy> https://github.com/skade/rfcs/tree/rust-conferences/text
+9:50 AM oops, more direct: https://github.com/skade/rfcs/blob/rust-conferences/text/0000-rust-project-conferences.md
+9:51 AM and if the meeting is over, I'm gonna run, running out of battery (and burgers) anyway
+9:51 AM E<•erickt> Erick Tryzelaar great. I'll make sure it's in the meeting notes
+9:51 AM k! thanks badboy!
+9:51 AM and thanks to everyone else!
+9:52 AM skade: btw which registrar did you use to buy laze.rs?
+9:58 AM ⇐ DF and Havvy quit  
+10:06 AM B<•brson> badboy: thanks for putting together more asmjs demos
+10:06 AM rhai on wasm is pretty cool
+10:07 AM B<badboy> haha, yeah, I still want miri working :P
+10:07 AM I also got regex to compile (stupid stupid threading libs)
+10:12 AM B<booyaa> wondering if meetup have broken meetup discussions. normally i get people offering to do talks or at least ask meetup related question
+10:13 AM it's very quiet, i'm seeing the rsvps but that's it
+10:20 AM E<edunham> erickt: Chatted with Alex, he says crates.io is pretty much maintenance mode right now and he doesn't really have the bandwidth to mentor on any changes
+10:21 AM E<•erickt> Erick Tryzelaar k
+10:22 AM E<edunham> so, alternate "looking-for-contributors" proposal: we invent a file, SeekingContributions.md or such, that people can drop in their repos.
+10:22 AM We then use the GitHub API to search for all repos in Rust with a SeekingContributors.md file, and display them someplace.
+10:22 AM maybe search for it either in the root or in the .github dir for cleaner structure or something, idk
+10:22 AM B<badboy> and do that until github adopts this as well :D
+10:22 AM E<edunham> we could define the sections that it's useful for such a file to have, stick them in our own repos, document the heck out of it, tweet a lot, and hope for the best
+10:24 AM as long as we had a site or two for aggregating the repos that have those files and maybe sorting them -- maybe it could also contain a machine-readable section for which labels a new contributor ought to look at in the issue tracker? -- I'll bet they'd start getting adopted
+New messages
+10:26 AM or heck, a ContributionsWanted.whatever file could be a thin reference into what docs to read (probably the README), where to find issues (probably a link to a tag in a tracker), the project's elevator pitch, and where to look for mentorship (probably an IRC channel)
