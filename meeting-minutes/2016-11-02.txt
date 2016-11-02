@@ -1,0 +1,292 @@
+<meetingbot> This week's agenda: https://github.com/rust-community/team/issues/104. The meeting is this Weds @ 4PM UTC. No minutes found for last week. :( bippity beep!
+9:00 AM ⇐ meetingbot quit (meetingbot@moz-6ojs2n.3nrp.fu44.23c4.2a00.IP) Quit: bottymcbottyface v0.1.2 - https://github.com/booyaa/bottymcbottyface
+9:00 AM E<•erickt> Erick Tryzelaar hey no fair!
+9:00 AM it's meeting time!
+9:00 AM B<badboy> hahaha
+9:00 AM E<•erickt> Erick Tryzelaar cheater bot
+9:00 AM J<jntrnr> is it time?
+9:00 AM E<•erickt> Erick Tryzelaar it's time!
+9:00 AM who's in today?
+9:00 AM E<edunham> \o
+9:01 AM J<jntrnr> o/
+9:01 AM B<badboy> o/
+9:01 AM E<•erickt> Erick Tryzelaar wunderbar
+9:01 AM so lets get started
+9:01 AM I guess before I begin, edunham did you already reach out to everyone for updates?
+9:02 AM cuz I love that idea and I didn't do it :)
+9:02 AM E<edunham> erickt: I did not! I will make a note on my calendar to do that next Tuesday.
+9:02 AM F<frewsxcv> o/
+9:02 AM E<•erickt> Erick Tryzelaar I will add that to my calendar as well just to be safe
+9:02 AM o/
+9:02 AM Manishearth: aren't you on the east coast now?
+9:02 AM err
+9:03 AM west coast?
+9:03 AM B<badboy> Some(Coast)
+9:03 AM E<•erickt> Erick Tryzelaar anyway lets begin
+9:03 AM hehe
+9:03 AM frewsxcv: you made the ticket, so you get to start us off :)
+9:03 AM F<frewsxcv> Sure :)
+9:03 AM M<•Manishearth> erickt: yes
+9:03 AM E<•erickt> Erick Tryzelaar or maybe carols10cents with http://24pullrequests.com?
+9:03 AM M<•Manishearth> in berkeley
+9:03 AM E<•erickt> Erick Tryzelaar hi Manishearth!
+9:04 AM F<frewsxcv> carols10cents asked about it during Rust Belt Rust, so I added it to the agenda to remind ourselves :)
+9:04 AM C<carols10cents> ya
+9:04 AM E<•erickt> Erick Tryzelaar nice. so jealous of you all
+9:04 AM F<frewsxcv> Are we interested in participating this year with 24pullrequests?
+9:04 AM C<carols10cents> we were talking about how we kinda got into hacktoberfest late
+9:04 AM F<frewsxcv> (did we participate last year?)
+9:04 AM B<badboy> what is required to participate?
+9:04 AM E<•erickt> Erick Tryzelaar I don't remember anything formal last year
+9:04 AM C<carols10cents> i think i might have added a few rust projects in there?
+9:04 AM it's the same sort of deal
+9:05 AM no t-shirt tho
+9:05 AM → •brson (opped) joined  
+9:05 AM C<carols10cents> and idk many people who get 24 PRs in
+9:05 AM F<frewsxcv> Actually, crates.io is listed as a project on the front page
+9:05 AM C<carols10cents> but it would be nice to have some rust projects listed in there
+9:05 AM S<•skade> o hi :)
+9:05 AM J<johannh> I'm here!
+9:05 AM F<frewsxcv> http://24pullrequests.com/projects
+9:05 AM E<•erickt> Erick Tryzelaar hey! it's a veritable party in here!
+9:06 AM B<•brson> here
+9:06 AM E<•erickt> Erick Tryzelaar neat we're in the "languages do you prefer" list
+9:06 AM F<frewsxcv> So maybe they'll just carry over the projects from last year, in which case, there might not be anything actionable on our side
+9:06 AM C<carols10cents> http://24pullrequests.com/projects/new
+9:06 AM we can submit more projects
+9:06 AM maybe all the projects we've gathered from confs that want contributors?
+9:06 AM E<•erickt> Erick Tryzelaar +1
+9:07 AM C<carols10cents> where are those? 
+9:07 AM C— carols10cents wonders where she put the ones from rbr
+9:07 AM E<•erickt> Erick Tryzelaar carols10cents: https://github.com/rust-community/team/issues/74
+9:08 AM C<carols10cents> aha
+9:08 AM ⇐ neo quit (Mibbit@moz-l8v.qa1.231.123.IP) Quit: http://www.mibbit.com ajax IRC Client
+9:08 AM C<carols10cents> ok i will take an action item to add all those to 24pullrequests before december
+9:08 AM F— frewsxcv confirms it's happening again this year https://twitter.com/teabass/status/789456363416150016
+ Follow
+ Andrew Nesbitt @teabass
+Just over a month until @24PullRequests kicks off again! 🎄🎅⛄️
+6:20 AM - 21 Oct 2016
+  5 5 Retweets   10 10 likes
+9:08 AM F<frewsxcv> "confirms"
+9:08 AM E<•erickt> Erick Tryzelaar carols10cents: https://github.com/rust-community/team/issues/105
+9:09 AM assigned it to you :)
+9:09 AM C<carols10cents> arghhh you beat me
+9:09 AM E<•erickt> Erick Tryzelaar :p
+9:09 AM C<carols10cents> that is all on that front
+9:09 AM E<•erickt> Erick Tryzelaar next, we got skade with his con rfc: https://github.com/skade/rfcs/blob/rust-conferences/text/0000-rust-project-conferences.md
+9:10 AM B<badboy> yes!
+9:10 AM so, I briefly talked with Aaron in Pittsburgh
+9:10 AM S<•skade> yeah, so I got a little feedback from nick which I need to reply to, though I am under the impression that he wasn't up to speed how the RFC came to be :)
+9:10 AM B<badboy> now with all 3 major confs done, he wanted to clarify and note down the future of thos conference and conference invovlement in general
+9:10 AM S<•skade> I'll forwards that to the mailing list along with it
+9:11 AM E<•erickt> Erick Tryzelaar great
+9:11 AM B<badboy> so adding this to the agenda was merely a "we need to get this discussed both here and with the core team soon"
+9:11 AM J<jntrnr> it sounds like all three went well
+9:11 AM E<•erickt> Erick Tryzelaar we should also pull together a post mortem from all the conferences
+9:11 AM S<•skade> in general, my biggest issue is that it needs to be kind of flexible while still being rather clear about some specifics, which is a bit odd for the RFC process
+9:11 AM B<badboy> yes, it's gonna be hard to reach that middle ground, skade
+9:11 AM but I much rather have something noted down than nothing
+9:12 AM S<•skade> also, all changes to things stated on the RFC need to be done through an RFC, which is a bit weird
+9:12 AM In any case, I think it's great to put something into writing
+9:12 AM E<•erickt> Erick Tryzelaar skade: yeah overall this seems quite reasonable at my first read through, good job
+9:13 AM jdm → jdm|f00ding
+9:13 AM E<edunham> skade: where should feedback on that RFC go? 
+9:13 AM S<•skade> edunham: either towards the mailing list or as a comment on the commit
+9:13 AM E<edunham> ok
+9:13 AM B<badboy> tracking comments on commits is hard though.
+9:14 AM (for outsiders)
+9:14 AM S<•skade> also, PRs towards my repos would be find
+9:14 AM TBQH, I should come up with a solution for that but haven't, thanks for raising that :)
+9:14 AM B<badboy> you could make that initial version a PR itself, so comments & changes are visible before it is submitted upstream
+9:14 AM E<•erickt> Erick Tryzelaar skade: is this the branch? https://github.com/skade/rfcs/tree/rust-conferences
+9:14 AM S<•skade> erickt: yep
+9:15 AM I'm a bit hesisting, I'm not looking forward to the discussion on the RFC bug tracker :)
+9:15 AM (but maybe that's just me)
+9:15 AM B<badboy> make it a PR on your own repo first
+9:15 AM S<•skade> badboy: ah!
+9:16 AM E<•erickt> Erick Tryzelaar frankly I think this is probably at or near ready for submitting to rust-lang/rfcs, where we could iterate there
+9:17 AM E<edunham> skade: I'll throw you a small grammar edit PR for typos too
+9:17 AM S<•skade> https://github.com/skade/rfcs/pull/1
+9:17 AM E<•erickt> Erick Tryzelaar skade: I think you need to rebase your RFC on top of head
+9:18 AM it's showing changes to all the rfcs
+9:18 AM S<•skade> erickt: yep, will do
+9:19 AM in any case, backtracking: should we come up with a meeting date for all conf organisers and core?
+9:19 AM and try to submit our reports before?
+9:20 AM E<•erickt> Erick Tryzelaar skade: great idea, then we can publish them out to the public
+9:20 AM on either your conference blogs, or to blogs.rust-lang.org
+9:20 AM S<•skade> I wouldn't like to submit mine to the public
+9:20 AM at least not in full :)
+9:21 AM E<•erickt> Erick Tryzelaar sure that's reasonable :)
+9:21 AM S<•skade> a public writeup makes sense, though, I agree
+9:21 AM C<carols10cents> reports on what exactly?
+9:21 AM E<•erickt> Erick Tryzelaar think your team (and carols10cents?) could get a writeup done by next week?
+9:21 AM carols10cents: how your conference went, and what could have gone better
+9:22 AM S<•skade> https://github.com/skade/rfcs/pull/1 fixed, but your comments are lost
+9:22 AM E<•erickt> Erick Tryzelaar and what can we do better next time
+9:22 AM C<carols10cents> so i was going to send out a survey to attendees
+9:22 AM which i have not yet
+9:22 AM and then needs to be open a few weeks
+9:22 AM i think my writeup would be better with that information
+9:23 AM but if yinz don't care i can write up my assessment
+9:23 AM E<•erickt> Erick Tryzelaar ok, we can schedule you after thanksgiving then :)
+9:23 AM S<•skade> thanks...what?
+9:23 AM J<jntrnr> makes sense, since RBR *just* finished a couple days ago
+9:23 AM E<•erickt> Erick Tryzelaar skade: hehe
+9:23 AM B<badboy> skade: another one of these thigns where the US folks just don't adhere to international dates
+9:23 AM E<•erickt> Erick Tryzelaar skade: https://en.wikipedia.org/wiki/Thanksgiving :)
+9:23 AM S<•skade> ah, end of november
+9:24 AM E<•erickt> Erick Tryzelaar it's always on the third thursday
+9:24 AM err fourth thursday
+9:24 AM tasty food comas
+9:24 AM S<•skade> I think end of november is a great time to arrange a meeting, maybe guess can gauge interest and have rather rough reports until then.
+9:25 AM C<carols10cents> 👍 sounds good
+9:25 AM E<•erickt> Erick Tryzelaar I'll open up a ticket to start planning something out
+9:25 AM S<•skade> github.com/rust-community/team/tissues < what just happened
+9:25 AM C<carols10cents> lol 
+9:25 AM S<•skade> erickt: okay, thanks :)
+9:25 AM C<carols10cents> don't cry skade !
+9:25 AM E<•erickt> Erick Tryzelaar and get a writeup from core
+9:26 AM weird, https://github.com/rust-community/team is back
+9:26 AM for me
+9:26 AM cache issue?
+9:26 AM J<jntrnr> he wrote tissues instead of issues
+9:26 AM C<carols10cents> tissues?
+9:26 AM who's on first?
+9:27 AM J<jntrnr> hehe
+9:27 AM E<•erickt> Erick Tryzelaar hah
+9:27 AM S— •skade just waits for erickt
+9:27 AM S<•skade> any other comments on conferencing things?
+9:28 AM E<•erickt> Erick Tryzelaar skade: I'll add notes to your PR but if you got time I think you can submit this week
+9:28 AM S<•skade> erickt: okay, thanks :)
+9:29 AM E<•erickt> Erick Tryzelaar next up, novemb.rs
+9:29 AM S<•skade> \o/
+9:29 AM E<•erickt> Erick Tryzelaar I'm personally trying to get a sub in for the bay area, but I'll be out of town
+9:29 AM S<•skade> well, I have two issues here, first of all, the weird spot we landed in
+9:30 AM B<badboy> cologne is secured (I need to update the site)
+9:30 AM (oh and I need to talk to you, skade, later)
+9:30 AM E<•erickt> Erick Tryzelaar skade: weird spot?
+9:30 AM S<•skade> mozilla devrel and us planned for a european and african event, but there seems to be a lot of interest elsewhere
+9:31 AM sooo, communication is a little weird currently, on the other hand, it's great that people want to hop on
+9:31 AM E<•erickt> Erick Tryzelaar rusters just want to rust
+9:31 AM S<•skade> I guess that just means we cannot provide financial support to people out of scope, but I don't what to hold anyone back to participate on those dates
+9:32 AM I'm pretty sure there's no answer to that except: let's run it and see.
+9:32 AM E<•erickt> Erick Tryzelaar (skade omg nice work with tango and https://github.com/skade/lazers)
+9:33 AM skade: yeah I think that's reasonable
+9:33 AM you can have some official locations, and the rest informal
+9:33 AM S<•skade> erickt: that's probably the best way to communicate it
+9:34 AM I'm so up to calling a US event a "sattelite event" for once :D
+9:34 AM J<jntrnr> lol
+9:34 AM S<•skade> second thing is: communication. If anyone knows someone at places we are not present at, this is a good moment to get in touch with them.
+9:34 AM E<•erickt> Erick Tryzelaar exactly
+9:35 AM S<•skade> e.g: vilnius wants to use it to start an event: https://github.com/rust-community/novemb.rs/issues/16
+9:35 AM a recurring
+9:36 AM E<•erickt> Erick Tryzelaar and they are asking for starter materials, which we should have plenty
+9:36 AM S<•skade> I'm happy to pick it up once people something on the issues page ;)
+9:36 AM E<•erickt> Erick Tryzelaar carols10cents: you get your rbr bridge stuff up?
+9:36 AM C<carols10cents> erickt: no i have been busy
+9:36 AM S<•skade> same with projects that would like to be present. I already wrote to portier, for example.
+9:37 AM E<•erickt> Erick Tryzelaar carols10cents: https://github.com/rust-community/team/issues/107 :)
+9:37 AM S<•skade> aaaand, finally: swag, how do I get swag to them and can johannh or flaki help there? :D
+9:37 AM E<•erickt> Erick Tryzelaar edunham: ^
+9:37 AM purveyor of rust stickers
+9:37 AM J<jntrnr> brson also
+9:38 AM J<johannh> being on parental leave I did not order any stickers so far :/
+9:38 AM not sure if stickermule is delivering to europe quickly enough, otherwise will order 1 million stickers from them today
+9:38 AM S<•skade> :D
+9:38 AM J<johannh> let me check
+9:38 AM S<•skade> johannh: no problem :)
+9:38 AM J<johannh> nov 14 \o/
+9:39 AM they say, at least
+9:39 AM S<•skade> is it possible to find a european supplier? also for the postcards and business cards?
+9:39 AM J<johannh> although, that might be a bit tight to forward it to everyone who asked
+9:39 AM E<edunham> skade: what kind of swag do you want, and how much of it?
+9:40 AM J<johannh> I had the postcards printed at a local kopierladen
+9:40 AM E<edunham> fi you tell me roughly how much you want of which stickers, I'll make Stickermule post them and then reimburse it from Rust's outreach budget
+9:40 AM I've had the resources cards printed by I think vistaprint, and they can probably ship a box to europe as well
+9:41 AM S<•skade> I'm pretty flexible there, what we got, we got. Stickers and the cards are going fast, so I think "quite some" would be great. I would like to ship around 100 to every site so that they have a couple of leftovers after the event.
+9:42 AM J<johannh> ok so we need a list of location we should send stickers to, quickly
+9:42 AM because if the delivery date for Berlin is Nov 14 today we don't have much time
+9:42 AM S<•skade> johannh: cologne, berlin, paris, vilnius, london or oxford (at the current state of things)
+9:42 AM E<edunham> I have maybe 50 of each sticker design left in my desk, so I could attempt fast shipping to Europe directly to the sites
+9:42 AM J<jntrnr> sorry to interrupt, but can we move this part of the conversation offline?
+9:42 AM S<•skade> we have no on handling london, still /cc booyaa 
+9:43 AM jntrnr: sure
+9:44 AM J<jntrnr> anything else on the novemb.rs front?
+9:44 AM J<johannh> are we doing live streaming?
+9:44 AM E<•erickt> Erick Tryzelaar right, we need to talk about jntrnr and the survey
+9:45 AM B<booyaa> skade: might be cambridge? (re: oxford)
+9:45 AM ⇐ chriskry_ quit (chriskrycho@moz-enurpn.res.rr.com) Connection closed
+9:45 AM S<•skade> booyaa: oops, sorry
+9:45 AM dhylands|afk → dhylands
+9:45 AM S<•skade> johannh: probably not
+9:45 AM → chriskrycho joined (chriskrycho@moz-enurpn.res.rr.com)
+9:45 AM J<johannh> ok, yeah, might be a bit difficult, we should still think of clever ways to keep people connected
+9:46 AM like this IRC thing I heard about
+9:46 AM E<•erickt> Erick Tryzelaar mind if we table this discussion? we do have some more things to talk about
+9:46 AM S<•skade> i'm fine wth that
+9:46 AM E— •erickt likes a busy meeting
+9:46 AM J<johannh> don't mind, sorry for holding up :)
+9:46 AM E<•erickt> Erick Tryzelaar jntrnr: you got gnomes and businesses
+9:46 AM J<jntrnr> hehe
+9:47 AM so yeah - I sent out the draft for the commercial user outreach results
+9:47 AM I *think* I sent it to the right email address :P
+9:47 AM so everyone should have a copy if you want to give feedback before it gets posted
+9:47 AM E<•erickt> Erick Tryzelaar when do you need comments by?
+9:47 AM J<jntrnr> soon?
+9:47 AM E<•erickt> Erick Tryzelaar like you are planning on posting this today?
+9:47 AM J<jntrnr> I'm trying to pub so that people can read it while the roadmap 2017 stuff gets worked out
+9:47 AM this week maybe?
+9:48 AM so let's say comments by Thursday night if youcan
+9:48 AM it's not super long, so it should take long to review
+9:49 AM btw - it'd be great to have a place to put our raw data
+9:49 AM E<•erickt> Erick Tryzelaar yeah it's a nice read
+9:49 AM S<•skade> like every "simple" software patch ever ;)
+9:49 AM E<•erickt> Erick Tryzelaar jntrnr: I sorta set up a private google drive for us
+9:49 AM S<•skade> (I guess it "shouldn't take long" to review)
+9:49 AM J<jntrnr> I can't remember where we ended up putting the data for the community survey
+9:49 AM S<•skade> jntrnr: that sounds good
+9:49 AM J<jntrnr> erickt: cool can you remind me what the info was for that offline?
+9:50 AM E<•erickt> Erick Tryzelaar yep
+9:50 AM J<jntrnr> while I have the microphone, lemme say a quick sentence about the GNOME stuff
+9:50 AM E<•erickt> Erick Tryzelaar which is going crazy
+9:50 AM J<jntrnr> if some of you have been watching /r/rust or twitter, you might have seen some of the GNOME folks starting to talk about Rust
+9:50 AM E<•erickt> Erick Tryzelaar they apparently love us
+9:50 AM J<jntrnr> which (imho) is frickin' awesome
+9:50 AM F<frewsxcv> <3 <3 <3
+9:51 AM S<•skade> I'd be very interested in that, is there some way we can help them?
+9:51 AM J<jntrnr> I've reached out to them to connect some of their core engineers with some of our folks, namely niko/aaron at this point
+9:51 AM E<•erickt> Erick Tryzelaar do they have meetups and conferences? we should go give talks at them if they do
+9:51 AM J<jntrnr> my first goal is to understand their specific needs
+9:51 AM and then see if we can tie them in with the right folks in the Rust community
+9:52 AM S<•skade> there's a regular desktop developers gathering at *cough* FOSDEM *cough*
+9:52 AM J<jntrnr> skade: yeah, that's a good point
+9:52 AM and going to that would be a good idea
+9:52 AM is that what Guadec turned into
+9:52 AM ?
+9:52 AM S<•skade> turned into?
+9:53 AM J<jntrnr> I take that as a "no" that Guadec is still around
+9:53 AM E<edunham> idk, but FOSDEM is an extremely big deal as far as FOSS conferences go
+9:53 AM J<jntrnr> okay cool
+9:53 AM anywho, still very early, but I just wanted to give folks here a heads up that we are reaching out to them
+9:53 AM E<edunham> good stuff
+9:53 AM E<•erickt> Erick Tryzelaar indeed
+9:53 AM and last thing, edunham international meetup speakers?
+9:53 AM E<edunham> real quick on the international groups front, I am now getting a bunch of pings from folks going "I wanna start a Rust group, pls provide resources" who aren't sure what they actually want/need
+9:54 AM → deith joined (deith@moz-jqeqac.adsl.inetia.pl)
+9:54 AM E<edunham> I'm thinking the best course will probably be to PR a page of advice to the community team site and cc everybody for reviews on whether it's sane, then point them to that once it lands?
+9:54 AM E<•erickt> Erick Tryzelaar edunham: sounds like things for https://github.com/rust-community/team/issues/4 <- meetup startup kit
+9:54 AM if we actually make it
+9:55 AM J<johannh> I also made this issue once https://github.com/rust-community/talks/issues/28
+9:55 AM E<edunham> ok because like I could just personally vid chat with them and give intro talk, but that super doesn't scale
+9:55 AM and I'd rather solve the "we need a scalable system" mess as early as possible than put it off till things are terrible
+9:56 AM thanks for the links; I'll follow up in those issues
+9:56 AM E<•erickt> Erick Tryzelaar edunham: yeah, we just need to sit down and turn that into a page
+9:57 AM E<edunham> ok, I'll take the action item of drafting an extremely rough meetup kit outline and PR-ing it to the team site.
+9:57 AM E<•erickt> Erick Tryzelaar awesome
+9:58 AM and with that I think we're done? anything else?
+9:58 AM S<•skade> okay, I have to leave :) Happy to be able to join you regularly again :D
+9:58 AM E<•erickt> Erick Tryzelaar :)
+9:59 AM if not, then thanks everyone!
+9:59 AM you're the best
+9:59 AM E<edunham> erickt: you too
