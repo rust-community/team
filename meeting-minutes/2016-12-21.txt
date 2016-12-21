@@ -1,0 +1,343 @@
+meetingbot> No agenda has been set! :( The meeting is this Weds @ 4PM UTC. No minutes found for last week. :( bippity beep!
+9:00 AM ⇐ meetingbot quit (meetingbot@moz-6ojs2n.3nrp.fu44.23c4.2a00.IP) Quit: bottymcbottyface v0.1.2 - https://github.com/booyaa/bottymcbottyface
+9:00 AM
+<•erickt> Erick Tryzelaar it's time!
+9:00 AM bah!
+9:00 AM and meetingbot, you're a liar!
+9:00 AM
+<carols10cents> BE NICE TO MEETINGBOT #botsrights
+9:00 AM
+<•erickt> Erick Tryzelaar we *do* have an agenda
+9:01 AM meetingbot is always just mocking me, its not fair
+9:01 AM waah
+9:01 AM agenda!
+9:01 AM https://github.com/rust-community/team/issues/114
+9:01 AM bstrie: had the first real agenda thing
+9:01 AM
+<carols10cents> wait wait back up erickt what was your small part in wall-e?
+9:01 AM
+<•erickt> Erick Tryzelaar ""thing" idea
+9:02 AM carols10cents: ya, used to work at pixar on the renderfarm
+9:02 AM my farm made those pixels
+9:02 AM
+<carols10cents> ooooh coooool!! ok the meeting may proceed now
+9:02 AM
+<•erickt> Erick Tryzelaar righto
+9:02 AM bstrie: you awake?
+9:02 AM → •brson (opped) joined
+9:02 AM
+<•erickt> Erick Tryzelaar carols10cents, you're shirking your duties!
+9:03 AM
+<carols10cents> erickt: he's out of my radius of influence! he's in niko territory now
+9:03 AM
+<•erickt> Erick Tryzelaar woah, he's a bostonian?
+9:03 AM did he settle down?
+9:03 AM
+<carols10cents> maybe
+9:03 AM no
+9:03 AM
+<•erickt> Erick Tryzelaar who's here today, btw?
+9:04 AM ⇐ •brson quit (brson@moz-q29.tdl.56.172.IP) Connection closed
+9:04 AM
+<steveklabnik> sup
+9:05 AM
+— •erickt waves
+9:05 AM
+<•erickt> Erick Tryzelaar seems like we got a light crowd today
+9:05 AM alright well first thing, I at least will be most likely unavailable next week
+9:05 AM
+<edunham> hic sorry to be a few later than usual
+9:06 AM
+— •erickt waves at edunham
+9:06 AM
+<•erickt> Erick Tryzelaar anyone else available that still wants to meet on the 28th?
+9:06 AM
+<carols10cents> i say we cancel
+9:06 AM
+<•erickt> Erick Tryzelaar or would ya'll want to cancel next week?
+9:06 AM sold, we cancel unless someone else chimes up
+9:07 AM two, both bstrie and skade aren't here, but we at least can respond to skades question
+9:07 AM should we set a time table for closing things?
+9:07 AM like the slack channel?
+9:07 AM → •brson (opped) joined
+9:08 AM
+<carols10cents> yes
+9:08 AM
+<•erickt> Erick Tryzelaar for me at least, I don't have a great insight into how much rust time I get on a week-by-week schedule, so it's a little hard to know when something is "done"
+9:09 AM but on the other, if it doesn't get critical mass, we can close the ticket
+9:09 AM and move discussion over to urlo if people want to still think about it?
+9:09 AM
+— •erickt didn't need a ticket to work on underhanded
+9:10 AM
+<carols10cents> 👍
+9:10 AM
+<•erickt> Erick Tryzelaar how about we say "if there isn't movement on a ticket for, X months then we close and point at urlo"
+9:10 AM where X is, oh, 2 months?
+9:11 AM things like badboy working on the switchboard might take more than X time, but he's been making progress
+9:12 AM ⇐ •brson quit (brson@moz-q29.tdl.56.172.IP) Ping timeout: 121 seconds
+9:12 AM
+<carols10cents> 👍
+9:12 AM
+— •erickt sends bstrie a text
+9:12 AM
+<edunham> sgtm :)
+9:13 AM → •brson (opped) joined
+9:13 AM
+<•erickt> Erick Tryzelaar so until ben gets here, one discussion topic I wanted to bring up, how can we help underhanded keep up it's momentum?
+9:14 AM we've had 10k+ pageviews since the announcement
+9:14 AM which is amazing
+9:15 AM I'd love to get more insight into who is actually playing
+9:15 AM
+<carols10cents> i think this could get you another round of upboats https://github.com/rust-community/underhanded.rs/issues/9
+9:15 AM
+<•erickt> Erick Tryzelaar anyone have any ideas on how to do it?
+9:15 AM ⇐ skeeter quit (skeeter@moz-d5s7vm.tukw.qwest.net) Connection closed
+9:16 AM
+<•erickt> Erick Tryzelaar yeah that'd be good
+9:16 AM one avenue we could use that as a feeder project that people might fork
+9:17 AM I also was thinking about we could have a #underhanded-rust (or #rust-underhanded) irc channel for helping out newbies
+9:17 AM
+<carols10cents> ooo
+9:17 AM
+<•erickt> Erick Tryzelaar or a gitter channel on underhanded
+9:18 AM
+<carols10cents> or a slack
+9:18 AM
+— carols10cents ducks
+9:18 AM jdm → jdm|f00ding
+9:18 AM
+<•erickt> Erick Tryzelaar heh
+9:18 AM and a hipchat?
+9:18 AM and matrix?
+9:19 AM and a foursquare?
+9:19 AM anything else?
+9:20 AM (*registers #rust-underhanded and #underhanded-rust)
+9:20 AM
+— •erickt is indecisive
+9:20 AM
+<edunham> i hope you're kidding about hipchat & foursquare
+9:20 AM
+<•erickt> Erick Tryzelaar lol
+9:21 AM
+<carols10cents> snapchat
+9:21 AM
+<•erickt> Erick Tryzelaar and a trulia
+9:21 AM
+<carols10cents> what about Manishearth doing a blog post on the clippy lints that will make this harder?
+9:21 AM
+<•erickt> Erick Tryzelaar +1
+9:21 AM more work for the Manishearth!
+9:21 AM
+— carols10cents likes volunteering other people for things
+9:21 AM
+<•erickt> Erick Tryzelaar great idea
+9:22 AM and other tools that'll make this harder, like quickcheck?
+9:22 AM
+<carols10cents> yeah!
+9:22 AM
+<•erickt> Erick Tryzelaar ooh
+9:22 AM ok i like this
+9:22 AM
+<carols10cents> like "here's more examples of things other than rustc that we think make rust better"
+9:22 AM but humbly!
+9:22 AM ofc
+9:23 AM
+<•erickt> Erick Tryzelaar yeah, we're awesome, but not jerks about it!
+9:23 AM hm, what other good tools are there out there. fuzz testers could be good
+9:23 AM https://github.com/frewsxcv/afl.rs
+9:23 AM
+<carols10cents> yeah!
+9:24 AM
+<•erickt> Erick Tryzelaar frewsxcv: hey! you're here and I met you in person!
+9:24 AM wanna write up a post on afl?
+9:24 AM and maybe something on using valgrind with rust?
+9:24 AM and other standard testing tools?
+9:25 AM that should cover us. we could try to time it to be a post every week
+9:26 AM I bet I could get one of the compiler writers to write up about valgrind
+9:27 AM hm. any other ideas?
+9:29 AM
+<edunham> are there plans to release a sample "overhanded" app or two to help newer coders?
+9:30 AM
+<•erickt> Erick Tryzelaar https://github.com/rust-community/underhanded.rs/issues/9
+9:30 AM edunham: &
+9:30 AM err, ^^
+9:31 AM well, I think I'm sort of out of topics
+9:31 AM if there's not more on this.
+9:31 AM I do want us at some point to have a summary of 2016
+9:32 AM but I haven't started thinking about that
+9:32 AM anyone want to do it for me? :D
+9:33 AM
+<booyaa> did we have one for 2015?
+9:33 AM
+<•erickt> Erick Tryzelaar booyaa: nope!
+9:33 AM but we weren't that active last year
+9:33 AM
+<booyaa> i figured so
+9:34 AM → bstrie_work joined (Mibbit@moz-t560si.fas.harvard.edu)
+9:34 AM
+<bstrie_work> hello!
+9:34 AM is the meeting still ongoing?
+9:34 AM
+<•erickt> Erick Tryzelaar a wild bstrie appeared!
+9:34 AM well we *were* starting to wrap things up
+9:34 AM but now you're here to shake things up
+9:35 AM
+<bstrie_work> not now, you aren't!
+9:35 AM I have a secret casual agenda item to discuss
+9:35 AM
+<•erickt> Erick Tryzelaar a thing!
+9:35 AM
+<bstrie_work> not anything immediate, just something to occupy us once the underhanded contest is done
+9:35 AM
+<•erickt> Erick Tryzelaar yah?
+9:36 AM
+<bstrie_work> so, background: has everyone seen 24 days of rust? https://siciarz.net/24-days-rust-reqwest/
+9:36 AM
+<booyaa> ja
+9:36 AM
+<•erickt> Erick Tryzelaar it's wonderful
+9:36 AM
+<bstrie_work> I think it's a lovely little thing that really helps to get the word out about various crates in the ecosystem
+9:37 AM and I think that this idea of making crates more discoverable is something that carols10cents has been interested in as well
+9:37 AM
+<carols10cents> nah
+9:37 AM ;)
+9:38 AM
+<bstrie_work> but one thing that I don't think that we necessarily want to commit to is to create an ongoing curated list, like awesome-rust has, because that's a lot of additional maintenance effort
+9:38 AM
+<•erickt> Erick Tryzelaar she's written one or two rfcs on the matter
+9:38 AM
+<bstrie_work> so instead, I want to take inspiration from 24 days of rust and do a yearly thing where we get prominent rust devs together to vote on what crates they think deserve to get more love
+9:39 AM an academy awards for rust crates!
+9:39 AM
+<theJPster> The Ruscars?
+9:39 AM
+<bstrie_work> haha
+9:39 AM ⇐ •brson quit (brson@moz-q29.tdl.56.172.IP) Connection closed
+9:39 AM
+<bstrie_work> name TBD
+9:39 AM everything TBD
+9:39 AM
+<•erickt> Erick Tryzelaar hahah
+9:39 AM
+<simulacrum> Ferrous Crates? :)
+9:40 AM err Ferris?
+9:40 AM
+<bstrie_work> I think this would be a good thing to stage for the middle of next year, maybe around the anniversary
+9:40 AM
+<simulacrum> Could announce them at rustconf, maybe?
+9:40 AM ⇐ bjz quit (bjz@moz-puppgq.tpgi.com.au) Quit: My MacBook has gone to sleep. ZZZzzz…
+9:40 AM
+<•erickt> Erick Tryzelaar that's a great idea
+9:40 AM
+<bstrie_work> when do we do the yearly community survey?
+9:41 AM
+<•erickt> Erick Tryzelaar that's a great idea on how to gather submissions
+9:41 AM
+<bstrie_work> ah, tie it in with the survey, you mean?
+9:41 AM
+<•erickt> Erick Tryzelaar yeha
+9:41 AM
+<bstrie_work> yes, that is a good idea that apparently I definitely just had myself
+9:42 AM
+<•erickt> Erick Tryzelaar it's like the whole friends-of-the-forest thing (which I've been shirking...)
+9:42 AM haha
+9:42 AM I love it
+9:42 AM do you have categories in mind?
+9:42 AM
+<bstrie_work> not sure yet, there are some concerns that we should keep in mind
+9:43 AM like, we don't just want everyone to vote for mio, say, and nothing else
+9:43 AM
+<•erickt> Erick Tryzelaar we could do things like "best new crate", "best web crate", "most supportive of newbies"
+9:43 AM
+<theJPster> (best embedded crate)
+9:43 AM
+<bstrie_work> we need to strike a balance between parading around our best well-known crates and trying to elevate more obscure crates
+9:44 AM
+<booyaa> wondering if you can get meetups involved by having them provide their scores for crates ala eurovision
+9:44 AM
+<•erickt> Erick Tryzelaar hehe
+9:44 AM
+<booyaa> record a little video skit or something and sew it together with erickt bstrie_work carols10cents in tuxes
+9:44 AM jdm|f00ding → jdm
+9:44 AM
+<•erickt> Erick Tryzelaar can the meetups submit their nominations in the form of a music video?
+9:44 AM
+<booyaa> compering
+9:44 AM
+<•erickt> Erick Tryzelaar <3
+9:44 AM
+<booyaa> erickt: becareful what you wish for
+9:45 AM
+<bstrie_work> haha, maybe. maybe we could have "best crate as judged by the community survey", "best crate as judged by the meetups", "best crate as judged by the core devs", etc
+9:45 AM
+<carols10cents> oooooooo eurovision!!!
+9:45 AM
+<bstrie_work> YourRustVision
+9:45 AM
+<•erickt> Erick Tryzelaar make little golden ferris statues to give out
+9:45 AM
+<carols10cents> best crate you haven't heard of
+9:45 AM best crate i heard of before it was cool
+9:46 AM
+<booyaa> :D
+9:46 AM
+<bstrie_work> I think we'll want to do a little massaging of the results to make sure more crates get showcased, so if the community survey selects X crate, the devs should keep that in mind when they select their best crate
+9:46 AM for maximum coverage
+9:46 AM
+<•erickt> Erick Tryzelaar best crate that used be a cool indie crate but then went mainstream
+9:46 AM
+<booyaa> gonna start looking for some autotuning software...
+9:47 AM nickleback crate - which i will win for sure
+9:47 AM
+<bstrie_work> I also think we'll want to limit voting to crates that work on stable, with the exception of a single "best crate that only works on nightly" category
+9:47 AM
+<•erickt> Erick Tryzelaar best tooling
+9:48 AM we could also have only 1.0+ crates be nominatable
+9:48 AM → •brson (opped) joined
+9:48 AM
+<•erickt> Erick Tryzelaar encourage some api stabilization
+9:48 AM
+<bstrie_work> erickt: I was thinking about that, but I think we still need time before that's feasible
+9:48 AM
+<•erickt> Erick Tryzelaar :)
+9:48 AM
+<bstrie_work> I don't want people going to 1.0 unnecessarily just to be able to be nominated
+9:48 AM but maybe for future years
+9:48 AM
+<•erickt> Erick Tryzelaar I do love using this as a lever to try to encourage good behavior
+9:48 AM
+<bstrie_work> for now, I think the "works on stable" restriction is enough of a stick
+9:48 AM
+<•erickt> Erick Tryzelaar best docs
+9:48 AM
+<bstrie_work> ooh, yes
+9:49 AM
+<•erickt> Erick Tryzelaar we can probably come up with a rule to limit repeat nominations every year
+9:49 AM
+<bstrie_work> yeah
+9:50 AM
+<•erickt> Erick Tryzelaar like a crate version can only be nominated in the year it comes out
+9:50 AM
+<bstrie_work> maybe "if you won any category the previous year, can't be nominated next year" (but get mentioned in that year's results as having won the previous year)
+9:50 AM I'll write up a little rfc for this, after christmas
+9:50 AM
+<•erickt> Erick Tryzelaar +1
+9:50 AM love it, great idea
+9:51 AM the rustcers
+9:51 AM
+<bstrie_work> "The Golden Sprockets"
+9:51 AM → srwalker_ joined (srwalker101@moz-ums63c.warwick.ac.uk)
+9:51 AM
+<theJPster> Golden Crabs
+9:53 AM → brson_ joined (brson@moz-eem.2lv.58.172.IP)
+9:53 AM
+<•erickt> Erick Tryzelaar well with that, anything else for the agenda?
+9:53 AM if not, then I'll gavel this meeting adjourned http://giphy.com/search/gavel
+9:54 AM ⇐ •brson quit (brson@moz-q29.tdl.56.172.IP) Ping timeout: 121 seconds
+9:54 AM
+<booyaa> bye bye
+9:54 AM
+<•erickt> Erick Tryzelaar laters!
+9:54 AM
+— •erickt remembers to capture the meeting minutes
