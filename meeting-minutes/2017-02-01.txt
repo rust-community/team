@@ -1,0 +1,440 @@
+== 1 Feb 2017
+[14:46] <sebasmagri> Meeting Day!
+[14:46] <sebasmagri> :-)
+[16:00] <meetingbot> This week's agenda: https://github.com/rust-community/team/issues/122. The meeting is this Weds @ 5PM UTC. No minutes found for last week. :( bippity beep!
+[16:12] <carols10cents> BEEP BOOP
+[16:12] <badboy> hello carols10bot
+[16:29] <booyaa[olde> i've added minute recording to the list for the meetingbot rewrite
+[16:30] <booyaa[olde> soon we won't even have to do the meetings. we'll just get assigned work items by meetingbot
+[16:30] <booyaa[olde> soon meaning not immediate future
+[16:30] <misdreavus> soon the hive mind will decide everything for us
+[16:52] <erickt> T-8 minutes!
+[16:52] * badboy gets up
+[16:53] <booyaa[olde> i've got my riot client now, so i can interact with you via my phone
+[16:53] <booyaa[olde> the future is great!
+[16:54] <erickt> ya know, I was at first thinking this week might not be the best week for a final countdown, but dammit I'm not gonna change my traditions
+[16:54] <erickt> so! get your \m/ up! https://www.youtube.com/watch?v=9jK-NcRmVcw
+[16:54] <broesamle> hi, good to "see" you
+[16:55] <erickt> hey broesamle!
+[16:55] <erickt> booyaa[olde: woah that's awesome about meetingbot
+[16:55] <broesamle> hey @erickt
+[16:55] <erickt> I think now's a good time for meetingbot and I to find some common ground
+[16:55] <broesamle> long time no see
+[16:56] <erickt> ya!
+[16:56] <erickt> we're gunna get the rustbridge band back together
+[16:57] <broesamle> yes we will *captain planet gesture*
+[16:58] * erickt breaks out his giant hair metal band hair
+[17:00] <erickt> its meeting time!
+[17:00] <erickt> https://github.com/rust-community/team/issues/122
+[17:00] <badboy> I can't. meetingbot didn't post the link on time!
+[17:00] <badboy> ah, erickt posted it.
+[17:00] <erickt> hi everybody and everyboty
+[17:00] <edunham> good morning
+[17:00] <darbaga> Hello
+[17:00] <erickt> so who else is here today?
+[17:01] <badboy> o/
+[17:01] <erickt> badboy: that's okay, meetingbot tries so hard
+[17:01] * erickt hugs meetingbot
+[17:01] <skade> o/
+[17:02] <erickt> ok so lets start with our agenda
+[17:02] <erickt> aturon: you might be interested in joining talking about remote rust conferences
+[17:02] <erickt> carols10cents: ^ is your call
+[17:02] <carols10cents> HI
+[17:03] <carols10cents> my call to start with that, or my call to wait for aaron?
+[17:03] <erickt> so has anyone not heard about the US travel ban for 7 countries?
+[17:03] <erickt> *angryface
+[17:03] <erickt> lets start, I didn't check with aturon to see if he could make it
+[17:03] <carols10cents> ok
+[17:03] <badboy> it couldn't be overheart
+[17:03] <badboy> overheard?
+[17:03] <badboy> one of those
+[17:04] <erickt> :)
+[17:04] <aturon> heya, I'm around
+[17:04] <carols10cents> so adding live streaming and remembering remote people during an in-person conf is expensive and hard
+[17:04] <erickt> heya
+[17:04] <bstrie_pants> howdy
+[17:04] * erickt waves
+[17:04] <carols10cents> to make it at all enjoyable for anyone
+[17:04] <carols10cents> so what if we have a separate event where EVERYONE is remote
+[17:04] <carols10cents> thus leveling the playing field a bit
+[17:04] <carols10cents> it still excludes people without broadband internet
+[17:05] <carols10cents> i was thinking this could be really cool
+[17:05] <erickt> carols10cents: we could network together mozilla offices
+[17:05] <carols10cents> 24 hours of rust or something
+[17:05] <carols10cents> do a whole day
+[17:05] <aturon> zomg, that sounds amazing
+[17:05] <carols10cents> speakers from every timezone
+[17:05] <Manishearth> o/
+[17:05] <erickt> hallo
+[17:05] <broesamle> that would be really cool for a larger event (by the side)
+[17:05] <erickt> !
+[17:05] <skade> I'm always to be had for such stuff...
+[17:05] <carols10cents> so yeah, i was thinking mozilla might be able to help with this :)
+[17:06] <erickt> yeah that'd be pretty nifty!
+[17:06] <Manishearth> networking together the moz offices sounds interesting
+[17:06] <badboy_> (arghs, my server is ... gone)
+[17:06] <skade> problem is: do we have streaming infrastructure people can hook into?
+[17:06] <carols10cents> and we'd need people to manage the livestreams, and maybe manage questions from the audience on irc
+[17:06] <erickt> are they scattered around enough to give us enough coverage?
+[17:07] <aturon> carols10cents: so, to be concrete, you're thinking of having livestreamed talks around the clock? and also video questions?
+[17:07] <carols10cents> aturon: does mozilla have the infrastructure for this?
+[17:07] <broesamle> would that include have the offices open for people to join live in person in the respective city/office
+[17:07] <badboy> (and back)
+[17:07] <carols10cents> i think livestreamed talks around the clock would be awesome
+[17:07] <carols10cents> i'm thinking text questions
+[17:07] <aturon> carols10cents: not sure yet, i want to make sure i understand in detail what the proposal/needs are
+[17:07] <carols10cents> but like 
+[17:07] <carols10cents> not in a way that the speaker would have to monitor IRC while they're talking
+[17:08] <erickt> we could also reach out to our google friends and see if youtube can help out
+[17:08] <misdreavus> might be interesting to have a stream relay server that went to twitch or something
+[17:08] <aturon> carols10cents: ok so, i can briefly mention some things re: Mozilla on this front, if we want to go that direction
+[17:08] <carols10cents> have someone else watch for questions, give them the ability to interject on the video or jump on the video at the end
+[17:08] <carols10cents> to ask the questions gathered from irc
+[17:08] <skade> hm, in the end, i've got some experience with wowza, it's pretty simple to set up on the server side
+[17:08] <erickt> we'd have to have docents covering the rooms for questions, and also have people in each of the offices to help manage
+[17:08] <Manishearth> carols10cents: erickt we have the Monday Meetings which occur in all offices simultaneously
+[17:08] <aturon> ^ that
+[17:08] <Manishearth> and questions come online
+[17:08] <skade> the problem is more providing people with good streaming setups
+[17:08] <aturon> we use the Vidyo service
+[17:08] <Manishearth> there's something called Moderator
+[17:08] <erickt> wonderful
+[17:09] <erickt> we use https://www.sli.do/ at work for these things, that lets you post and vote up questions
+[17:09] <aturon> it also gets streamed via airmozilla
+[17:09] <carols10cents> skade: do you mean providing  good streaming setups for speakers or attendees?
+[17:09] <skade> for speakers
+[17:09] <erickt> skade: yeah, that could be difficult, but we could at least make a recording of the event
+[17:09] <aturon> note: this setup does NOT require speakers to all be in Mozilla offices
+[17:10] <carols10cents> aturon: do you know what kind of connection/hardware would be needed?
+[17:10] <skade> for attendees, you just provide a video player
+[17:10] <carols10cents> on the speaker side?
+[17:10] <aturon> all you need is Vidyo and decent bandwidth
+[17:10] <aturon> it's the same software we use for meetings; it's available free
+[17:10] <erickt> we could also consider pre-recording people if there are concerns about video stability and bandwidth
+[17:10] <carols10cents> skade: does anything concern you about that?
+[17:10] <aturon> the livestreaming through airmozilla then happens from within Mozilla, AIUI
+[17:11] <aturon> erickt: this'd basically be like the setup for the Bay Area meetup, but bigger
+[17:11] <erickt> mozilla offices: https://www.mozilla.org/en-US/contact/spaces/
+[17:11] <erickt> yeah
+[17:12] <aturon> so we could have people who do want to hang out in person come to mozilla offices -- or other spaces that want to hook into Vidyo
+[17:12] <carols10cents> would we have to move the host office around the world or could we just leave one thing started in SF and hand off management capabilities?
+[17:12] <bstrie_pants> I haven't had much success with vidyo in the past...
+[17:12] <aturon> carols10cents: there's not a designated host office
+[17:12] <aturon> well, hm
+[17:12] <carols10cents> like who starts it
+[17:12] <aturon> i guess there is in the sense of running the airmozilla feed
+[17:12] <skade> carols10cents: about what?
+[17:12] <aturon> and if we really want to do 24h, we'd have to hand that off
+[17:13] <erickt> well we'd have to have steveklabnik stay up 24 hours to MC the event :)
+[17:13] <carols10cents> skade: about speakers needing vidyo and decent bandwidth
+[17:13] <steveklabnik> hehehe
+[17:13] <aturon> bstrie_pants: yeah, some people have had problems getting the software set up, but by and large we've been able to make it work
+[17:13] * steveklabnik buys a case of red bull
+[17:13] <skade> carols10cents: well, vidyo more then the decent bandwidth
+[17:13] <aturon> erickt: oh yes, that sounds quite plausible, i have yet to see steveklabnik run out of energy
+[17:13] <steveklabnik> erickt: it'd be like a PBS funding drive
+[17:13] <skade> the last, we cannot really get around :/
+[17:14] <erickt> we'd also need to have Moz technical staff available to run the vidyo setup
+[17:14] <aturon> right
+[17:14] <aturon> i think that's doable
+[17:14] <aturon> FWIW, if we do want to use Mozilla's equipment for this, we're pretty much tied to Vidyo AFAIK
+[17:14] <carols10cents> so i think central organizing wise, we'd still need to pick a date, run a CFP, do outreach especially to get speakers from across the world, schedule everyone, publicize the event
+[17:14] <aturon> (for speakers)
+[17:14] <erickt> we'd have to get them very nice gifts if they stay up with us :)
+[17:14] <erickt> or at least a giant coffee
+[17:15] <erickt> carols10cents: yep. one nice thing doing it this way is we could actually organize it a bit earlier than other events
+[17:15] <erickt> since we wouldn't need to setup the space
+[17:15] <carols10cents> i think the next steps for this would be for aturon to check on the feasibility of the tech stuff
+[17:16] * erickt seconds
+[17:16] <carols10cents> erickt: yup!!!
+[17:16] <erickt> I'm always happy to make other people do more work!
+[17:16] <aturon> heh :)
+[17:16] <carols10cents> aturon: do you accept this challenge? :)
+[17:16] <erickt> Manishearth is also available, if anyone one needs something done
+[17:16] <erickt> Manishearth: <3
+[17:16] <carols10cents> i know the mozilla folks aren't busy at all so
+[17:17] <aturon> i'm happy to get the ball rolling on the tech front, but in general don't have the bandwidth to organize the event fully (just to be clear)
+[17:17] <aturon> i can CC the community team on emails? or whoever would like to be involved?
+[17:17] <skade> sure
+[17:17] <erickt> +1 yeah I think all of us together can help work on this
+[17:17] <carols10cents> aturon: yeah i was thinking the community team could take care of the rest.... who's with me?!!??!
+[17:17] <erickt> \m/
+[17:17] <badboy> cc the team, _someone_ will feel responsible :)
+[17:18] <skade> none of us have the bandwidth, I guess we have to be creative :D
+[17:18] <aturon> alright!
+[17:18] <carols10cents> YAYAYAYAY!!!
+[17:18] <erickt> skade: we just need to bittorrent our bandwidth?
+[17:18] <badboy> is there a rust-y bittorrent yet? might save some memory!
+[17:18] <erickt> woo
+[17:19] <carols10cents> ok so next item is also me
+[17:19] * badboy fears he might have just been pulled into some conf-organizer-y thingy ....
+[17:19] <erickt> depending on the tech, this could be a great outreach opportunity
+[17:19] <badboy> all about carols10cents today…
+[17:19] <erickt> like we could try to link up with google/youtube/dropbox
+[17:19] <carols10cents> i am working with someone in columbus investigating venues for rust belt rust, but we haven't booked anything yet
+[17:20] <skade> i think what would help already would be if we unified some stuff between the confs
+[17:20] <carols10cents> so i'm not necessarily opposed to moving it to toronto, but yeah, not a clear win
+[17:20] <skade> e.g. just have one CFP app for all
+[17:20] <badboy> Columbus. Investigating. https://frtim.files.wordpress.com/2012/10/frontpagecolumbo1.jpg
+[17:20] <carols10cents> and i'd want to have jdm's help
+[17:20] <badboy> (I'm sorry, the no-meme thing doesn't apply here)
+[17:20] <erickt> +1 to a CFP app
+[17:20] <skade> and unify communication a little
+[17:20] * jdm is hesitant given that he's not going to be regularly living in toronto starting in july
+[17:20] <carols10cents> aturon: how has the feedback been to your posts about rustconf
+[17:20] <skade> (i'm not to sure how to do that)
+[17:20] <carols10cents> D:
+[17:21] <carols10cents> ok then like ... i'm reluctant to organize a conference without someone local helping me
+[17:21] <erickt> do we have other contacts in our community in toronto?
+[17:21] <aturon> carols10cents: i haven't heard from anyone where the ban is a hardship
+[17:21] <badboy> regarding rustconf, I wanted to poke someone to make the 2016's edition available on 2016.rustconf.com or rustconf.com/2016 or so...
+[17:21] <aturon> carols10cents: most people seem to strongly agree with skade's comment, about responding by just doing MORE events :)
+[17:21] <aturon> and/or livestreaming
+[17:22] <aturon> so i think it's likely that RustConf will stay put
+[17:22] <carols10cents> aturon: got it, sounds good :)
+[17:22] <erickt> +1 to more events
+[17:22] <aturon> re: CFP app, we've been using the one from RailsConf for RustConf and have been happy with it
+[17:22] <carols10cents> then i'm probably going to continue forward with columbus then
+[17:22] <aturon> https://github.com/rubycentral/cfp-app
+[17:23] <skade> yeah, I'm biased towards ours, ( https://github.com/eurucamp/call4papers), but yeah
+[17:23] <carols10cents> we used https://github.com/jnf/blinder for rust belt rust
+[17:23] <carols10cents> i'm biased towards that ;)
+[17:23] <carols10cents> ok erickt i think i'm done with my agenda items
+[17:23] <erickt> carols10cents: nepotism! 
+[17:23] <erickt> (i think?)
+[17:23] <skade> interesting
+[17:24] <skade> ours is a bit clunky (needs manual intervention for some steps of the process)
+[17:24] <erickt> hm, next agenda item if I can find it...
+[17:24] <bstrie_pants> carols10cents: awesome that you have a venue, but I'm curious why columbus over cleveland?
+[17:24] <carols10cents> bstrie_pants: i have a volunteer in columbus :)
+[17:24] <bstrie_pants> that settles it then :P
+[17:24] <skade> okay, is sebasmagri here
+[17:24] <skade> ?
+[17:25] <erickt> it seems maybe not? we can circle back to it
+[17:25] <erickt> next up, rustbridge!
+[17:26] <erickt> hi bridgers!
+[17:26] <broesamle> heyho!
+[17:26] <erickt> I'd love to start up our bridge work again. we did some great stuff
+[17:27] <erickt> so and there's so much more we can do
+[17:27] <broesamle> How about a workshop-consolidation-a-thon
+[17:27] <erickt> wonderful idea to do another -athon
+[17:27] <erickt> those are always fun
+[17:27] <broesamle> get things streamlined a bit, finalize web-content
+[17:27] <erickt> how about a march event?
+[17:28] <broesamle> like in ~4 to 6 weeks
+[17:28] <broesamle> good!
+[17:28] <erickt> would y'all be available to host something in your local towns?
+[17:28] <carols10cents> possibly!
+[17:28] <broesamle> if i know early enough I can do berlin
+[17:29] <erickt> broesamle: great! we can probably at least get into the mozilla spaces
+[17:29] <erickt> we can also activate the meetup organizer mailing list
+[17:29] <erickt> which we should probably formalize into a proper mailing list, now that I think about it
+[17:30] * badboy just realized that the next cologne meetup in regular schedular would be on the last day of carnival
+[17:30] <badboy> erickt: we have such a thing?
+[17:30] <erickt> or use urlo? I'm not sure if our community subpage gets that much attention :/
+[17:30] <erickt> badboy: I got a list of emails that have permission to put things on the community calendar
+[17:30] <badboy> ah
+[17:30] <broesamle> that brings up the topic of the webpage again
+[17:31] <erickt> yep!
+[17:31] <erickt> I know sonja originally talked about working on one. does anyone know if she made any progress with it?
+[17:32] <broesamle> i think there is a branch somewhere but she never officially announced it
+[17:32] <erickt> well we can reach out to her offline about getting access
+[17:32] <erickt> that could be one of the projects
+[17:33] <erickt> aw, someone already owns bridge.rs
+[17:33] <broesamle> it would be good to have a landing page with all workshops + events + how to contribute link
+[17:33] <broesamle> it can be a three pager
+[17:33] <erickt> +1
+[17:34] <sebasmagri> +1
+[17:34] <broesamle> bridge apartnments
+[17:34] <skade> sonja has a somwhat finished website
+[17:34] <broesamle> owns it
+[17:34] <erickt> seems legit too, they've owned it since 2015 and keep renewing it
+[17:34] <sebasmagri> sorry for the delay, I'd like to help with the rustbridge website whatever the starting point is
+[17:34] * erickt shakes fist at a legitimate business using it legitimately
+[17:35] <erickt> hey sebasmagri !
+[17:35] <erickt> no worries!
+[17:35] <erickt> skade: oh! that's wonderful!
+[17:35] <broesamle> http://www.rust-bridge.org/
+[17:35] <broesamle> not taken
+[17:35] <erickt> I'd be happy to pay for a proper domain
+[17:35] <erickt> rustbridge.rs is also available
+[17:36] <broesamle> i like that one
+[17:36] <sebasmagri> I like the latter
+[17:36] <erickt> or we could have a subdomain on bridge.community.rs
+[17:36] <skade> here: https://github.com/rust-community/rustbridge-page
+[17:36] <skade> bridge.community.rs has a nice ring to it
+[17:36] <broesamle> bridge.community.io via github pages
+[17:36] <sebasmagri> +1
+[17:36] <booyaa> Is there an issue to coordinate the virtual presence (via Mozilla offices or other) for rust conf?
+[17:37] <erickt> yeah i do kind of like bridge.community.rs
+[17:37] <skade> https://community.rs/rustbridge-page/
+[17:37] <broesamle> rustbridge.github.io via github pages
+[17:37] <erickt> broesamle: we do already own https://community.rs :)
+[17:37] <carols10cents> booyaa: https://github.com/rust-community/team/issues/123
+[17:37] <booyaa> I like bridge.community.rs
+[17:37] <broesamle> haha! there it is
+[17:37] <booyaa> Carols10cents: ty
+[17:38] <booyaa> Damn riot doesn't have nick completion
+[17:38] <erickt> anyone opposed to bridge.community.rs and rather a toplevel domain for this?
+[17:38] <erickt> going once...
+[17:38] <broesamle> fine!
+[17:39] <erickt> and sold! I'll set up that domain
+[17:39] <broesamle> coolio!
+[17:39] <erickt> and point it at sonja's page
+[17:39] <booyaa> 🎉
+[17:39] <erickt> huzzah
+[17:39] <erickt> (now how do I do that...)
+[17:39] <badboy> CNAME it and place a file in the repo
+[17:40] <skade> we have to go through the team again, though
+[17:40] <booyaa> Will need an update to cloudflare DNs too?
+[17:40] <erickt> skade: what do you mean?
+[17:40] <erickt> booyaa: yeah I think so
+[17:40] <broesamle> maybe I want a human picture rather than my github logo
+[17:40] * badboy wishes for IPv6 for github pages…
+[17:40] <erickt> I figure we can iterate a little on the page before we announce it
+[17:40] <skade> erickt: there's a list of people on the page, some people are not quite on the team :)
+[17:41] <erickt> ah ok
+[17:41] <erickt> next agenda. sebasmagri: you're up! multi-language communitys
+[17:41] <erickt> ies
+[17:42] <erickt> oh, did you step away?
+[17:42] <erickt> ok lets cycle back to you again :)
+[17:42] <erickt> milestones!
+[17:43] <erickt> aturon made a rust-roadmap
+[17:43] <erickt> https://github.com/rust-lang/rust-roadmap
+[17:43] <erickt> to centralize the team planning'
+[17:44] <erickt> our bit is (supposed to be) linking to our milestones, so we need to start milestoning our tickets
+[17:44] <erickt> that's all I got on that issue
+[17:44] <aturon> in particular see https://github.com/rust-lang/rust-roadmap/issues/22
+[17:44] <erickt> thanks!
+[17:44] <erickt> sebasmagri: you back?
+[17:44] <aturon> y'all should feel free to use this page however you like
+[17:45] <aturon> i.e. you can keep all the tracking in your dedicated repo and joint point to it, or whatever
+[17:45] <erickt> aturon: should we keep editing that ticket to update our status?
+[17:45] <sebasmagri> yep erickt 
+[17:45] <erickt> or just commenting on it as things come up?
+[17:45] <aturon> erickt: update the ticket please
+[17:45] <erickt> great
+[17:46] <sebasmagri> so, the whole idea is to be able to have specific language categories in urlo
+[17:46] <erickt> sebasmagri: you're up on multi-language communities
+[17:46] <sebasmagri> the initial proposal is here as well as some feedback https://users.rust-lang.org/t/categories-for-other-languages/8708
+[17:47] <erickt> sebasmagri: I'd be supportive of that, we'd need to make sure we got moderation that can cover those languages
+[17:47] <sebasmagri> That would make it easier for non-English speaking communities to have a place to share stuff
+[17:47] <skade> I can certainly do german moderation
+[17:47] <sebasmagri> we could document a process to ask for a language category
+[17:47] <skade> Does anyone have experience with multi-lingual discourse?
+[17:48] <sebasmagri> I'd be glad to do Spanish moderation
+[17:48] <sebasmagri> as part of that process, moderators would be a requirement to set the category up
+[17:49] <sebasmagri> I don't, but initially I believe it would not be a hard requirement to have the UI internationalized
+[17:49] <skade> well, the question is just whether discourse is built for such a mixed mode
+[17:49] <erickt> the other bit is we'd also need to figure out the tech. does discourse support multi-language?
+[17:49] <erickt> heh
+[17:49] <erickt> I found https://meta.discourse.org/t/make-a-multi-language-forum/18501/2
+[17:49] <sebasmagri> we could do some research on it
+[17:49] <erickt> that mentions some plugins
+[17:49] <skade> definitely, a forum with multiple languages is a bit hard
+[17:50] <skade> when you can't easily opt in and opt out of some
+[17:50] <erickt> yeah
+[17:50] <erickt> it also might not be *that* hard to run multiple language-specific discourses
+[17:50] <skade> ben kampmann has been a discourse committer for a while
+[17:50] <sebasmagri> Yep, we should use the same setup and just create some categories in which users will be able to post in its mother tongue
+[17:51] <skade> (he's the one running the current are we web yet)
+[17:52] <sebasmagri> if we can improve the experience for non-english speakers later that'd be great but I don't believe it's a hard requirement to start...
+[17:52] <erickt> great. sebasmagri want to do some more research and come up with a technical approach to implement this?
+[17:53] <sebasmagri> sure thing erickt 
+[17:53] <skade> in general, i would prefer a "one venue" approach, as that makes discoverability easy, if it doesn't impact noise too badly
+[17:53] <erickt> I'm sure we could grow the mod team to cover it (cc mbrubeck / pnkfelix / et all)
+[17:53] <erickt> skade: me too
+[17:54] <erickt> there's challenges about some already formed locale-specific boards
+[17:54] <Manishearth> I prefer having one community per language instead of a catchall
+[17:54] <erickt> but we can reach out to those communities about bringing them into the fold
+[17:55] <sebasmagri> that shouldn't be an issue if they decide not to
+[17:55] <erickt> Manishearth: I'd also be fine if we also work with those boards to make them "offical" local specific groups
+[17:55] <erickt> if they want to be official
+[17:56] <erickt> sebasmagri: could you also reach out to those other boards and see if they'd be interested?
+[17:56] <sebasmagri> yep, no problem erickt 
+[17:56] <erickt> we should also have buy-in from them too
+[17:56] <mbrubeck> as the mod team we should probably reach out to any moderators/admins of existing forums, and perhaps making the forums official would also involve adding their moderators to the mod team
+[17:57] <mbrubeck> (not necessarily as a requirement; could be discussed case-by-case, perhaps)
+[17:57] <sebasmagri> I don't know which ones are already setup though, if you can help me with a list I'll do
+[17:57] <sebasmagri> I can do some research as well
+[17:58] <skade> I'm a bit sad discourse doesn't support subforums :(
+[17:58] <erickt> sebasmagri: KiChang from servo is familiar with the Chinese community, he could point you in the right direction for them
+[17:58] <sebasmagri> that'd be the perfect setup skade 
+[17:59] <sebasmagri> great erickt, I'll contact him... skade actually moderates the german one right?
+[17:59] <skade> no, i don't
+[17:59] <skade> funny enough, my login is broken since quite a while
+[18:00] <erickt> I'm not sure offhand if anyone in this channel is from the Brazillian rust community
+[18:00] <booyaa[olde> HedgeMage: 
+[18:00] <booyaa[olde> whoops
+[18:00] <booyaa[olde> rtpo
+[18:00] <erickt> oh, bltavares, are you online?
+[18:00] <booyaa[olde> typo even
+[18:00] <erickt> :)
+[18:01] <erickt> sebasmagri: oh, there's the irc channels #rust-br for Brazillian Portuegese, #rust-ru for Russian, #rust-fr for French, #rust-de for German
+[18:02] <erickt> I bet you could find people there that could help
+[18:02] <sebasmagri> erickt: yeah, will do, I'm taking note
+[18:02] <erickt> :) great!
+[18:02] <erickt> anything else on it?
+[18:03] <erickt> last thing (and we're already over if any of you need to take off)
+[18:03] <sebasmagri> I believe this is a good starting point, we can discuss progress next week
+[18:03] <erickt> darbaga: the state of rust ecosystem
+[18:03] <darbaga> Hi
+[18:03] <erickt> https://github.com/Gabriel439/post-rfc/blob/master/sotu.md
+[18:03] <erickt> sorry for the delay :)
+[18:04] <darbaga> No worries, it was fun observing
+[18:04] <erickt> :)
+[18:04] <darbaga> So...i don't know if this is something that should be done..i've spent less than a month on rust and it's kind of my first "serious" programming language. But.
+[18:04] <erickt> I'm only now looking through the sotu, but I think this could be interesting for us
+[18:05] <badboy> it looks like a hell lot of work
+[18:05] <darbaga> I was considering that rather than having stuff like stdx (which is extremely useful, for sure) we *also* have a "state of the rust ecosystem" thing which details how developed the crates are at specific tasks that rust can do
+[18:05] <erickt> we do have https://github.com/kud1ing/awesome-rust
+[18:05] <badboy> but worth it for sure
+[18:05] <badboy> wasn't there another list posted yesterday of something similar?
+[18:05] <darbaga> erm, crate ecosystem, rather
+[18:06] <erickt> hm, I don't recall something. carols10cents: you working on anything like this?
+[18:06] <darbaga> The bikeshedding thing?
+[18:06] <carols10cents> omg
+[18:06] <sebasmagri> could that be built in a `arewefooyet` format? probably with some administration/moderation goodies
+[18:06] <badboy> yes, bikeshedding. https://github.com/production-rs/bikeshed
+[18:06] <carols10cents> https://github.com/rust-lang/rfcs/pull/1824
+[18:06] <badboy> posted 10hrs ago
+[18:08] <sebasmagri> probably the new crate categorization could help with this, and have this `Status of the Ecosystem` as a report in crates.io
+[18:09] <erickt> yeah
+[18:09] <sebasmagri> I mean, categorization + ranking
+[18:09] <carols10cents> do people get mad about this SOTU leaving things out or getting things wrong or being out of date?
+[18:09] <darbaga> Huh. I an see every category eventually having little blurbs of text on how good the crates in that specific category are, a description, and the top crates themselvs
+[18:10] <darbaga> I'm not sure. I think they redo it every 6 months, iirc
+[18:10] <erickt> carols10cents: I was also trying to figure that out
+[18:11] <erickt> I wouldn't want to end up feeling like we're calling out favorites
+[18:11] <erickt> at the bare minimum, I'm quite supportive if the community wants to write up SOTU-style things
+[18:11] <sebasmagri> that could probably cause way too much flamewars
+[18:12] <erickt> I'm a little hesitant about the teams officially promoting one project over another
+[18:13] <darbaga> Idk. Perhaps have voting on the crates (and easy way to do said voting, perhaps through a cargo subcommand) and just make the rust ecosystem thing get the top crates from that?
+[18:13] <darbaga> I"m not sure if we have that.
+[18:13] <sebasmagri> that could be left to the ranking parameters from crates.io
+[18:13] <sebasmagri> download counts, docs, dependants count, etc
+[18:13] <erickt> darbaga: carols10cents is looking into some level of ranking of crates
+[18:14] <carols10cents> this is getting into rfc 1824 territory
+[18:14] <carols10cents> plz go read that 
+[18:14] <sebasmagri> so the most objective way to "vote" for a crate is to use it
+[18:14] <darbaga> Oh my bad, I missed that link
+[18:15] <erickt> anything else on this?
+[18:15] <erickt> if not, then I might call this a wrap
+[18:15] <sebasmagri> I'll provide feedback in the RFC
+[18:15] <badboy> thanks!
+[18:16] <darbaga> Me too, after i read it fully/i have something interesting to say :D
+[18:16] <erickt> darbaga / sebasmagri please don't forget to add a link to the haskell sotu if it's not already there
+[18:16] <sebasmagri> just as soon as I'm able to read all the comments
+[18:16] <erickt> for some reference
+[18:16] <sebasmagri> darbaga: do you want to do it? :-)
+[18:16] <darbaga> Sure! I just comment on the pull request right?
+[18:16] <erickt> thanks everyone! and as a final thought, just a heads up that we haven't been getting many submissions to underhanded
+[18:17] <erickt> which is sad, so either people might just be waiting for the deadline, or we need to remind them it's still going on
+[18:19] <sebasmagri> yep darbaga 
+[18:19] <sebasmagri> erickt: I'm not completely clear of the submission process
+[18:19] <sebasmagri> that's probably happening to other people as well
+[18:20] <erickt> sebasmagri: I'm going to work on at least another post
+[18:20] <erickt> sebasmagri: but it's just send the submission to underhanded@rust-lang.org :)
+[18:20] <sebasmagri> got it erickt 
+[18:20] <erickt> I'm also thinking about extending the deadline
+[18:21] <erickt> in case there are other problems
