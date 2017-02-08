@@ -1,0 +1,271 @@
+== 8 Feb 2017
+[09:13] <Trangar> <- guy who organized rustschool in rotterdam yesterday
+[09:42] <booyaa_> Trangar: how'd it go?
+[09:43] <Trangar> It went well actually
+[09:43] <booyaa_> folks what's the url for the rust contributors site? i thought it was love.rust-lang.org
+[09:43] <Trangar> They only had 1 question and that was when I was organising part 2 
+[09:45] <booyaa_> Trangar: wanna write a report? I had never thought to write a debrief on my evenst, saw this on urlo and though yes this is a good idea! https://users.rust-lang.org/t/fosdem17-rust-bof-meeting-notes/9326
+[09:45] <booyaa_> doesn't need to be as detailed, but nice to have especially if there's questions that stump the teachers/presents
+[09:46] <Trangar> I think I got to explaining Option and Result and that was my 2 hours over
+[09:46] <Trangar> It was mostly an "here's some broken code, try make it work with the compiler's instructions"
+[09:48] <booyaa_> what was the background of the people attending? experienced programmers (in another lang? new to programming?
+[09:49] <Trangar> Mostly experienced programmers, nodejs, php and python and stuff
+[09:49] <Trangar> 1 person only did a little bit of programming but he came along nicely
+[09:50] <booyaa_> anyone with systems programming background? i imagine some some of your pythonistas would be in this category
+[09:50] <Trangar> Not that I know of
+[09:51] <booyaa_> how long did it take to get everyone setup with rust and code editor integration?
+[09:51] <Trangar> I only had them install rustup and use a standard editor with "cargo run"
+[09:52] <Trangar> About 30 mins, mostly because I wanted them to install the nightly because of the slightly improved error message on undefined keywords
+[09:52] <booyaa_> ah so no linting?
+[09:52] <Trangar> Nah
+[09:52] <Trangar> It was mostly stuff like "let some_string: ... = "test"; <- find the type"
+[09:52] <booyaa_> k
+[09:52] <Trangar> So they start with "string" -> "String" -> "&'static str"
+[09:53] <booyaa_> no 3rd party crates then?
+[09:53] <Trangar> Nope
+[09:53] <Trangar> This is how far we got https://slides.com/victorkoenders/deck/
+[11:31] <badboy> thanks Trangar for the report and congrats to a successful event!
+[11:31] <badboy> also good to know how long it takes to set it up
+[11:31] <badboy> I've got a 3hour workshop soon ^^
+[11:32] <badboy> Trangar: if you should ever do that again drop me a note. I live in Aachen, not that far away and might find time to drop by
+[11:32] <Trangar> Oh that'd be fun
+[11:33] <Trangar> We got an email that there are workshops in utrecht and amsterdam as well
+[11:33] <badboy> good to know. I once gave a talk in amsterdam
+[15:00] <erickt> meeting day yay!
+[15:00] <erickt> booyaa_: it's https://thanks.rust-lang.org/
+[15:08] <booyaa_> erickt: ty
+[15:24] <steveklabnik> booyaa_: you're probably thinking of the heart alias
+[15:24] <steveklabnik> but the canonical url is thanks
+[15:24] <booyaa_> steveklabnik: heh i think i might be
+[15:25] <booyaa_> i suspect rust core loves it's contributors though
+[16:00] <meetingbot> This week's agenda: https://github.com/rust-community/team/issues/126. The meeting is this Weds @ 5PM UTC. Last week's minutes https://github.com/rust-community/team/blob/master/meeting-minutes/2017-02-01.txt. bippity beep!
+[16:51] <badboy> I made it home in time!
+[16:54] <erickt> \o/
+[16:54] <erickt> https://www.youtube.com/watch?v=9jK-NcRmVcw
+[16:55] <badboy> also I'm super tired and hate graphs
+[16:55] <badboy> but well
+[16:55] <badboy> …
+[16:56] <erickt> more of a relational algebra kind of person?
+[16:56] <badboy> considering my last exam ahead of me I kinda have to be now
+[16:57] <brson> i can't attend today
+[16:57] <badboy> brson: but you are here!
+[16:58] <erickt> he's got you there, brson!
+[17:00] <edunham> good morning
+[17:00] <erickt> hello everyone!
+[17:00] <erickt> it's meeting time!
+[17:00] <erickt> \o/
+[17:00] <erickt> *confetti*
+[17:00] <erickt> https://github.com/rust-community/team/issues/126
+[17:00] <erickt> who's in today?
+[17:00] <badboy> o/
+[17:01] <brson> lol
+[17:01] <steveklabnik> hi hi
+[17:01] <erickt> brson, you're really not doing this whole "I'm not here" thing well
+[17:02] <stephanbuys> hi all 
+[17:02] <erickt> ok so first up, @stephanbuys 
+[17:02] <erickt> hey!
+[17:02] <erickt> carols10cents: I think this also includes you
+[17:02] <badboy> stephan buys ... beer?
+[17:02] <erickt> https://github.com/production-rs/bikeshed
+[17:03] <erickt> stephanbuys cupcakes?
+[17:03] <erickt> :)
+[17:03] <erickt> stephanbuys: want to start the conversation?
+[17:03] <stephanbuys> lol - believe it or not its actually pronounced more like 'bays' and its Afrikaans
+[17:04] <stephanbuys> so yeah - I sent an email to the community list to ask if it would be possible to ping other "Friends of rust" for their input on our project
+[17:04] <stephanbuys> the project is more like an experiment and was inspired by esr's posts a couple of weeks ago
+[17:04] <stephanbuys> we're production users of rust, so we can definitely see the value of having a good goto list
+[17:04] <erickt> about there not being a good recommended list of what's good?
+[17:04] <stephanbuys> (of crates)
+[17:05] <stephanbuys> well the focus here is to try and pick on (or maybe an alt) crate for a production use-case
+[17:05] <erickt> so first thing is carols10cents has been working on an rfc for recommending crates
+[17:05] <stephanbuys> so its highly curated 
+[17:06] <erickt> which I'm still looking for...
+[17:06] <stephanbuys> and it turns out the libs team thinks it might be a good list of signals for the roadmap
+[17:07] <erickt> https://github.com/rust-lang/rfcs/pull/1824
+[17:07] <erickt> phew, took a while
+[17:07] <stephanbuys> https://github.com/rust-lang/rust-roadmap/issues/9
+[17:07] <erickt> that too :)
+[17:08] <stephanbuys> more specifically https://github.com/rust-lang/rust-roadmap/issues/11
+[17:08] <badboy> so just to make it clear: you want more input on crate recommendations for that list, possibly by production users?
+[17:08] <stephanbuys> I think the list will be best if we get decent feedback from other prod users
+[17:08] <stephanbuys> badboy: correct
+[17:09] <stephanbuys> so I'm hoping that they can be approached as "Friends of Rust"
+[17:09] <stephanbuys> that would be a high-quality initial input
+[17:09] <stephanbuys> (or thats the theory)
+[17:09] <erickt> if we don't already, we should add the "what crates are you using" to our upcoming surveys
+[17:10] <badboy> open-ended questions will be hard to evaluate, won't they?
+[17:10] <Manishearth> ohai
+[17:10] <stephanbuys> of course the other challenge is identifying the correct categories and sub categories
+[17:11] <stephanbuys> based on reddit feedback, and just by intuition, there could possibly be a 'panel' in the future to nurture the list
+[17:11] * badboy checks if areweproductionyet.com is free
+[17:11] <erickt> badboy: speaking of graphs, there's all sorts of fun centrality algorithms out there that could be a good signal for recommendations
+[17:11] <badboy> erickt: go away, graphs are awful!
+[17:11] <erickt> which could also feed into carols10cents's rfc
+[17:11] * badboy wants his numbers back
+[17:11] <erickt> poor little vertices and edges
+[17:11] <Manishearth> so I think the production thing would help if it had a website
+[17:12] <Manishearth> see http://arewewebyet.org/
+[17:12] <stephanbuys> the prod list could be one of the signals for crates like cargo-esr
+[17:12] <Manishearth> I also think it needs to be a bit more officially-placed to work well
+[17:12] <erickt> I do like the areweXyet
+[17:12] <stephanbuys> Manishearth: yeah for sure, the idea is to aid ramp-up and discoverability - it could also be a good rallying point for cookbooks, etc
+[17:14] <Manishearth> I also think it makes sense to have a slightly better gatekeeping process than "make a PR"
+[17:14] <stephanbuys> the other advantage of just having a list is avoiding the other technical issues around the 'rust-platform' proposal, as well as deprecation
+[17:14] <Manishearth> e.g. on AWWY if you made a PR with a random framework I haven't heard of, I won't let you stick it at the top of the list
+[17:14] <erickt> and maybe some interaction with https://github.com/kud1ing/awesome-rust would be nice?
+[17:14] <stephanbuys> Manishearth: absolutely, a panel and a submission process seems like a natural outcome, then gradually ramping up the requirements to make it onto the list as the crates mature
+[17:15] <badboy> to step away from how it is decided what's on the list, what is the role of the community team?
+[17:15] <badboy> i guess it's too much to make us maintain that list
+[17:16] <stephanbuys> erickt: yeah - theres lots of great signals out there already. positions on all those different lists could be another signal for preferring one specific crate
+[17:16] <badboy> but we are the ones with the contacts to friends of rust, so we would need to kindly ask them to contribute there, right?
+[17:16] <erickt> we could form a subteam to help run something like this
+[17:16] <erickt> so there'd be some level of accountability and formalism
+[17:16] <stephanbuys> badboy: exactly :-)
+[17:16] <stephanbuys> erickt: that panel/sub-team would be awesome
+[17:17] <stephanbuys> based on https://github.com/rust-lang/rust-roadmap/issues/11 I can see its value - its core to the 2017 roadmap
+[17:17] <erickt> it's a shame carols10cents isn't around
+[17:17] <stephanbuys> and if its part of "official" rust and easily discoverable through the main resources it might get many future esr's out of the starting blocks a little quicker
+[17:18] <stephanbuys> anyway - so thats the proposal/experiment…
+[17:18] <erickt> ok so action item. we need to gather up all the people in this space to start exploring the technical/non technical options
+[17:19] <edunham> "areweprodyet"++
+[17:20] <edunham> Yep, balance people from the "let's not bless things too formally" and the "please just tell us what to use" sides of the fence to strike a compromise that everyone's ok with :)
+[17:20] <stephanbuys> I'm chatting to the libs team on Monday too, so being on the list might have real benefits, if the "friends of rust" really need certain crates it would massively benefit them to get on the list (if the experiment doesn't fail)
+[17:20] <erickt> who should be in this meeting? carols10cents definitely, maybe kud1ing. who else?
+[17:21] <erickt> stephanbuys: oh great! that saves me organizing a meeting :)
+[17:22] <stephanbuys> its apparently something the libs team is very interested in (key 1.0 crates)
+[17:22] * erickt wonders if crates.io should grow the ability for anyone to make their recommendations, like steam
+[17:22] <badboy> when's the lib team meeting and is it chat or video or what?
+[17:23] <stephanbuys> badboy: I'm still awaiting formal answer from aturon
+[17:23] <stephanbuys> but its on Mondays
+[17:23] <badboy> ok
+[17:24] <erickt> anything else on this subject?
+[17:25] <stephanbuys> thats my song and dance… 
+[17:25] <erickt> if not, sebasmagri, you around?
+[17:26] <erickt> then moving on!
+[17:26] <erickt> underhanded!
+[17:26] <erickt> as I mentioned in https://github.com/rust-community/team/issues/126, we just have a few things to do, the most urgent thing is writing up a post saying we're getting close to the end
+[17:26] <erickt> and then another post closing the submissions
+[17:27] <badboy> when's the end?
+[17:27] <erickt> technically 3/1
+[17:27] <badboy> I see
+[17:27] <badboy> hm
+[17:27] <badboy> https://github.com/rust-community/underhanded.rs/issues/13 < lots of open boxes
+[17:27] <erickt> but I've only gotten 2 submissions, so I can't tell if people are waiting for near the end to submit
+[17:28] <badboy> but apart from that we should advertise it a bit more
+[17:28] <badboy> is it in twir?
+[17:28] <badboy> we should get it in there for the next weeks
+[17:28] <erickt> hm, is it?
+[17:28] <erickt> yeah
+[17:28] <erickt> it's not! 
+[17:28] <erickt> so I'm sort of thinking also about extending the submission deadline
+[17:28] <erickt> to the end of march
+[17:29] <erickt> and then trying to get some more advertising done
+[17:29] <Manishearth> hm
+[17:29] <Manishearth> folks might just be waiting till the last moment to submit
+[17:29] <erickt> they might be
+[17:29] <erickt> it's hard to tell
+[17:29] <Manishearth> we could mention that it's okay to submit early and you can change the solution later
+[17:30] <erickt> yeah. we could also put out a quick survey of how many people are working on a solution
+[17:31] <erickt> anyone else have any ideas to help drive underhanded submissions?
+[17:32] * erickt adds it to twir
+[17:33] <badboy> I opened an issue because I still don't know the exact process to make it happen
+[17:33] <erickt> badboy: to make what happend?
+[17:33] <booyaa_> erickt: announcements on meetups, newrustacean, and maybe a slot on software daily?
+[17:33] <badboy> adding things to twir
+[17:33] <badboy> I'm never sure if just an issue or a PR
+[17:33] <erickt> badboy: pr is easiest
+[17:33] <booyaa_> i'll add it to my meetup tomorrow
+[17:34] <carols10cents> SORRY I'M LATE I'M HERE NOW
+[17:34] <badboy> hello carols10cents 
+[17:34] <booyaa_> hi carols10cents!
+[17:34] <erickt> and turn down the volume on your keyboard ;)
+[17:35] <erickt> booyaa_: great!
+[17:35] <booyaa_> daft question, how many submissions have taken place?
+[17:35] <badboy> 2
+[17:36] <booyaa_> i'd be happy to reach out to the two podcasts, but it would make sense to include someone who's better at articulating underhandedness
+[17:36] <booyaa_> to do the actual interview
+[17:36] <erickt> is anyone opposed to extending the deadline to 3/31?
+[17:36] <erickt> that'd give us a good month and a half to do more ads
+[17:36] <booyaa_> +1
+[17:36] <badboy> that would work far better for me with reviewing anyway
+[17:37] <erickt> ok
+[17:37] <badboy> (how long do we plan for review?)
+[17:37] <erickt> i gave us 3 months
+[17:37] <badboy> oh ok
+[17:38] <erickt> ok so we can write up a new post, booyaa_ will reach out to the podcasts
+[17:39] <badboy> oh I need to schedule a podcast as well
+[17:39] <erickt> and I need to sit down and actually start writing some posts
+[17:39] <erickt> unless any of you want to write up some things :)
+[17:39] * badboy gives erickt a chair
+[17:39] <badboy> you earned it
+[17:39] <erickt> ;_;
+[17:39] <erickt> anything else on underhanded?
+[17:40] <erickt> if not, a bonus topic
+[17:40] <erickt> for the worldwide rustbridge athon, how's a tentative Saturday 3/18 or 3/25 sound for all you meetup organizers?
+[17:41] <booyaa_> https://github.com/rust-community/team/issues/127
+[17:41] <badboy> 18th I'm out
+[17:41] <badboy> unless I can get norwegians to rustbridge with me
+[17:41] <erickt> I think there's a meetup group up there
+[17:42] <erickt> but 3/25 also would work for me
+[17:42] <erickt> so how about we aim for that?
+[17:43] <erickt> ok, anyone have anything else?
+[17:43] <booyaa_> 3/25 works for me too
+[17:43] <badboy> the idea was to hack on rustbridge workshop material in a more or less coordinated way across the planet?
+[17:44] <erickt> with carols10cents back, we could shift back to talking with stephanbuys and https://github.com/production-rs/bikeshed
+[17:44] <carols10cents> so i love what stephanbuys is doing
+[17:44] <erickt> badboy: yeah, just get people to work together more on content and webpages
+[17:44] <carols10cents> and i think we should give him teh emails
+[17:45] <badboy> ok
+[17:45] <carols10cents> and that committee should manage how they work however they want
+[17:45] <jntrnr> I think I got the emails from the pr's
+[17:45] <carols10cents> and we should point people there
+[17:45] <erickt> carols10cents: we should sync with jntrnr as well
+[17:46] <erickt> I can't remember if we have any companies that haven't publicly said they're using rust
+[17:46] <carols10cents> what else did you want my input on?
+[17:46] <jntrnr> But there are a lot more now than when I did the survey
+[17:46] <erickt> ya
+[17:47] <jntrnr> I think we had 12(?) then. Now it's over 50
+[17:47] <carols10cents> i'd like to see what the committee comes up with and how the community responds to it before we integrate it officially
+[17:47] <carols10cents> keep it lightweight to start
+[17:47] <jntrnr> But sounds like community it +1 on this targeted survey?
+[17:47] <erickt> jntrnr: ya
+[17:48] <erickt> I'm even considering if we should just do a full survey again
+[17:48] <carols10cents> yeah i think it's a great way for production users to give back by talking about their experiences
+[17:48] <jntrnr> Roger that.
+[17:48] <erickt> I know aturon wanted to sync it up with the end of the year progress report
+[17:48] <carols10cents> full survey of anyone or full survey of production users?
+[17:48] <erickt> but it's been nearly a year for both our surveys
+[17:49] <jntrnr> Lol the last one was posted in November. Wasn't even that long ago
+[17:49] <erickt> and it'd be sad to wait nearly another year for the next survey results
+[17:49] <erickt> heh, was that the last company survey?
+[17:49] <jntrnr> Yeah
+[17:50] * erickt just wants a continual feed of info from our users
+[17:50] <jntrnr> https://internals.rust-lang.org/t/2016-rust-commercial-user-survey-results/4317
+[17:51] <carols10cents> erickt: that's called reddit
+[17:51] <erickt> well we should at least consider if there's any other questions we want to ask if we do another commercial survey, since I don't want to tire them out if we have another question we want to ask
+[17:52] <seppo0010> user population is not big enough to have a permanent survey system, using random samples every month, is it?
+[17:52] <Manishearth> I don't think major changes have happened since the last one
+[17:52] <Manishearth> stuff in the pipeline is futher down
+[17:52] <Manishearth> but nothing directly affecting prod users
+[17:53] * erickt makes a ticket to start queuing up questions for commercial users
+[17:54] <erickt> https://github.com/rust-community/team/issues/128
+[17:55] <erickt> please add more ideas to ^
+[17:55] <erickt> with that, I'm done! anyone else have anything?
+[17:56] <Manishearth> erickt: I did ping isis about tomorrow, no reply yet
+[17:56] <badboy> isis?
+[17:57] <erickt> Manishearth: thanks!
+[17:57] <erickt> badboy: https://github.com/isislovecruft/
+[17:57] <badboy> oh 
+[17:57] <erickt> Manishearth: any progress organizing the march meetup? ;)
+[17:58] <Manishearth> erickt: wait um
+[17:58] <Manishearth> erickt: haven't done anything yet. probably should.
+[17:59] <erickt> ya! :)
+[17:59] <erickt> then I don't have to
+[17:59] <Manishearth> erickt: you'll need to help me out on this one -- who do we want to speak?
+[18:00] <erickt> PS everyone else, I consider the meeting closed so feel free to take off!
+[18:00] <erickt> Manishearth: wonderful question.
+[18:00] <carols10cents> oh great now this room is on a watchlist
+[18:01] <erickt> Manishearth: rocket.rs would be wonderful
+[18:01] <erickt> I usually find speakers by seeing what's interesting in twir/reddit
+[18:01] <erickt> or bothering people I already know to see if they have anything interesting to speak about
+[18:02] <Manishearth> any local folks?
