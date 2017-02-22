@@ -1,0 +1,297 @@
+[16:00] <meetingbot> This week's agenda: https://github.com/rust-community/team/issues/129. The meeting is this Weds @ 5PM UTC. Last week's minutes https://github.com/rust-community/team/blob/master/meeting-minutes/2017-02-08.txt. bippity beep!
+[16:15] * erickt waves
+[16:15] <thejpster> hey
+[16:16] <booyaa> morning erickt 
+[16:22] <Manishearth> im at an (un) conference today at github, might not be able to make the meeting
+[16:22] <badboy> I will drop out after 30/45minutes
+[16:22] <Manishearth> were discussing maintainering and making foss accessible and stuff so if you have thoughts on that lmk
+[16:23] <erickt> Manishearth: thanks for organizing the meetup!
+[16:23] <erickt> <3
+[16:23] <Manishearth> :)
+[16:24] <erickt> btw, brson wanted to sync up with you at some point to show you how to do the whole room reservation and air mozilla coordination
+[16:24] <Manishearth> as i mentioned i may not be able to help out with tye next one
+[16:24] <Manishearth> bc taipeeeeeiii mmmm dumplings
+[16:24] <Manishearth> yeah he mentioned that hell email me instructions
+[16:26] <erickt> Manishearth: no worries! this is all just to make sure that we get our schedule regular when we get individually busy
+[16:50] <erickt> T-10 minutes!
+[16:50] <badboy>  /o\
+[16:50] * badboy pokes TS to finish on time
+[16:55] <erickt> you know what time it is? it's final countdown time! https://www.youtube.com/watch?v=9jK-NcRmVcw
+[16:56] <badboy> but.... mike taylor is still talking 
+[16:56] <erickt> \m/
+[16:56] <erickt> hold up your laptop with this blasting in the back of the room
+[16:56] <erickt> it'd be epic
+[16:56] <badboy> well, he's in another room, not sure if my holding the laptop would work :D
+[16:56] <badboy> I'm just on Air Mozilla 
+[16:57] <erickt> you just need to try harder
+[16:57] <edunham> good morning
+[16:57] <erickt> also grow out giant metal band hair
+[16:57] <badboy> someone could run to room MTV 257 Kashyyyk and do that?!
+[16:58] <erickt> morning!
+[16:58] <erickt> so epic
+[17:00] <erickt> it's 9am!!
+[17:00] <erickt> so says my clock
+[17:00] <erickt> hello everyone!
+[17:00] <badboy> hello erickt and everyone else
+[17:00] <erickt> I like that meetingbot lets me post the agenda: https://github.com/rust-community/team/issues/129
+[17:01] <badboy> it's not yet in the topic! :D
+[17:01] <badboy> mostly because I don't have op
+[17:01] <erickt> hehe
+[17:01] <badboy> ha!
+[17:01] <erickt> ok lets get started
+[17:01] <erickt> bstrie: you in?
+[17:01] <erickt> "A private place to register corporate contacts for participating in the annual commercial user survey"
+[17:02] <erickt> ^ seems like we can setup a mailbox for it
+[17:03] <erickt> like commercial-user-survey@rust-lang.org
+[17:03] <erickt> would that work?
+[17:03] <badboy> sounds like a plan
+[17:03] <erickt> done!
+[17:04] <erickt> next up
+[17:04] <erickt> thejpster: hello!
+[17:04] <thejpster> Hey
+[17:04] <erickt> so you're looking for help on workshop materials?
+[17:04] <thejpster> Indeed.
+[17:04] <thejpster> A little background, if that's OK.
+[17:05] <erickt> sure!
+[17:05] <edunham> erickt: [commercial-user-survey] google groups again, or hardcoded address list? I can do either
+[17:05] <erickt> edunham: I figured googlegroup would be simplest
+[17:05] <thejpster> I've worked with the Raspberry Pi community quite a lot in the past (my company and the Broadcom SoC go back a long way). At the last Cambridge Jam, I did this:
+[17:05] <thejpster> https://www.youtube.com/watch?v=6O4OCU45Djo
+[17:06] <thejpster> Now the Jams are fun, and they have maybe a hundred or so attendees. But once a year, they do the Pi Party.
+[17:06] <erickt> edunham: I was going to wait for bstrie to get in before making the mailing list in case there was other special considerations to think about
+[17:06] <johannh> quickly re the Rust Toulouse Email: I can send them stickers, it just got buried in my inbox :)
+[17:06] <thejpster> This is on (roughly) the anniversary of the launch of the Raspberry Pi. This year it's 4/5 March.
+[17:06] <thejpster> https://www.raspberrypi.org/events/big-birthday-weekend-2017/
+[17:06] <johannh> badboy: ^
+[17:06] <badboy> johannh: yeah, though I just add it to the agenda so it doesn't get lost
+[17:06] <thejpster> I thought I'd do my talk again, but in a larger venue to a bigger audience. But the talk slots were all taken, so they talked me in to a workshop.
+[17:07] <erickt> thejpster: I'm severely dissapointed it isn't on 3/14 every year
+[17:07] <erickt> and cool!
+[17:07] <thejpster> erickt: Fun fact - they launched on a leap day. Last year was technically their first birthday.
+[17:07] <erickt> hehe
+[17:08] <thejpster> Anyway, a talk slot opened up. So (and this is not confirmed until the materials are published, so keep it under your hats), I'm doing the (largely the same) talk on Rust on the Raspberry Pi at 
+[17:08] * thejpster checks the notes
+[17:08] <thejpster> 4pm until 4.20pm, then I've got a workshop for 12 people from 5pm to 5.45pm/
+[17:08] <erickt> cool!
+[17:09] <thejpster> The room will contain 12 Raspberry Pi terminals. Internet access may or may not be available. I mean, lets face it. If 12 people fire up rustup on shared WiFi at the same time, that's most of the workshop blown.
+[17:09] <badboy> pfff, deploy better wifi ;)
+[17:09] <badboy> (but yeah, I get the point)
+[17:10] <erickt> heh
+[17:10] <thejpster> They're expecting 230 in the lecture theatre, so it's going to be hammered.
+[17:10] <erickt> so we started building out workshop material in our bridge project: https://github.com/rust-community/rustbridge
+[17:10] <thejpster> Anyway, what can we do to put together a couple of sides of A4 walking people through getting started with Rust.
+[17:10] <thejpster> Ah, yes, I think this came up last week at Rust London.
+[17:11] <erickt> it's not completely put together, but we got some nice materials on introducing rust, installing rust, and some basic examples
+[17:11] <thejpster> Now, I (as am embedded engineer) was hoping to get people to do something physical with their Raspberry Pi. Traffic lights, that sort of thing.
+[17:11] <thejpster> But I think the terminals are plain Raspberry Pi ceed PiTops, and I don't think they have anything like that installed by default.
+[17:11] <erickt> we don't have any raspberry pi tutorials
+[17:12] <erickt> but we'd be thrilled to take any you write :)
+[17:12] <thejpster> I have some steps for getting started on a Pi: 
+[17:12] <thejpster> http://railwayelectronics.blogspot.co.uk/2016/10/raspberry-rust.html
+[17:12] <thejpster> http://railwayelectronics.blogspot.co.uk/2016/12/bug-in-rust-113-for-arm-and-how-to-work.html (yeah, that one hurt me)
+[17:13] <thejpster> and http://railwayelectronics.blogspot.co.uk/2016/12/target-practice.html
+[17:13] <thejpster> I'm short on time (see my unfinished PiWars entry) in the lead up, so what's the best approach for gathering help putting together and testing material ahead of the workshop.
+[17:14] <thejpster> Secondly, are there any specific formats or idioms that would aid re-use.
+[17:14] <erickt> Oh btw, have you synced with japaric and his xargo project?
+[17:14] <thejpster> Totally
+[17:14] <erickt> I'm not sure if that supports Raspberry Pi
+[17:14] <thejpster> See last week's Rust London talk on Xargo and the Stellaris Launchpad
+[17:14] <erickt> nice
+[17:14] <thejpster> It's a plain Linux device, so xargo isn't required
+[17:14] <erickt> carols10cents / skade: either of you around?
+[17:14] <erickt> ^ actually ran some workshops
+[17:15] <erickt> but I have to say if you've only got 45 minutes for a workshop, you need to be really efficient
+[17:15] <thejpster> Good point
+[17:15] <erickt> are people providing their own Pi machines, or is the conference providing them?
+[17:16] <thejpster> The Raspberry Pi Foundation are happy to perform any pre-workshop steps I send them on the 12 terminals.
+[17:16] <thejpster> They are provided.
+[17:16] <erickt> great! that'll save a bunch of time
+[17:16] <badboy> 45minutes is like nothing. you are probably better served having an a bit more hands-on talk
+[17:16] <badboy> ok, if you get things set up in advance that will be eaiser
+[17:16] <badboy> *easier
+[17:16] <thejpster> Hopefully it's enough to cargo new --bin foobar, add a dependency on some rust-gpio library and then make an LED blink.
+[17:16] <erickt> for reference, when I've been in the workshops steveklabnik ran, we took about 2 hours for it
+[17:17] <erickt> yeah you probably don't need to explain the borrow checker to get a light to blink
+[17:17] <thejpster> I just want people to leave thinking "Type safe programming isn't scary. I might try it."
+[17:18] <skade> erickt: will be in 15 minutes
+[17:18] <erickt> skade: no prob!
+[17:19] <erickt> thejpster: we can help review and you iterate on the materials
+[17:19] <thejpster> That would be really helpful.
+[17:19] <erickt> wasn't someone working on cargo templates?
+[17:19] <brson> cargo itself supports templates now
+[17:19] <erickt> hey brson!
+[17:19] <brson> yo
+[17:19] <erickt> ^ might be a great way to skip a bunch of teh setup
+[17:20] <badboy> brson: wait what?
+[17:20] <badboy> brson: got a link?
+[17:20] <thejpster> This? http://doc.crates.io/guide.html#templates
+[17:20] <badboy> awesome
+[17:20] <thejpster> Especially if I could vendor in the dependencies to avoid any network issues.
+[17:20] <brson> probably, and https://github.com/rust-lang/cargo/pull/3004
+[17:21] <thejpster> To save me scrolling through, is that in stable?
+[17:22] <badboy> nope, need cargo from nightly it seems
+[17:22] <erickt> thejpster: you wouldn't need to vendor, you could just have everything cached locally
+[17:23] <thejpster> Ooh, yes, that would work.
+[17:23] <thejpster> So the pre-workshop steps are 1) rustup, 2) download template, 3) clone template, 4) build, 5) delete clone
+[17:24] <erickt> thejpster: I wouldn't delete the working template
+[17:24] <erickt> you could leave it there in case peopel get lost
+[17:24] <erickt> and want a reference
+[17:24] <thejpster> good idea
+[17:24] <mbrubeck> thejpster: `cargo fetch` should also work for step 4
+[17:24] <thejpster> Maybe that would have a full solution in it.
+[17:25] <thejpster> mbrubeck: You learn something new every day.
+[17:25] <erickt> have you started putting together the presentation material?
+[17:26] <thejpster> I was going to lean heavily on the presentation I used last time.
+[17:26] <thejpster> But make the font bigger ;)
+[17:26] <erickt> :)
+[17:26] <thejpster> https://thejpster.org.uk/slideshows/raspberry_rust.html
+[17:26] <thejpster> And maybe change the style. It looks better than neon on a monitor, but it was practically invisible last week.
+[17:28] <thejpster> So, when I've got some beta stuff together, how's best to reach people who can help review it?
+[17:28] <erickt> you can always hop on here, we can help review materials
+[17:28] <badboy> open an issue and poke people until you get feedback
+[17:28] <erickt> there's usually some folks around
+[17:28] <erickt> I don't have any experience with Pi though
+[17:29] <thejpster> There'll actually be very little Pi specific in it. Just the crate which abstracts the GPIO pins.
+[17:29] <erickt> cool
+[17:29] <erickt> anything else we can help with now?
+[17:29] <thejpster> That'll do for now. That's been very helpful. Thanks everyone!
+[17:30] <erickt> ok next up!
+[17:30] * skade wants to teach you a german word: "matsche" - the state of having given a workshop in rust for three days
+[17:30] <thejpster> ;)
+[17:30] <skade> (germany now has people with a workshop certificate in rust)
+[17:30] <badboy> skade: \o/ I hope it went well
+[17:30] <erickt> nice!
+[17:30] <skade> surprisingly good, it needs fixed here and there, but the approach works
+[17:31] <skade> all stuff (in german) can be found here: http://github.com/skade/rust-three-days-course
+[17:31] <erickt> ok so underhanded, I've started writing up an announcement on the extension, but the big thing I think we need is an overhanded example to help kickstart some helpful material
+[17:32] <thejpster> I'll be honest, I thought about entering, but it seemed really hard!
+[17:32] <erickt> I hacked up something in iron, but it's a little painful: https://github.com/erickt/overhanded-quadrilateral
+[17:33] <erickt> thejpster: how about some good old fashioned SQL injection?
+[17:33] <erickt> use a raw sql library :)
+[17:34] <erickt> I've started playing around with rocket.rs and it's already a bit nicer of an experience
+[17:34] <erickt> so I was gonna iterate on that
+[17:34] <erickt> but unfortunately it depends on rust nightly
+[17:35] <erickt> I'm also thinking of including a mini survey
+[17:35] <erickt> but I'm looking for questions. One big one is "did you start a submission and give up?"
+[17:36] <erickt> anyone have other ideas what we could ask?
+[17:37] <erickt> or anyone else have any better ideas what we should be doing with the extension announcement?
+[17:38] <erickt> I've heard from a few people stories like thejpster_afk just now about them finding it too hard
+[17:38] <erickt> we also need to have some measure that if we only get a few submissions
+[17:38] <skade> hm, there's a little bit of a problem
+[17:39] <erickt> we need to know if that's just because rust is so good at resisting underhandedness
+[17:39] <skade> if people find it "too hard" isn't that hind of a good think?
+[17:39] <erickt> or if people didn't try
+[17:39] <badboy> ok, gotta go now!
+[17:39] <badboy> bye
+[17:39] * erickt waves
+[17:39] <erickt> skade: yeah
+[17:40] <skade> maybe, along with the extension, ask people to send us a note if they tried and couldn't solve it
+[17:41] <erickt> skade: yeah
+[17:41] <erickt> we could also spell out some avenues that we think are exploit opportunities
+[17:41] <bstrie_late> ok I'm here for real this time!
+[17:41] <bstrie_late> did I miss the whole meeting? :P
+[17:41] <erickt> like sql injections or find some recent vulnerabilities we could exploit
+[17:41] <erickt> bstrie_late: hello!
+[17:42] <thejpster> I just thought "This would be a damned sight easier in a language with undefined behaviour"
+[17:42] <bstrie_late> did you already discuss my agenda item without me?
+[17:42] <erickt> you're so late rust is passe. we're onto the next hot new language, lisp
+[17:42] <erickt> thejpster: that's the idea :)
+[17:43] <bstrie_late> erickt: one day the cycle will come around and rust will be cool again, this is how fashion works! until then, I endure!
+[17:43] <erickt> bstrie_late: we did, we thought a mailing list like commerial-users-survey@rust-lang.org could work for this
+[17:44] <erickt> we then include that for an announcement
+[17:44] <erickt> with a promise that we will keep any companies submitted through it private
+[17:45] <erickt> bstrie_late: does that cover your request?
+[17:45] <bstrie_late> erickt: ok, that could work, but it seems like it wouldn't be too hard for companies to fall through the cracks... are we just going to have someone manually trawl through and collect email addresses when the time for the survey comes? and do this every year?
+[17:46] <bstrie_late> erickt: I also think that at some point it's worth having a discussion on the exact form that the survey will take, but maybe that's too much for this week
+[17:46] <erickt> bstrie_late: a more efficient approach then could be to do a google survey thing to collect emails from commercial users
+[17:46] <bstrie_late> erickt: that could be better, yeah
+[17:47] <erickt> that we just leave open for a few weeks
+[17:47] <bstrie_late> erickt: why not leave it open indefinitely?
+[17:47] <erickt> I was thinking of avoiding spam :)
+[17:47] <bstrie_late> erickt: my use case is that at any point during the year I might find people who want to be included in the survey, and I need to register their info somewhere
+[17:47] <bstrie_late> erickt: do google surveys receive spam? I don't expect them to be on the radar for commercial spammers
+[17:48] <erickt> bstrie_late: we can have a separate list for that that we keep up to date
+[17:48] <bstrie_late> erickt: right, but where is that list. is it just a google doc spreadsheet?
+[17:48] <erickt> I think the core team already has a list like that
+[17:48] <bstrie_late> erickt: I asked brson who had the original spreadsheet, he said to contact jntrnr to see if he has anything comparable for modern use
+[17:48] <erickt> I'll bring this up at our meeting about how we should all be collaborating on this
+[17:49] <erickt> ah, we should then just build an official one then
+[17:50] <brson> if somebody wants to continue mantaining a prod users list i can give them my old list
+[17:50] <bstrie_late> ordinarily I would just shove all this stuff into a place on the issue tracker, but we don't have access to private issue trackers
+[17:50] <bstrie_late> wait, can we make github wikis private? that would suffice quite well
+[17:50] <erickt> yeah. We do have an official "private community team" google drive folder
+[17:50] <erickt> we can drop the contact list there
+[17:50] <bstrie_late> I just don't want to add yet another thing that we have to officially keep track of
+[17:50] <bstrie_late> as in, another medium
+[17:51] <bstrie_late> more logins add more bureaucracy
+[17:52] <bstrie_late> brson: I'm happy to maintain it, though I would ideally like it to exist somewhere where we can both distribute write access while ensuring strong control over read access
+[17:52] <bstrie_late> for privacy purposes
+[17:52] <bstrie_late> don't want to piss off the production users, no no
+[17:52] <erickt> bstrie_late: this google drive thing would let us do access control
+[17:52] <erickt> we used it for the community survey raw results
+[17:52] <erickt> so it's not really anything new
+[17:53] <bstrie_late> just a google doc spreadsheet, then? does google docs let you give someone write access *without* also giving that person invite-to-read access?
+[17:53] <erickt> hmm
+[17:54] <bstrie_late> I mean, I am willing to volunteer to maintain this list and maybe only share access with erickt for redundancy
+[17:54] <erickt> bstrie_late: yeah you can lock it down
+[17:54] <jntrnr> +1 on putting it in private google drive
+[17:54] <bstrie_late> ok cool
+[17:54] <erickt> so people can be editors, but not share
+[17:54] <bstrie_late> great, glad to hear it
+[17:54] <bstrie_late> that sounds like a good solution
+[17:56] <erickt> now what was the name of that spreadsheet...
+[17:56] <erickt> ah found it
+[17:56] <erickt> brson: you made this list, I assume you don't have any reservations about making it community team private?
+[17:57] <erickt> I'll check with the core team too
+[17:57] <erickt> oh I guess we're nearly out of time
+[17:58] <erickt> last things quickly
+[17:58] <erickt> brson: any word on the workshop-a-thon room reservation on 3/25?
+[17:58] <erickt> and badboy and skade: you mentioned "Mail Rust Event Toulouse, France"?
+[17:59] <skade> what is the workship-a-thon and what email?
+[18:01] * badboy drops back in
+[18:01] <erickt> skade: oh, I thought you mentioned something about https://github.com/rust-community/team/issues/129#issuecomment-280071467
+[18:01] <badboy> there was a mail on the 10th, someone is doing a rust event in france, asked for swag
+[18:01] <erickt> badboy: hey! this Toulose thing, what's up
+[18:01] <badboy> johannh said he will follow up with them
+[18:01] <skade> ah, I like france, so we can send them swag
+[18:01] <erickt> skade: on workshop thing, we're putting together another get together on a saturday and work on RustBridge materials
+[18:01] * thejpster perks up
+[18:01] <thejpster> Swag you say?
+[18:02] <skade> the question is: do they also want people attending? there's no metntion of that in the mail
+[18:02] <badboy> (oh, that's only in september, it's not even that urgent then)
+[18:02] <erickt> edunham: aren't you the swag-master?
+[18:02] <erickt> badboy: oh ok
+[18:03] <erickt> skade: so on workshops, booyaa and I think badboy expressed interest in also holding RustBridge-ish workshops on the same weekend
+[18:03] <erickt> in the local meetup groups
+[18:03] <skade> well, that would be interesting
+[18:03] <skade> i've also got that course I gave today :D
+[18:03] <erickt> wonderful!
+[18:04] <erickt> we need to build out the website, and figure out what the next steps are
+[18:04] * badboy is gone again
+[18:05] <booyaa1> Yup
+[18:05] <brson> oh i made these last week http://imgur.com/a/DYIr4
+[18:06] <brson> i also have a shipment of stickers in
+[18:06] <skade> which website?
+[18:06] <erickt> so anyway, once I get that date locked in, I want to contact the other meetup organizers to see if they want to organize something
+[18:06] <skade> ah, rustbridge
+[18:06] <skade> well, the workshop was for people with programming experience, but no rust
+[18:06] <skade> interesting, a solar power company, interested in putting that on their embedded devices
+[18:07] <skade> sorry, still "matsch"
+[18:07] <erickt> nifty!
+[18:08] <erickt> well I ought to be getting to work
+[18:08] <erickt> so I call this meeting adjourned! but you can all stick around of course
+[18:09] <thejpster> I need to get home (it's 1809 GMT). Thanks everyone.
+[18:09] <skade> \o/
+[18:09] <edunham> erickt: haha sort of, what do you need?
+[18:09] <bstrie_late> brson: ha! you remade bors' avatar :P
+[18:10] <brson> bstrie_late: https://github.com/brson/bors.svg
+[18:10] <bstrie_late> brson: speaking of, I originally made bors' avatar a million years ago but it had to be super low-res to look good with the scaling that github was applying back then, maybe things have improved since then and we can give him an avatar that looks good at high res as well...
+[18:12] <bstrie_late> like, really, this is just silly: https://github.com/bors
+[18:13] <bstrie_late> I love that bors has 55 followers...
+[18:23] <brson> yeah it would be good to update
+[18:24] <brson> i think only alex has his github password, and i don't recall how to set up the gravatar offhand
+[18:26] <erickt> bstrie_late: I added a "Commercial Rust Users Contact List" to the shared folder
+[18:26] <Aaronepower> bstrie_late I like that it is essentially a doom sprite. :p
+[18:26] <erickt> it's empty at the moment until I sync with the core team
+[18:26] <erickt> but feel free to start dropping any info into it
+[18:26] <skade> which reminds me that I wanted to write the little book of "who owns which account"
