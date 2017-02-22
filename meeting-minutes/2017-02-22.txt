@@ -1,0 +1,188 @@
+[17:00] <   meetingbot> This week's agenda: https://github.com/rust-community/team/issues/131. The meeting is this Weds @ 5PM UTC. No minutes found for last week. :( bippity beep!
+[17:00] <       badboy> thank you meetingbot
+[17:02] <         hjr3> hi all. i have missed a ton of these, but trying to get back in the habit of attending again
+[17:02] <       badboy> hjr3: \o/
+[17:21] <@      erickt> badboy / booyaa ya thanks for covering!
+[17:21] <@      erickt> I need to help with some training at work
+[17:21] <@      erickt> Heya hjr3 !
+[17:22] <         hjr3> hi erickt ! hope things are well
+[17:23] <       badboy> erickt: I hope it's rust training!
+[17:23] <@      erickt> Sadly no ;_;
+[17:24] <       badboy> damn
+[17:24] <       badboy> just sneek in some rust
+[17:46] <@      erickt> I'm tryin
+[17:46] <@      erickt> I'm getting a few steps closer to hooking one team
+[17:46] <       badboy> :)
+[17:55] <       badboy> it is that time of the week again! https://www.youtube.com/watch?v=9jK-NcRmVcw
+[17:55] <-!- You're now known as vice-erickt
+[17:56] <      edunham> good morning
+[17:57] <  vice-erickt> hello erickt
+[17:57] <  vice-erickt> oops.
+[17:57] <  vice-erickt> hello edunham
+[17:57] <     frewsxcv> hi
+[17:57] <@       brson> hi
+[17:57] <         hjr3> hi
+[17:59] <       booyaa> o/
+[17:59] <       booyaa> i will be one of those annoying people walking down the street whilst looking at their phone (traveling to train station)
+[17:59] <  vice-erickt> booyaa: please don't run into things
+[18:00] <  vice-erickt> Hello and Welcome to the community team meeting! I am your host today, formely known as badboy. Our today's agenda is here: https://github.com/rust-community/team/issues/131
+[18:00] <  vice-erickt> The real erickt is doing some non-Rust-y things and somehow I was the first to mention it, so now I am responsible.
+[18:01] <  vice-erickt> I assume those that said hi previously are now here, so let's start with the first thing
+[18:01] <@ Manishearth> o/
+[18:01] <  vice-erickt> > Invite-only (or hidden) category for tech speakers on URLO
+[18:01] <  vice-erickt> hey Manishearth
+[18:01] <  vice-erickt> (https://github.com/rust-community/team/issues/130)
+[18:02] <  vice-erickt> the idea is to have a semi-public category on URLO for those preparing proposals for RustFest (and maybe soon other confs)
+[18:02] <@ Manishearth> wfm
+[18:03] <      edunham> sgtm, many confs offer some form of not-publicly-recorded mentorship ir office hours for speakers
+[18:03] <         hjr3> ya i think this is a great idea too
+[18:03] <         hjr3> are there any downsides?
+[18:03] <  vice-erickt> cool.
+[18:03] <      edunham> there's the temptation tk disseminate public info in private channels, as always
+[18:03] <  vice-erickt> well, we basically need _some_ rules on who exactly gets in as skade mentioned in that issue
+[18:04] <      edunham> but i think it's a small risk/drawback
+[18:04] <  vice-erickt> yep
+[18:04] <      edunham> imo if anyone interested in speaking can join, it oughtn't offend anyone sensible
+[18:04] <  vice-erickt> yup
+[18:05] <  vice-erickt> who has the needed admin rights to do so on urlo?
+[18:05] <      edunham> definitely brson; probably anyone on mod team?
+[18:06] <      edunham> vice-erickt: do we want one "speakers room", or one for all prospective speakers + 1 per conf?
+[18:07] <      edunham> (for accepted speakers & logistics, or whatever)
+[18:07] <@ Manishearth> I think I do
+[18:07] <  vice-erickt> as I understood it we want a (hidden) category where potential speakers are able to open topics to discuss their proposal ideas before sending them in
+[18:08] <  vice-erickt> I don't think urlo would be the place for accepted speakers
+[18:08] <      edunham> ok so like a conf proposal workshop space
+[18:08] <  vice-erickt> yes
+[18:09] <  vice-erickt> now, re-reading the issue it seems also to be used for our speaker/mentor matching we had/want to do again, so even after accepting it would be used for improving the talk
+[18:09] <      edunham> I'd prefer to call it "proposal workshop" or something rather than "speakers space" type name, as less-confident new submitters might select out if it sounds like you have to already know what you're doing to join :)
+[18:09] <@ Manishearth> okay, I have admin, but can't create categories
+[18:11] <  vice-erickt> ok, I guess we can figure out the how after that
+[18:11] <  vice-erickt> edunham: indeed, that sounds good
+[18:11] <  vice-erickt> So I conclude we approve this request and wait for skade to fill in the exact details?
+[18:11] <      edunham> even just "future speakers" :)
+[18:11] <      edunham> +1
+[18:11] <  vice-erickt> noted.
+[18:12] <@ Manishearth> yeah
+[18:12] <  vice-erickt> Then let's move on. I'd like to move sebasmagri to the front if he's around?
+[18:14] <  vice-erickt> ok, then we get back to it afterwards.
+[18:14] <  vice-erickt> > Ways for non-coders to help out Rust. This was a question in the Tech speakers Telegram, maybe someone will join for that.
+[18:14] <  vice-erickt> and from flaki: I got asked if rust had any "zero-knowledge" onboarding style self-learning tools, like freecodecamp. If you know any, please share :)
+[18:16] <  vice-erickt> regarding the second thing, IMO that "just" needs work. Maybe we get rustbridge things to a point where they are good enough for self-learning as well
+[18:16] <      edunham> ways to help: proof/edit/translate docs, organize a meetup, make and share art
+[18:17] <  vice-erickt> we still don't have that "start a meetup" guide, right? hm
+[18:17] <      edunham> find a rust tool for which you're in the target audience, try to use it, offer feedback
+[18:17] <  vice-erickt> that's a good one!
+[18:17] <      edunham> vice-erickt: where is that supposed to live when finished?
+[18:18] <      edunham> (the guide)
+[18:18] <  vice-erickt> https://github.com/rust-community/team/issues/4
+[18:18] <  vice-erickt> at best in our resources
+[18:19] <      edunham> oh ok
+[18:19] <      edunham> oh omg artists can make project/group logos
+[18:20] <@ Manishearth> yeah
+[18:20] <  vice-erickt> *cough* http://rust.cologne/logo.png
+[18:20] <         hjr3> nice
+[18:20] <      edunham> vice-erickt: i see nothing wrong with that, which might just prove your point
+[18:20] <         hjr3> are there existing rust bridge docs or any docs on the zero knowledge stuff?
+[18:21] <  vice-erickt> edunham: nah, just wanted to show off
+[18:21] <  vice-erickt> i do think those ideas are good ones. we should just make sure we have them noted
+[18:22] <      edunham> hjr3: iirc there's a github org for rustbridge, not sure what they've published yet
+[18:22] <  vice-erickt> we have https://github.com/rust-community/rustbridge
+[18:22] <         hjr3> ah right. thank
+[18:22] <      edunham> oh we should also make a users thread to solicit non-code involvement ideas
+[18:22] <  vice-erickt> not much happened in the last months, but people were interested in getting up to speed again
+[18:23] <  vice-erickt> edunham: yes. would you take care of that?
+[18:23] <      edunham> sure!
+[18:24] <  vice-erickt> thank you
+[18:24] <@ Manishearth> +1
+[18:24] <  vice-erickt> so one other TechSpeaker just mentioned he wants to try to write a Rust Introduction for self-learning as well
+[18:26] <  vice-erickt> I encouraged him and offered feedback
+[18:26] <      edunham> (oh and the agenda mentions in passing that they want someone to join a telegram group; do we have info on that?)
+[18:26] <  vice-erickt> as I also have a workshop upcoming, I'm sure we will get good material in the next months
+[18:27] <  vice-erickt> edunham: oh, it was asked in the TS telegram group (or on last night's call)
+[18:27] <  vice-erickt> I already asked and I am in contact with Elio
+[18:28] <  vice-erickt> (Josh Matthews gave a rust/servo briefing last night, I sadly missed it but will rewatch it to see if they had more questions we should be aware of)
+[18:29] <  vice-erickt> anything else on non-tech involvement or more learning material?
+[18:33] <  vice-erickt> I guess not.
+[18:33] <  vice-erickt> in that case: Manishearth, fuzz!
+[18:33] <    thejpster> Sorry I'm late.
+[18:33]  * sebasmagri back, sorry
+[18:33] <  vice-erickt> thejpster: heho!
+[18:33] <          jdm> the questions were at https://public.etherpad-mozilla.org/p/josh-matthews-questions
+[18:34] <  vice-erickt> sebasmagri: no problem
+[18:34] <  vice-erickt> jdm: thanks!
+[18:35] <@ Manishearth> vice-erickt: So yeah, basically
+[18:35] <@ Manishearth> https://github.com/rust-fuzz/cargo-fuzz exists now
+[18:35] <@ Manishearth> is super easy to use
+[18:35] <  vice-erickt> it is!
+[18:35] <      edunham> https://users.rust-lang.org/t/how-can-non-coders-help-your-rust-project/9598 for the record
+[18:35] <@ Manishearth> and the community should FUZZ ALL THE THINGS
+[18:35] <  vice-erickt> edunham: thanks
+[18:35] <      edunham> Manishearth++
+[18:35] <@ Manishearth> it sorta ties in to the underhandedrs stuff
+[18:36] <         hjr3> awesome
+[18:37] <@ Manishearth> might be fun to promote fuzzing more, though I'd probably wait for cargo-fuzz to settle down
+[18:38] <@ Manishearth> Also, I and some security folks might be hacking on an implementation of https://theupdateframework.github.io/ to make rustup secure, lmk if you want to help
+[18:38] <  vice-erickt> o/ (if only I had time)
+[18:38] <  vice-erickt> Manishearth: what do you have in mind regarding promoting it?
+[18:39] <@ Manishearth> vice-erickt: noooo idea
+[18:40] <  vice-erickt> :D
+[18:41] <  vice-erickt> if only it would find a bug in my libraries I could blog about…
+[18:42]  *    edunham imagines a Crater run of fuzzing the world
+[18:42] <@ Manishearth> sadly you need to write fuzzers manually
+[18:43] <  vice-erickt> can't meetingbot do that? it does everything already anyway
+[18:43] <     frewsxcv> Not unless you found all constructors that take &[u8] and &str
+[18:43] <@ Manishearth> Google's oss-fuzz accepts projects which they then fuzz on sweet sweet google hardware
+[18:43] <     frewsxcv> And automatically fuzz those
+[18:43] <@ Manishearth> well yeah
+[18:43] <     frewsxcv> Or anything that implements FromStr
+[18:45] <@ Manishearth> yeah
+[18:49] <  vice-erickt> ok
+[18:50] <  vice-erickt> I guess we just encourage people who use it to write about it and post it at the usual places
+[18:50] <@ Manishearth> yeah
+[18:50] <  vice-erickt> if nothing else on that topic, it would be sebasmagri's turn now.
+[18:51] <@ Manishearth> yep
+[18:52] <@ Manishearth> is he here?
+[18:52] <  vice-erickt> he was a few minutes aago
+[18:52] <  vice-erickt> sebasmagri: ping
+[18:53] <    thejpster> If it's not too late, can I add something to the agenda?
+[18:53] <  vice-erickt> thejpster: please do so
+[18:54] <    thejpster> vice-erickt: Added to the issue
+[18:54] <   sebasmagri> sorry, I'm on several things at the same time...
+[18:54] <      edunham> https://github.com/thejpster/pi-workshop-rs
+[18:54] <      edunham> reviews of ^^ requested by friday
+[18:54] <  vice-erickt> thejpster: ah! yeah. I'll do it tonight (after the next meeting…)
+[18:55] <    thejpster> I have to sent it to the Raspberry Pi foundation by then for printing, and then it's too late to spot mistakes.
+[18:55] <   sebasmagri> Just wanted to post a quick update on the multilang discourse approach. The `discourse native` way to do it would be with categories and sub categories, this would require to change the setup to display categories instead of topics by default
+[18:55] <    thejpster> Comments on the associated https://github.com/thejpster/sensehat-rs very much welcome. And chasing the author of https://github.com/jocull/rust-measurements would be cool too because I have an outstanding PR.
+[18:56] <  vice-erickt> thejpster: alright. expect my feedback my tomorrow morning
+[18:57] <    thejpster> Amazing. Thanks to you and anyone who has a chance to chip in.
+[18:57] <  vice-erickt> sebasmagri: hm, that would mean Category = Language, Subcategory = as like now?
+[18:58] <   sebasmagri> We could keep the same current categories but add new lang specific categories
+[18:58] <   sebasmagri> those categories could have sub-categories for specific topic group
+[18:58] <   sebasmagri> those categories could have sub-categories for specific topic groups
+[18:59] <  vice-erickt> I see
+[19:00] <  vice-erickt> thanks for informing us, sebasmagri
+[19:01] <  vice-erickt> we should move that discussion over to the issue again
+[19:01] <  vice-erickt> on whether that would be a suitable approach
+[19:01] <   sebasmagri> will update it later today
+[19:01] <  vice-erickt> thank you!
+[19:02] <  vice-erickt> so, we've come to an end, nearly on time.
+[19:02] <  vice-erickt> thanks all for attending!
+[19:02] <       booyaa> *applause*
+[19:02] <  vice-erickt> I hope I was a good enough vice-erickt
+[19:02] -!- You're now known as badboy
+[19:02] <       booyaa> 14/10
+[19:02] <       badboy> <3
+[19:06] <       badboy> thejpster: did you try reaching jocull via email?
+[19:08] <    thejpster> No, I just sent a PR. Where would I get his e-mail?
+[19:08] <       badboy> it's on his github profile
+[19:09] <       badboy> we do have https://github.com/rust-unofficial/ which might be able to host that crate if it is useful
+[19:10] <       badboy> (I didn't check that it matches criteria, but given that we do not have a lot there I don't think the bar would be too high)
+[19:10] <    thejpster> I can't put sensehat-rs on crates.io while it puts at my Git fork, is the issue.
+[19:10] <    thejpster> s/puts/points
+[19:10] <       badboy> yep
+[19:11] <       badboy> maybe just try to reach him via mail and see if he wants to hand out co- (or full) maintainership
+[19:11] <       badboy> if not, fork & rename :)
+[19:13] <       booyaa> when did the new download graph drop in crates.io? very nice
+[19:13] <    thejpster> Right, gotta run. Thanks everyone!
+[19:13]  *  thejpster waves
