@@ -1,31 +1,456 @@
-[18:00] <erickt> I think it's mainly posted to by steveklabnik and aturon
-[18:00] <steveklabnik> yes, at the moment anyway
-[18:00] <steveklabnik> sometimes we have other posts
-[18:00] <skade> okay, I got someone interested in a guest post
-[18:00] <skade> I'll put you in touch?
-[18:00] <erickt> when steveklabnik isn't working on the book
-[18:00] <aturon> syndication would be great
-[18:01] <aturon> we've wanted "planet rust" for a long time
-[18:01] <skade> yeah, that would also be interesting
-[18:01] <skade> but as always, you can't choose where people are :)
-[18:01] <erickt> skade: I don't think core has really thought much about guest posts. current process tries to post just about big things
-[18:02] <skade> a planet rust would also be a great thing you could syndicate if it had an RSS feed itself
-[18:02] <skade> okay, then, i'd need to find another venue for them...
-[18:02] <skade> (Rust India, the people with the 450 people conf session on Rust)
-[18:02] <erickt> like releases or major new projects. I think we could be argued towards guest posting for other major projects
-[18:03] <erickt> we could setup planet.community.rs in our infinite free time :)
-[18:03] <skade> okay, let's discuss that at another point
-[18:03] <skade> (I'm still working on the community server...)
-[18:03] <skade> in any case... food :)
-[18:03] <erickt> or blog.community.rs
-[18:03] <erickt> ok!
-[18:03] <skade> blog.community.rs sounds interesting
-[18:03] <erickt> oh and we're past our hour
-[18:04] <erickt> anyone else have anything they want to talk about?
-[18:04] <booyaa[> any mozillians around? i need a rust friendly contact for the #london office i'd like to use their facilties for a meetup
-[18:04] <booyaa[> i've lost touch with them since they moved
-[18:04] <erickt> Manishearth / edunham / steveklabnik / aturon: ^?
-[18:05] <steveklabnik> no idea who's at london
-[18:05] <Manishearth> booyaa[: jgraham maybe?
-[18:05] <booyaa[> Manishearth: ty!
-[18:06] <erickt> skade: https://github.com/rust-community/team/issues/154 for blog.community.rs
+•erickt> Erick Tryzelaar helllooo everyone!
+10:00 AM happy meeting day!
+10:00 AM https://github.com/rust-community/team/issues/149 is our agenda today
+10:00 AM 
+<jntrnr> o/
+10:00 AM 
+<•erickt> Erick Tryzelaar who is here that's not badboy?
+10:00 AM 
+<•skade> I'm badboy
+10:01 AM 
+<•erickt> Erick Tryzelaar hello badskadeboy!
+10:01 AM anyone else in?
+10:01 AM there were so many people just a few minutes ago
+10:01 AM 
+<sebasmagri> I'm here, without moral prejudice
+10:01 AM 
+<•erickt> Erick Tryzelaar hello sebasmagri!
+10:02 AM 
+<carols10cents> i am here!
+10:02 AM 
+<•skade> https://www.youtube.com/watch?v=4SYc_flMnMQ
+10:02 AM 
+<•Manishearth> sup nerds
+10:02 AM 
+<•erickt> Erick Tryzelaar hehe
+10:02 AM ok so first agenda item
+10:03 AM it's nearly rust birthday time!
+10:03 AM 5/15
+10:03 AM 
+<•Manishearth> oooo
+10:03 AM party
+10:03 AM 
+<•erickt> Erick Tryzelaar we should party
+10:03 AM I have a meetup timed for 5/4
+10:04 AM but I can check if we can push it back to, oh, 5/11 or 5/18
+10:04 AM anyone else interested in partying around then?
+10:04 AM 
+<•skade> It's a monday, is it?
+10:04 AM 
+<•erickt> Erick Tryzelaar yeah
+10:04 AM 
+<•skade> :/
+10:04 AM 
+<•erickt> Erick Tryzelaar I'm not sure if monday is a great meetup day
+10:04 AM 
+<•Manishearth> we can celebrate early
+10:04 AM 
+<bstrie> looks like boston rust doesn't have a meetup scheduled, I'll ask nmatsakis 
+10:05 AM 
+<•skade> for us, the 10th is the nearest meetup, but we could also throw a talk meetup on the day
+10:05 AM 
+<carols10cents> when it's time to party, we will always party hard
+10:06 AM 
+<•erickt> Erick Tryzelaar cuz that's what rust is known for. wild parties
+10:06 AM 
+<•skade> hm, don't let rustaceans dance, they're not as dynamic
+10:06 AM dancing with the compiler
+10:06 AM 
+<edunham> cupcakes and arguments about the borrow checker? partying doesn't get much harder than that
+10:06 AM 
+<•skade> jokes aside, we should put a call out on the blog and on URLO
+10:06 AM 
+<sebasmagri> Hahahah
+10:07 AM 
+<•erickt> Erick Tryzelaar yep!
+10:07 AM we can send out a mail on our organizer mailing list too
+10:07 AM 
+<•skade> do we have any swag for hat?
+10:07 AM achievement stickers?
+10:07 AM 
+<•erickt> Erick Tryzelaar edunham: hows our sticker supply doing?
+10:08 AM 
+<edunham> erickt: I do not have a backlog of stickers on hand right now, but if we pick designs I can almost certainly get them printed and distributed by the birthday
+10:08 AM ⇐ tglman2 quit (tglman@moz-kd2a1c.ip205.fastwebnet.it) Ping timeout: 121 seconds
+10:08 AM 
+<bstrie> I added a comment about rust swag to the agenda list, inspired by the community email from today
+10:08 AM 
+<edunham> (by 'pick designs' i mostly mean agree on a general idea of what they ought to be)
+10:08 AM 
+<•Manishearth> branding: #[derive(Rust)]
+10:09 AM 
+<•erickt> Erick Tryzelaar ooh
+10:09 AM edunham: we could organize a sticker design-a-thon 
+10:10 AM 
+<edunham> erickt: we'd have like a week to complete the whole thing if we wanted to definitely have stickers at meetups by birthday, though
+10:10 AM 
+<•erickt> Erick Tryzelaar the design-a-thon would have to come later
+10:10 AM 
+<edunham> ok :)
+10:11 AM but yeah, in general, that's an excellent idea :)
+10:12 AM 
+<•erickt> Erick Tryzelaar edunham: https://github.com/rust-community/team/issues/150
+10:12 AM 
+<•skade> rustfest kiyv has nice stickers, but they are obvs rustfest style
+10:13 AM okay, so the tasks out of this are: blog announcement, swag dispensing, URLO announcement?
+10:13 AM ⇐ dowwie quit (quassel@moz-1b4905.cust.tzulo.com) Ping timeout: 121 seconds
+10:13 AM 
+<•erickt> Erick Tryzelaar who designed our stickers? if we only have a week, maybe we should just use one of the old designs and ship them out everywhere
+10:13 AM → dowwie joined (quassel@moz-1b4905.cust.tzulo.com)
+10:14 AM 
+<edunham> erickt: which "our stickers" are you asking about?
+10:14 AM most of the recent Ferris stickers are just me kicking around the SVG in Inkscape then sending it off to stickermule
+10:15 AM 
+<•erickt> Erick Tryzelaar skade: yeah. 
+10:15 AM ⇐ srwalker101 quit (srwalker101@moz-bds.a5k.1.94.IP) Quit: Leaving...
+10:15 AM 
+<•erickt> Erick Tryzelaar I filed https://github.com/rust-community/team/issues/151 to track birthday party organization
+10:15 AM 
+<edunham> I wonder if rustbridge has branding, and if so, whether this would be a good time to send out stickers with it
+10:15 AM 
+<•skade> not really, we're lacking a designer after sandra kind of dropped out
+10:15 AM 
+<•erickt> Erick Tryzelaar edunham: I don't think we have branding
+10:16 AM edunham / skade: oh someone did make https://community.rs/rustbridge-page/
+10:16 AM 
+<•skade> yes, that was sandra
+10:16 AM 
+<•erickt> Erick Tryzelaar we could sticker that up
+10:17 AM 
+<•skade> sonja, damn, sorry :(
+10:18 AM sure
+10:18 AM so, rustbridge, how was the bridge-a-thon
+10:18 AM ?
+10:18 AM 
+<•Manishearth> pretty good
+10:18 AM 
+<•erickt> Erick Tryzelaar edunham: oh good we got an svg: https://github.com/rust-community/rustbridge-page/blob/master/img/rust-bridge-logo.svg
+10:18 AM skade:  before we move off of the birthday
+10:18 AM 
+<•Manishearth> not mant folsk, but stuff got dome, and lots of good feedback from newcomers
+10:18 AM 
+<•erickt> Erick Tryzelaar is there anything else we need to start organizing?
+10:19 AM 
+<edunham> if somebody tells me how many stickers to send where ASAP, I can make that happen
+10:19 AM 
+<•erickt> Erick Tryzelaar edunham: I'll add in the email to contact you directly if they want stickers
+10:20 AM 
+<kvark> edunham: I'd appreciate having stickers for Rust Toronto meetup. 50 would be fine.
+10:20 AM 
+<•skade> I wouldn't see anything that must be discussed this week. we should have it as a constant topic until it happens
+10:20 AM 
+<edunham> erickt: ok, say rustbirthdaystickers@edunham.net so I have a chance at sorting things :)
+10:20 AM 
+<•Manishearth> might be better to get a moz toronto persom to order some?
+10:21 AM 
+<•erickt> Erick Tryzelaar edunham: sure
+10:21 AM ok, so moving on to rustbridge
+10:22 AM 
+<kvark> Manishearth: how do I order?
+10:22 AM 
+<•erickt> Erick Tryzelaar skade: yeah it turned out to be more of an informal rustbridge event :)
+10:22 AM the majority of attendees were new to the language, so we put them through the materials
+10:22 AM 
+<•Manishearth> kvark if you work at moz, ask edunham. if you dont, ask someome at the tor moz office
+10:22 AM i think you just order and expense but idk
+10:23 AM 
+<kvark> heh, ok, I've just asked edunham
+10:23 AM 
+<•erickt> Erick Tryzelaar we even had one person who showed up for a different meetup that was scheduled for a different day
+10:23 AM 
+<edunham> Manishearth: it's a lot cheaper to order in bulk at least from the providers I use, so I was just gonna ship 'em all to me then mail them out
+10:23 AM 
+<•erickt> Erick Tryzelaar and we convinced her to stick around and play with rust
+10:23 AM 
+<•Manishearth> edunham works
+10:23 AM 
+<•erickt> Erick Tryzelaar we even got a pull request from her: https://github.com/rust-community/rustbridge/pull/83
+10:23 AM 
+<kvark> lol erickt, you converted her
+10:23 AM 
+<•Manishearth> bwahaha
+10:23 AM 
+<•erickt> Erick Tryzelaar exactly
+10:24 AM 
+<•skade> very cool!
+10:24 AM 
+<•erickt> Erick Tryzelaar I transcribed our summary notes in https://public.etherpad-mozilla.org/p/bridge-a-thon-2017-03-25
+10:24 AM that I need to convert into proper tickets
+10:24 AM sebasmagri: how'd your event go at rustmx?
+10:25 AM ⇐ skeeter quit (skeeter@moz-p5hqsa.qnvn.vgrg.0601.2601.IP) Quit: WeeChat 1.6
+10:25 AM 
+<•erickt> Erick Tryzelaar also we had devdiva-hari working on the website
+10:25 AM → skeeter joined (skeeter@moz-p5hqsa.qnvn.vgrg.0601.2601.IP)
+10:25 AM 
+<•erickt> Erick Tryzelaar with sebasmagri 
+10:25 AM I'm not sure how far they got
+10:25 AM 
+<sebasmagri> erickt: it went pretty good even while it was shorter... But we have a couple girls interested on continuing to work with Rust and asking stuff in our Telegram channel...
+10:26 AM 
+<•erickt> Erick Tryzelaar great!
+10:26 AM sebasmagri: rust in general, or helping out with rustbridge?
+10:27 AM 
+<sebasmagri> I have a complete implementation of the website using gutenberg, and devdiva-hari was working on the frontend. I'm looking forward to integrate her updates...
+10:27 AM 
+<•erickt> Erick Tryzelaar oh and also, brson worked on setting up tests, and Manishearth converted the docs over to mdbook
+10:27 AM 
+<kvark> edunham: so, can I has those stickers please?
+10:27 AM 
+<sebasmagri> erickt: one of them is definitely interested on rustbridge
+10:27 AM 
+<•erickt> Erick Tryzelaar Manishearth: what's the url for the mdbook page?
+10:27 AM \o/
+10:28 AM 
+<sebasmagri> oh and we're planning a whole day RustBridge activity for May 27th
+10:28 AM 
+<•erickt> Erick Tryzelaar great!!
+10:28 AM I also am starting to figure out how to run one in the bay area
+10:29 AM hm. did I miss anything?
+10:29 AM 
+— jntrnr is happy
+10:30 AM ⇐ wolf4ood quit (wolf4ood@moz-kd2a1c.ip205.fastwebnet.it) Quit: http://www.kiwiirc.com/ - A hand crafted IRC client
+10:30 AM 
+<•erickt> Erick Tryzelaar oh on pacing. the newbies did manage to get through the installfest, the beginners tutorials, and I think the website?
+10:30 AM one of em actually started playing around with tokio
+10:30 AM biggest thing we need to docs wise is probably get some help from the docs team / steveklabnik to help get a more unified voice
+10:31 AM 
+<carols10cents> NO YOU CAN'T HAVE HIM
+10:31 AM 
+<steveklabnik> sup
+10:31 AM 
+<carols10cents> NOT UNTIL THE BOOK IS DONE
+10:31 AM 
+<steveklabnik> heheh
+10:31 AM yes
+10:31 AM i gotta get this last chapter out
+10:31 AM 
+<•erickt> Erick Tryzelaar and split up some of the docs to have a brand new beginners track, and a I've done some more advanced programming
+10:31 AM 
+<steveklabnik> and then help carol edit
+10:32 AM → sleffy joined (sleffy@moz-6h8duu.ca.comcast.net)
+10:32 AM 
+<•erickt> Erick Tryzelaar steveklabnik: want to take our tutorials and convert them into the final chapter?
+10:32 AM two birds with one stone!
+10:32 AM 
+<carols10cents> NO
+10:32 AM 
+<steveklabnik> hehe
+10:32 AM 
+<carols10cents> NO BIRDS, NO STONES
+10:32 AM 
+<•erickt> Erick Tryzelaar carols10cents: steveklabnik can work on anything he wants. you're not the boss of him!
+10:33 AM 
+<carols10cents> YES I AMMMMM
+10:33 AM 
+<steveklabnik> <whimper>yes she is</whimper>
+10:33 AM 
+<carols10cents> :)
+10:33 AM 
+<•erickt> Erick Tryzelaar 😇
+10:33 AM hehe
+10:33 AM ⇐ dowwie quit (quassel@moz-1b4905.cust.tzulo.com) Ping timeout: 121 seconds
+10:33 AM 
+<•erickt> Erick Tryzelaar ok anyway, I think that's all I got on rustbridge
+10:34 AM I was quite happy. I wish we had more experienced people to work on the docs, but it's fun teaching newbies
+10:34 AM ok next on agenda
+10:34 AM (ps: anyone want to review https://github.com/rust-community/rustbridge/pulls?)
+10:35 AM oooh
+10:35 AM underhanded!
+10:35 AM submission ends in 2 days
+10:35 AM we, err, didn't receive any additional submissions
+10:35 AM :(
+10:36 AM 
+<bstrie> haha :P oh well
+10:36 AM → dowwie joined (quassel@moz-1b4905.cust.tzulo.com)
+10:36 AM 
+<•erickt> Erick Tryzelaar oh well
+10:36 AM we tried
+10:36 AM 
+<bstrie> erickt: I was telling Manishearth last time that next year we should make it more freeform
+10:36 AM 
+<•erickt> Erick Tryzelaar rust is just too resistant to underhandedness
+10:36 AM 
+<bstrie> how many did we get total? 4?
+10:36 AM 
+<•erickt> Erick Tryzelaar or the inverse, make it downscoped to just poke at a particular function
+10:36 AM I think 4 submissions from 2 people
+10:37 AM 
+<•skade> well, that's okay as a beginning
+10:37 AM 
+<•erickt> Erick Tryzelaar yeah
+10:37 AM so we need to start organizing the next steps, like putting together a survey
+10:37 AM 
+<bstrie> a survey? for what?
+10:38 AM 
+<•erickt> Erick Tryzelaar to see how many people participated, see if they tried and couldn't get underhandedness, or if the idea was just too hard
+10:38 AM I figure it'd be a pretty quick survey
+10:39 AM 
+<jntrnr> Speaking of surveys when did the last Rust survey start?  Feels like we're coming up on one year
+10:39 AM 
+<•skade> we announced it with the 1 year thing
+10:40 AM 
+<•erickt> Erick Tryzelaar jntrnr: I think it was may-ish
+10:40 AM 
+<jntrnr> May 9 is the date of blog post
+10:40 AM That's a little over a month away
+10:40 AM 
+<•erickt> Erick Tryzelaar we should get organizing!
+10:41 AM 
+<jntrnr> +1
+10:41 AM 
+<•erickt> Erick Tryzelaar aturon (I think) said he wanted to eventually get the survey synced with the end of the year rust goals
+10:41 AM but I think it'd be worthwhile doing one now, and then in decembers
+10:41 AM december*
+10:42 AM 
+<aturon> erickt: so to clarify
+10:42 AM 
+<•erickt> Erick Tryzelaar hello!
+10:42 AM 
+<aturon> it should feed into the 2018 roadmap process
+10:42 AM 
+<•erickt> Erick Tryzelaar a wild aturon has appeared
+10:42 AM 
+<•skade> we could do a general one around the birthday and a more focused one to the end of the year
+10:42 AM 
+<aturon> so ideally we have the data + analysis by July
+10:42 AM last year's timing worked well
+10:42 AM and had a lot of impact on the direction, e.g. the focus on IDEs
+10:43 AM 
+<jntrnr> We could do commercial user survey earlier
+10:43 AM Last year we kinda had to wait for it
+10:44 AM 
+<•skade> ha, do I count as a commercial user now?
+10:44 AM (have 2 futher trainings lied up for this year)
+10:44 AM 
+<jntrnr> :)
+10:44 AM Nice
+10:44 AM 
+<aturon> ah yes, aligning the commercial survey would be helpful
+10:45 AM in any case, i think having the info early is better than late, and think yearly is the right cadence
+10:45 AM 
+<jntrnr> I don't mind picking up the baton for the surveys
+10:45 AM 
+<•erickt> Erick Tryzelaar great
+10:45 AM 
+<jntrnr> (unless someone else wants to drive)
+10:45 AM 
+<•erickt> Erick Tryzelaar jntrnr: I'll make ya a ticket
+10:46 AM 
+<jntrnr> Cool thx
+10:46 AM 
+<•skade> okay, I have to leave quite on time today, and would like to cover the last two subjects :)
+10:46 AM (rustfest meeting afterwards and I need food :D )
+10:46 AM 
+<•erickt> Erick Tryzelaar skade: sure!
+10:46 AM take it away
+10:47 AM 
+<•skade> okay, so rustfest fuzz is simple
+10:48 AM we need to sell tickets, so I'd be happy if you could promote the conf to anyone you know :)
+10:48 AM especially to people in russia and poland
+10:48 AM retweet rustfest tweets or send people a link to the page
+10:48 AM it helps a lot, because we can only speak to our audience
+10:48 AM (which already gets the message twice a day :) )
+10:49 AM also, I'd like to say that there may be a second RustFest this year in Zurich by October, but don't say that out loud
+10:49 AM (because people might hold off going to Kiev :) )
+10:49 AM that's about it on that :)
+10:50 AM 
+<booyaa[> heh
+10:50 AM 
+<•skade> so... dev.to
+10:50 AM 
+— •erickt is ready to retweet
+10:50 AM 
+<•skade> the crystal community syndicates all their blog posts to dev.to (the practical dev on twitter)
+10:51 AM which is a clever idea, especially as dev.to has very nice content policies (like setting a rel=canonical to your original post)
+10:51 AM 
+<•erickt> Erick Tryzelaar ah yeah. is there any documentation to replicate jekyll to it?
+10:51 AM 
+<•skade> the problem is mostly that the process is currently manual, but I contacted them, they are working on an automated solution and would be willing to help us in between
+10:52 AM i think that answers the question :)
+10:52 AM the developers are /cced on the relevant ticket
+10:53 AM 
+<•erickt> Erick Tryzelaar skade: ah so they don't just consume a RSS feed?
+10:53 AM 
+<•skade> no, though that's possibly how it will end up in future
+10:53 AM currently, it's mostly a blogging platform
+10:54 AM itself
+10:54 AM but my question is more if we want to syndicate or not, the rest is basically details
+10:55 AM 
+<•erickt> Erick Tryzelaar I think syndication would be nice. It's a shame this platform makes it a bit more manual
+10:56 AM it might not be too hard to make a rust-world thing that just pulls from RSS feeds
+10:56 AM 
+<•skade> well, that's why they are up to helping us
+10:56 AM as far as I understood, including doing the manual process for us or implementing a specialised solution at first
+10:57 AM 
+<•erickt> Erick Tryzelaar do they have moderation tooling?
+10:57 AM → malayaleecoder joined (uid139674@moz-k1ar3t.brockwell.irccloud.com)
+10:58 AM 
+<•skade> no, but they enforce the contributor coventant on their site: https://dev.to/code-of-conduct
+10:58 AM so, yes, for themselves
+10:58 AM 
+<•erickt> Erick Tryzelaar that's good
+10:58 AM 
+<•skade> yeah, they are pretty popular in some circles and quite known in the ruby community
+10:58 AM 
+<•erickt> Erick Tryzelaar i guess the main question is if we want to try to own the channel, or if we care if someone else does
+10:59 AM I think I'd be fine using them for syndication
+10:59 AM 
+<•skade> well, we could at least syndicate our blog and TWIR
+10:59 AM 
+<•erickt> Erick Tryzelaar yeah
+10:59 AM 
+<•skade> by the way, who's in charge of the blog?
+10:59 AM 
+<•erickt> Erick Tryzelaar I'd want them to use RSS though :)
+11:00 AM core team own blog.rust-lang.org
+11:00 AM I think it's mainly posted to by steveklabnik and aturon
+11:00 AM 
+<steveklabnik> yes, at the moment anyway
+11:00 AM 
+<•skade> okay, I got someone interested in a guest post
+11:00 AM 
+<steveklabnik> sometimes we have other posts
+11:00 AM 
+<•skade> I'll put you in touch?
+11:00 AM 
+<•erickt> Erick Tryzelaar when steveklabnik isn't working on the book
+11:01 AM 
+<aturon> syndication would be great
+11:01 AM we've wanted "planet rust" for a long time
+11:01 AM 
+<•skade> yeah, that would also be interesting
+11:01 AM but as always, you can't choose where people are :)
+11:01 AM 
+<•erickt> Erick Tryzelaar skade: I don't think core has really thought much about guest posts. current process tries to post just about big things
+11:02 AM 
+<•skade> a planet rust would also be a great thing you could syndicate if it had an RSS feed itself
+11:02 AM okay, then, i'd need to find another venue for them...
+11:02 AM (Rust India, the people with the 450 people conf session on Rust)
+11:02 AM 
+<•erickt> Erick Tryzelaar like releases or major new projects. I think we could be argued towards guest posting for other major projects
+11:03 AM we could setup planet.community.rs in our infinite free time :)
+11:03 AM 
+<•skade> okay, let's discuss that at another point
+11:03 AM (I'm still working on the community server...)
+11:03 AM in any case... food :)
+11:03 AM 
+<•erickt> Erick Tryzelaar or blog.community.rs
+11:03 AM ok!
+11:03 AM 
+<•skade> blog.community.rs sounds interesting
+11:03 AM 
+<•erickt> Erick Tryzelaar oh and we're past our hour
+11:04 AM anyone else have anything they want to talk about?
+11:04 AM 
+<booyaa[> any mozillians around? i need a rust friendly contact for the #london office i'd like to use their facilties for a meetup
+11:04 AM i've lost touch with them since they moved
+11:04 AM 
+<•erickt> Erick Tryzelaar Manishearth / edunham / steveklabnik / aturon: ^?
+11:05 AM 
+<steveklabnik> no idea who's at london
+11:05 AM 
+<•Manishearth> booyaa[: jgraham maybe?
+11:05 AM 
+<booyaa[> Manishearth: ty!
+11:06 AM 
+<•erickt> Erick Tryzelaar skade: https://github.com/rust-community/team/issues/154 for blog.community.rs
