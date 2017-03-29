@@ -1,0 +1,31 @@
+[18:00] <erickt> I think it's mainly posted to by steveklabnik and aturon
+[18:00] <steveklabnik> yes, at the moment anyway
+[18:00] <steveklabnik> sometimes we have other posts
+[18:00] <skade> okay, I got someone interested in a guest post
+[18:00] <skade> I'll put you in touch?
+[18:00] <erickt> when steveklabnik isn't working on the book
+[18:00] <aturon> syndication would be great
+[18:01] <aturon> we've wanted "planet rust" for a long time
+[18:01] <skade> yeah, that would also be interesting
+[18:01] <skade> but as always, you can't choose where people are :)
+[18:01] <erickt> skade: I don't think core has really thought much about guest posts. current process tries to post just about big things
+[18:02] <skade> a planet rust would also be a great thing you could syndicate if it had an RSS feed itself
+[18:02] <skade> okay, then, i'd need to find another venue for them...
+[18:02] <skade> (Rust India, the people with the 450 people conf session on Rust)
+[18:02] <erickt> like releases or major new projects. I think we could be argued towards guest posting for other major projects
+[18:03] <erickt> we could setup planet.community.rs in our infinite free time :)
+[18:03] <skade> okay, let's discuss that at another point
+[18:03] <skade> (I'm still working on the community server...)
+[18:03] <skade> in any case... food :)
+[18:03] <erickt> or blog.community.rs
+[18:03] <erickt> ok!
+[18:03] <skade> blog.community.rs sounds interesting
+[18:03] <erickt> oh and we're past our hour
+[18:04] <erickt> anyone else have anything they want to talk about?
+[18:04] <booyaa[> any mozillians around? i need a rust friendly contact for the #london office i'd like to use their facilties for a meetup
+[18:04] <booyaa[> i've lost touch with them since they moved
+[18:04] <erickt> Manishearth / edunham / steveklabnik / aturon: ^?
+[18:05] <steveklabnik> no idea who's at london
+[18:05] <Manishearth> booyaa[: jgraham maybe?
+[18:05] <booyaa[> Manishearth: ty!
+[18:06] <erickt> skade: https://github.com/rust-community/team/issues/154 for blog.community.rs
