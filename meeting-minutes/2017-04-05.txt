@@ -1,0 +1,245 @@
+== 5 Apr 2017
+[05:00] <Manishearth> sleffy: another RESF rant
+[05:00] <Manishearth> https://lobste.rs/c/kdgi1c
+[05:00] <Manishearth> er
+[05:00] <Manishearth> skade: 
+[05:00] <Manishearth> if you go through the n-gate stuff all the RESF mentions are perfectly benigh
+[05:01] <sleffy> hey hey I'm on the strike force too
+[05:06] <sleffy> I have to say, before this whole thing blew up, I could have sworn I heard bits and pieces of RIIR suggestions
+[05:06] <sleffy> But only heard of; never seem 'em myself
+[05:07] <sleffy> And as far as "Rust evangelism", I've never heard of more happening than, say, Haskell evangelism
+[05:25] <skade> Manishearth: hm?
+[05:29] <Manishearth> skade: no, just another case where someone is grumping about the strike force, and I ranted about it
+[06:35] <bstrie> Manishearth: robert o'callahan works for mozilla, right? can we get him to vet his rust-related posts with us first or something?
+[06:36] <bstrie> this isn't his first own-goal, and it makes us all look bad
+[06:44] <Manishearth> bstrie: no, he no longer works for us
+[06:44] <Manishearth> he works full time on rr now
+[06:44] <Manishearth> own-goal?
+[06:44] <Manishearth> h
+[06:44] <Manishearth> * oh
+[06:44] <Manishearth> what was the last time that happened?
+[06:44] <Manishearth> bstrie: you can talk to him in #research though
+[06:45] <Manishearth> username rock
+[06:45] <Manishearth> er
+[06:45] <Manishearth> roc
+[08:23] <skade> oh, I see you met angersock
+[08:23] <skade> Manishearth: ^
+[08:23] <skade> anyone has a good guide to set up vscode with rust on windows?
+[09:09] <booyaa[> skade: wondering how different it would be unless you're also including rustup and friends as part setup
+[09:10] <skade> booyaa[: I don't know, but I have someone actively asking :D
+[09:20] <booyaa[> k i'll assume (wrongly) they have a working rust. then after installing the extension (vscode-rust) decide if you want to use rls or run in legacy mode. the latter is a bit more involved because you have to install racer, rustfmt, rustsym et al manually
+[09:20] <booyaa[> using rls (i might add it's working really nicely considering it's not beta yet) is much easier.
+[09:21] <booyaa[> https://github.com/editor-rs/vscode-rust/blob/master/doc/main.md
+[09:22] <skade> 2nd semester students
+[09:22] <booyaa[> skade: if rust isn't working i.e. cargo new --bin foo ; doesn't result in a hello world bin. then maybe installing visualstudio community edition might help with linkers and other stuff
+[09:24] <booyaa[> i think the visualstudio extension is created by the team behind piston, where as the rust code exgtension is a fork of jntrnr's reference extension
+[09:24] <booyaa[> rust code = vscode rust
+[14:44] <erickt> Meeting day!
+[15:00] <meetingbot> This week's agenda: https://github.com/rust-community/team/issues/156. The meeting is this Weds @ 5PM UTC. Last week's minutes https://github.com/rust-community/team/blob/master/meeting-minutes/2017-03-29.txt. *happy bleeping sounds*
+[15:22] <booyaa[> i'll make sure i don't truncate the minutes this time :P
+[15:55] <skade> I'll be giving a 90 minute lecture + 90 minute course on Rust at the University of Koblenz in May
+[15:56] <badboy> \o/
+[15:56] <badboy> as a lecture to students?
+[15:56] <skade> yes
+[15:56] <skade> part of their OS classes
+[15:57] <badboy> nice
+[15:57] <sebasmagri> cool skade!
+[15:57] <badboy> olol and zalando is now doing a Rust study group in Dortmund
+[15:58] <badboy> https://www.reddit.com/r/rust/comments/63le79/rust_study_group_in_dortmundger/dfv2bv0/
+[15:58] <badboy> skade: your chance to promote the hack&learn instead
+[15:59] <badboy> I will probably have to skip the meeting again, as I need to catch a train home later
+[16:09] <skade> aaargh, what was the name of the irish OTS person in dortmund?
+[16:09] <skade> me and names
+[16:09] <skade> badboy: ^
+[16:10] <theJPster> booyaa[: Is there a rust london coming up any time soon?
+[16:11] <theJPster> Also I can't lurk at the Wednesday meeting any more - since the clocks change it almost exactly coincides with my commute home.
+[16:12] <theJPster> But now PiWars is out of the way, I want to start a Rust Cambridge meeting.
+[16:18] <badboy> skade: shelly?
+[16:18] <booyaa[> theJPster: can't get a venue this month, had to move mine to may ish. 2nd i think
+[16:19] <booyaa[> need to find more venues, might see if work is ameniable, numbers would be lower though
+[16:45] <theJPster> booyaa[, that venue I went to was great. Do they charge much?
+[16:50] <skade> badboy: thanks
+[16:52] <booyaa[> theJPster: free, but content is owned by them. also no integration with meetup. no control over rsvp.
+[16:52] <booyaa[> but other than that the venue is super nice, the rust dev team thought it was good ;)
+[16:53] <booyaa[> *cough*https://skillsmatter.com/skillscasts/8309-state-of-rust-2016-and-how-to-create-webservices-in-rust *cough* ;)
+[16:53] <booyaa[> they look so young and fresh :P
+[16:53] <booyaa[> i'll be travelling when the meeting starts, might catch tail end if i'm lucky
+[16:54] <erickt> https://www.youtube.com/watch?v=9jK-NcRmVcw time!
+[16:57] <skade> I fell from a mozilla meeting into a mozilla meeting into another mozilla meeting....
+[16:57] <erickt> heh
+[16:57] <sebasmagri> skade: it's a mozilla meeting's stairway :-)
+[16:57] <skade> the meeting bleeds into the rust hack & learn
+[17:00] <erickt> meeting time!
+[17:00] <erickt> \o/
+[17:00] <erickt> assuming we got UTC right
+[17:00] <erickt> who's here today?
+[17:00] <edunham> \o
+[17:00] <erickt> https://github.com/rust-community/team/issues/156
+[17:01] <brson> i'm here
+[17:01] <sebasmagri> o/
+[17:02] <erickt> great
+[17:02] <erickt> so lets begin. sebasmagri put together the initial agenda
+[17:02] <erickt> first up, rustbridge
+[17:02] <erickt> we got ourselves https://bridge.community.rs/
+[17:02] <erickt> sebasmagri: you've been working on converting that over to gutenburg
+[17:02] <erickt> right?
+[17:04] <sebasmagri> right erickt, it's mostly complete... we could deploy it somewhere else to gather some feedback and try to reach devdiva to see if she had progress on the frontend changes and to refine her navigation proposal anyway
+[17:04] <erickt> I haven't seen her online
+[17:04] <erickt> ever since the meetup
+[17:04] <erickt> I can try to reach out to her over meetup
+[17:04] <sebasmagri> My intention is to have it wrapped up for the Mexico City RustFest on May 27th
+[17:05] <erickt> sebasmagri: where you're planning on doing a rustbridge then?
+[17:05] <sebasmagri> that's right erickt
+[17:05] <erickt> wonderful
+[17:05] <sebasmagri> the idea is to have RustBridge as a central activity in the RustFest
+[17:05] <erickt> sebasmagri: have you talked to skade and carols10cents, who have also run bridge events?
+[17:06] <sebasmagri> not yet, but I'll do now that I know :)
+[17:06] <erickt> :)
+[17:06] <sebasmagri> skade: carols10cents any advise is welcome ;-)
+[17:07] <skade> I have only organied a conf with a bridge event
+[17:07] <sebasmagri> and that's why I proposed discussing guidelines for events (3rd point in the agenda)
+[17:09] <erickt> sebasmagri: sent devdiva a meetup message
+[17:09] <sebasmagri> thanks erickt
+[17:10] <erickt> sebasmagri: before we move on from bridge status, do you have your website version online somewhere?
+[17:11] <sebasmagri> erickt: not yet, but I'll put it somewhere asap and share the link here
+[17:11] <erickt> wonderful
+[17:11] <erickt> alright so next thing. sebasmagri, since you brought up guidelines
+[17:12] <erickt> want to go into more detail?
+[17:13] <sebasmagri> ok... so what I was thinking is that it would be useful to have a set of guidelines to make it easier for people to organize events based on the previous experience...
+[17:13] <sebasmagri> those guidelines would be there to give guidance on things to consider when doing a Rust event, be it a meetup, rustfest, conference, etc...
+[17:14] <sebasmagri> the topics might cover stuff like branding, swag, but also code of conduct and general logistics
+[17:14] <erickt> +1
+[17:15] <erickt> we do have some conference retrospectives here: https://github.com/rust-community/team/issues/108
+[17:16] <erickt> carol might have written up something in more detail for rust belt rust
+[17:17] <erickt> ah https://github.com/rust-community/rustbridge/issues/60
+[17:17] <sebasmagri> great... we could use that to create a document and discuss it on GH, on a RFC alike process
+[17:17] <erickt> wonderful. could be good blog.community.rs material
+[17:18] <sebasmagri> +1
+[17:18] <erickt> anyone want to take the first crack at writing this stuff up?
+[17:19] <edunham> I have no extra bandwidth this week but might have some time next week, so I'll check in if it's not done by then
+[17:19] <sebasmagri> if no one else does, I can write down an initial version...
+[17:19] <edunham> sebasmagri++ please do!
+[17:20] <erickt> we could start an etherpad and start putting down notes
+[17:20] <sebasmagri> edunham: will give you a mention in the ticket anyway
+[17:20] <edunham> it'd be especially helpful to write up an outline and PR the writeups for parts of it
+[17:20] <sebasmagri> +1
+[17:20] <edunham> then the remaining parts would be bite-sized for others to grab
+[17:20] <erickt> https://public.etherpad-mozilla.org/p/rust-event-guidelines
+[17:21] <sebasmagri> nice
+[17:21] <erickt> anything else?
+[17:21] <sebasmagri> not from my side
+[17:22] <erickt> ok next up
+[17:22] <erickt> how about the website stuff?
+[17:22] <erickt> we got community.rs flow, and our blog, started by skade
+[17:23] <erickt> which is awesome
+[17:23] <erickt> devdiva at the last rustbridge was working on page flow
+[17:23] <erickt> I'm trying to find the picture she made
+[17:24] <sebasmagri> https://github.com/rust-community/rustbridge/issues/1#issuecomment-289234932
+[17:24] <sebasmagri> here it is
+[17:24] <erickt> oh thanks
+[17:25] <sebasmagri> we were discussing earlier this week about whether to have all community subprojects' news centralized in blog.c.rs or have separate news sites for each
+[17:25] <sebasmagri> and the need to define a crosslinking scheme across c.rs sites raised
+[17:26] <booyaa[> o/
+[17:26] <erickt> branding is also important. Oh I also forgot about http://novemb.rs as another website
+[17:27] <erickt> that the european folks made
+[17:27] <erickt> hi booyaa[!
+[17:27] <notriddle> The "resources" link on community.rs points at https://rust-community.github.io/resources/
+[17:27] <notriddle> This adds an unnecessary redirect.
+[17:28] <erickt> notriddle: ah! probably just a bug before we had our c.rs website
+[17:30] <erickt> however, I think I'd prioritize getting some basic flow up, and worry about branding later
+[17:30] <sebasmagri> probably the first step is to have a complete inventory of sites first
+[17:31] * sebasmagri remembers the 90's webrings
+[17:31] <erickt> :)
+[17:31] * erickt adds animated flame gifs to c.rs
+[17:32] <sebasmagri> 04/01 is over :-(
+[17:32] <erickt> next year tho
+[17:32] <booyaa[> i hope we make stickers
+[17:32] <booyaa[> RUSF
+[17:33] <booyaa[> i'd love to have a judge dredd style badge necklace thingy with RUSF on it
+[17:33] <booyaa[> RESF
+[17:34] <erickt> sebasmagri: well once you get the new rustbridge page up, we can then try to update c.rs
+[17:34] <erickt> with gutenburg
+[17:34] <erickt> the other webby thing, we got some blogs coming our way by way of skade
+[17:34] <sebasmagri> yep, I believe it's a good tool... tera makes things easy
+[17:34] <erickt> great work there
+[17:34] <erickt> one important thing I want to talk about is https://github.com/rust-community/blog.community.rs/issues/5
+[17:35] <erickt> or setting standards on allowing guest posts
+[17:35] <erickt> has anyone else seen a community page that allows for third party guest posts?
+[17:35] <erickt> my company does this, but it's, well, a company blog: https://blog.cloudera.com/
+[17:36] <erickt> oh, I found one: https://blogs.apache.org/hbase/
+[17:36] <sebasmagri> I would only consider keeping the process as cool as possible to encourage people to do it
+[17:37] <erickt> like you gotta wear a leather jacket with slick back hair
+[17:38] <sebasmagri> I was thinking on a PR based approach for people to register workshops in the RustBridge site, but also have a simpler form based approach...
+[17:38] <erickt> we could approach some of the larger folks doing rust stuff to talk about it
+[17:39] <erickt> like dropbox, onesignal, or buoyant with their linkerd-tcp project
+[17:39] <sebasmagri> +1
+[17:39] <erickt> jwilm: ^ wanna guest post on our new blog?
+[17:39] <sebasmagri> Honeypot with their searchspot stuff as well
+[17:40] <erickt> yeah
+[17:41] <booyaa[> hoping to have ethcore and maidsafe speaking on future meetups. will broach the subject of guest posting.
+[17:41] <erickt> I'll approach some of my interior people on how the apache projects manage guest blogs
+[17:43] <erickt> I think the last thing I got is we should all help review skade's upcoming posts: https://github.com/rust-community/blog.community.rs/pulls
+[17:43] <sebasmagri> it seems like Elixir is using a PR based approach for this https://github.com/elixir-lang/elixir-lang.github.com/pull/84
+[17:43] <skade> mostly the next one currently
+[17:44] <sebasmagri> that would be #3 right skade ?
+[17:45] <erickt> sebasmagri: hm. it doesn't really seem like they actually take external posts there anymore: http://elixir-lang.org/blog/
+[17:46] <sebasmagri> yeah just realized that was really old erickt, sorry :)
+[17:46] <erickt> no worries
+[17:46] <erickt> anything else?
+[17:46] <erickt> on blog posts?
+[17:47] <sebasmagri> probably the "Know the meetup" series
+[17:47] <erickt> sebasmagri: oh right, what did you mean by that?
+[17:47] <erickt> introducing each meetup community, or was there more to it?
+[17:47] <sebasmagri> so pretty quick the idea is to have meetup organizers tell a short story of their meetup and the activities they have been doing
+[17:48] <sebasmagri> something simple with a standard table with age, location, members count etc
+[17:48] <erickt> we do need to actually get an official meetup list somewhere
+[17:49] <sebasmagri> I did a simple project to query the meetup API and get a list of meetups in an automated way... sadly the meetup.com's api doesn't allow to send messages to organizers thru API, which makes sense
+[17:49] <booyaa[> we've kkinda got one on the talk repo readme?
+[17:49] <erickt> booyaa[: yeah, but it should really be on c.rs
+[17:50] <sebasmagri> we have this https://community.rs/meetup-map/
+[17:50] <erickt> sebasmagri: I think we can probably just have it be manually curated
+[17:50] <erickt> ooooh
+[17:50] <sebasmagri> the experiment with the meetup API was intended to POC a way to have that updated more easily with meetup dates, and probably adding meetups to the calendar automatically
+[17:50] <erickt> we should add a link for that :)
+[17:51] <erickt> that'd be super cool
+[17:51] <erickt> yeah we need to get that on our page too :)
+[17:51] <sebasmagri> yeah, I don't know where the sources for that are tho, probably in the c.rs repo
+[17:52] <erickt> https://github.com/rust-community/meetup-map
+[17:52] <erickt> by badboy 
+[17:52] <sebasmagri> nice!
+[17:52] * badboy waves
+[17:52] <erickt> so that also needs some linkage
+[17:52] <erickt> hi badboy!
+[17:52] <sebasmagri> badboy: will look at it and ping you if I have any concern, is that ok?
+[17:53] <badboy> yes, please, go ahead
+[17:53] <badboy> I'd be happy to make that official and maintainable
+[17:53] <erickt> badboy: I see there's supposed to be a web scaper
+[17:53] <erickt> did you end up uploading that?
+[17:53] <badboy> (I was just swamped with distracting work the last weeks)
+[17:54] <badboy> erickt: :/ of course not, taking care of that either during this train ride or tomorrow
+[17:54] <erickt> thanks!
+[17:54] <sebasmagri> here's the meetup-scanner I did https://github.com/sebasmagri/meetup-scanner
+[17:54] <erickt> hm i think that's all I got for the time left for this meeting.
+[17:54] <erickt> oh except one last thing
+[17:55] <erickt> how about we switch back to 4pm UTC?
+[17:55] <erickt> it seemed to work better for people
+[17:55] <sebasmagri> good for me
+[17:55] <erickt> now that EU has gone into the daylight savings tie
+[17:55] <erickt> time
+[17:55] <badboy> +1 from mee (xcept every 4 weeks)
+[17:55] <erickt> anyone else have anything?
+[17:56] <badboy> expect more polished crates after tonight
+[17:56] <badboy> (my meetup is running right now)
+[17:56] <erickt> :)
+[17:56] <erickt> ok then I'm gonna get off to work
+[17:56] <erickt> thanks everyone!
+[17:56] <badboy> wait, what?
+[17:57] <badboy> don't we just turn off ericktbot after meetings?
+[17:57] <erickt> boop beep boop
+[17:58] <sebasmagri> xD
+[17:58] <sebasmagri> thanks! back to work as well
+[18:00] * sebasmagri cries as he switch back to javascript code
+[18:00] <badboy> sebasmagri: you do know you can write rust and compile it to JS?
+[18:00] <badboy> :P
+[18:01] <sebasmagri> badboy: heheh, to make it worst, it's backend code! :-(
+[18:01] <badboy> :D damn
