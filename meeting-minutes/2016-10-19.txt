@@ -1,0 +1,225 @@
+== 19 Oct 2016
+[00:35] <frewsxcv> https://github.com/blog/2267-introducing-github-community-guidelines
+[09:37] <badboy> nice!
+[13:25] <Friend1> Anyone there
+[13:25] <badboy> hey Friend1 
+[13:27] <QCSHSstudent> Hello, I'm with Friend1
+[13:27] <badboy> Hey!
+[13:27] <badboy> and welcome
+[13:27] <QCSHSstudent> We are looking for assistance in regards to one of our school projects 
+[13:27] <Friend1> We would like some advice on a project for our research class
+[13:28] <badboy> are you the ones with the mail 2 days ago?
+[13:28] <QCSHSstudent> Why yes, that was um me 
+[13:28] <badboy> ok! Sorry for not getting back to you yet. 
+[13:29] <QCSHSstudent> we were worried a bit if it wasn't received.  
+[13:29] <QCSHSstudent> Oh it is alright
+[13:29] <badboy> yes, it is
+[13:29] <badboy> we just didn't found to answer yet
+[13:29] <badboy> however, let me just re-read that mail quickly
+[13:31] <badboy> ok, so you want to use Rust for a university project and need info on how to get started and also some expert who would be willing to give an interview?
+[13:32] <QCSHSstudent> Well it is a high school project, and yes part of our requirements for it is to have an interview form and expert in the field
+[13:32] <badboy> ok, high school
+[13:32] <QCSHSstudent> from an* sorry 
+[13:35] <badboy> if you need to get started with Rust, a good way is definitely the book: https://doc.rust-lang.org/book/
+[13:35] <badboy> once you have a bit experience with Rust you should look out for libraries to use in your project
+[13:36] <badboy> given that it was some firewalling, likely the pcap bindings are worth a look: https://crates.io/crates/pcap
+[13:37] <QCSHSstudent> Why yes, I was aware of the book  already, and have sent that link out for my group mates to go over. I myself have been studying it when I have the chance. 
+[13:38] <QCSHSstudent> Ah, I was looking for something like that. Thanks
+[13:38] <badboy> in general you should take a look at crates.io, there are already quite some libraries around
+[13:38] <badboy> for general questions you can always join #rust or #rust-beginners
+[13:39] <QCSHSstudent> Alright
+[13:39] <badboy> about the interview partner: I'm not sure who I should forward you to. members of the community team are themselves volunteers, not sure if there is anyone with expert knowledge in the field of security/networking you're looking for
+[13:40] <QCSHSstudent> I see
+[13:41] <QCSHSstudent> well to be frankly honest even a somewhat adept person would settle for our interview partner for the mean time
+[13:41] <QCSHSstudent> Our teacher i believe allows us to do more in the future
+[13:42] <QCSHSstudent> right now it is mostly and exercise in gathering and collating relevant information from people more knowledgeable than you 
+[13:42] <badboy> We have a meeting at 4pm UTC, in a bit more than 2 hours.
+[13:42] <QCSHSstudent> as part of our research subjects curriculum
+[13:42] <badboy> You can stick around for that or I can bring that up and see if anyone wants to help out
+[13:43] <QCSHSstudent> That would be most helpful. 
+[13:45] <QCSHSstudent> Thank you again for your assistance. It means a lot for an aspiring CS student :) 
+[13:46] <badboy> I am one myself :)
+[14:40] <booyaa> badboy: re: security maybe someone from the servo team? ping^ Manishearth 
+[14:41] <booyaa> lol should've read the scroll back looks like it's more network security
+[14:43] <Manishearth> booyaa: avadacatavra has recently studied the status of rust security
+[14:43] <Manishearth> in #servo
+[14:43] <booyaa> QCSHSstudent: ^^
+[14:45] <booyaa> QCSHSstudent: also skade did an excellent talk about the inherent safety features of rust. he might be a good person to interview too. https://skillsmatter.com/skillscasts/9252-useful-rust
+[14:45] <booyaa> there's the video
+[14:46] <badboy> oooh it's online already
+[14:46] <badboy> (still a great shirt!)
+[14:52] <booyaa> badboy: i need to work on skillsmatter and their lack of youtubeness
+[14:52] <booyaa> yeah that tee is awesome
+[15:00] <meetingbot> This week's agenda: https://github.com/rust-community/team/issues/100. The meeting is this Weds @ 4PM UTC. Last week's minutes https://github.com/rust-community/team/blob/master/meeting-minutes/2016-10-12.txt. bippity beep!
+[15:04] <carols10cents> QCSHSstudent: there was a meetup about rust and cryptography/security a few years ago, if any of the speakers look relevant, you might want to try contacting them! https://air.mozilla.org/bay-area-rust-meetup-december-2014/
+[15:05] <erickt> T-55 minutes!
+[15:08] <frewsxcv> QCSHSstudent: If you're looking for crypto + rust talk, check out #rust-crypto
+[15:12] <erickt> hey y'all! anything for the agenda?
+[15:22] <Zaga> Ummm...hello
+[15:23] <QCSHSstudent> Hey, Zaga is connected with me. 
+[15:23] <Zaga> Yeah hi
+[15:23] <carols10cents> hi!!!!
+[15:24] <QCSHSstudent> Are there anyways to get in contact with the people mentioned above? Do they have a work email we can send to?
+[15:25] <Zaga> Yes, is there any way?
+[15:26] <jdm> contact information is probably present at the end of each of the talks, if they gave it
+[15:27] <QCSHSstudent> Alright
+[15:27] <erickt> hello Zaga!
+[15:28] <Zaga> Hello sir : )
+[15:29] <erickt> hrm, this might be a short meeting today...
+[15:30] <erickt> who added the bit about the "Interview Request for Research Project"?
+[15:30] <Zaga> What is the meeting going to be about?
+[15:30] <erickt> it's our weekly community team meeting, you're welcome to stay
+[15:30] <erickt> this one might not be that exciting though :)
+[15:31] <Zaga> That would be me and QCSHSstudent
+[15:31] <badboy> erickt: I did, that was in regard to the mail/ QCSHSstudent & Zagas request
+[15:31] <badboy> but I guess we covered most of it before the meeting now
+[15:31] <Zaga> Yes, yes it was
+[15:32] <erickt> :)
+[15:33] <QCSHSstudent> Alright, zaga I have the contact info for skade. 
+[15:34] <Zaga> Ok cool
+[15:34] <QCSHSstudent> I'm gonna dig a bit more and see if there is anyone else we could ask
+[15:34] <erickt> carols10cents: ping!
+[15:35] <carols10cents> erickt: PONG
+[15:35] <erickt> eep
+[15:35] <erickt> so I didn't have a chance to build a proper agenda, but i wanted to see if you needed anything
+[15:35] <carols10cents> nah i'm good :)
+[15:35] <erickt> otherwise, maybe we should cancel?
+[15:35] <QCSHSstudent> other than that I think we are mostly done, if you have any questions zaga now would be a good time. 
+[15:35] <badboy> I'm fine with that, then I can make dinner earlier :D
+[15:36] <badboy> maybe just poke people to work on open issues?
+[15:36] * badboy pokes himself
+[15:36] <Zaga> I'm not sure what to ask, QCSHSstudent
+[15:36] <erickt> badboy: ya
+[15:36] <erickt> I might take this as a working session :)
+[15:37] <QCSHSstudent> well, that's fine too zaga. 
+[15:37] <QCSHSstudent> Um, thanks again for taking the time to help us
+[15:37] <badboy> In the morning I put "write that damn info about Rust Community switchboard already" on my whiteboard, so yeah, I guess I can use that time to do so
+[15:37] <QCSHSstudent> It is greatly appreciated
+[15:37] <mbrubeck> QCSHSstudent, Zaga: Feel free to join the #servo channel if you'd like to contact any Servo developers. (avadacatavra was mentioned earlier; you can find her in that channel.)
+[15:38] <erickt> canceled!
+[15:38] <erickt> badboy: ya I've been pretty swamped with work (sorry carols10cents!) so I have not made any progress on my stuff either
+[15:38] <QCSHSstudent> alright thanks :)
+[15:39] <carols10cents> erickt: quit your job
+[15:39] <erickt> mortgage!
+[15:39] <badboy> carols10cents: Didn't we had that discussion yesterday? :D
+[15:39] <skade> Meeting is in 20 minutes?
+[15:39] <carols10cents> skade: erickt just cancelled it
+[15:39] <erickt> skade: just canceled it
+[15:39] <Zaga> Yes, thank you very much :)
+[15:40] <erickt> skade: couldn't come up with a useful agenda
+[15:40] <carols10cents> badboy: repetition makes it sink in :)
+[15:40] <QCSHSstudent> oh um
+[15:40] <QCSHSstudent> mr, skade. 
+[15:40] <badboy> new feature for meetingbot
+[15:40] <QCSHSstudent> we were hoping to find you. 
+[15:41] <erickt> carols10cents: lol
+[15:41] <carols10cents> yes yes, every time erickt says the words "busy" and "work", the bot should tell him to quit his job!
+[15:41] <erickt> haha
+[15:41] <erickt> fair enough
+[15:41] <erickt> I'll r+ that PR
+[15:44] <Zaga> Oh and thesecretary is also with me and QCSHSstudent
+[15:46] <Zaga> Svtshosh is also with me, QCSHSstudent, and thesecretary
+[15:53] <booyaa> jntrnr: i seem to recall you're doing some kind of roundtable with corporate/enterprise?
+[15:55] <hjr3> hi
+[15:57] <edunham> \o
+[15:58] <carols10cents> erickt cancelled the meeting today everyone
+[15:58] <edunham> oh ok
+[15:59] * edunham adds "clarify educational outreach vision" to next week's agenda then
+[15:59] <carols10cents> he's "busy" with "work" and there's "no agenda" or something
+[15:59] <carols10cents> <3
+[16:00] <jntrnr> booyaa: yup! Almost done with draft of write-up. Got sidetracked by ide support :)
+[16:01] <hjr3> ok going back to my workshop talk!
+[16:01] <edunham> fwiw jntrnr, brson, and I had a good chat with lucyeoh about what Moz is working on for university outreach yesterday
+[16:01] * edunham reclaims meeting hour to prep Rust Arabic Gathering talk for this weekend
+[16:01] <edunham> skade: did Moz end up booking you travel for that, or are we just having me do it?
+[16:03] <skade> edunham: nope, I had not further communication (not unhappy, because of the travel involved)
+[16:04] <skade> edunham: have you seen this? https://github.com/rust-community/team/issues/95#issuecomment-254249371
+[16:06] <skade> because the code sprint is mostly focused on time zones, it might be a good idea to offer all infrastructure (people in the IRC channels, etc.) also to people on the african continent or middle east
+[16:18] <booyaa|mobile> Hi! Sorry no scroll back since 1600
+[16:19] <Manishearth> erickt: btw, SF from next week!
+[16:19] <Manishearth> though next week i will be looking for a place and stuff
+[16:19] <edunham> skade: oh good point... I'll be west coast US for all of November, but I'd be happy to make sure to be awake during the code sprint hours to help folks out
+[16:19] <Manishearth> so next week I will not exist on the internets
+[16:21] <skade> edunham: well, I was more thinking about spreading the word on the event in casablanca :)
+[16:21] <skade> Manishearth: we built 3G for that
+[16:25] <erickt> Manishearth: that's wonderful news! we should organize a dinner to celebrate
+[16:25] <booyaa|noscrollback> jntrnr: I mentioned the effort to someone I met at my meetup last night. Is it too late for them to join in the programme? (Re: RLS - congrats btw)
+[16:27] <jntrnr> booyaa|noscrollback: not too late. They can email jturner at mozilla dot com
+[16:28] <jntrnr> But tone is short. I hope to have the draft finished soon
+[16:28] <jntrnr> Time is short
+[16:28] <edunham> skade: *oh*!
+[16:29] <edunham> skade: what date/time were finalized for it?
+[16:29] <edunham> (also location, also telecommute strategy for people who can't travel to $EUROPE)
+[16:29] <skade> edunham: 19/20th, exact time is not fixed
+[16:29] <skade> oh, it's meant as an event where people gather at their $LOCATION and then just hop on irc and work on tasks
+[16:30] <edunham> skade: if a recommended time range could be committed to before Saturday, I'd have an easier time advertising it
+[16:30] <skade> I'm writing a small document on that tomorrow, to pass around to people
+[16:31] <edunham> awesome
+[16:33] <skade> so, in any case, last day in london, we're heading out :)
+[16:33] <booyaa|noscrollback> jntrnr: you have mail, thanks again!
+[16:33] <skade> see you tomorrow :)
+[16:33] <booyaa|noscrollback> skade: enjoy!
+[16:33] <skade> edunham: thanks for helping out there \o/
+[16:34] <booyaa|noscrollback> Hopefully not the last time you'll visit us!
+[16:34] <skade> booyaa|noscrollback: nope
+[16:34] <skade> probably around christmas for the next time, a friend is marrying
+[16:35] <booyaa|noscrollback> Awesome maybe we'll get a chance to meetup properly I promise I won't force you to do another talk!
+[16:35] <booyaa|noscrollback> Who needs znc when you have http://logs.glob.uno/?c=rust-community
+[16:36] <edunham> skade: safe travels!
+[16:37] <badboy> well, nothing wrong with giving a talk
+[16:51] <booyaa> looks like colloquy ate my last message
+[16:52] <booyaa> badboy: are you still interested in doing a talk next month?
+[17:17] <badboy> nope, sorry
+[17:18] <badboy> heading out for pittsburgh in half a week and when I get back I should probably get started with my thesis
+[17:18] <booyaa> badboy: no worries
+[17:56] <johannh> hoverbear: https://bugzilla.mozilla.org/show_bug.cgi?id=1087380
+[18:08] <carols10cents> pittsburgh pittsburgh pittsburgh pittsburgh!!!!
+[18:08] <badboy> that's a city I heard
+[18:08] <chriskrycho> Three hours later, I *think* I finally finished updating this: https://github.com/rust-lang/rfcs/pull/1636
+[18:08] <carols10cents> also fyi for any community team members, erickt has given me The Tablecloth, edunham has ordered stickers, and i will have large paper if anyone wants to help me run a community table
+[18:09] <carols10cents> with whatever we want to do :)
+[18:09] <chriskrycho> carols10cents, I specifically integrated your comments on release notes and ideas on how to make this work with the book
+[18:09] <carols10cents> chriskrycho: yay!!!!!
+[18:09] <chriskrycho> Now, someone just figure out how to give me an extra week out of the year to be able to go to Rust Belt Rust. :p
+[18:09] <badboy> carols10cents: totally!
+[18:09] <HedgeMage> This reminds me, edunham we must arrange for me to get my stickers from you and get money transmitted in your direction.
+[18:09] <carols10cents> chriskrycho: quit your job!!! :) <3
+[18:09] <chriskrycho> Hahahaha
+[18:10] <chriskrycho> Then I'd have time but couldn't *afford* to go. :p
+[18:10] <carols10cents> :P
+[18:10] <carols10cents> excuses excuses
+[18:10] <dikaiosune> carols10cents: has anyone volunteered for the job of pestering  you about talk videos?
+[18:10] <badboy> carols10cents: I very much appreciate your engagement, but I actually think what works for erickt does not work for everyone.
+[18:10] <dikaiosune> if not, i am  unable to attend but would happy  to fill that role
+[18:10] <carols10cents> dikaiosune: ಠ_ಠ 
+[18:11] <badboy> if anyone brings up conf videos I will personally punish them
+[18:11] <dikaiosune> carols10cents: i'll take that as a "it's  covered"
+[18:11] <carols10cents> i think i'll just send people other videos, like episodes of my little pony or something
+[18:12] <badboy> carols10cents: we could make short videos ranting about people wanting conf videos
+[18:12] <badboy> they do not need editing 
+[18:12] <carols10cents> ahaha
+[18:13] <carols10cents> need to get lewis black to be like "hey internet, you're getting this shit for FREE you didn't even GO to the conference"
+[18:15] <badboy> well, we should intensify the ranting
+[18:15] <badboy> like the first one still a "videos are coming soon *smile*"
+[18:15] <badboy> and up from there
+[18:16] <mbrubeck> second one is a rickroll
+[18:17] <badboy> or ... is it?
+[18:48] <hoverbear> badboy: I maintain videos shall be delayed half a day each time someone asks
+[19:08] <erickt> carols10cents: hahaha
+[20:21] <excaliburHisSheath> I don't know if anyone's online now, but I have a question for the community team: Would you say that increasing diversity and representation of underrepresented groups within the Rust community is a goal of the community team?
+[20:24] <carols10cents> excaliburHisSheath: yes!
+[20:24] <HedgeMage> excaliburHisSheath: I am NOT a member of the community team, but I would hope that their goal is to increase the Rust community by making it welcoming to EVERYONE who wants to work with Rust and not playing demographic games.
+[20:25] <carols10cents> See aturon's post about rust's 2017 vision https://internals.rust-lang.org/t/setting-our-vision-for-the-2017-cycle/3958
+[20:25] <carols10cents> namely "Outreach and mentoring is also one of the best avenues for increasing diversity in the project, which, as the survey demonstrates, has a lot of room for improvement."
+[20:25] <carols10cents> One of the community team's current efforts in this direction is https://github.com/rust-community/rustbridge
+[20:26] <carols10cents> in the style of http://railsbridge.org/
+[20:28] <booyaa> the rustbridge ppl hang out on #rustbridge agenda items can be added to the main community meeting on weds 4pm utc https://github.com/rust-community/team/issues
+[20:28] <booyaa> the agenda is usually announced a day before
+[20:28] <booyaa> excaliburHisSheath: ^
+[20:29] <excaliburHisSheath> :D I'm happy to hear, that's really reassuring.
+[20:33] <excaliburHisSheath> So I'm running into some anti-diversity arguments on /r/rust: https://www.reddit.com/r/rust/comments/589563/how_can_we_preserve_our_friendly_rust_community/
+[20:33] <excaliburHisSheath> It's kind of distressing to hear that kind of push back. Any advice on how to address it?
+[20:36] <simulacrum> Manishearth: ^ (mod-team related)
+[20:36] <HedgeMage> excaliburHisSheath: If you'd like to take this conversation to PM, I'll oblige, but given the inflammatory nature I'd rather not have it in here.
+[20:56] <steveklabnik> excaliburHisSheath: that thread is very unusual overall
+[21:10] <excaliburHisSheath> steveklabnik: I agree. I like that the Rust community generally seems to be *for* openness and increased diversity, so having such an immediately negative response worries me.

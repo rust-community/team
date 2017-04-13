@@ -1,0 +1,465 @@
+== 25 Jan 2017
+[10:26] <badboy> oh my, I didn't even wanted to spark a discussion around our use of GitHub :D
+[10:26] <badboy> I just thought it was interesting that gitlab now includes a chat by default
+[10:28] <badboy> > Cargo is "at the apex of usability" for language package managers, he said, adding that developing code in Rust is "a painless and beautiful process".
+[10:29] <skade> well, mattermost is rather easy to set up by itself, as far as I see it
+[10:29] <badboy> from https://linux.conf.au/schedule/presentation/78/ (quoted in an lwn.net article, I can give a subscriber link if wanted)
+[10:29] <skade> oh, from suse
+[10:30] <badboy> yes, suse is trying hard to get Rust into the distribution
+[10:30] <badboy> (and packages from other langs as well)
+[10:33] <badboy> > … saying that the older way was better, but that way is not going to remain viable for much longer. His experience with Rust made that clear; developing in that environment is just too nice.
+[10:33] <badboy> :D
+[10:37] <skade> yeah, I was in contact with someone from suse at eurucamp 2015
+[10:38] <skade> sadly, I'm not in nürnberg all to often nowadays
+[11:11] <booyaa> skade: you into gamedev? (re: ncollide.org)
+[11:50] <skade> Booya, nope, just found it while searching for shape detection
+[12:15] <skade> booyaa one of the pieces of software I'm missing in the world is something that detects hand drawings and puts them into svg
+[12:15] <skade> (but detects given shapes, say, UML classes and stuff)
+[12:18] <booyaa> skade: ah
+[12:19] <booyaa> not as specific, but i think i've used inkscape once to trace an imported image to turn the line drawings into vectors drawings
+[12:19] <booyaa> used it for laser cutting
+[12:23] <skade> yeah, tracing is not quite what I want
+[12:24] <skade> I want a drawing something resembling two rectangles and a connection in between and the thing giving me two rectangles and a joint as seperate objects
+[12:24] <skade> I just prefer to hand-draw such images :)
+[12:24] <badboy> tracing is the first step, some heuristic needs to map this to the objects you want then
+[12:28] <skade> I learned that it's called contour detection and opencv has facilities for that
+[12:30] <skade> http://www.pyimagesearch.com/2016/02/08/opencv-shape-detection/
+[12:38] <skade> it seems to be a topic of research... http://ieeexplore.ieee.org/document/6619250/?reload=true&arnumber=6619250
+[12:39] <badboy> everything is a topic of research!
+[12:40] <skade> ah, not quite
+[12:55] <locks> I think whether something is a topic of research is a topic of research
+[12:56] <booyaa> yo dog
+[13:09] <skade> :D
+[15:41] <erickt> meeting day!
+[15:57] <erickt> skade / Manishearth / bstrie / carols10cents / booyaa / badboy / johannh: y'all have any agenda items for today?
+[15:57] <carols10cents> nope
+[15:57] <skade> I guess I will come up with something, but I'm in a meeting :)
+[15:57] <skade> (currently)
+[15:58] <erickt> https://github.com/rust-community/team/issues/121
+[15:58] <erickt> oh and jntrnr
+[15:58] <johannh> so I completely missed the last meeting
+[15:59] <johannh> sorry if you talked about that stuff
+[15:59] <johannh> but wasn't there someone working on a RustBridge website?
+[16:00] <meetingbot> This week's agenda: https://github.com/rust-community/team/issues/121. The meeting is this Weds @ 5PM UTC. No minutes found for last week. :( bippity beep!
+[16:03] <erickt> johannh: good morning! I thought hannelita was. skade, do you remember?
+[16:04] <skade> sonjaheinen was and she got sidetrackd by $life
+[16:04] <johannh> erickt: good "morning" :P
+[16:05] <erickt> johannh: not my fault it's almost nighttime for you. if only we stuck with the whole flat earth thing
+[16:06] <johannh> erickt: I
+[16:06] <johannh> dammit
+[16:06] <erickt> hehe
+[16:06] <johannh> you rendered me speechless :D
+[16:07] <erickt> I have that effect
+[16:07] <skade> I always wanted the earth to be a moebius band
+[16:11] <erickt> that'd be super cool
+[16:11] <erickt> I was always partial to ringworlds: https://en.wikipedia.org/wiki/Ringworld
+[16:16] <badboy> nerds.
+[16:18] <smag-M> Hi, testing from Matrix here
+[16:19] <badboy> hi answering from irc here
+[16:19] <smag-M> :-)
+[16:20] <booyaa> erickt: let me justscan the minutes, wante to see if anyone had an update from rustbridge from last week
+[16:23] <booyaa> k doesn't look like there were any upadtes last week
+[16:24] <smag-M> I wasn't able to find this channel through the Matrix bridge, I  did using the full URI... It turned out to be that the channel is set as `+s` (secret) so it wont show up in the directory/channel list. Is this intended?
+[16:25] <badboy> Of course, we are a secret community, driving world domination through making a programming language approachable by everyone
+[16:26] <badboy> it seems all rust channels have that flag
+[16:26] <smag-M> Oh, is there some kind of initiation ritual? :-)
+[16:26] <badboy> yes, joining the channel
+[16:27] <smag-M> it's weird because a bunch of other rust channels do show up in the listing
+[16:28] <erickt> smag-M: how does one connect to matrix and the bridge?
+[16:29] <smag-M> erickt: the channel is actually already connected. It just wasn't showing up because of the secret flag. You can use a Matrix client to connect. I'm using Riot https://riot.im/
+[16:30] <locks> booyaa: are you addressing bors?
+[16:30] <locks> I think time ran out last week
+[16:32] <riotous-erickt-M> ooh nifty
+[16:33] <booyaa> no progress with eeyore on the bors front
+[16:34] <booyaa> is that the real erickt or some creation on the matrix
+[16:34] <riotous-erickt-M> I made it
+[16:34] <booyaa> ?
+[16:34] <booyaa> heh
+[16:34] <erickt> I'm everywhere!
+[16:34] <booyaa> i should add something to agenda even though i'll prolly missing the meeting because of travel
+[16:35] <erickt> </3
+[16:35] <booyaa> befoer i do, do we think it would be a good idea to have a "intro to rust" presentation .
+[16:36] <riotous-erickt-M> sebasmagri: how'd you change your nick? /nick another-erickt didn't do it for me
+[16:36] <booyaa> i've been asked several times now to do one for other meetups and i keep staring at the blank keynote. i think it's mostly because i'm still finding my way around rust
+[16:36] <booyaa> riotous-erickt-M <-- like docker container name gen gone bad
+[16:37] <erickt> booyaa: you could use nmatsakis / aturon's rust intro slide deck
+[16:37] <erickt> heh
+[16:40] <another-erickt> so many erickts
+[16:41] <carols10cents> booyaa: we used this at rustbridge https://github.com/rust-community/rustbridge/tree/master/workshops/intro-to-rust
+[16:41] <another-erickt> !nick exploda-erickt
+[16:41] <rustbot> Permission denied.
+[16:41] <erickt> hehe
+[16:41] <erickt> matrix is fun
+[16:42] <carols10cents> booyaa: but slide decks are pretty personal things
+[16:42] <carols10cents> you could start with that tho
+[16:45] <booyaa> carols10cents: thanks i'll have a look, so far the only approach i could come up with is go through rbe, condensing it into an hour talk max
+[16:49] <carols10cents> booyaa: yeah, an hour isn't very long, so it depends a lot on where your audience is coming from and what you want them to come away with
+[16:50] <frewsxcv> +1 Matrix
+[16:51] * frewsxcv switched from IRCCloud to Riot last week
+[16:51] <frewsxcv> #rust:matrix.org gets quite a bit of attention, as far as Matrix channels go
+[16:54] <erickt> y'all know what time it is?!
+[16:54] <erickt> it's final countdown time! https://www.youtube.com/watch?v=9jK-NcRmVcw
+[16:56] <another-erickt> I'm glad you all humor/ignore me and my traditions
+[16:57] * badboy sits down
+[16:57] * badboy plays the music
+[16:59] <erickt> \o/
+[17:01] <edunham> \o good morning
+[17:01] <erickt> meeting time!
+[17:01] <erickt> morning everyone!
+[17:01] <erickt> who's in today?
+[17:01] <brson> i'm here
+[17:01] <sebasmagri> o/
+[17:01] <steveklabnik> o/
+[17:02] <badboy> n'abend!
+[17:02] <skade> ohai
+[17:02] <erickt> so we got two agenda items today: https://github.com/rust-community/team/issues/121
+[17:02] <erickt> please add more if you got em
+[17:02] <skade> I'll be a little delayed, have some setup to do for the meeting after the meeting :(
+[17:03] <badboy> I need stickers & a tshirt... but I guess that's not to be discussed here^^
+[17:03] <erickt> first up is jntrnr's https://github.com/rust-lang/rfcs/pull/1865
+[17:03] <badboy> I put it on there
+[17:03] <erickt> ypu
+[17:03] <erickt> you're the best
+[17:03] <badboy> and while I don't think we will all agree on a single outcome, given that it falls in our departement we should all have an eye on it
+[17:04] <erickt> brson / steveklabnik / jntrnr: we haven't really managed RFCs before, but this seems like it falls under our umbrella
+[17:04] <erickt> mind taking a moment to talk through our responsibilities sheparding this along?
+[17:05] <Manishearth> erickt: my thoughtss on that matter haven't changed
+[17:05] <erickt> shepharding, or this RFC?
+[17:05] <Manishearth> erickt: responsibility: bow down to my obviously superior comments and agree with me
+[17:05] <Manishearth> shepmastering
+[17:06] <erickt> Manishearth: I don't remember what your thoughts are :)
+[17:08] <brson> erickt: is the core team definitely going to be responsible for this or is the community team?
+[17:08] <brson> core team is assigned
+[17:08] <erickt> that's a wonderful question
+[17:09] * bstrie_is_here is here
+[17:09] <erickt> brson: I suppose at least one reason why is that we don't have a T-community
+[17:09] <erickt> label
+[17:09] <steveklabnik> heh
+[17:10] <skade> i haven't been able to answer in full, but there's been some very specific objections to the options discussed in URLO
+[17:10] <brson> either way it seems like community team buy in will be necessary
+[17:10] <bstrie_is_here> discussing the new communication channels RFC?
+[17:10] <erickt> brson: this seems like stuff we should eventually be owning to take load off core
+[17:10] <badboy> bstrie_is_here: yes
+[17:10] <erickt> bstrie_is_here: we are
+[17:10] <skade> also, for example, improval of IRC usability (for example by deploying one of the great alternative interfaces) are not discussed
+[17:10] <brson> erickt: yes
+[17:11] <bstrie_is_here> the community team's support doesn't suffice to establish new communication channels, and steveklabnik won't scale forever. the only way that "official" new channels can exist is if volunteers actually want to use them, and sit in there to answer questions
+[17:11] <erickt> brson: so this sounds like a good learning experience for us :)
+[17:12] <erickt> bstrie_is_here / skade: yeah my big worry is about splitting the community
+[17:12] <skade> well, I don't have that too much
+[17:12] <Manishearth> erickt: brson this sounds like a comm team thing, but as with most comm team stuff core may want deeper involvement too
+[17:13] <skade> most of the discussion in those channels is transient anyways, so it just needs a crowd, even if those are different crowds
+[17:13] <erickt> my initial vote would be for more things like a matrix/riot bridge
+[17:13] <brson> yes core team cares about this quite a lot as a matter of training and perception
+[17:13] <Manishearth> whaddya mean steveklabnik won't scale forever he's part of the cloud isn't he
+[17:13] <bstrie_is_here> I know there are people that would be using slack who won't be using IRC, but none of the rust core teams can make this happen unless *users* want this to happen and are willing to do the legwork
+[17:13] <steveklabnik> heh
+[17:13] <edunham> to state the obvious, this seems right up the mod team's alley as well
+[17:13] <brson> yeah good point
+[17:13] <erickt> +1
+[17:14] <sebasmagri> regarding the Matrix bridge, it's already deployed and compatible with the current chan, so no additional work needed to get it. Just advertising it.
+[17:14] <bstrie_is_here> official rust buying really means nothing here, other than instructing the mod team to lurk there
+[17:14] <skade> well, i find the objection that slack is not caring about your private data _and_ being silent about this a quite strong objection
+[17:14] <skade> the question to ask if people want slack or certain _properties of slack_ - and if those can be gotten otherwise
+[17:14] <edunham> like, I think we should come to a proposed solution with their needs in mind and then give them a chance to veto it, since ultimately it's their work that makes Rust communication channels as reliably nice as they are
+[17:14] <bstrie_is_here> I think a bridge wouldn't be the worst idea, depending on how it's implemented
+[17:14] <edunham> * blessed communication channels
+[17:14] <erickt> sebasmagri: if we go this route, it's also worth considering if we should be running our own matrix/riot server
+[17:15] <sebasmagri> nice formatting and File/code sharing is available on Matrix, I don't know how this gets mapped to IRC though
+[17:15] <edunham> I think a 1 user to 1 irc account bridge mapping is pretty essential to IRC channel moderation in my experience, but then again I'm not a mod here
+[17:15] <erickt> jntrnr: I'm guessing you're all asleep
+[17:15] <sebasmagri> and there's a bridge for matrix-gitter as well, but I'm almost sure it wont work on a tri-directional way
+[17:16] <badboy> (back to the flat earth discussion from earlier…)
+[17:16] <erickt> (hehe)
+[17:16] <erickt> (it's his fault for moving)
+[17:16] <bstrie_is_here> is the proposed plan to mirror a slack channel to #rust? or #rust-beginners? or #rust-slack?
+[17:16] <edunham> erickt: would people on matrix/riot who don't want to use IRC be offended by having to use a public server?
+[17:17] <sebasmagri> erickt: we could use Ruma for it https://www.ruma.io/
+[17:17] <Manishearth> I think (and I mentioned this in my comment there) that we should be clear about differentiating between newbie channels and core dev channels when discussing this
+[17:17] <edunham> +1
+[17:17] <erickt> bstrie_is_here: I think jntrnr proposed them being independent communication channels
+[17:17] <Manishearth> because my current opinion is "go for it" for #rust(-beginners) on slack gitter whatever, but a big no on core channels
+[17:18] <skade> ruma isn't quite ready AFAIK
+[17:18] <Manishearth> and i think others share that, so it's a bit muddling when the two (imo very separate situations) get mixed up
+[17:18] <bstrie_is_here> erickt: independent how? no mirror at all?
+[17:18] <erickt> edunham: are you referring to that people might be unhappy if they go to matrix.rust-lang.org?
+[17:18] <bstrie_is_here> I really, really don't want to add more interfaces that rust folks need to monitor
+[17:18] <skade> I'm not much of a fan holding up on the mirroring discussion. I don't see much of a win over just having two venues of discussion.
+[17:18] <erickt> that they might want to run their own frontends?
+[17:19] <erickt> bstrie_is_here: yes I believe it'd be independent
+[17:19] <sebasmagri> skade: you're right, I don't know about its readiness yet
+[17:19] <edunham> erickt: I'm referring to whether or not maintaining a matrix.r-l.o is any advantage over just pointing folks at matrix.org
+[17:20] <erickt> he does mention bridging in the alternatives section, but doesn't go into much detail beyond that the slack-irc bots aren't high quality yet
+[17:20] <erickt> edunham: true
+[17:20] <bstrie_is_here> adding a wholly separate new communication channel smells like long-term heartache to me
+[17:20] <bstrie_is_here> let's not even consider adding more than one
+[17:21] <erickt> bstrie_is_here: I do think it'd be useful to have an easy web ui for newbies though
+[17:21] <skade> I don't see that much of a problem. We have that with /r/rust, URLO and IRLO already 
+[17:21] <bstrie_is_here> erickt: I'm using mibbit as we speak
+[17:21] <edunham> To play devil's advocate, the only advantage of having a separate/"backup" communication channel would be if Moz hypothetically went poof. 
+[17:21] <erickt> mibbit works alright
+[17:21] <sebasmagri> the main issue I personally find with IRC is that it doesn't handle disconnection-reconnection with backlog and notifications well... Unless you use znc or a irccloud alike service. That's something Matrix fixes. And we'd still have one communication channel, no replication or additional moderation needs
+[17:21] <bstrie_is_here> skade: that is a huge problem, I never have time to monitor irlo and urlo already
+[17:21] <skade> http://novemb.rs/chat.html << i propose kiwi before
+[17:22] <skade> sure, that's why i think we need a dedicated team that cares about whatever channel it is
+[17:22] <edunham> Let's say Moz has a major security breach and shuts down their IRC servers for a month. One could contend that having an already-set-up redundant location would allow Rust development to continue a lot more smoothly than trying to address the need at the time. Then again, there are compelling counterarguments as well.
+[17:22] <bstrie_is_here> we have to hold "official" channels to way higher standards of discourse, which means we need people to enforce that. who's signed up to do so?
+[17:23] <erickt> edunham: has that happened before?
+[17:23] <skade> no one currently, but as long as we're not even decided on running such a thing, we have a chicken and egg problem
+[17:23] <skade> no one wants to sign up as a moderator of something that doesn't exist
+[17:24] <bstrie_is_here> skade: on the contrary, there's no risk of signing up for people who want to do it, given that it currently requires no investment :P
+[17:25] <skade> ehm, nope
+[17:25] <erickt> :)
+[17:25] <skade> projects draw people, not plans
+[17:25] <Manishearth> skade: /r/rust, urlo, and irlo are separate purposes. irlo is more permanent discussion about internals.
+[17:25] <erickt> the mod team did express concerns about having to cover even more channels
+[17:25] <skade> Manishearth: sure, but they are still different venues
+[17:26] <Manishearth> /r/rust is basically #rust, as is urlo
+[17:26] <bstrie_is_here> well we're emphatically not going to have an entirely unmoderated community as an official channel, so if it's a chicken-and-egg problem as you say (which I don't believe) then I suppose it's just not going to happen
+[17:26] <erickt> so they'd probably need to grow if we grew new ones to cover
+[17:26] <Manishearth> skade: for different purposes. that is important
+[17:26] <Manishearth> irlo's existence doesn't split the community
+[17:26] <erickt> that's the advantage of a fully bridged solution
+[17:26] <Manishearth> /r/rust vs urlo kind of does but the discussions there are more transient so not really
+[17:27] <Manishearth> this is why I'm advocating maintianing a difference between "gen pop" channels and internals channels
+[17:27] <Manishearth> in this discussion
+[17:27] <Manishearth> fragmentation in "gen pop" is okay since the vast majority of folks are transient participants anyway. these channels don't have a /community/ per se
+[17:28] <Manishearth> they have a few folks who stick around, and folks from the community drop by, and random new rustaceans drop by
+[17:28] <skade> yeah, that makes sense
+[17:28] <bstrie_is_here> Manishearth: the population may be transient, but we guarantee that there are always knowledgeable people around to answer questions, which is the value of the community
+[17:28] <skade> well, this is the kind of unclarity why i think we should discuss what peoples problem are
+[17:28] <Manishearth> bstrie_is_here: oh, yeah, that's a separate concern
+[17:28] <bstrie_is_here> Manishearth: this is exactly why I refer people from ##rust on freenode to #rust on moznet, because no experts are sitting over in the freenode channel
+[17:28] <Manishearth> yep
+[17:29] <skade> is the issue that many find IRC unaccessible to them (can we improve access?) or because they have slack open all day and absolutey need an additional chat in there?
+[17:29] <bstrie_is_here> well, there's mbrubeck, but not many others :P
+[17:29] <Manishearth> skade: both i think
+[17:29] <Manishearth> skade: however, in this context, again, making #rust more accessible is great. making #rust-internals and co more accessible via slack can have a negative effect (and is it necessary?)
+[17:29] <erickt> skade: yeah. here's what I think jntrnr's root argument is "The motivation is fairly simple: IRC is struggles in terms of usability, and to some, this is a barrier for entry. More recent chat platforms like gitter and Slack have filled in the usability gap, and are now preferred over IRC."
+[17:30] <bstrie_is_here> I am completely willing to concede that IRC is terrible and foreboding, but I don't know that throwing slack into the mix is going to improve anything. we've got a subreddit and a discourse and a decent presence on SO already
+[17:30] <Manishearth> I don't like the concept of "if you want to 'level up' in the community you must use irc" but I think ultimately we must choose a single channel else internals discussion won't work.
+[17:30] <skade> sure, but we haven't even discussed (or tried) whether there's better options to access IRC
+[17:30] <brson> bstrie: none of those provide the rich real-time collaboration experience that people now expect from slack
+[17:30] <bstrie_is_here> Manishearth: I think internals discussion is beside the point here
+[17:30] <brson> neither does irc
+[17:31] <erickt> more distilled, general population wants more of a modern UI for realtime chat
+[17:31] <bstrie_is_here> Manishearth: because the devs can use whatever they want, and people will go there to lurk
+[17:31] <skade> as i mentioned above: there's quite good, free "one-click" interfaces for IRC
+[17:31] <Manishearth> bstrie_is_here: I know, but the rfc explicitly mentions this, so....
+[17:31] <erickt> brson: have you tried https://riot.im
+[17:31] <skade> it doesn't fix history and retention problems, though
+[17:31] <erickt> brson: it's not quite as nice as slack but it's still pretty decent
+[17:31] <edunham> For someone embedded in the "I use Slack for everything" world, the arguments toward using IRC are similar to the arguments people make for why Rust should use GitLab :)
+[17:31] <sebasmagri> Matrix/Riot does
+[17:31] <Manishearth> I think it's okay to ask people to use IRC for discussing internals though. It's not *hard* to use something like IRCCloud, and if your'e already a part of the community you know who to ask to figure this stuff out. But if you're not, and want to join, you should not have to figure this stuff out.
+[17:32] <bstrie_is_here> brson: what sort of rich real-time collaboration features does slack provide? I haven't used it much, it looks like it's just IRC with inline gif support
+[17:32] <badboy> Don't underestimate gif support
+[17:32] * bstrie_is_here no memes
+[17:32] <badboy> no one needs gif support
+[17:33] <erickt> bstrie_is_here: final countdown youtube clips are grandfathered in, at least in this channel
+[17:33] <brson> erickt: no i have not
+[17:34] <bstrie_is_here> brson skade: if you're willing to personally monitor and answer questions in the slack channel and advertise it so that it grows then I think it's fine, but *somebody must* be responsible for these tasks
+[17:34] <Manishearth> bstrie_is_here: always-logged-in 
+[17:34] <brson> bstrie_is_here: i'm afraid i don't have enough experience to cite specifics. i know the instant i opened slack i felt a huge difference in accessibility. image support is an obvious difference
+[17:34] <erickt> brson: it's decent
+[17:34] <Manishearth> not realtime, but it's a rich collaboration thing
+[17:35] <skade> edunham: so, would ease of use or ease of access (by having everything in one client) be the more important point
+[17:35] <Manishearth> with always-logged-in your discussion can upgrade to a long-term non-realtime one at any time
+[17:35] <erickt> bstrie_is_here: also there's a mobile app
+[17:35] <erickt> and automatic archiving
+[17:35] <skade> bstrie_is_here: I'm not disagreeing there, I always said that any new channel needs a mod team willing to take on the load
+[17:35] <bstrie_is_here> skade: then you should announce it to the current channels on a provisional basis to seek people willing to moderate it
+[17:36] <sebasmagri> Manishearth: we can achieve always-logged-in with this IRC channel bridged to Matrix. That's what I'm currently using.
+[17:37] <Manishearth> sebasmagri: nice
+[17:37] <frewsxcv> IRC channel bridging is not simple via Matrix, for the record
+[17:37] <skade> bstrie_is_here: well, but I'm not convinced on the idea on other grounds :)
+[17:38] <sebasmagri> Corey Farwell: well it's already working, we don't need to work on it.
+[17:38] <Manishearth> fwiw for alternate #rust and beginners channels I do think it's important to have as many channels as folks want (provided there are folks interested enough to hang out and help there) -- newbies shouldn
+[17:38] <Manishearth> t have to "figure it out" when they join
+[17:38] <erickt> frewsxcv: how so?
+[17:38] <Manishearth> and both IRC and slack need some figuring out
+[17:38] <Manishearth> but folks are used to at least one of them
+[17:39] <Manishearth> so having both is a good step
+[17:39] <erickt> does anyone see an advantage of having multiple UI channels, like a gitter and slack channel?
+[17:39] <Manishearth> erickt: what I just said?
+[17:39] <rust-neo-M> test?
+[17:40] <badboy> hm
+[17:40] * frewsxcv understands Matrix, Slack, and IRC. Not so much Gitter
+[17:40] <Manishearth> gitter is actually perhaps the easiest to set up if you have a github account
+[17:40] <Manishearth> one-click, basically
+[17:40] <Manishearth> with slack you need to figure out that you should use the app, and sign up each time
+[17:40] <sebasmagri> but that can be a limitation as well for someone who has no github account. Yes, those people exist.
+[17:41] <Manishearth> i know
+[17:41] <skade> my biggest problem with slack is that the product is not meant for such use and it shows at all corners
+[17:41] <frewsxcv> erickt: Joining an IRC room on Matrix requires PMing some random @mozilla-irc:matrix.org user and sending a bunch of commands. Unless you're referring to having Matrix user join something like #rust-community:matrix.org and that will have some sort of bot that bridges the IRC room
+[17:41] <erickt> Manishearth: I mean multiple web UI interfaces
+[17:42] <Manishearth> erickt: as in?
+[17:42] <erickt> Manishearth: if all we want is a prettier web UI for chatting, we don't need both gitter and slack
+[17:43] <bstrie_is_here> I don't think we need more than a single real-time web chat interface. emphatically
+[17:43] <frewsxcv> +1 erickt
+[17:43] <erickt> frewsxcv: I suppose it might be possible to setup our own riot server that just talks to the mozilla irc server. maybe that'd cut out some of the setup
+[17:43] * jntrnr joins the fray
+[17:43] <erickt> a wild jntrnr has appeared
+[17:44] <skade> is it #rust-beginners or #rust-beginner?
+[17:44] <Manishearth> erickt: no that was my point -- there will be folks used to gitter but not slack or IRC and they shouldn't need to "figure it out"
+[17:44] <steveklabnik> with the s
+[17:44] <steveklabnik> skade: ^
+[17:44] <Manishearth> and we have an active gitter community anyway
+[17:44] <jntrnr> Yeah, I keep trying to get the conversation to be "how do we help Slack folks"
+[17:45] <erickt> jntrnr: is it actually slack folks? or just people who want a nicer web UI?
+[17:45] <jntrnr> There is a technical question to it but that's mostly social imho
+[17:45] <Manishearth> erickt: both afaict
+[17:45] <erickt> I can imagine if we got a gitter community that's a bit more painful to ask them to move
+[17:45] <jntrnr> As in, do we want to reach out to them
+[17:45] <skade> https://github.com/rust-lang/rust-www/pull/701 (FWIF)
+[17:45] <skade> FWIW
+[17:45] <jntrnr> People specifically asking for slack who use slack everyday
+[17:45] <skade> erickt: well, we don't need anyone to move
+[17:46] <skade> if they just want to keep it running, why not :)
+[17:46] <jntrnr> Yes please no one move :)
+[17:46] <badboy> skade: +1
+[17:46] <frewsxcv> Has anyone asked these people why they want Slack?
+[17:46] <frewsxcv> Are those reasons documented anywhere?
+[17:46] <skade> this is like the most infuriating thing about this discussion that outside of this team everyone seems to believe we want to move away from IRC and such
+[17:46] <bstrie_is_here> I'm not interested with helping any given service lock our users in, all we need is an easy web interface
+[17:46] <jntrnr> frewsxcv: it's what they're used to
+[17:47] <skade> jntrnr: my main question there is just: is IRC absolutely a no-go to them or is it just that the interface is shit (which is often true)?
+[17:47] <jntrnr> skade: yeah I try to make that clear but there seems to be a fear response that makes the discussion difficult
+[17:48] <jntrnr> skade: yes for some irc is no go
+[17:48] <erickt> jntrnr: to take this argument to extremes, do we pursue the community to the next thing after slack?
+[17:48] <skade> jntrnr: even if it is just the transport and they don't see it? :)
+[17:48] <sebasmagri> So a web based IRC client would be completely fine. If users want always-logged-in then advertise Matrix
+[17:48] <erickt> and with official moderation coverage for all X channeles?
+[17:48] <jntrnr> erickt: if the next thing becomes sufficiently popular
+[17:49] <erickt> rust snapshat channel here we come :)
+[17:49] <erickt> err snapchat
+[17:49] <erickt> :/
+[17:49] <skade> well, why not :D
+[17:50] * badboy takes over Instagram
+[17:50] <erickt> so at a bare minimum, I think one gate we should have before we call something official/unofficial is if we have moderators watching those channels
+[17:51] <erickt> we could at least have links to these "unofficial" unmoderated channels
+[17:51] <Manishearth> yes pls
+[17:51] <Manishearth> this is why i mwntioned bootstrapping
+[17:51] <jntrnr> Totally.
+[17:51] <Manishearth> set them up. link to wm, perhaps separately
+[17:51] <Manishearth> give mods access, 
+[17:51] <erickt> I do worry about them regressing to the antagonistic tech chats though
+[17:52] <jntrnr> I think the core team pushed for rfc in part to ensure moderation could accommodate.
+[17:52] <Manishearth> if enough of a community grows we can deputize more active members
+[17:52] <Manishearth> erickt hence, bootstrapping. let mod team keep an eye on it short term
+[17:53] <Manishearth> obv mod team must agree
+[17:53] * badboy points to the clock
+[17:53] <erickt> and then we can write up something that says how to get a channel officially blessed
+[17:54] * skade prepares for the ruby berlin e.V. meeting...
+[17:54] <Manishearth> yep
+[17:54] <erickt> such as respecting the CoC and having mod team coverage
+[17:54] <skade> well, concerning the RFC, I would prefer a more deep discussion of the problems solved
+[17:54] <jntrnr> skade: ?
+[17:55] <jntrnr> Do we need slack is the problem
+[17:55] <skade> (even if the problem is as simple "some people just totally prefer slack over everything and it's very convenient for them")
+[17:55] <jntrnr> Yup that's the rfc :)
+[17:55] <Manishearth> jntrnr: for general discussion? forinternals channels? slack or any web ui?
+[17:55] <skade> jntrnr: no, the problem is "why do people want slack and in which forms can we serve their needs"
+[17:55] <jntrnr> And making gitter official
+[17:56] <jntrnr> Hmmm I don't think that's the question
+[17:56] <skade> I do
+[17:56] <Manishearth> skade yeah. i think many wamt it bc it is convenient and they use it already. like i said for general rust discussion there should be zero barrier to entry
+[17:56] <jntrnr> But yeah, how much of official meeting are there is important too
+[17:56] <steveklabnik> jntrnr: i think what skade is trying to say is that you have an assumption here that's not spelled out in the RFC (not taking a position on this myself)
+[17:57] <Manishearth> what steve said
+[17:57] <steveklabnik> that is, you're starting from "
+[17:57] <steveklabnik> how do we help Slack folks
+[17:57] <steveklabnik> "
+[17:57] <erickt> I do worry about splitting up our community too much, but on the other hand, our community is getting too big for being in individual channels :)
+[17:57] <Manishearth> in general i think my position here is "what steve said" tbh
+[17:57] <steveklabnik> but not everyone is on the same page there
+[17:57] <jntrnr> I'm confused :-/
+[17:57] <Manishearth> we split rust into beginners anyway
+[17:58] <Manishearth> and rust is still crowded
+[17:58] <steveklabnik> jntrnr: so consider that comment from withoutboats
+[17:58] <steveklabnik> to my response. which was "nobody is asking for other alternatives, thery'e asking for slack"
+[17:58] <steveklabnik> that kind of backstory/justification isn't actually in there
+[17:58] <steveklabnik> (last i read)
+[17:58] <steveklabnik> that's what i understand skade to be saying
+[17:58] <skade> steveklabnik: yeah, that's what I mean
+[17:58] <jntrnr> And #rust is already 20% bigger than it was a few months ago
+[17:59] <jntrnr> We're on the growth curve now and we need to compensate
+[17:59] <Manishearth> yep
+[17:59] <skade> everyone prefers their current solution, but sometimes you can serve them otherwise (or sometimes not)
+[17:59] <skade> i just don't find the case convincing currently
+[17:59] <jntrnr> steveklabnik: ah okay
+[18:00] <steveklabnik> :+1: <3
+[18:00] <Manishearth> +1 skade
+[18:00] <jntrnr> skade: I guess it's like "but your website doesn't work with my browser of choice". We would fix the website not tell them to use a new browser
+[18:01] <skade> kinda similar but not quite :)
+[18:01] <erickt> jntrnr: yeah, I think one thing to consider if people asking for slack would be satisfied if we said to use our matrix/riot.im server, which would be bridged to our irc
+[18:01] <steveklabnik> hehe analogies
+[18:01] <steveklabnik> i read that analogy as "yeah, don't tell me to use a new browser" :p
+[18:01] <Manishearth> happy birthday steveklabnik!
+[18:01] <steveklabnik> Manishearth: <3 ty
+[18:01] <skade> I guess the point is we should make a noticeable effort to fix things
+[18:01] <erickt> happy birthday!
+[18:01] <skade> Manishearth: happy birthday <3
+[18:01] <booyaa> happy birthday!
+[18:01] <jntrnr> Yay!!! 🍰🍰
+[18:02] <Manishearth> skade not mine. today is my alt-birthday
+[18:02] <skade> i think we all agree that the current situation is just not very pleasant to many
+[18:02] <skade> Manishearth: damn, i blame it on irc
+[18:02] <erickt> +1 I'd love something better for people who are uncomfortable or unable to use irc
+[18:02] <steveklabnik> yeah, i really liked the "how to irc" comment in the rfc
+[18:02] <skade> steveklabnik: happy birthday <3
+[18:02] <steveklabnik> <3
+[18:02] <Manishearth> skade so youre saying this wouldnt happen on slack? dems fighting words :p
+[18:03] <skade> Manishearth: sure, steve isn't on slack, so it wouldn't have happened
+[18:03] <Manishearth> haha
+[18:03] <jntrnr> Lol
+[18:03] <erickt> since it's a little late, can we start summarizing our comments on https://public.etherpad-mozilla.org/p/rust-chat-channels
+[18:03] <jntrnr> Thanks all
+[18:03] <Manishearth> i will pitch in later, will be kicked out of meeting by transbay tube soon
+[18:04] <Manishearth> center of all tech and no 4g in tunnels. wat you doing sf
+[18:04] <badboy> erickt: will we take any of this discussion and/or its results from the community team's perspective to the rfc or do we decide on that next week?
+[18:05] <mbrubeck> more channels == we will start drafting people onto the moderation team.  mandatory six-week tours of duty.  :)
+[18:06] <erickt> mbrubeck: +1
+[18:06] <erickt> we should get you a drill sergeant hat
+[18:06] <badboy> I vote for shifted six-week tours of duty for mods on those channels so they at least all have to cover 2 versions of rust!
+[18:06] <erickt> badboy: first thing is to summarize all the comments we had here
+[18:07] <badboy> alright!
+[18:07] <erickt> we should eventually vote, or whatever subteams do to voice their collective opinion :)
+[18:09] <bstrie_is_here> steveklabnik: on my way back from dc I dropped my friends akiva and molly off at the ny tech solidarity meetup, not sure if they remembered to say hi to you for me :P
+[18:09] <badboy> the IETF uses humming to reach rough consensus or at least a sense of consensus
+[18:09] <badboy> we should adopt something similar!
+[18:09] * badboy writes a humming-over-IRC RFC
+[18:19] <steveklabnik> bstrie_is_here: ah! they might not have :) i dunno. i was very tired
+[18:20] <badboy> > Unlike other languages which have one preferred means of signalling an error, C is a multi error paradigm language. 
+[18:20] <badboy> oh my...
+[18:20] <steveklabnik> th enext sentence is funnier imho
+[18:20] <skade> i thought C is a language to implement error handling patterns
+[18:21] <erickt> I think I got everything on https://public.etherpad-mozilla.org/p/rust-chat-channels, can you all check and add anything I missed?
+[18:21] <badboy> steveklabnik: I didn't even get that far
+[18:22] <erickt> and tweak any language I might have used?
+[18:22] * badboy rewrites erickt's note in German
+[18:22] <erickt>  hehe
+[18:31] <carols10cents> sorry i missed the meeting
+[18:31] <carols10cents> we have a slack for rust belt rust
+[18:31] <carols10cents> and i've kept it open
+[18:31] <carols10cents> but it hasn't had much traffic since the conference
+[18:31] <badboy> hello carols10cents 
+[18:32] <carols10cents> idk if that's a useful data point or not
+[18:32] <carols10cents> i'm asking in there what people think, since it's a bunch of rust slack users at least
+[18:34] <skade> well, we used to have something similar for eurucamp, ruby berlin and it didn't get much traction, either
+[18:37] <badboy> uff, 15$ shipping for the shirts
+[18:38] <badboy> anyone willing to grab a shirt and send it over to me as a "gift" to avoid taxes?^^
+[18:48] <hoverbear> badboy: I might be able to help you
+[18:49] <steveklabnik> aturon: ^
+[18:49] <steveklabnik> i thought that we were gonna help with this
+[18:50] <aturon> steveklabnik: yes, this was supposed to be subsidized, i will check into it (though Leah is out right now)
+[18:50] <badboy> importing from the US is fun anyway -_-
+[18:51] <badboy> >=26€ → +tax, >= 120€ → additional toll
+[18:51] <badboy> (in theory)
+[18:52] <aturon> badboy: steveklabnik: ok, i've asked DevSwag and will let you know as soon as i hear more
+[18:52] <badboy> aturon: cool, thank you!
+[18:52] <aturon> but definitely the intent is for european shipping to be cheaper
+[19:55] <Manishearth> steveklabnik: https://e.xtendo.org/monad#61 reminds me of the chair thing in your post
+[19:56] <steveklabnik> heh
+[23:03] <aturon> booyaa: OK, we're setting up a discount for international orders that will make shipping the same as US
+[23:04] <aturon> the sales page will be updated with this info soon

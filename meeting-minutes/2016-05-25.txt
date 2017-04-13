@@ -1,0 +1,242 @@
+== 25 May 2016
+[10:40] <Manishearth> skade: https://cfp.rustfest.eu/mentorship
+[10:42] <Manishearth> rust community europe ev links to rubyberlin's site
+[13:23] <skade> Manishearth gnihi, thanks
+[15:30] <bstrie> erickt: meeting today?
+[15:31] <steveklabnik> should be in 25 mins
+[15:32] <bstrie> kk
+[15:32] <steveklabnik> i will only be semi-around, i have to leave for boston shorly after 12
+[15:34] <erickt> bstrie: yeah!
+[15:34] <erickt> I'm trying to get prepped now
+[15:36] <bstrie> when does the survey close?
+[15:41] <erickt> let me check...
+[15:41] <erickt> bstrie: June 8th
+[15:42] <erickt> anyone have any agenda items? https://github.com/rust-community/team/issues/32
+[15:43] <erickt> like a butterfly, I've just started to emerge from my chrysalis 
+[15:43] <erickt> and I haven't quite built an agenda
+[15:44] * jntrnr is also "semi-around"
+[15:49] <erickt> bstrie: did oscon happen?
+[15:50] <erickt> T-10 minutes!
+[15:52] <bstrie> erickt: oscon happened so hard!
+[15:54] <erickt> hm. what else should we have for our agenda...
+[15:54] <erickt> aturon: anything from your side?
+[15:55] <aturon> erickt: nope! i think most everything i've had on my radar is now under way
+[15:55] <erickt> skade: got anything specific in regards to rustbridge?
+[15:56] <erickt> aturon: aw, how can we help if you got things already under way?
+[15:56] <erickt> where can we put a spanner into your plans?
+[15:56] <aturon> hah, well mostly what's under way is initiatives this team is launching, so it'd be a spanner in your own gears :)
+[15:58] <erickt> harrumph. that's now how this is supposed to work, aaron
+[15:58] * frewsxcv waves
+[15:58] <erickt> you're always ruining my plans. first you skip work yesterday and miss lunch, and now this
+[15:59] * erickt waves!
+[15:59] <erickt> T-1 minute!
+[15:59] * erickt drumrolls...
+[16:00] <erickt> and it's time!
+[16:00] <erickt> fireworks
+[16:00] <erickt> marching band
+[16:00] <erickt> and etc
+[16:00] <erickt> hello everyone! welcome again to another team meeting
+[16:00] <erickt> it is I, Manishearth, to run things
+[16:00] <hjr3> hiall
+[16:01] <erickt> (thanks for running things last week)
+[16:01] <erickt> so who's in attendance today?
+[16:01] <hjr3> o/
+[16:01] <Manishearth> erickt: wat
+[16:01] <Manishearth> no
+[16:01] <Manishearth> heresy
+[16:01] <Manishearth> I am best Manishearth
+[16:01] <Manishearth> there is no better Manishearth 
+[16:01] <bstrie> dunno, I'm a pretty good Manishearth 
+[16:02] <BetterManishearth> muwhaaha
+[16:02] <BestManishearth> BEAT THIS
+[16:02] <erickt> impossible!
+[16:02] <bstrie> so I take it we have no agenda items this week, then? :P
+[16:03] <booyaa> two Manishearth go in, one leaves
+[16:03] <erickt> oh contraire! https://github.com/rust-community/team/issues/32
+[16:03] <erickt> I got a few agenda items, but please if anyone has anything more pressing please let me know
+[16:04] <erickt> I'm not sure if we have critical mass on the two things I really want to talk about, but here goes
+[16:04] <erickt> first, huon brought up this lovely comment about having alternating meeting times: https://github.com/rust-community/team/issues/27
+[16:05] <bstrie> +1 to oscillating meeting times
+[16:05] <erickt> can someone create a doodle for us to pick the other times that'll work for everyone? http://doodle.com/
+[16:06] <erickt> we can check back in later on in the meeting
+[16:06] <bstrie> erickt: I think the idea is to pick times that will be maximally inclusive for people who *aren't* here, yeah? probably just want to do timezone math
+[16:06] <erickt> and pass it around a urlo thread
+[16:06] <erickt> bstrie: but folks (cough) have work meetings they need to schedule around
+[16:06] <bstrie> hmm
+[16:07] <bstrie> well I'm good for anything
+[16:08] <hjr3> is the idea that we will post new times in the issue and see if that increases overall attendance?
+[16:08] <erickt> yeah. priority is to find something that'll work for us regulars, but allows more overall attendance
+[16:09] <erickt> alright, I'll send out a doodle after the meeting
+[16:09] <hjr3> sounds good
+[16:09] <erickt> next up, has anyone here been working on the rustbridge initiative?
+[16:10] <aturon> only loosely -- i think the status right now is that a bunch of people have been invited to the repo, but it's stalled a bit until skade can talk to the BridgeFoundry folks
+[16:10] <bstrie> skade has, right?
+[16:10] <erickt> or any of the workshops? Manishearth / bstrie: I vaguely remember you two saying you were going to reach out to some folks
+[16:10] <bstrie> I've been traveling, haven't had time for any work at all really in the past few weejs
+[16:11] <erickt> I know the feeling
+[16:11] <johannh> skade has invited some people from Berlin to the GitHub org, including one who'd like to actively work on workshops as far as I understand
+[16:12] <erickt> johannh: yeah, this issue has gotten some activity: https://github.com/rust-community/rustbridge/issues/3
+[16:12] <johannh> no response from larissas for me yet, BridgeFoundry I don't know the status (but would like to)
+[16:13] <erickt> I also poked dherman about the whole RustBridge name conflict yesterday. He said he was going to chime in on my https://github.com/rust-community/rustbridge/issues/4 today 
+[16:13] <johannh> skade is travelling as well as far as I know, so he might not be here for the meeting
+[16:13] <bstrie> johannh: I don't believe we've met before, are you in berlin too?
+[16:14] <bstrie> ("too" as in like skade, I'm not in berlin :P )
+[16:14] <aturon> erickt: re: naming, just to make sure everyone's clear: dherman et al are totally fine with the name being used for the community project as well.
+[16:14] <erickt> +1
+[16:14] <johannh> bstrie: hah, I was about to say let's meet up :D
+[16:14] <johannh> bstrie: yes I'm in Berlin, I work in the Mozilla office here
+[16:15] <erickt> yeah, I don't think the name is really an issue, I just have some questions about the whole user experience and discoverability
+[16:15] <erickt> that I hope we can resolve
+[16:15] <erickt> bstrie: It wouldn't have surprised me if you were in Berlin though
+[16:17] <erickt> does anyone have any ideas how we could structure a page that works well for outreach, and for this cross-language bridging infrastructure?
+[16:17] <erickt> or am I just over thinking things?
+[16:18] <aturon> erickt: one data point: I think the community RustBridge is the only one that wants "official" standing
+[16:19] <aturon> in terms of things like bridge.rust-lang.org or whatnot
+[16:19] <erickt> that's true
+[16:19] <aturon> whereas dherman's work is more of an "external" thing, and each project within it has its own "brand"
+[16:19] <aturon> (like Neon, Helix, etc)
+[16:20] <erickt> yeah
+[16:20] <aturon> in other words, i suspect most of the advertising etc will go toward either the official community RustBridge, or to individual projects like Neon/Helix
+[16:21] <erickt> I'm not sure if I have more on this topic, does anyone else?
+[16:21] <erickt> aturon: that could work for me
+[16:22] <erickt> so next topic, how's that old survey doing?
+[16:23] <erickt> we're still getting replies, which is great
+[16:23] <erickt> we got 47 replies just today
+[16:23] <bstrie> yeah, as much as I lovelovelove dherman's efforts I think that "FooBridge" was a well-defined meaning that predates it :P
+[16:24] <bstrie> erickt: I was planning on stickying the survey for a week on reddit as it nears its end, to give it one last boost
+[16:24] <hjr3> i am continuing to push it at meetups, etc. i am still meeting lots of people who have not taken the survey
+[16:24] <erickt> with about ~36% of replies being newbies
+[16:24] <erickt> hjr3: +1
+[16:25] <erickt> there anything else we can do?
+[16:26] <hjr3> i think we can probably do another marketing push
+[16:26] <erickt> jntrnr: how was our international response turnout?
+[16:26] <hjr3> i have not seen it mentioned for a while on twitter, reddit, etc
+[16:27] <jntrnr> erickt: having to pop out, but last I checked we were generally seeing more international response
+[16:27] <Manishearth> I emailed a bunch of folks in the India community, as well as tshepang
+[16:28] <erickt> great
+[16:28] <Manishearth> India isn't really *using* Rust yet, but there's a lot of interest
+[16:28] <jntrnr> and almost 36% are non-users
+[16:28] <jntrnr> which is great
+[16:29] <Manishearth> though I heard that some of the folks going to the bangalore meetup had concrete plans for using it @ work
+[16:30] <erickt> that's great
+[16:31] <erickt> So we're supposed to be wrapping the survey up on June 8th
+[16:31] <erickt> bstrie: how about we do the sticky on Monday?
+[16:32] <Manishearth> erickt: sticky?
+[16:32] <erickt> on reddit
+[16:32] <Manishearth> of the results?
+[16:32] <Manishearth> I'd like to have an analysis blog if possible too
+[16:32] <erickt> no, just to get people to fill out the survey
+[16:32] <Manishearth> oh ok
+[16:32] <erickt> we definitely need an analysis blog
+[16:33] <erickt> I think huon expressed tentative interest in helping out
+[16:34] <erickt> I think there's going to be a lot of cleanup we need to do, we got a lot of free text fields
+[16:34] <erickt> hehe, 2 more people just filled out the survey
+[16:35] <erickt> so I guess we should start identifying people to help drive this effort. I'll open a ticket for that
+[16:36] <erickt> the last bit I have if anyone else doesn't have anything was to just see if there's anything OSCON wise that we should talk about
+[16:37] <erickt> bstrie: ^
+[16:38] <bstrie> erickt: I'll give llogiq the word, he handles stickies
+[16:40] <erickt> well it seems like things are pretty quiet today :)
+[16:40] <Manishearth> erickt: we need to discuss rescheduling too
+[16:40] <Manishearth> this is probably the last week I can attend this meeting at this time :)
+[16:41] <erickt> Manishearth: the meeting? yeah. I'll send out a urlo thread since we don't quite have critical mass to plan a new time
+[16:41] <Manishearth> oh ok
+[16:41] <hjr3> what does "urlo" mean?
+[16:42] <erickt> hjr3: oh sorry! users.rust-lang.org/
+[16:42] <hjr3> oh right. i think i knew that one point
+[16:42] <hjr3> thanks
+[16:42] <erickt> no worries
+[16:42] <erickt> well I'm going to gavel this meeting adjourned
+[16:43] <hjr3> thxall
+[16:43] <erickt> remember, if you had any problems with this meeting, please blame Manishearth
+[16:44] <erickt> thanks everyone!
+[16:44] <badboy> Thanks, Manishearth.
+[16:44] <badboy> (I only really read here now, what happened?)
+[16:44] <Manishearth> haha
+[16:45] <erickt> badboy: hehe. start from http://logs.glob.uno/?c=rust-community#c120
+[16:45] <badboy> https://i.imgflip.com/14r4md.jpg
+[16:46] <erickt> haha
+[16:47] <erickt> Manishearth: what city are you in again?
+[16:48] <Manishearth> erickt: mumbai
+[16:49] <erickt> boy this international scheduling is tough
+[16:49] <Manishearth> erickt: this is my life now :p
+[16:49] <erickt> 7am SF == 12am Sydney == 4pm Berlin == 7:30pm Mumbai == 10am Pittsburgh
+[16:51] <Manishearth> erickt: I have to figure out sane work hours *and* try to be awake a bit when PST is up
+[16:51] <Manishearth> except PST is 12 hours off
+[16:51] <Manishearth> so ... :)
+[16:51] <erickt> yeah
+[16:52] <erickt> hm. in order to have Sydney and Berlin be up at the same time, SF is at 11pm and Pittsburgh is 2am
+[16:54] <erickt> I suppose we theoretically could pull off 9pm SF == 2pm Sydney == 6am Berlin == 9:30am Mumbai == 12am Pittsburgh
+[16:55] <hjr3> +1 for 9pm
+[16:55] <erickt> aturon: do you know how the other teams are handling this?
+[16:55] <Manishearth> 9:30 am mumbai wfm :)
+[16:55] <Manishearth> erickt: two meetings
+[16:55] <Manishearth> we did this for two years in servo
+[16:55] <Manishearth> (or more than that, idk, I've only been around that long)
+[16:55] <mbrubeck> alternating weeks
+[16:55] <Manishearth> it worked p well
+[16:56] <Manishearth> except our meetings don't really have much content since the team is pretty good at async everything
+[16:56] <Manishearth> the team, except for me, because it turns out that my solution to timezone issues was "you're going to be awake when they are anyway", which isn't going to work now :p
+[16:57] <Manishearth> but I'll figure it out :)
+[16:57] <erickt> hm. it'd make me sad that we'd basically be scheduling things so one person or another couldn't attend
+[16:57] <Manishearth> yeah
+[16:58] <erickt> so we'd have to make sure we're actually getting people to attend to offset it
+[16:59] <Manishearth> hm
+[16:59] <Manishearth> so.
+[17:00] <Manishearth> It occurs to me that 9:30-10:30 PM isn't that bad, and I can probably prep any points I'd like to mention beforehand or something
+[17:00] <Manishearth> in which case the current time is fine. not sure if it works for huon
+[17:01] <erickt> it's 2am for huon right now :(
+[17:01] <Manishearth> oh nooooo it won't
+[17:01] <Manishearth> $ timeof huon
+[17:01] <Manishearth> Thu May 26 03:01:02 AEST 2016
+[17:01] <Manishearth> erickt: if you exclude reasonable times for Mumbaiyou should be able to find a good time in australia evening/california morning  i think
+[17:02] <Manishearth> or just alternate it
+[17:03] <erickt> yeah. so we'd have a pacific ocean meeting and an atlantic ocean meeting
+[17:04] <Manishearth> servo actually had a PST meeting and a europe meeting
+[17:04] <erickt> how about we all join the flat earth society and get rid of these timezones once and for all?
+[17:04] <Manishearth> PST morning and europe noon I think?
+[17:06] <mbrubeck> The pacific meeting was timed to include gw in Australia
+[17:06] <erickt> what time was the pacific meeting?
+[17:06] <Manishearth> right
+[17:06] <mbrubeck> 10:00 and 17:00 Pacific
+[17:07] <erickt> hm. that makes Manishearth now get up at 5:30am
+[17:07] <mbrubeck> Originally one of them was pegged to Korea Standard Time
+[17:07] <mbrubeck> Everything shifts around when you have daylight saving time moving in different directions for different timezones. :P
+[17:08] <Manishearth> this is why you always trust the google calendar
+[17:08] <erickt> we could shift the PST morning meeting to 7 or 8am, which would get berlin at 4pm and mumbai at 7:30pm
+[17:08] <Manishearth> except when you yourself go to a different timezone
+[17:08] <mbrubeck> The best piece of timezone trivia to confuse Rust devs is that HKT eliminated DST.
+[17:08] <erickt> which might not be that bad if Manishearth doesn't want to have a social life
+[17:08] <Manishearth> erickt: I'm already planning to be around at 7:30pm on some days
+[17:09] <erickt> hehe that really confused me
+[17:09] <Manishearth> erickt: I'm mostly not going to work in the mornings
+[17:09] <Manishearth> or something like that
+[17:09] <Manishearth> so, strange hours, but it should work
+[17:09] <Manishearth> also, mumbai doesn't sleep
+[17:09] <Manishearth> unlike your city, which has trains that stop at 9pm. .... 9pm!!!
+[17:10] <erickt> hehe
+[17:12] <erickt> well it's work time for me, I'll send out a mail in a bit
+[17:13] <steveklabnik> heh
+[17:13] * steveklabnik is on a train right now
+[17:14] <hjr3> i did not realize there was a train from NY to boston. i always took the bus
+[17:14] <Manishearth> commuter rail?
+[17:14] <steveklabnik> amtrak, yeah
+[17:14] <Manishearth> oh ok
+[17:14] <hjr3> makes sense
+[17:14] <Manishearth> I have used amtrak just once
+[17:14] <Manishearth> we drove everywhere
+[17:15] <steveklabnik> hjr3: yeah, megabus isn't too bad either, but after this, i am going from boston to pittsburgh, which is also totally doable via megabus, but i like the train
+[17:15] <steveklabnik> there's actually power and the wifi is okay
+[17:15] <hjr3> ya that sounds nice
+[17:27] <staticassert> steveklabnik: Been to Boston before?
+[17:29] <steveklabnik> breifly
+[17:31] <staticassert> Gotcha. Well, welcome :P
+[17:32] <steveklabnik> thanks :)
+[20:18] <bstrie> nmatsakis: I'm in boston, are there any regular rust lunches like erickt arranges in SF? :)
+[20:18] <nmatsakis> bstrie: rust meetup tonight
+[20:18] <bstrie> tonight?!
+[20:18] <nmatsakis> bstrie: http://www.meetup.com/BostonRust/
+[20:18] <nmatsakis> er http://www.meetup.com/BostonRust/
+[20:18] <nmatsakis> er http://www.meetup.com/BostonRust/events/230419544/
+[20:19] <steveklabnik> i am en route
+[20:19] <steveklabnik> :)
+[20:23] <bstrie> I'll be there, but I'll have to miss a D&D game to do it :P

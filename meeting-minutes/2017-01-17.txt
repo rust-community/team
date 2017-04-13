@@ -1,0 +1,127 @@
+== 17 Jan 2017
+[08:25] <badboy> Who is Irvin Chen? And why is he the admin of our Rust google account?
+[08:33] <skade> badboy: part of the mozilla translation team and making our youtube videos go to the subtiteling services
+[08:33] <badboy> ah ok
+[08:33] <badboy> so all is fine
+[08:34] <badboy> should have clicked the fifth link on google
+[12:55] <mughal> admin of forums! my account is locked!
+[12:55] <skade> cc Manishearth ˆˆ
+[15:28] <skade> https://users.rust-lang.org/t/twir-quote-of-the-week/328/346?u=skade
+[15:28] <skade> I would call the borrowchecker zanshin: https://en.wikipedia.org/wiki/Zanshin (basically, what remains after you went through the whole exercise) :)
+[16:00] <meetingbot> No agenda has been set! :( The meeting is this Weds @ 5PM UTC. No minutes found for last week. :( bippity beep!
+[17:57] <carols10cents> sad meetingbot is sad
+[18:16] <nmatsakis> I remember there being talk of a successor to RustFest in Kiev -- has that been announced?
+[18:18] <steveklabnik> not yet
+[19:07] <jntrnr> skade: ping
+[19:07] <jntrnr> or does anyone else know about the google rust brand account?
+[19:19] <skade> jntrnr: pong
+[19:19] <skade> nmatsakis: last word i had is that they still want to settle on a venue lease
+[19:19] <skade> before announcing
+[19:19] <jntrnr> skade: I noticed someone was added to the Rust brand account on google
+[19:19] <jntrnr> skade: I didn't recognize the name
+[19:19] <skade> Irvin Chen?
+[19:19] <jntrnr> skade: that's the one
+[19:20] <skade> he handled adding our youtube channel to the subtiteling service for us
+[19:20] <jntrnr> skade: ahh, okay
+[19:20] <skade> still need to check all the things there
+[20:27] <skade> so, after ESR blew over, Fefe posted a rant that "Rust doesn't compile with openssl 1.1"
+[20:27] <skade> anyone got any idea what that is?
+[20:28] <badboy> fefe complains for a couple of months 
+[20:28] <Manishearth> is fefe like German ESR or something?
+[20:28] <badboy> basically^^
+[20:29] <badboy> on oct 25 he complained that cargo couldn't be built against openssl 1.1 which might have been true back then
+[20:34] <skade> so his problem is cargo?
+[20:34] <badboy> whhhyyy is there no changelog on rust-openssl?
+[20:35] <badboy> yes: (hate to link to it) http://blog.fefe.de/?ts=a917d0cc
+[20:35] <badboy> latest rust-openssl should be compatible with openssl 1.1
+[20:38] <badboy> https://crates.io/crates/cargo lists openssl ^0.9, which has 1.1 support afaik
+[20:40] <badboy> 0.9 was released on november 6, cargo was updated to ^0.9 on dec 25
+[20:40] <badboy> so if he really wanted he should be able to get it to work
+[20:40] <badboy> but honestly I don't care for him ¯\_(ツ)_/¯
+[20:43] <skade> sure. but annoying things like this happen: https://github.com/moonglum/explore
+[20:44] <badboy> what is annyoing about it?
+[20:45] <skade> oh, sorry, c&p error
+[20:45] <badboy> :D
+[20:45] <skade> https://www.reddit.com/r/rust/comments/5ok6r8/openssl_11/
+[20:45] <skade> sorry, lucas is not annoying
+[20:45] <badboy> yeah, I hoped you didn't mean him :D
+[20:46] <badboy> otherwise I would have had to defend him in a Rust-y battle sword!
+[20:46] <skade> hehe, he just had a long critical run on Rust at @nerdkunde
+[20:48] <badboy> he didn't sign up for tomorrow!
+[20:50] <Manishearth> skade: what I find interesting is that Asian scripts have ridiculous orthographies but simple phonologies, whereas European scripts have it in reverse
+[20:51] <Manishearth> e.g. most Asian languages I know of have pretty restricted sets of phonemes and predictable grapheme-phoneme mappings
+[20:51] <Manishearth> y'all are just like whatever and invent phonemes as you go along. especially english
+[20:53] <Manishearth> (proto-)Hindi created new letters to borrow words from Persian. English will borrow words from whichever the hell language it wants and represent them in Latin without changing the pronunciation
+[20:55] <skade> heh, I've only got a little experience with japanese scripts (though I still cannot read them, but Ruby gives you enough exposure)
+[20:56] * skade still wants to learn japanese at some point
+[20:56] <mbrubeck> good old-fashioned ASCII latin like God intended.  Diacritics are a European Communist conspiracy.
+[20:56] * skade hits mbrubeck over the head with an elision
+[20:56] <skade> sacre bleu
+[20:57] <mbrubeck> Manishearth: Spanish and Italian have pretty simple phonology and grapheme-phoneme mappings, on par with Japanese
+[20:57] <Manishearth> mbrubeck: oh, right, spanish
+[20:57] <Manishearth> yeah spanish is simple
+[20:58] <Manishearth> I'm not quite sure if french has a restricted set of phonemes. the mappings are not simple. but it might actually map to a restricted set of phonemes (filtered by accent)
+[20:58] * badboy shouldn't have dropped out of spanish class...
+[20:59] <Manishearth> I studied spanish for two years and then I couldn't, and had to take french, and french overwrote spanish
+[20:59] <skade> Manishearth: danish is interesting
+[20:59] <skade> the saying is that you should consider written and spoken danish separate languages 
+[20:59] <Manishearth> I was able to make use of my spanish abilities last year though. once. I was able to ask where the bathroom was at madrid airport (the signs led to a blank wall)
+[21:00] <Manishearth> skade: huh
+[21:00] <badboy> I know how to order beer
+[21:00] <badboy> (in spanish)
+[21:00] <skade> badboy: by ordering it or by writing it down for the barkeeper?
+[21:00] <mbrubeck> Norwegian (especially bokmål)  is the Swedish spoken language paired with the Danish written language
+[21:00] <badboy> skade: by ordering it.
+[21:00] <badboy> I can also order beer in Norwegian and sing a drinking song in norwegian.
+[21:01] <Manishearth> mbrubeck: wat
+[21:01] <Manishearth> mbrubeck: that ... doesn't make sense
+[21:01] <Manishearth> the scripts are the same, no?
+[21:01] <Manishearth> I guess danish doesn't use the a with the eye of sauron on it
+[21:01] <mbrubeck> Manishearth: to a very rough approximation.  But more seriously, the nordic languages are really more a spectrum of dialects (the divisions into languages are more political than linguistic)
+[21:01] <badboy> ï
+[21:01] <Manishearth> mbrubeck: ah, okay
+[21:02] <badboy> (I struggeled with norwegian when moving from the south to the north...)
+[21:02] <Manishearth> mbrubeck: so the words are similar enough that you can use the danish spellings and the swedish pronunciation and it is still plausible?
+[21:02] <mbrubeck> Manishearth: And Norway's bokmål standard for writing dates to when Norway was under Danish rule
+[21:02] <mbrubeck> or is descended from writing from that time, anyway
+[21:05] <mbrubeck> Manishearth: yes, in fact the written languages are easily mutually intelligible, the spoken dialects somewhat less so
+[21:05] <badboy> yeah -_-
+[21:05] <badboy> it's super useful if you learn bøkmal in a class and then you go to norway and no one speaks like that :D
+[21:06] <Manishearth> its interesting how mbrubeck used an obviously swedish spelling of bokmal and you used an obviously danish one
+[21:07] <Manishearth> of course, I will use an obviously-foreigner-who-doesnt-have-unicode-irc spelling :p
+[21:07] <badboy> oh wait, it's bokmål
+[21:07] <badboy> now I'm ashamed
+[21:07] <Manishearth> aw
+[21:07] <badboy> my brain is quicker to type ø than å
+[21:08] <badboy> and because both look norwegian enough^^
+[21:08] <Manishearth> � is used in norway/sweden?
+[21:08] <badboy> correct
+[21:08] <Manishearth> I thought it was unique to danish, my bad
+[21:09] <badboy> https://www.youtube.com/watch?v=f488uJAQgmw
+[21:10] <skade> badboy: o.O
+[21:11] <skade> "This video has more views than the population of norway﻿"
+[21:13] <badboy> yes, it does :)
+[21:13] <mbrubeck> sv: https://sv.wikipedia.org/wiki/Wikipedia:Dagens_skandinaviska_artikel/Dansk/Vecka_4,_2017
+[21:13] <mbrubeck> da: https://da.wikipedia.org/wiki/Wikipedia:Ugens_artikel/Uge_4,_2017
+[21:13] <mbrubeck> no: https://no.wikipedia.org/wiki/Wikipedia:Ukens_danske_artikkel/Uke_4,_2017
+[21:13] <badboy> and while we're at it: https://www.youtube.com/watch?v=pIb-boiAnRM
+[21:13] <mbrubeck> no wait, I think this is untranslated source text. :/
+[21:14] <skade> i'm still confused that campus party is still a thing people seem to enjoy. but maybe that's just my exposure to the berlin one :)
+[21:14] <skade> -.=
+[21:14] <skade> -.-
+[21:15] <skade> I still have this nerdcore-documentary here, they've also got a couple of weirds things...
+[21:22] <jdm> so many rust jobs in TWiR!
+[21:23] <badboy> keep them coming!
+[21:29] <badboy> finally a parser combinator skade can use: https://github.com/J-F-Liu/pom/blob/master/doc/article.md
+[21:38] <killercup> "pom" looks like a library that is especially popular with people whose font rendering has bad keming
+[21:39] <edunham> I think https://linux.conf.au/schedule/presentation/51/ will be streaming in 2 days (Thursday in many time zones, Friday in Australia)
+[21:39] <badboy> edunham: thanks for the info!
+[21:41] <edunham> yeah, I'm surprised to learn how many folks at Red Hat are extremely interested in Rust
+[22:03] <skade> edunham: interestingly, every time I'm in contact with one of redhat, no one knows about that
+[22:53] <badboy> wait, it's carols10cents' birthday? HAPPY BIRTHDAY! 
+[22:54] <Havvy> Ooh, happy birthday!
+[23:19] <carols10cents> badboy: off-by-one, it was yesterday ;) but thank you!!!!!
+[23:20] <carols10cents> thank you Havvy !!
+[23:30] <badboy> I'm a programmer, I _have_ to by off-by-one
+[23:30] <badboy> also: timezones
+[23:30] <badboy> my slack said "today" on the messages from others

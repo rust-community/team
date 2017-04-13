@@ -1,0 +1,286 @@
+== 13 Jul 2016
+[15:03] <erickt> It's nearly meeting time huzzah
+[15:04] <badboy> uff. an hour, right?
+[15:04] <badboy> (I'm not even in the team, I don't _have_ to be here :D)
+[15:09] <erickt> badboy: heh
+[15:09] <erickt> but you want to be here, right? ;)
+[15:10] <erickt> because no one throws a meeting like a #rust-community meeting
+[15:10] <badboy> I like to follow along
+[15:23] <erickt> agenda items: https://github.com/rust-community/team/issues/46
+[15:23] <erickt> please add some!
+[15:24] <hjr3> i will be there this morning. i took some much needed vacation and now i am back
+[15:25] <erickt> \o/
+[15:30] <booyaa> heh intrigued by "swag" lol
+[15:32] <erickt> aturon: ready to talk swag yet, or want to punt it off again?
+[15:32] <aturon> erickt: i talked with wycats last week, the plan is for him to open a discuss post
+[15:45] <erickt> k
+[15:45] <erickt> anyone else have agenda items?
+[15:46] <erickt> cuz it's only T-15!
+[15:46] <badboy> https://media.giphy.com/media/Az1CJ2MEjmsp2/giphy.gif
+[15:46] <badboy> (sorry)
+[15:47] <erickt> haha
+[15:47] <booyaa> heh
+[15:47] <booyaa> it'll be a quick 'un methinks
+[15:48] <erickt> it might be!
+[15:48] <erickt> https://media.giphy.com/media/11R5KYi6ZdP8Z2/giphy.gif
+[15:49] <dikaiosune> crickets and tumbleweeds, it's like where i grew up
+[15:49] <badboy> ohai dikaiosune 
+[15:49] * erickt waves
+[15:49] <dikaiosune> hallo
+[15:49] <erickt> who else is here today?
+[15:50] * steveklabnik waves
+[15:51] <carols10cents> hi
+[15:51] <erickt> mornin steveklabnik and carols10cents!
+[15:52] <erickt> carols10cents: hopefully by now you've been flooded with clients
+[15:52] <carols10cents> a flood of 1 lead, yes! :)
+[15:52] <erickt> woo
+[15:52] <erickt> one unit of flooding is way better than none!
+[15:52] <carols10cents> yup :)
+[15:54] <booyaa> carols10cents: gz
+[15:56] <locks> 👋
+[15:56] <erickt> morning locks!
+[15:57] <locks> let's [pokémon] go
+[15:57] <dikaiosune> no pokemans no
+[15:57] <bstrie> I was up until 7:30 am trying to troubleshoot windows in ways that somehow steadily made everything worse forever. a.k.a. good morning!
+[15:58] <carols10cents> resident frumplebum bstrie has been awakened
+[15:58] <erickt> T-2 minutes!
+[15:58] <erickt> hello bstrie!
+[15:58] <badboy>  /o\ not another pokemon channel
+[15:58] * jntrnr sleepily waves
+[15:58] <carols10cents> LET ME SHOW YOU MY POKE MANS
+[15:59] <bstrie> if anyone's looking to catch a frumplebum, aim a pokeball my direction
+[15:59] <erickt> me feels bad he hasn't pokemans yet
+[15:59] <erickt> T-1 minute!
+[15:59] <dikaiosune> erickt: don't -- you're not part of the ruination of my nightly dog walks -- it used to be so quiet and peaceful
+[15:59] <dikaiosune> (don't feel bad)
+[15:59] <erickt> https://media.giphy.com/media/3orieQSwXb5RNfhBL2/giphy.gif
+[16:00] <erickt> hehe
+[16:00] <erickt> and it's time!
+[16:00] <erickt> welcome welcome
+[16:00] <erickt> hello everyone
+[16:00] <erickt> thanks for coming
+[16:00] * brson here
+[16:00] <erickt> so lets get this meeting ball rolling!
+[16:00] * erickt waves
+[16:00] * locks goes after the ball
+[16:00] <jntrnr> roll that meeting ball
+[16:01] <hjr3> hiall
+[16:01] <erickt> since locks and dikaiosune are here from bors.io, want to give a little update on how it's going?
+[16:01] <bstrie> let's flick this meeting ball slightly upward with our index finger
+[16:01] <dikaiosune> locks?
+[16:01] <dikaiosune> i can do it too
+[16:01] <locks> there was a discussion with regards to the best way to set up the infrastructure
+[16:02] <locks> https://github.com/rust-community/bors/issues/1
+[16:03] <dikaiosune> so the rough consensus seems to be: get the current python code stood up on heroku, make it work with postgres, and live with the stateful in-memory nature of it
+[16:03] <locks> in short, frewsxcv set up an heroku account and we're waiting for someone to be voluntold to set it up ;) nathanhammond says he has availability atm
+[16:03] <erickt> oh great
+[16:03] <dikaiosune> also notriddle has apparently been working on a homu-esque daemon in rust, which may be an interesting alternative instead of a new rewrite if a rust project is a goal
+[16:03] <erickt> ooh
+[16:03] <dikaiosune> https://github.com/AelitaBot/aelita
+[16:04] <erickt> that's great, have you gotten in touch with notriddle?
+[16:04] <dikaiosune> erickt: they posted to the issue on infrastructure, but perhaps they should be involved more formally
+[16:05] <erickt> awesome
+[16:05] <erickt> as of right now though, it sounds like you're still hashing out how to run bors at the moment?
+[16:05] <dikaiosune> yarp
+[16:05] <erickt> s/bors/homu
+[16:06] <locks> we're going with bors
+[16:06] <erickt> but you got the heroku account all set up to do it's thing
+[16:06] <erickt> oh?
+[16:06] <locks> *we're going with the name bors
+[16:06] <erickt> oh, you mean the name
+[16:06] <locks> that's hte name of the repo and the channel
+[16:06] <locks> yes, sorry
+[16:06] <erickt> :)
+[16:07] <erickt> well it sounds like you're doing pretty good then. anyone here want to help out?
+[16:07] <erickt> morning nathanhammond?
+[16:07] <erickt> locks: or are you actually pretty good with volunteers?
+[16:08] <nathanhammond> Good morning! Welcome to my train ride.
+[16:08] <dikaiosune> i suspect that for whatever portion of the project is just "get the current code onto heroku using japaric's buildpack" we may already have too many cooks in the kitchen
+[16:09] <erickt> nathanhammond: thanks! we're just wrapping up the bors.io section
+[16:09] <erickt> heh ok
+[16:09] <erickt> what a lovely problem to have
+[16:10] <erickt> anything else I guess we can help with? I think you said you're okay right now with the funding of this project?
+[16:10] <nathanhammond> Agreed. I'm intending to push forward with the python/heroku/as-is.
+[16:10] <nathanhammond> Funding is fine.
+[16:10] <erickt> edunham I think said that mozilla could help with funding too
+[16:10] <erickt> nathanhammond: cool
+[16:11] <erickt> have any estimates yet when you think it'll be online?
+[16:11] <erickt> oh and I need to give y'all access to the bors.io domain name
+[16:11] <dikaiosune> given the low resource requirements of homu, i'd guess it's going to be a very cheap project to run (at least until it's opened to a wider audience)
+[16:11] <nathanhammond> Will encourage next steps of publishing this week.
+[16:12] <erickt> +1
+[16:12] <nathanhammond> We need to make a bit fewer decisions as a group but that is handle-able.
+[16:12] <nathanhammond> 😛
+[16:12] <erickt> :)
+[16:12] <erickt> anything else you need from us?
+[16:13] <nathanhammond> Please pass me the domain info and I'll set up a 1password vault for sharing secure info across the Bors team.
+[16:13] <erickt> nathanhammond: great, I'll sync with you after to get that setup
+[16:14] <erickt> alright moving on! any of the rustbridge folks here today?
+[16:14] <erickt> it doesn't appear so, well I can give an update on our second meeting we had yesterday
+[16:15] <booyaa> here
+[16:15] <erickt> we we're starting to get some more structure with the team
+[16:15] <erickt> oh hey booyaa!
+[16:15] <erickt> you want to go through yesterday's meeting>
+[16:15] <erickt> ?
+[16:16] <erickt> or I can I suppose
+[16:16] <booyaa> can do, one sec let me bring it up on screen
+[16:16] <booyaa> actually sorru i'm slowing things down struggling with computer (not my main one)
+[16:17] <booyaa> will do it next erickt 
+[16:17] <erickt> no worries, I can do it :)
+[16:17] <erickt> I don't need to delegate *everything* :)
+[16:17] <erickt> so the highlights
+[16:18] <erickt> aepheil0n (I hope I got that right) has taken ownership on getting workshop materials produced
+[16:18] <erickt> you can see now in https://github.com/rust-community/rustbridge/issues
+[16:18] <brson> neat
+[16:18] <erickt> we've started to split up the workshops into dedicated events, like a web scraping tutorial, url shortener and etc
+[16:19] <erickt> (it's aepsil0n btw)
+[16:20] <erickt> so the other main thing we came up with is that we're going to get our meetups (SF, London, Berlin, Sao Paulo) to have a workshop-a-thon meetups
+[16:20] <erickt> kinda like the gameathon and docathon we had at SF many months ago
+[16:20] <erickt> where we'll just get attendees to split up in small teams to prototype a task and training material for it
+[16:20] <brson> yes
+[16:20] <brson> awesome
+[16:20] <erickt> and do a critique at the end of the day
+[16:21] <erickt> figure it's a pretty fast way to start producing materials
+[16:21] <booyaa> i've already started pitching this to the london group, referencing the main issue (#2?) from rust bridge. there's an appetite to do this based on our last meetup (11th)
+[16:21] <booyaa> definitely
+[16:21] <erickt> great!
+[16:22] <erickt> I was thinking about trying to organize the SF one on Saturday 7/30, so, brson, can you see if that day is free?
+[16:22] <brson> erickt: sure
+[16:22] <erickt> thanks!
+[16:22] <erickt> any of the other meetup organizers here want to join in?
+[16:23] <erickt> we don't need to coordinate on anything formal
+[16:23] <erickt> just that if you do host an event make sure you either update or comment on one of the tickets in https://github.com/rust-community/rustbridge/issues
+[16:23] <erickt> so we don't duplicate effort
+[16:23] <booyaa> yeah i'd like to be part of that, will check my schedule first or one of the organisers can run it vladimir-sn (ping)
+[16:23] <hjr3> i am already hosting two coding events for women in LA in august, so i will postpone for now
+[16:23] <steveklabnik> oh i just remembered i wanted to put something on the agenda
+[16:24] <steveklabnik> lol sob
+[16:24] <erickt> steveklabnik: it's never too late!
+[16:24] <booyaa> great bond movie title
+[16:24] <dikaiosune> booyaa: "lol sob" or "it's never too late!" ?
+[16:24] <booyaa> heh why not both
+[16:24] <steveklabnik> added
+[16:24] <erickt> the last thing on rustbridge is just that Sonja, who volunteered to build out the website, is off on vacation for a bit and so we won't get some progress on that for a little bit
+[16:25] <erickt> the last agenda item I had before steve was just to sync in with jntrnr  / aturon on if there's been any more on the survey
+[16:26] <erickt> I know skade mentioned his partner hasn't had any time yet to drill into the data
+[16:26] <jntrnr> erickt: nothing yet
+[16:26] <jntrnr> I spent so much time on the blog post that I'm catching up with other things :p
+[16:26] <erickt> :)
+[16:26] <erickt> that's all I got. steveklabnik, take it away!
+[16:27] <steveklabnik> so, this is more of a PSA than anything
+[16:27] <steveklabnik> but
+[16:27] <steveklabnik> rovar, the organizer of the NYC meetup, is moving across the country
+[16:27] <steveklabnik> we have had really good turnout at NYC meetups, but now we won't have them anymore
+[16:27] <steveklabnik> i have tried to have my own, but have failed, becuase i am bad at this and too busy
+[16:28] <steveklabnik> so, if anyone knows NYC people or something, or thoughts on how to fix this.....
+[16:28] <steveklabnik> i figured you all should at least be aware that this is a thing that's going on
+[16:29] <erickt> steveklabnik: have you or rovar mailed out to the regulars to see if anyone would help organize?
+[16:29] <erickt> you and rovar are the only NYC rust folks I know (I think(
+[16:30] <erickt> unless bstrie happens to be migrating through NYC area this time of the year
+[16:30] <bstrie> steveklabnik: no time for one last NYC meetup before he leaves, where you can ask people in person to step up?
+[16:31] <bstrie> I mean, I'll be passing through NYC a bit on my way between boston and pittsburgh :P
+[16:31] <steveklabnik> it was posted to the existing Meetup list
+[16:32] <bstrie> if nothing else it couldn't hurt to make various threads about it on urlo, reddit, etc
+[16:32] <steveklabnik> but yeah, i'm not sure
+[16:32] <steveklabnik> if there's time for a last one
+[16:32] <erickt> steveklabnik: another option that might not put too much strain on you to organize is just to say "hey lets meet at such-and-such restaurant and talk rust"
+[16:33] <erickt> that's what I do when I run out of speakers
+[16:33] <carols10cents> yup, worksforme
+[16:33] <carols10cents> that's what i do here, it's fun
+[16:33] <erickt> usually only takes a few minutes to organize
+[16:33] <hjr3> i don't even seek out speakers. if they come, fine. otherwise, we all just get together and hack on stuff
+[16:33] <steveklabnik> erickt: yeah, i had tried that. i am bad at that as well
+[16:33] <steveklabnik> heh
+[16:33] <erickt> then from there you can convince someone to speak
+[16:33] <erickt> heh
+[16:34] <steveklabnik> i was trying to make brooklyn.rs a hack thing only at a cofee shop
+[16:34] <steveklabnik> and leave NYC Rust to be the "speakers" style meetup
+[16:34] <steveklabnik> http://brooklyn.rs/ <- june, then august 2014, then.... me feeling terrible about never having another
+[16:35] <jntrnr> it's a time machine!
+[16:35] <erickt> steveklabnik: no worries these things happen
+[16:35] <hjr3> i want to make losangeles.rs now
+[16:35] <booyaa> steveklabnik: you could just make it part of your monthly schedule, if new people come great. just need +1
+[16:35] <jntrnr> do it :)
+[16:35] <carols10cents> it might be easier to convince someone else to take over a hack meetup
+[16:36] <hjr3> what is the best registrar for .rs? or does it matter?
+[16:36] <steveklabnik> hjr3: i use net.im, they're kinda terrible but passable
+[16:36] <hjr3> thanks
+[16:36] <steveklabnik> booyaa: yeah, that was the idea..........
+[16:36] <steveklabnik> the real issue is my travel schedule, so i never know when i'm actually gonna be in town
+[16:38] <erickt> steveklabnik: we should pull rovar into this chat. he might also know some good people to help organize these things
+[16:39] * erickt waves at rovar
+[16:39] <rovar> oy!
+[16:39] <steveklabnik> rovar: haaaaaay
+[16:40] * frewsxcv waves
+[16:40] <rovar> :)
+[16:40] <erickt> rovar: logs of our meeting if you want to catch up: http://logs.glob.uno/?c=rust-community
+[16:40] <steveklabnik> it also looks like maybe some people stepped up?
+[16:40] <erickt> rovar: in short we're just brainstorming ways to keep your community running
+[16:40] <erickt> oh?
+[16:40] * frewsxcv wishes he had more time to help host the NYC meetup
+[16:40] <steveklabnik> so maybe my fretting is for nothing
+[16:41] <rovar> Amit, who spoke at the last meetup has volunteered to do some bits. 
+[16:41] <erickt> great!
+[16:41] <frewsxcv> erickt: "you and rovar are the only NYC rust folks I know" for what it's worth, I'm also in NYC.
+[16:41] <rovar> frewsxcv, if you wanted to sign up to be a co-organizer, that would be nice. 
+[16:41] <frewsxcv> rovar: Works for me. How does one do that?
+[16:41] <erickt> rovar: if amit needs help organizing speakers, please check in with us, we can route them to our past speakers
+[16:42] <frewsxcv> I've been loosely following the Meetup.com discussion.
+[16:42] <rovar> Also, there is one other volunteer.. so between the three of you,  you could probably pull off a meetup :)  
+[16:42] <rovar> someone volunteered a venue.. if the meetings could be at the same place every time, that would drastically simplify the amount of work/planning that needs to happen. 
+[16:42] <erickt> rovar / frewsxcv: feel free also to use https://github.com/rust-community/talks/issues to track organizing events. you can also see what other meetup speakers people have organized
+[16:42] <erickt> and you can recruit them for nyc
+[16:43] <rovar> I'll have a look. 
+[16:44] <erickt> great
+[16:44] <erickt> anyone have anything else they want to talk about?
+[16:44] <rovar> I'm going to set about collecting Rustaceans in WA and PDX
+[16:45] <rovar> I know wycats and carl pretty well, but any other intros would be very helpful
+[16:45] <erickt> rovar: http://www.meetup.com/PDXRust/
+[16:45] <rovar> I'll probably be in Seattle once a month or so for a few days. 
+[16:45] <erickt> and nice!
+[16:46] <frewsxcv> I missed the bors discussion earlier. I have admin access to the Heroku account (with nathan's card added) so if someone insists on themselves having access to the account, let me know. I plan to contribute after $DAYJOB busy-ness dies down.
+[16:46] <rovar> it looks like the Seattle Rust community could use some help :)
+[16:46] <erickt> well if there's nothing else for the formal agenda, I'm going to formally release you all
+[16:46] <erickt> but feel free to still keep talking :)
+[16:47] <bstrie> it would be a little useful to have a place where we could list all the sleeper cells of rust agents we have in various cities
+[16:47] <erickt> frewsxcv: great!
+[16:47] <rovar> isn't there such a thing?  rustaceans.org is close. 
+[16:47] <erickt> bstrie: kinda sorta at least organizing the meetups and speakers in https://github.com/rust-community/talks
+[16:48] <rovar> doesn't look like search is working on that site.. and I'm not sure if one can search by city.. but that would be a nice improvement. 
+[16:48] <erickt> rovar: agreed
+[16:48] <erickt> we also did gather up contact info in the survey
+[16:49] <erickt> with intention that that could help organize meetups
+[16:49] <erickt> we just need to actually do that though
+[16:49] <rovar> frewsxcv, you've just been made co-organizer as well :)
+[16:49] <rovar> who owns rustaceans.org? 
+[16:50] <rovar> A Nick Cameron from NZ, it seems
+[16:50] <erickt> good old nrc
+[16:50] <rovar> ah, cool
+[16:50] <rovar> still active, then?
+[16:51] <erickt> in rust, yes, on rustaceans.org? dunno
+[16:51] <erickt> he works at mozilla
+[16:52] <rovar> That's encouraging
+[16:52] <frewsxcv> rovar: "you've just been made co-organizer" Is co-organizer Meetup.com terminology?
+[16:52] <rovar> yes
+[16:52] <erickt> rovar: are you moving up to Portland?
+[16:53] <frewsxcv> I haven't seen any email, and the interface hasn't changes, so I'm going to blame caching :)
+[16:53] <frewsxcv> *changed
+[16:53] <rovar> WA State, btw Seattle and Portland
+[16:53] <jntrnr> rovar: hope you can tolerate the weather :)
+[16:53] <jntrnr> (though if you're not on the coast, maybe it's not so grey?)
+[16:54] <rovar> yea.. I'll be east of the mountains, in the desert
+[16:54] <rovar> I was born there, lived in Seattle for a few years as well. 
+[16:54] <erickt> there are deserts between Seattle and Portland?
+[16:54] <erickt> I just always pictured it to be beautiful rivers
+[16:54] <erickt> and starbucks stores
+[16:55] <rovar> The state is split in half by the cascade mountains.. anything east of the mountains gets like 15cm of rain per year
+[16:55] <rovar> and about 300+ days of sunshine a year
+[16:55] <erickt> how silly of it
+[16:59] <rovar> its nice to change things up a bit
+[16:59] <erickt> the geography? :D
+[17:00] <rovar> there are a lot of different climates in WA.. rainforest to desert, and everything in between 
+[17:13] <frewsxcv> rovar: Which user did you invite?
+[17:13] <frewsxcv> Nevermind.
+[17:13] <frewsxcv> Of course I was in the wrong NYC meetup.
+[17:16] <johannh> a tale of two cities
+[17:18] <rovar> :)

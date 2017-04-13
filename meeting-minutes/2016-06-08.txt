@@ -1,0 +1,35 @@
+== 8 Jun 2016
+[06:49] <booyaa> erickt: could i have access to this calendar please? https://calendar.google.com/calendar/embed?src=apd9vmbc22egenmtu5l6c5jbfc@group.calendar.google.com&pli=1 i'd like to add the london meetups w/ event link
+[06:53] <Manishearth> booyaa: email id?
+[06:53] <Manishearth> erickt: I only got an invite for the old-time meeting btw
+[06:53] <Manishearth> not either of the new time meetigns
+[06:54] <Manishearth> i is confused ;)
+[06:57] <Manishearth> booyaa: done
+[07:03] <booyaa> thanks
+[16:05] <jntrnr> erickt/Manishearth/skade/etc - can we close up the survey soonish by chance?
+[16:05] <erickt> jntrnr: sure!
+[16:06] <Manishearth> jntrnr: sure
+[16:06] <jntrnr> I guess I could throw the switch?
+[16:06] <erickt> huh, we still got 14 responses today
+[16:06] <erickt> that's crazy
+[16:07] <jntrnr> yeah
+[16:07] <jdm> heh
+[16:07] <jntrnr> 3100+ responses
+[16:08] <erickt> ok throwing the switch...
+[16:08] <jntrnr> erickt: do you want to let it run through the day then?
+[16:08] <jntrnr> k
+[16:08] <jntrnr> sounds good
+[16:08] <jntrnr> I'm ready to crack on the data :D
+[16:08] <erickt> bstrie: want to unsticky the reddit thread?
+[16:08] <erickt> I suppose we should do that first
+[16:09] <Manishearth> erickt: on it
+[16:09] <Manishearth> erickt: done
+[16:13] <erickt> jntrnr / Manishearth / bstrie / skade / etc: survey is closed!
+[16:16] <jntrnr> erickt: thanks!
+[16:18] <erickt> jntrnr / skade / etc: just ping us when you're working on the survey
+[16:18] <erickt> so we don't duplicate work
+[16:19] <jntrnr> erickt: taking a look at the data now
+[16:25] <jntrnr> erickt/skade/Manishearth - If it's cool with you all, I think I'm going to see if I can turn "why I don't use Rust" from two different answers into one normalized one
+[16:25] <Manishearth> cool
+[21:33] <jntrnr> wow, this looks oddly familiar: https://medium.com/@freeformz/state-of-go-2016-survey-9aa1756a299b#.ft7yak579
+[21:36] <mbrubeck> :)

@@ -1,0 +1,206 @@
+== 15 Mar 2017
+[11:41] <skade> OMGOMGOMG https://www.redbubble.com/de/people/criangulien/works/19716120-knuthella?grid_pos=530&p=sticker
+[12:01] <booyaa> skade: donald?
+[12:01] <skade> yep
+[12:05] <skade> rust is now used for bad stickers... https://www.redbubble.com/de/people/stutefish/works/24997441-alternative-facts-c?grid_pos=1905&p=sticker
+[12:05] <skade> oh, wait, semicolon - it's not rust
+[13:04] <frewsxcv> `enum A { B, C };;;;;` is valid Rust
+[13:07] <badboy> ;;;;;;;;
+[13:07] <badboy> more helps more
+[14:52] <carols10cents> are we still doing 5pm UTC today?
+[14:52] <badboy> I guess. Though I won't make it
+[14:52] <carols10cents> that means it's 1pm EDT and 10am PDT
+[14:52] <badboy> ugh, timezones :D
+[14:53] <steveklabnik> friggin timezones
+[14:53] <skade> hm, so, i'm at the hairdressers at that time
+[14:53] <steveklabnik> the docs team meeting and the core team meeting now conflict
+[14:53] <steveklabnik> due to one being defined as a local time and one being defined as UTC
+[14:53] <carols10cents> change back to 4pm UTC for the summer?
+[14:53] <badboy> yeah, we should move it again ... in 2 weeks :D
+[14:54] <carols10cents> :P
+[14:54] <badboy> when the important part of the world switches clocks I mean
+[14:54] <carols10cents> how about 4:30 for 2 weeks
+[14:54] <carols10cents> compromise
+[14:54] <badboy> whatever. Today I'll probably miss it because conf.
+[14:54] <skade> We need part of the Rust core team on mars
+[14:56] <badboy> I don't see Mars Time on everytimezone
+[14:57] <carols10cents> let's start our own time
+[14:57] <carols10cents> rust time
+[14:57] <misdreavus> bring back swatch internet time
+[14:57] <badboy> The Future<_>!
+[15:03] <skade> wow
+[15:03] <skade> on the techspeakers telegram, someone just asked for help because he has 450 signups for a workshop at a conference in india (AI in Rust)
+[15:03] <staticassert> that is awesome
+[15:04] <badboy> skade: uuuuh what?
+[15:05] <badboy> skade: it's in the group for the winter program, right?
+[15:05] <skade> yep
+[15:05] <badboy> I see, I'm not in that one :D
+[15:05] <badboy> busy enough in the other one
+[15:06] <skade> I'm not allowed to see that one :)
+[15:06] <skade> misdreavus: urgh, that's equally horrible... 
+[15:06] <misdreavus> lol
+[15:07] <badboy> skade: you will eventually!
+[15:35] <erickt> meetup day!
+[15:37] <erickt> oh darn. daylight savings time
+[15:37] <erickt> down with daylight savings time!
+[15:39] <erickt> anyway, are y'all going to be available in 20 minutes for the meeting?
+[15:39] <badboy> I might jump out
+[15:44] <carols10cents> i'm around. change the topic!
+[15:49] * edunham around, despite the darn DST
+[15:50] <edunham> for the record I'd also be around an hour later if that suited more timezones
+[15:51] <erickt> I also can do an hour from now
+[15:51] <badboy> do we have agenda items besides timing?
+[15:52] <carols10cents> i was just researching some live streaming options
+[15:52] <carols10cents> i think youtube live/hangouts on air would work
+[15:52] <carols10cents> but i'd want to test out presenter switching
+[15:52] <carols10cents> that's basically my report
+[15:53] <erickt> great! I don't have much beyond brainstorming underhandedness PR
+[15:53] <erickt> I'm not sure if our delay has produced more submissions yet :/
+[15:55] <erickt> perhaps we reschedule if there's not more for the agenda?
+[15:57] <erickt> I made a very empty https://github.com/rust-community/team/issues/147
+[16:00] <meetingbot> No agenda has been set! :( The meeting is this Weds @ 5PM UTC. No minutes found for last week. :( *happy bleeping sounds*
+[16:01] <erickt> hi everyone!
+[16:01] <erickt> meeting time
+[16:01] <erickt> who's around? and would anyone prefer us to reschedule?
+[16:01] <erickt> there's, err, not much on the agenda
+[16:01] <erickt> *shameface*
+[16:02] <brson> i'm around
+[16:02] <erickt> hi brson!
+[16:02] <brson> hi erickt 
+[16:03] <erickt> oh and PS I won't be able to make next week's meeting, got a work conflict :(
+[16:03] <badboy> you should stop working
+[16:03] <erickt> I should
+[16:03] <edunham> that's ok, we can appoint a vice-erickt until our virtuous erickt returns
+[16:03] <badboy> someone who was not vice-erickt yet?
+[16:04] <erickt> s/virtuous/prodigal
+[16:04] <erickt> who's been vice-erickt? badboy and Manishearth. has anyone else been? I can't remember
+[16:04] <edunham> I haven't officially
+[16:04] <erickt> edunham: I don't think you did
+[16:05] <edunham> not yet!
+[16:05] <erickt> great! want to organize it?
+[16:05] <edunham> I was only 80% sure I'd be at the meeting next week but if a leader is needed, I can step up
+[16:05] * edunham puts "be vice-erickt today, very important" on calendar
+[16:05] <erickt> as vice-erickt, you can always cajole someone into being vice-vice-erickt if you need it
+[16:05] <edunham> :) ok
+[16:06] <erickt> anyone have anything for today?
+[16:06] <erickt> I suppose we could call it if we don't have anything to talk about
+[16:06] <edunham> so yeah AFAIK we have a handful of "yeah an hour later would be fine", a couple of "I need it an hour later if I'm going to be able to attend", and no votes against
+[16:07] <edunham> so I'd like to confirm what time I'm to show up to run next week's :)
+[16:07] <erickt> well we can check back in if people show up at 5pm UTC
+[16:07] <edunham> SGTM. 
+[16:08] <erickt> great
+[16:11] <edunham> hmm this makes me just want to document everybody's usual time zone and meeting constraints in the team repo somewhere
+[16:12] <edunham> (like, "I am in CET and can only do 5pm-11pm local time" or w/e)
+[16:12] <erickt> i think we did that way back when we first organized, but we've have some moves around the world
+[16:12] <erickt> so it might be worthwhile updating those numbers
+[16:13] <edunham> where did that used to be documented?
+[16:13] <erickt> i think it was just an email
+[16:13] <erickt> I'll see if i can find it
+[16:15] <erickt> ah, no, edunham we didn't have something formal: https://github.com/rust-community/team/issues/3
+[16:15] <erickt> i just knew back then that some people were in Germany and India
+[16:18] <edunham> think that'd be ok info to stick in README?
+[16:19] <edunham> actually just "which time ranges UTC do you find convenient" would be more efficient
+[16:21] <erickt> Sure
+[16:21] <erickt> I like that phrasing
+[16:22] <erickt> it lets people reveal less about themselves if they don't want to say where they are from
+[16:22] <edunham> good point
+[16:23] <erickt> cool. You going to add that to the readme?
+[16:23] <erickt> or would you rather I do it?
+[16:25] <edunham> I'm making a wiki page and filing an issue, actually
+[16:25] <erickt> :)
+[16:26] <edunham> since process to edit wiki is way lighter weight
+[16:26] <edunham> just thinking about the best ways to phrase stuff to say what I actually mean, which is tricker than usual with time zones
+[16:26] <edunham> is the meeting usually pegged to UTC, or to Pacific?
+[16:27] <erickt> UTC
+[16:28] <edunham> ok cool
+[16:31] <frewsxcv> Gitter joins GitLab: http://blog.gitter.im/p/7e1c7194-347e-47f1-84d1-8149de853e03/
+[16:31] <badboy> didn't gitlab just released with some other chat integration?
+[16:33] <killercup> yeah, mattermost is their opensource slack clone
+[16:34] <badboy> I see
+[16:37] <badboy> frewsxcv: now it's gone oO
+[16:39] <erickt> interesting
+[16:45] <booyaa> not bad i think gitter was their first pivot (from trope)
+[16:45] <booyaa> troupe even
+[16:46] <thejpster> Hey everyone. How is it Wednesday again already? Only seems like five minutes since the last meeting!
+[16:47] <booyaa> thejpster: until you get the meeting right, it will repeat
+[16:47] <booyaa> every day
+[16:47] <carols10cents> groundhog meeting day
+[16:47] <frewsxcv> https://webcache.googleusercontent.com/search?q=cache:XWzfaAJ7eAAJ:blog.gitter.im/p/7e1c7194-347e-47f1-84d1-8149de853e03/+&cd=1&hl=en&ct=clnk&gl=za
+[16:47] <thejpster> Am I Tom Cruise or Emily Blunt?
+[16:48] <frewsxcv> If the community meeting gets moved or got moved, it'd be helpful if the Rust Community Calendar reflected that
+[16:48] <badboy> once we decide on the timing we will :D
+[16:49] <thejpster> (http://www.imdb.com/title/tt1631867/)
+[16:50] <carols10cents> no no no you're bill murray
+[16:51] <thejpster> Really. I'm surprised I'm not better at French poetry at this point.
+[16:53] <carols10cents> http://www.imdb.com/search/keyword?keywords=time-loop
+[16:53] <carols10cents> there are a lot of time loop movies, it turns out
+[16:55] <frewsxcv> Oh, they're planning to open source Gitter
+[16:55] <frewsxcv> It'd be awesome if Gitter just became a Matrix server
+[16:55] <booyaa> +1
+[16:56] <booyaa> i love my riot client lets me keep in touch with you folks when i'm unable to break out the laptop
+[16:56] <edunham> erickt: https://github.com/rust-community/team/wiki/Meeting-Availability this was more confusing than I thought it'd be, but I think I did it right.
+[16:57] <edunham> not the least because early morning UTC Wednesday is actually my Tuesday evening
+[16:57] <edunham> (which remains a fine time to meet, just for the record)
+[16:57] <badboy> but ... but ... early mornings!
+[16:58] <edunham> badboy: hey, the fact that i happen to be available early in your morning carries no information about whether *you* consider yourself available at that time
+[16:59] <badboy> :D
+[16:59] <edunham> if you're not, and there exists a time when everyone is, we should obviously use that time. 
+[16:59] <badboy> hehe, yeah
+[16:59] <badboy> I'll check later. 
+[16:59] <edunham> badboy: please update the wiki page with your availability at whatever intervals of the year might change it :) https://github.com/rust-community/team/wiki/Meeting-Availability
+[17:00] <edunham> if you don't, you might end up with the dreaded early-meeting ;)
+[17:00] <badboy> I will, I will
+[17:03] <badboy> ah, back online under a different url: http://blog.gitter.im/2017/03/15/gitter-gitlab-acquisition/
+[17:04] * edunham emailed link to community list 
+[17:07] <carols10cents> is 24:00 an actual time?
+[17:07] <carols10cents> or does it go 23:59-00:00?
+[17:07] * erickt unfortunately needs to deal with some work stuff, so I'm gonna be distracted at the moment
+[17:08] <badboy> >  Where convenient, the notation 24:00 may also be used to refer to midnight at the end of a given date[5] – that is, 24:00 of one day is the same time as 00:00 of the following day.
+[17:09] <skade> damn, this time I had time for the old meeting date :(
+[17:10] <carols10cents> thanks badboy !
+[17:11] <edunham> carols10cents: I use it for "the minute after 23:59" though I don't know if that's really kosher
+[17:12] <edunham> UTC midnight is my local 4pm or 5pm, so I'm available both Tuesday evening and Wednesday afternoon local -- thus early-morning and late-night UTC
+[17:14] <carols10cents> my head hurts
+[17:15] <carols10cents> i just subtracted 3 hours from yours to get mine, edunham... were you going for 8am-11pm local time? 
+[17:15] <edunham> yep
+[17:15] <carols10cents> whew!
+[17:17] <edunham> I can do 6am or 7am local time in a pinch, but I prefer not to commit to doing it long term
+[17:17] <edunham> though IRC meetings are nice for "wake up, pull out laptop, take meeting, go back to sleep" kind of thing
+[17:22] <edunham>  /me puts helpful words on own entry so others in Pacific can blindly copy/paste
+[17:27] * Manishearth blindly copy pastes
+[20:00] <WindowsBunnyBeginDeferWindowPos> carols10cents: I actually wonder if I could take advantage of my macros to emit #[doc] attributes and whether they would count for the doc coverage measurement
+[20:00] <carols10cents> shrug!
+[20:01] <WindowsBunnyBeginDeferWindowPos> actually that would only work if you properly analyzed expanded output
+[20:01] <WindowsBunnyBeginDeferWindowPos> if you just naively measure the number of lines that are //! or /// then winapi will fall flat :(
+[20:02] * WindowsBunnyBeginDeferWindowPos wants an exception for winapi
+[20:02] <WindowsBunnyBeginDeferWindowPos> Unless...
+[20:02] <WindowsBunnyBeginDeferWindowPos> I could make a massive file which is entirely lines of ///!
+[20:02] <WindowsBunnyBeginDeferWindowPos> which would of course compress really well and not affect crate size
+[20:03] <WindowsBunnyBeginDeferWindowPos> Look at what your guidelines are making me consider doing D:
+[20:06] <carols10cents> WindowsBunnyBeginDeferWindowPos: you could just be normal
+[20:07] <WindowsBunnyBeginDeferWindowPos> I considered that, but I decided I'd rather be special
+[20:07] <carols10cents> :P
+[20:08] <WindowsBunnyBeginDeferWindowPos> carols10cents: Also, please never add any metrics based on examples or integration tests in the .crate itself because I specifically *don't* include those in the winapi .crate to keep the file size down
+[20:10] <carols10cents> WindowsBunnyGetClipboardData: that is not in the rfc as currently being considered
+[20:11] <carols10cents> WindowsBunnyGetClipboardData: also note that gaming the docs only works if you end up in the top 20%
+[20:11] <WindowsBunnyGetClipboardData> So I'll just have to figure out what the cutoff ratio is and just go a bit above that
+[20:12] <carols10cents> have fun! glad you're choosing to spend your time on this!
+[20:13] <WindowsBunnyGetClipboardData> I could even call that file full of empty comments MSDN.rs
+[20:23] <misdreavus> does the rfc say how it'll count the documented/undocumented items?
+[20:35] <carols10cents> yep!
+[20:36] <misdreavus> oh
+[20:36] * misdreavus runs off to read
+[20:38] <misdreavus> hmm
+[20:38] <WindowsBunnyGetClipboardData> misdreavus: greps for lines that have /// or //!
+[20:38] <misdreavus> yeah, just saw it
+[20:38] <WindowsBunnyGetClipboardData> and have a .rs extension
+[20:38] <misdreavus> would it be worth amending this if/when rustdoc gets a machine-parseable output?
+[20:39] <misdreavus> guess that has a chance to dilute the metric they're trying to capture
+[20:40] <misdreavus> namely *how much* docs have been written
+[20:40] <misdreavus> not just *how many items* have docs
+[20:41] <misdreavus> wonder what egg-mode's ratio is >_>
+[20:48] <misdreavus> 0.46, as of my last published version :D
+[21:06] <booyaa> badboy: finally read that wasm paper you posted. lotsa maths! but very useful for further reading
+[22:15] <WindowsBunnyGetClipboardData> misdreavus: I'm around 0.0026 for winapi
+[22:15] <misdreavus> lol
+[22:43] <badboy> booyaa: it's theoretical computer science, math is to be expected :d

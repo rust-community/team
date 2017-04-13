@@ -1,0 +1,126 @@
+== 22 Mar 2017
+[09:57] <Sergio> Has the rustconf CFP gone out?
+[10:17] <booyaa[> For the second year in a row, Rust was the most loved programming language.
+[10:18] <badboy> determined in a survey which asked only you?
+[10:18] <booyaa[> haha i don't think i filled out this year
+[10:19] <booyaa[> maybe someone unwrap_or(true) against the value idk
+[10:19] <booyaa[> value of is_rust_loved
+[10:19] <badboy> drop(real_answer); true
+[10:22] <booyaa[> i had no idea javascript was so pop with datascientists i would've thought python or r praps
+[10:22] <badboy> what survey is this? and where are the results?
+[10:30] <booyaa[> http://stackoverflow.com/insights/survey/2017/?utm_source=so-owned&utm_medium=hero&utm_campaign=dev-survey-2017&utm_content=hero-questions
+[10:34] <badboy> must be all due to the Rust Evangelism Strikeforce!
+[10:37] <badboy> oh wow, Redis is the most loved database
+[10:37] <badboy> I end up in great projects it seems :D
+[10:39] <booyaa[> The Rust Evangelism Strikeforce are super effective
+[12:33] <carols10cents> i'm like 60% sure that redis isn't a database
+[12:35] <badboy> carols10cents: it is not? then what is it?
+[12:35] <carols10cents> it doesn't persist, it's supposed to be transient cache?
+[12:35] <badboy> it absolutely does persist 
+[12:35] <badboy> apart from that who said that databases need to be persistent?
+[12:36] <carols10cents> oh ok "in-memory data structure store, used as a database, cache and message broker"
+[12:36] <badboy> :)
+[12:36] <carols10cents> i guess i've only used it as a cache
+[12:36] <carols10cents> and trying to use it as a database has resulted in Bad Times
+[12:36] <badboy> that's the most prominent use, yep
+[12:36] <carols10cents> but we were probably just doing it wrong
+[12:37] <badboy> and I agree with you that for most things your better of having a "real" database in the background
+[12:37] * badboy puts on his Consulting Hat
+[12:37] <badboy> BUT there are certain valid use cases for Redis and you should pay me to tell you which those are!
+[12:41] <carols10cents> no YOU pay ME!
+[12:41] <badboy> hm, I don't think that's how it works
+[12:41] * badboy takes his hat off again
+[12:42] <carols10cents> i got your payment right here, i'mma put it in redis for safekeeping
+[12:42] <carols10cents> WHOOPS it's gone!
+[12:43] <badboy> if you would have asked earlier I would have advised you to properly configure persistence!
+[12:49] <carols10cents> :)
+[16:00] <meetingbot> This week's agenda: https://github.com/rust-community/team/issues/148. The meeting is this Weds @ 5PM UTC. No minutes found for last week. :( *happy bleeping sounds*
+[16:00] <edunham> good morning! team meeting is 1 hour from now :)
+[16:00] <edunham> meetingbot++
+[16:01] <badboy> hello!
+[16:24] <booyaa[> i should prolly grep that issue for meeting start time although that one has 4PM UTC
+[16:26] <badboy> haha :D yeah, we more or less decided on the time yesterday and edunham was so kind to mail it
+[16:26] <badboy> it will get better next week, once everyone has switched to DST
+[16:27] <badboy> I changed it in the issue for now
+[16:27] <edunham> whoops the title is wrong at the momemt
+[16:27] <edunham> aw, no perms to set flags.
+[16:34] <badboy> WAH! github redesigned the search
+[16:37] <booyaa[> gz to skade top hit: https://github.com/search?utf8=%E2%9C%93&q=language%3Arust+unwrap&type=Code
+[16:38] <badboy> :D
+[16:40] <badboy> sooo, meeting agenda
+[16:41] <badboy> (I also changed last week's time, I'm an idiot -_-)
+[16:59] <Manishearth> hello all
+[16:59] <carols10cents> o/
+[17:00] <edunham> hello, and welcome to this week's meeting!
+[17:00] <ambaxter> hello!
+[17:00] <badboy> heho!
+[17:01] <edunham> first up: Last chance to promote the underhanded Rust competition. 
+[17:01] <edunham> Does anyone have places they've wanted to promote it but haven't yet, and need some kind of support for that?
+[17:01] <brson> hi
+[17:08] <edunham> hello!
+[17:08] <carols10cents> 🏏🏏🏏
+[17:09] * edunham vice-erickt today, in case it wasn't obvious
+[17:09] <Manishearth> !meeting
+[17:09] <Manishearth> !agenda
+[17:09] <badboy> https://github.com/rust-community/team/issues/148
+[17:09] <Manishearth> next item, rustfest buzz
+[17:09] <Manishearth> thank you badboybot
+[17:09] <badboy> yes
+[17:10] <bstrie> oh yes a meeting
+[17:10] <badboy> basically just get it out. We're announcing speakers this week and could use more ticket sales as always
+[17:10] <bstrie> edunham: we had the underhanded extension stickied on /r/rust for two weeks, maybe in the last few days before the deadline we could consider a final push to remind people
+[17:11] <bstrie> we had four underhanded submissions last I checked, have any more come in?
+[17:11] <Manishearth> i don't think so
+[17:11] <bstrie> badboy: happy to sticky your posts on /r/rust for a bit
+[17:11] * bstrie is the stickmaster
+[17:11] <Manishearth> folks seemed to always be interested btu not many submissions
+[17:11] <bstrie> Manishearth: clearly that just means rust is too honest :P
+[17:11] <badboy> bstrie: perfect. I'll create one
+[17:12] <edunham> or perhaps everyone with infosec interests is very busy :)
+[17:12] <edunham> I wonder if we should solicit feedback as to whether another time of year would work better for the next underhanded.
+[17:13] <edunham> badboy: Is there a best link to send around for rustfest stuff, or just rustfest.eu
+[17:14] <badboy> 2017.rustfest.eu or just rustfest.eu seems good
+[17:14] <badboy> we should have all info on there
+[17:14] <edunham> ok!
+[17:14] <badboy> bstrie: https://www.reddit.com/r/rust/comments/60vxx6/first_speakers_for_rustfest_kiev_april_30th/
+[17:14] <Manishearth> edunham: last week a rusty crypto/infosec person said "oh I have a cool idea for an underhanded rust thing" and I mentioned that we have one ongoing but she's too busy to make a submission :(
+[17:15] <edunham> Manishearth: I hear that a lot also. 
+[17:15] <edunham> I wonder if we could time it better with hack time at conferences in the future to get people started on their projects.
+[17:15] <badboy> https://twitter.com/tenderlove/status/844597412903608322 < now we just need him to get blogging about Rust :D
+[17:15] <carols10cents> i wonder if there's something that would take less time than creating a full solution
+[17:15] <edunham> or heck, I wonder if we made it an annual thing and gave people all year to get their submissions in
+[17:15] <carols10cents> like an "ideas" submission
+[17:16] <booyaa> o/
+[17:16] <edunham> carols10cents: good point :)
+[17:16] <carols10cents> or some way to pair up people who have ideas with people who have no ideas but have time
+[17:16] <carols10cents> (for the future)
+[17:18] <edunham> Alrighty, I've captured that feedback in a comment on the agenda
+[17:18] <edunham> Any other business for the meeting? 
+[17:19] <booyaa> Pairing is good
+[17:19] <booyaa> Or maybe a play rust template?
+[17:21] <edunham> yep, that's definitely worth talking about next time around too :)
+[17:21] <edunham> So, unless anyone has other business to bring up, we can conclude the rather short meeting with action items of signal boosting underhanded and rustfest.
+[17:23] <badboy> good
+[17:23] <bstrie> badboy: stickied
+[17:23] <badboy> bstrie: <3
+[17:23] <edunham> bstrie++
+[17:23] <badboy> btw, I got great feedback to my Rust Workshop last week
+[17:23] <bstrie> Manishearth: I do think next year we ought to let the underhanded contest be more freeform to encourage participation even for folks without a lot of time
+[17:23] <badboy> We might have a few new northern Rustaceans soon
+[17:25] <edunham> that's neat!
+[17:26] <Manishearth> bstrie: +1
+[17:55] <booyaa[> does anyone mind if i get the rustbot def for !newbook to include the pre-order page for the nostarch b[Dook?
+[17:55] <steveklabnik> nope
+[17:56] <booyaa[> ty
+[17:56] <steveklabnik> also
+[17:56] <steveklabnik> while you're at it
+[17:56] <steveklabnik> https://doc.rust-lang.org/nightly/book/ <- :D
+[17:56] <steveklabnik> so the URL for newbook should be https://doc.rust-lang.org/nightly/book/second-edition/
+[20:00] <brson> Manishearth erickt: remember there is no catering saturday. and I currently do not have plans to order anything. if we need food please think about it.
+[20:00] <brson> also Manishearth i'll be in sf tomorrow for this meeting
+[20:02] <Manishearth> brson: cool
+[20:03] <erickt> brson: no worries
+[21:00] <bstrie> brson: mozilla's free food is one of the things I miss most about san francisco :(
+[21:00] <bstrie> ...and obviously all of you fine folks, of course... but also the food :)
+[21:05] <brson> lol
+[21:23] <badboy> I'm sad I didn't know anyone there when I was in SF two years ago 

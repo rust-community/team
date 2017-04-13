@@ -1,0 +1,305 @@
+== 14 Dec 2016
+[04:56] <bstrie> erickt: at the meeting tomorrow I'd like to talk about the contest
+[04:56] <bstrie> but not right now, I injured my hands today and typing sucks :P
+[04:56] <erickt> aw
+[04:56] <erickt> and yes!
+[04:58] <erickt> bstrie: added it to https://github.com/rust-community/team/issues/111
+[10:01] <booyaa> re: underhanded - i think richard pryor's character did this in superman 3
+[10:01] <booyaa> very good
+[15:33] <carols10cents> http://s2.quickmeme.com/img/00/000bdf2f3baeb7060c1f100f85894c15f46883b0d350d87468e961710f05564b.jpg
+[15:42] <booyaa> heh ah office space
+[15:42] <booyaa> PC LOAD LETTER
+[15:51] <erickt> haha
+[16:00] <meetingbot> This week's agenda: https://github.com/rust-community/team/issues/111. The meeting is this Weds @ 4PM UTC. No minutes found for last week. :( bippity beep!
+[16:00] <erickt> meeting day!
+[16:00] <erickt> darnit meetingbot!
+[16:02] <badboy> also 5pm utc, because timezones.
+[16:07] <booyaa> ah yes i think i might have updated time on meetingbot's host
+[16:09] <badboy> ack please: https://github.com/rust-community/team/pull/112 
+[16:10] <badboy> this community o_O https://github.com/rust-community/underhanded.rs/pull/2
+[16:10] <badboy> I haven't even re-read the english announcement
+[16:14] <badboy> oh, also https://github.com/rust-community/resources/pull/4
+[16:14] <badboy> sandra (devrel) had these made and ordered some. i will order some next year (on mozilla's costs)
+[16:17] <badboy> (also, why has my meetup co-organizer reviewed the announcement already, but I did not? :D)
+[16:21] <erickt> yay! 
+[16:21] <erickt> badboy: I merged in #112
+[16:21] <erickt> need to step out to grab some breakfast, back in a moment
+[16:23] <booyaa> i reckon this contest is going to draw a lot of attention
+[16:35] <booyaa> which is good mind you
+[16:54] <booyaa> oh just case i miss the discussion, when do we think the underhanded contest will be publically announced?
+[16:54] <badboy> soon™
+[16:54] <badboy> (sorry :D)
+[16:54] <badboy> (it's just, I have a shortcut for that message in my irc client)
+[16:56] <erickt> https://www.youtube.com/watch?v=9jK-NcRmVcw time!
+[16:56] <erickt> heh
+[16:57] * erickt turns on the lights and the effects machine
+[16:58] <badboy> please turn off the heat...
+[16:59] * erickt activates the fog machine
+[16:59] <carols10cents> please turn on the heat
+[16:59] <badboy> waaaaat?
+[16:59] * erickt turns on and off the heat
+[16:59] <badboy> it's like 10°C here
+[16:59] <badboy> (that's 50°F in freedom units afaik)
+[17:00] <erickt> that seems... cold?
+[17:00] <badboy> no. :D
+[17:00] <erickt> oh! meeting time o'clock!
+[17:00] <erickt> \m/
+[17:00] <erickt> take that, meetingbot!
+[17:00] <badboy> that's far too warm to sip hot glühwein in the city
+[17:00] <badboy> ericktbot is best meetingbot
+[17:00] <erickt> that's right!
+[17:01] <erickt> who's here today for the poorly kept records?
+[17:01] <badboy> o/
+[17:01] <carols10cents> it is... *looks* *converts* -3 °C here
+[17:01] <badboy> carols10cents: should we switch? i want cold.
+[17:01] <carols10cents> yes plz
+[17:01] * carols10cents puts snow on a plane
+[17:01] <bstrie> I have arrived
+[17:01] <badboy> First Agenda topic: carols10cents and badboy will switch places until weather changes significantly
+[17:02] <erickt> badboy: can you write that up in an RFC?
+[17:02] <carols10cents> :)
+[17:02] <brson> i'm here
+[17:02] <erickt> hello!
+[17:02] <badboy> Unresoled questions: How does this benefit the community? - How do we teach this to beginners: We give every beginner a handful of snow to adjust
+[17:03] <erickt> hehe
+[17:03] <erickt> so meetingbot is snoozing on the job again, here's the agenda: https://github.com/rust-community/team/issues/111
+[17:03] <erickt> feel free to add more topics to it
+[17:03] <badboy> hey, that could be me! *snoozemaster*
+[17:03] <erickt> as needed
+[17:03] <erickt> first thing, underhanded rust! it's almost across the finish line!
+[17:03] <erickt> woo
+[17:03] <carols10cents> \o/
+[17:04] <erickt> and if you didn't see, we also got a german and chinese translation too
+[17:04] <badboy> checked english + german (german needs to be adjusted later on again I guess)
+[17:04] <erickt> nox was also helping on a french translation, but it hasn't come in yet
+[17:05] <bstrie> erickt: I'd like to discuss some of the wording in the announcement
+[17:05] <badboy> I pretty much have no idea how to even approach that contest but I would gladly review what ever code comes in
+[17:05] <erickt> bstrie: wonderful topic
+[17:06] <erickt> have any ideas how to approach it?
+[17:06] <bstrie> erickt: in particular the first paragraph seems a bit too boastful to me, I think we ought to be taking a more humble tack
+[17:06] <erickt> badboy: me neither :)
+[17:06] <erickt> bstrie: got a suggestion on better phrasing? I'd be happy to take one
+[17:07] <bstrie> erickt: I'll write up a tweaked version of the first paragraph as a comment on the document on github
+[17:08] <erickt> great
+[17:08] <erickt> I'm hoping to launch this today or tomorrow, so please try to get it done soon :)
+[17:08] <bstrie> erickt: though if it's accepted I do want to make sure that the translations are similarly un-cocky
+[17:08] <erickt> steveklabnik: do you have any recommended day and time for this to try to maximize visibility?
+[17:09] <badboy> I should have time tomorrow evening for any changes to the german text
+[17:09] <bstrie> I also think we need some stronger language regarding the "don't send PRs to put exploits in our libraries kthx"
+[17:09] <bstrie> right now it's like "please don't do this" whereas it should be "what the fuck is wrong with you, don't do this"
+[17:09] <erickt> bstrie: want to go as far as you will be rejected from the contest?
+[17:09] <steveklabnik> erickt: so i usually try to post stuff at noon PST
+[17:09] <bstrie> in so many words
+[17:10] <bstrie> erickt: I'll similarly write up a tweaked version of that paragraph
+[17:10] <erickt> steveklabnik: great, so we do have some time for some revisions
+[17:10] <bstrie> erickt: is your intention to post this *today*?
+[17:11] <erickt> bstrie: I was hoping to get it out soon. comments were dying down so I was considering it FCP :)
+[17:11] <bstrie> ok, I'll start writing up my comments then
+[17:11] <steveklabnik> erickt: errr sorry, i meant noon EST 9am PST
+[17:11] <erickt> bstrie: I got a meetup tomorrow, so I was trying to get it announced before then :)
+[17:11] <steveklabnik> i don't think it matters a TON though
+[17:11] <bstrie> erickt: I mean, you could annouce it at the meetup :P
+[17:11] <steveklabnik> just "during working hours in the US"
+[17:12] <bstrie> brb, writing this stuff
+[17:12] <badboy> (for reference: noon est = 9am pst = 4pm utc = 6 pm cet)
+[17:12] <erickt> steveklabnik: oh ok. tomorrow 9am sounds fine to me. that'll give us a chance to get through any language tweaks across translations
+[17:12] <carols10cents> https://www.youtube.com/watch?v=s_8KR-n2fBQ
+[17:13] <erickt> thanks carols10cents, I ran out of meeting mood music
+[17:13] <carols10cents> :)
+[17:13] <erickt> ok tomorrow at 9am PST it is!
+[17:13] <badboy> please ping me when the english text is decided, I will take care of german then
+[17:14] <erickt> steveklabnik: can we also do a blog.rust-lang.org post for this?
+[17:14] <badboy> (not sure if skade is around)
+[17:14] <steveklabnik> possibly, let's talk about it at the core team meeting
+[17:14] <erickt> steveklabnik: I'll add it to the agenda
+[17:15] <erickt> hm what else on the topic. Does anyone know any spanish or portuguese speakers that could help out?
+[17:16] <erickt> I think hanelita might speak it, but I haven't heard from her in a while
+[17:18] <jdm_> emilio speaks spanish
+[17:18] <erickt> the other bit is I guess once we go live, who will be around to help monitor the reddit/urlo/HN threads?
+[17:18] <erickt> thanks jdm_! I'll reach out to emilio
+[17:19] <badboy> erickt: monitor for what?
+[17:19] <erickt> oh questions and confusion and stuff
+[17:19] <erickt> first time I ran one of these :)
+[17:19] <badboy> I regurarly browse reddit and urlo anyway, I at least can try
+[17:20] <erickt> I know these things came up on the survey posts
+[17:20] <erickt> ok, well I'll coordinate here before I post anything
+[17:20] <erickt> maybe I'll get steveklabnik to post it cuz he's got more karma than me :)
+[17:20] <badboy> haha
+[17:21] <badboy> (btw, good comments about rust/the community on the orange site: https://news.ycombinator.com/item?id=13175433)
+[17:22] <erickt> woo emilio will help translate
+[17:22] <erickt> thanks jdm_!
+[17:22] <erickt> badboy: yeah that's awsome
+[17:22] <erickt> I love this community
+[17:22] * erickt gives everyone a group hug
+[17:23] * jdm_ feels a little bit bad given how many things emilio tries to do simultaneously
+[17:23] * erickt 's arms are longer than they look
+[17:23] <erickt> hehe
+[17:24] * erickt waves at emilio
+[17:24] <erickt> thanks emilio for helping out!
+[17:24] * emilio waves back
+[17:24] <emilio> no worries! :)
+[17:25] <erickt> last thing I have on the contest is who wants to help judge, and who wants to potentially play?
+[17:25] <bstrie> erickt: another thing I wanted to ask, who came up with the specific challenge for the contest?
+[17:25] <erickt> I'm gonna at least help coordinate, so I'm taking myself out of the game
+[17:25] <badboy> I judge.
+[17:25] <erickt> bstrie: that's all me. it came to me in a dream
+[17:26] <badboy> besides doing bot-jobs he also does dream jobs.
+[17:26] <erickt> that's right
+[17:27] <erickt> bstrie: also working on another summer game idea :)
+[17:27] <bstrie> erickt: oh another thing, how are we going to test that submissions actually work?
+[17:27] <erickt> I can pitch that after the meeting
+[17:28] <erickt> bstrie: the submissions should detail how to run the submission to verify it worked 
+[17:28] <erickt> as to actually running them, I'd have judges run them on a VM in aws or something since, you know, exploited code and all
+[17:29] <erickt> bstrie: think that needs to be spelled out more in the contest?
+[17:30] <erickt> I think it'd be sufficient if, say, they're using sqlite as their database they can just have us run a command on the cli that shows the salami account now has +0.001 coins after processing a transaction
+[17:31] <erickt> but I want to leave it open ended if they want to be more creative about it
+[17:32] <erickt> bstrie: think that's good?
+[17:32] <bstrie> I suppose, just want to make sure the judging is actually feasible
+[17:33] <erickt> yeah. it's ultimately going to be subjective to the judges
+[17:33] <erickt> I'm also trying to see if we can round up funding to give everyone that submits something some swag of some sort
+[17:34] <erickt> anything else on this subject?
+[17:36] <erickt> okay next topic I forgot to put on the schedule, https://github.com/rust-community/team/issues/108
+[17:36] <erickt> this is about the conference retrospectives
+[17:36] <carols10cents> darn, was hoping you forgot
+[17:36] <erickt> skade / carols10cents / aturon: did you all coordinate on a time?
+[17:36] <erickt> haha
+[17:36] <erickt> :p
+[17:36] <carols10cents> i still haven't written up anything
+[17:36] <carols10cents> and no one has picked a time
+[17:36] <erickt> ok
+[17:36] <badboy> neither did we (that I know of)
+[17:37] <erickt> I just proposed next tuesday
+[17:37] <erickt> if that works for you, i'll see if that'll work for a quorum of the core team
+[17:37] <badboy> 20.12.?
+[17:38] <erickt> yeah
+[17:38] <erickt> badboy: were you involved in rustfest? I can't remember
+[17:38] <badboy> .... yes.
+[17:39] <badboy> (can do bot work, but has no memory, a shame)
+[17:39] <badboy> :P
+[17:39] <erickt> only 1k of ram
+[17:39] <erickt> it was a lot when I was born!
+[17:39] <badboy> oh should be enough for everyone
+[17:40] <erickt> :) badboy does that time work for you? if so, could you wrangle the other rustfest organizers into prepping for the meeting?
+[17:40] <badboy> tuesday would work. Sending a mail to the others later
+[17:40] <badboy> in the hope we get something written down, even if just extended notes
+[17:41] <erickt> +1
+[17:41] <erickt> ok, I'll check in later on in the week to see if we're actually on schedule
+[17:42] <badboy> ✓
+[17:43] <erickt> anything else on this subject?
+[17:43] <erickt> next up were some carry-overs from the last meeting. we got 2016 retrospective, and the switchboard with badboy
+[17:44] <erickt> I haven't actually done anything for 2016
+[17:44] <badboy> noooothing
+[17:44] <erickt> but we should have some sort of end of the year post
+[17:44] <badboy> ok, let's get over with the switchboard thingy. Because I'm terribly sorry I still didn't upstream that
+[17:45] <erickt> what's left to do?
+[17:45] <badboy> so I added speaker search + location to rustaceans (while fixing bugs, I don't know how that ever worked)
+[17:45] <erickt> haha
+[17:45] <badboy> I basically just need to clean it up, PR it and deploy it
+[17:46] <badboy> I can get to do that next week (and you can pin me on that, otherwise no christmas presents or similar)
+[17:46] <erickt> nice.
+[17:46] <erickt> but if you get it done, do you turn into goodboy?
+[17:46] <badboy> I just mentioned that in #rust-webdev as well: I want to get rid of the current nick, but I have it for >10 years, so there's no chance I ever get rid of it...
+[17:46] <bstrie> erickt: I've submitted an alternative first paragraph
+[17:47] <erickt> as a forcing function, if you want, you could submit a PR now to rustaceans and then we could help iterate to get it to a mergable state
+[17:47] <badboy> I don't even know where I have the repository :D
+[17:47] <erickt> heh yeah
+[17:47] <bstrie> badboy: I transitioned from a nick a few years ago, it works as long as you give it a long deprecation period :) first I was Wensley, then I was Wensley_bstrie for a while, then I was bstrie_Wensley for a while
+[17:47] <erickt> bstrie: thanks!
+[17:47] <badboy> but I try to do that today/tomorrow
+[17:48] <badboy> bstrie: but 'jer' is gone on all platforms...
+[17:48] <bstrie> badboy: jer912931293123
+[17:48] <erickt> yeah, I used to go by idadesub, which was created by a friend of mine in a literal feverdream, where she decided my name should be ida instead of erick
+[17:48] <booyaa> j3r?
+[17:48] <badboy> enough! I'm bad at chosing names (pun intended)
+[17:49] <erickt> jεr?
+[17:49] <badboy> then I can never have a crate with my nick :(
+[17:49] <erickt> we can't have unicode in our crate names?
+[17:50] * carols10cents quickly grabs badboy on crates.io
+[17:50] <erickt> that's sad
+[17:50] <badboy> well, you can, but you can't upload it to crates.io
+[17:50] <badboy> I tried. ;)
+[17:50] <erickt> crates.io is a jerk
+[17:50] <carols10cents> HEY
+[17:50] <erickt> hehe
+[17:51] <badboy> ok, time's running out (which means I'm getting hungry), should we quickly go through the rest? 
+[17:51] <erickt> carols10cents: omg cargo.rs is free, go buy it right now
+[17:51] <erickt> I think I'm wrapped up
+[17:51] <erickt> unless anyone else has anything else to talk about
+[17:51] <booyaa> so the embargo for underhanded ends 9am pst?
+[17:52] <booyaa> tomorrow
+[17:52] <badboy> only the milestone checkin, right?
+[17:52] <booyaa> embargo as in announcing
+[17:52] <erickt> booyaa: give or take, yeah
+[17:52] <erickt> badboy: I'm not sure if there's more to cover with that. I do want to make a 2016 end of year post
+[17:52] <booyaa> k i'll check in before hand, should be just in time for my meetup at 7pm GMT
+[17:53] <badboy> ok
+[17:53] <erickt> booyaa great!
+[17:53] <erickt> yes, I think you should be fine to announce it then
+[17:53] <booyaa> yay!
+[17:54] <booyaa> also badboy totally stealing that alias  soon™
+[17:54] <badboy> which one?
+[17:54] <booyaa> soon™
+[17:54] <badboy> ah yeah
+[17:55] <badboy> it came to be as several times a day people in #redis asked when a feature will land in a release or when the next release is due
+[17:55] <booyaa> heh
+[17:56] <erickt> hehe
+[17:56] <erickt> ok well I'm calling this meeting adjourned but you are welcome to stay and hang out
+[17:57] <erickt> ok so my summer games idea.
+[17:57] <badboy> thanks!
+[17:57] <erickt> so one of the downsides with the whole underhanded rust contest is that it doesn't really incentivize people to collaborate
+[17:57] <erickt> because the best exploit wins and all
+[17:58] <carols10cents> the real exploit is the friendships we make along the way!
+[17:58] <badboy> o_O
+[17:58] <erickt> haha
+[17:58] <booyaa> i jumbled and read something about exploiting friends to win
+[17:58] <erickt> so i love the whole idea of these AI contests
+[17:59] <erickt> like the tron light cycle game, http://csclub.uwaterloo.ca/contest/ and all
+[17:59] <erickt> but they also don't have the right incentives
+[17:59] <erickt> so I was thinking is if we could have a community wide challenge to work together to build something over a period of weeks
+[18:00] <booyaa> that would be nice
+[18:00] <erickt> so my first idea is if we could buy an RC car, throw a camera on it, and get the community to run it through a maze
+[18:00] <mbrubeck> We could find a programming contest that allows Rust as a language, and have a "whole rust community" entry :)
+[18:00] <erickt> we get one attempt a week
+[18:00] <erickt> mbrubeck: hehe true
+[18:00] <mbrubeck> twitch plays borrowck
+[18:00] <booyaa> so the community would provide code to make the rc escape the maze?
+[18:00] <booyaa> mrmonday: +1
+[18:01] <booyaa> whoops
+[18:01] <badboy> Twitch^WRust plays Robot
+[18:01] <erickt> mbrubeck: yeah that's the short version! twitch plays robot
+[18:01] <booyaa> mbrubeck sorry mrmonday 
+[18:01] <erickt> booyaa: yeah
+[18:01] <badboy> Twitch plays borrowck. Hahahaha
+[18:01] <erickt> and so we'd have to collectively build out a control system, embedded systems, a vision 
+[18:01] <booyaa> erickt: i think this idea has legs or wheels i guess
+[18:01] <erickt> and simulators so we can test offline
+[18:01] <erickt> hehe
+[18:02] <bstrie> edunham: do you have a photo of plush ferris that we can link from the blog post?
+[18:02] <booyaa> writing the simulator could be fun in its self
+[18:02] <bstrie> erickt: would you like me to offer one of my rusty metal ferrises an as alternative prize?
+[18:02] <erickt> i got some friends that I can help build out the robot side of things
+[18:02] <booyaa> if you went really deep and kept track of battery power etc
+[18:03] <erickt> bstrie: sure!
+[18:04] <erickt> booyaa: yeah
+[18:04] <erickt> pull in some of the piston folks to help out with that
+[18:07] <carols10cents> can someone paraphrase the leadup to "twitch plays borrowck" and submit it as qotw
+[18:07] <mbrubeck> "erickt> so my first idea is if we could buy an RC car, throw a camera on it, and get the community to run it through a maze" is probably enough context
+[18:08] <carols10cents> 👍
+[18:08] <badboy> but that would make that idea public!
+[18:08] <mrmonday> booyaa: it's ok, I appreciate the general +1
+[18:08] <booyaa> :D
+[18:09] <mrmonday> never know when you might step on a spike and need an extra life
+[18:09] <booyaa> heh
+[18:09] <carols10cents> it's a good thing this room isn't logged anywhere publicly ;) ;) ;)
+[18:09] <carols10cents> our secrets might get out!!
+[18:10] * carols10cents waves to the CIA
+[18:10] <erickt> our precious precious secrets
+[18:11] <bstrie> erickt: ok I have completed my review
+[18:11] <erickt> <3
+[18:11] <erickt> thanks bstrie
+[19:18] <erickt> thanks emilio for https://github.com/rust-community/underhanded.rs/pull/3!
+[19:19] <emilio> erickt: no problem! I need to run now, but I've pinged some folks from Mozilla Hispano to see if they want to review it, so there might be some comments on that :)
+[19:24] <erickt> thanks!
+[19:30] <erickt> got a phrasing question/request. should we add a bit about optionally requesting submissions be in english to help with reviewing? or should we take submissions in whatever language then reach out to translators if they are not in english? 
+[19:31] <badboy> That's a tough one. afaik skade mentioned he'd be willing to help with German, others might jump in, but we probably can't guarantue it for every language right? 
+[19:36] <erickt> that might be tricky, but I bet we could track down people if we need to

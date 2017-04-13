@@ -1,0 +1,219 @@
+== 16 Nov 2016
+[03:24] <erickt> carols10cents / skade / bstrie / Manishearth / badboy / booyaa / edunham: anything for the agenda? https://github.com/rust-community/team/issues/109
+[11:04] <badboy> oh we should grab a custom url on youtube now
+[11:04] <badboy> should we go with just rust or rustvideos?
+[13:34] <booyaa> would it look like youtu.be/rust?
+[13:34] <booyaa> wondering if the game rust already has /rust
+[14:58] <erickt> booyaa: if so, we should claim youtu.be/playrust
+[15:04] <johannh> haha
+[15:14] <badboy> youtube.com/c/rust I guess
+[15:15] <badboy> https://tmp.fnordig.de/scr/04a36ac351.png
+[16:00] <meetingbot> This week's agenda: https://github.com/rust-community/team/issues/109. The meeting is this Weds @ 4PM UTC. No minutes found for last week. :( bippity beep!
+[16:05] <erickt> T-55 minutes!
+[16:10] <erickt> badboy: just sent an email to c4pt0r
+[16:15] <badboy> about that rustbridge thing?
+[16:19] <erickt> yeah
+[16:22] <carols10cents> <3
+[16:23] <erickt> carols10cents: hi! we can knock off another agenda item :)
+[16:23] <erickt> did you end up sending out your survey?
+[16:23] <carols10cents> for rbr? ya, closing it on sate
+[16:23] <carols10cents> sat
+[16:23] <erickt> great
+[16:35] <badboy> wait, did i fill it out? hm
+[16:35] <carols10cents> I SENT U EMAIL
+[16:35] <badboy> I know
+[16:35] <carols10cents> Y U SEND ME TO SPAM
+[16:35] <badboy> but so did several other people
+[16:35] <badboy> i didn't
+[16:35] <badboy> i send you to archive
+[16:35] <badboy> :P
+[16:35] <badboy> look, I was busy releasing videos, ok?
+[16:37] <badboy> mozilla just released: https://medium.com/mozilla-tech/rust-and-the-future-of-systems-programming-b75fba746910#.z6iixyw84
+[16:37] <badboy> (hehe ,saw that video this morning already!)
+[16:38] <carols10cents> "This embedded content is from a site that does not comply with the Do Not Track (DNT) setting now enabled on your browser."
+[16:38] <carols10cents> why are they spying on me
+[16:39] <badboy> youtube is spying on you.
+[16:40] <Manishearth> y'all should watch this before the meeting
+[16:40] <Manishearth> https://www.youtube.com/watch?v=8EPsnf_ZYU0
+[16:41] <badboy> now I have the remaining faces for people behind all these nicknames!
+[16:41] <Manishearth> https://medium.com/mozilla-tech/rust-and-the-future-of-systems-programming-b75fba746910#.xbww4qphe
+[16:42] <johannh> no Manishearth though :(
+[16:42] <johannh> but a nice video!
+[16:42] <badboy> well, we all know Manishearth as https://avatars.githubusercontent.com/manishearth anyway
+[16:42] <Manishearth> johannh: I wasn't on the west coast then
+[16:43] <johannh> Manishearth: yup, I figured it was filmed before you moved :)
+[16:43] <Manishearth> yeah
+[16:43] <Manishearth> it existed in August :)
+[16:43] <badboy> If I understood them correctly, I might end up in one of those videos as well...
+[16:43] <Manishearth> it's like an Apple video, just less white background
+[16:45] <johannh> that describes it pretty well
+[16:46] <erickt> hey Manishearth! you coming to the meetup tomorrow?
+[16:46] <erickt> the rest of y'all are invited as well
+[16:47] <badboy> won't make it
+[16:47] <badboy> (but I have a meetup in 90min!
+[16:47] <badboy> )
+[16:47] <erickt> </3
+[16:47] <badboy> erickt: you had your chance in pittsburgh…
+[16:48] <erickt> ;_;
+[16:48] <erickt> the worst bit was the days I stayed here to work those days were pretty light
+[16:48] * johannh wonders if badboy is in Berlin
+[16:48] <badboy> i am not
+[16:48] <badboy> heading to cologne now
+[16:48] <badboy> erickt: told you!
+[16:48] <badboy> erickt: :(
+[16:49] <erickt> i know and I knew then too :(
+[16:49] <erickt> but gotta reassure nervous folks launching things
+[16:49] <badboy> hehe 
+[16:56] <erickt> T-4 minutes!~
+[16:56] <carols10cents> erickt: I TOLD YOU WORK WASN'T WORTH IT
+[16:56] <erickt> https://www.youtube.com/watch?v=9jK-NcRmVcw
+[16:56] <carols10cents> why do yinz look like you're being interrogated in this video
+[16:57] <carols10cents> such harsh lighting
+[16:57] <edunham> carols10cents: the rust videos? 
+[16:57] <edunham> artistic discretion by the video crew and a quest for professionalism, i'd assume
+[16:57] <erickt> I love those animations
+[16:57] <carols10cents> edunham: yeah
+[16:58] <erickt> edunham: y'all shoulda shot on a green screen
+[16:58] <carols10cents> everyone's chins are throwing these huge shadows
+[16:58] <carols10cents> like aaron's head looks like it's floating above his shoulders, no neck
+[16:59] <erickt> T-1 minutes!
+[17:00] <erickt> I hope y'all are ready for this short meeting!
+[17:00] <badboy> kinda.
+[17:00] <badboy> so .... I just go ahead and begin (and also shitty internet, I hope this works)
+[17:00] <jntrnr> haha
+[17:00] <erickt> hey it's meeting time!
+[17:00] <edunham> \o
+[17:00] <erickt> *fireworks
+[17:01] <erickt> meeting bot is slacking off, so https://github.com/rust-community/team/issues/109
+[17:01] <erickt> we have *one* item for discussion since we knocked off the others before the meeting :)
+[17:01] <erickt> who's in?
+[17:01] <jntrnr> o/
+[17:02] <carols10cents> o/
+[17:02] <brson> i'm here
+[17:02] <erickt> aloha!
+[17:02] <johannh> me
+[17:02] <erickt> so anyway, first and only thing (unless ya'll want to talk about more) is the switchboard
+[17:03] <erickt> which badboy wrote up in http://pad.fnordig.de/p/rust-switchboard
+[17:03] <Manishearth> o/
+[17:03] <erickt> badboy: want to start us off?
+[17:04] <badboy>  give me a sec until my internet is back again -_-
+[17:04] <erickt> ... but how did you write that...
+[17:05] <badboy> normally this train ridehas good coverage, except today....
+[17:05] <badboy> well, my phone has internet, lagging but a bit
+[17:05] <erickt> what's up with this german infrastructure, not having spotless internet coverage
+[17:06] <erickt> I'll start the conversation then. does anyone not know what we mean by a switchboard?
+[17:06] <badboy> oook, somewhat back
+[17:06] <erickt> this is about helping meetups find speakers
+[17:07] <badboy> exactly
+[17:07] <erickt> this has been one of our big asks from new organizers
+[17:08] <erickt> so the idea would be for us to collect that all in some central location
+[17:09] <erickt> so hopefully by now y'all read through http://pad.fnordig.de/p/rust-switchboard
+[17:10] <jntrnr> there are some people on the Mozilla side (devrel specifically) that are also gathering Rust speakers
+[17:10] <jntrnr> maybe we can centralize the efforts
+[17:10] <erickt> I like the idea of rustaceans.org, but given it's database is in a github repo, I don't want to leak PII
+[17:10] <erickt> jntrnr: yeah, I think we pointed them to this project, but I dunno if we got that far with em
+[17:10] <jntrnr> AI on me to ping
+[17:11] <erickt> great
+[17:12] <erickt> so I think the main thing we need to support is some way of contacting speakers
+[17:12] <erickt> so we could just have the github username at a minimum, where people could open a ticket
+[17:12] <erickt> and if they want to include an irc handle and email that'd be fine too
+[17:13] <badboy> (orrr, I'm terribly sorry, it's really buggy today)
+[17:13] <erickt> anyone think that'd be a problem?
+[17:13] <erickt> no problem
+[17:14] <carols10cents> yeah so like if the point is for being able to look up speakers to contact, like, the speakers' contact info needs to be in there
+[17:14] <erickt> we could hide it somewhat through a contact form
+[17:14] <carols10cents> what protection would that offer?
+[17:14] <erickt> but I expect almost all speakers would be on github anyway
+[17:14] <badboy> that's what I wanted to mention: do we act as a middleman for first contact?
+[17:15] <Manishearth> we should imo
+[17:15] <carols10cents> like meetup org sends contact through form, app sends speaker email, which they can choose to reply to or not?
+[17:15] <erickt>  yeah
+[17:15] <carols10cents> but we don't expose the speaker's email to the meetup org or public?
+[17:16] <carols10cents> and how do we prevent spam
+[17:16] <erickt> I imagine it'd just be on first contact. such-and-such@gmail.com wants to ask you if you want to speak at this meeutp
+[17:17] <erickt> we could also just send all requests to our mailing list, and then we route them by hand
+[17:17] <carols10cents> :-/
+[17:18] <erickt> we could also route through private messages on urlo
+[17:18] <carols10cents> we're already slow enough responding to people who email us
+[17:18] <erickt> make it someone else's problem
+[17:18] <edunham> do you think having a speakers mailing list where people could put the region in the topic of their message could work?
+[17:19] <edunham> like, the requirements seem to be "let speakers volunteer without revealing their names or locations or emails unnecessarily"
+[17:19] <carols10cents> i dont really want to get messages for meetups i dont want to speak at tho
+[17:19] <edunham> it seems like we might be overcomplicating things by looking for the platform with the ideal message system
+[17:19] <carols10cents> and that might create a tragedy of the commons
+[17:20] <edunham> yeah true
+[17:20] <carols10cents> "oh someone else will volunteer for this one" [silence]
+[17:20] <edunham> I guess we do need something more complex to avoid excess work for speakers in tweaking their mail filters
+[17:20] <carols10cents> but if you get a personal message, this meetup organizer wants YOU to speak at their email
+[17:20] <carols10cents> at their meetup
+[17:20] <badboy> yeah, so what about a site speakers can add basic info (rough locations, topics) and contact info and we provide search & contact form for those searching
+[17:21] <carols10cents> 👍
+[17:21] <carols10cents> my only concern is spam
+[17:21] <carols10cents> " such-and-such@gmail.com wants to ask you if you want to speak at this meeutp"
+[17:21] <carols10cents> " such-and-such@gmail.com wants to ask you if you want to speak at this meeutp"
+[17:21] <carols10cents> " such-and-such@gmail.com wants to ask you if you want to speak at this meeutp"
+[17:22] <erickt> I hope it wouldn't get that bad :/ 
+[17:23] <carols10cents> any form on the internet WILL get submitted by bots
+[17:23] <erickt> that's true
+[17:23] <badboy> gnaaah
+[17:23] <erickt> that's why I think we should route through someone else, like github or urlo for contacts
+[17:24] <carols10cents> if you add gh login to search/be able to send messages tho
+[17:24] <carols10cents> that might help
+[17:24] <carols10cents> and maybe like "you already contacted this person, you can't contact them again"
+[17:25] <erickt> I think that sounds a bit more like a second generation thing
+[17:25] <badboy> sounds doable
+[17:25] <carols10cents> ok but dont say i didn't warn you
+[17:25] <erickt> for an mvp, just having a link to a github repo where they can file a ticket, or their urlo username where they can send a direct message
+[17:25] <erickt> that'd still require a github login to send a message
+[17:25] <erickt> still authenticated, then we don't need to implement our own auth story :)
+[17:26] <badboy> but still have a directory of possible speakers in the first place?
+[17:26] <erickt> yeah
+[17:27] <Manishearth> yeah, I think that works
+[17:27] <Manishearth> ask them to file an issue and ping someone, basically
+[17:27] <badboy> given I have the weekend allocated for rust stuff anyway (yey novemb.rs), I will come up with the MVP of that then
+[17:27] <erickt> looks like rustaceans should be relatively simple to do this with. we could just update the user blob like https://github.com/nrc/rustaceans.org/blob/master/data/edunham.json
+[17:28] <erickt> to include a "speaking-opportunities" or something
+[17:28] <edunham> erickt: yup
+[17:30] <badboy> yep, that was my idea. extend it with necessary info and provide search for that 
+[17:30] <edunham> I think we discussed having it opt-in and include the regions where someone would like to be contacted about speaking engagements
+[17:30] <erickt> edunham: +1
+[17:31] <edunham> so no PII further than general area of the planet and 1 contact method would be needed
+[17:31] <erickt> agreed
+[17:31] <edunham> and that's almost certainly less than a dedicated stalker could glean from any public speaker's public information
+[17:32] <badboy> yes, having  this info provided can help
+[17:33] <erickt> if i had infinite free time, I'd consider also updating rustaceans to not depend on a sqlite database running on nrc's machine :) but that's definitely not a priority
+[17:33] <johannh> badboy: maybe we should make that a novemb.rs project and collaborate on it over the weekend
+[17:33] <badboy> agreed. I will get on this then. thanks!
+[17:34] <badboy> johannh: yes, we're in contact anyway, so collaborating is appreciated :)
+[17:34] <johannh> sounds like a fun thing for the weekend
+[17:35] <edunham> rustaceans.rs? 
+[17:35] <edunham> :shipit:
+[17:35] <erickt> <3
+[17:35] <badboy> I can't believe how shitty the lte was today
+[17:36] <badboy> i also realized i need to exit here *runs*
+[17:36] <erickt> see ya!
+[17:36] <badboy> I'm not lesving ypu!
+[17:36] <erickt> hehe
+[17:37] <johannh> don't ypu lesve me
+[17:38] <erickt> well anything else to talk about?
+[17:38] <badboy> we have a lot of locations now for novemb.rs, so that is good
+[17:39] <erickt> great!
+[17:39] <erickt> I wish I could make it
+[17:39] <erickt> oh speaking of which
+[17:39] <erickt> it's thanksgiving next thursday, so I won't be able to make our wednesday meeting (due to family time)
+[17:40] <erickt> y'all are welcome to meet of course
+[17:40] <erickt> if there's nothing else, then I'm gonna call our meeting a bit early :)
+[17:40] <badboy> meet for thanks giving at your house?
+[17:41] <badboy> that's nice!
+[17:41] <erickt> I'm sure, if you want to come over
+[17:41] <erickt> but i'll tell you, it's the *worst* time to travel in the US
+[17:42] <erickt> ok well I'm gonna run to a work meeting! thanks everyone!
+[17:42] <erickt> good luck at novemb.rs!
+[17:43] <badboy> thanks
+[17:43] * carols10cents waves
+[17:46] <jntrnr> Cya all
+[17:59] <badboy> damn, I don't have any rustbeltrust sticker left oO
+[18:08] * carols10cents whistles innocently
+[18:09] <badboy> well, guess I have to fly back and collect some
+[18:09] <carols10cents> yay!!!!
+[18:09] <badboy>  /o\

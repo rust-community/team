@@ -1,0 +1,207 @@
+== 26 Oct 2016
+[00:31] <chriskrycho> Do you good people know: What's the best way to go about registering a `.rs` domain?
+[01:20] <badboy> chriskrycho: skade used https://www.istanco.rs/
+[07:44] <skade> chriskrycho: and I'm happy
+[07:45] <skade> have an appointment with the people from the phillipines tomorrow
+[08:14] <booyaa> skade: awesome!
+[08:14] <booyaa> chriskrycho: looking to buy newrustacean.rs? ;)
+[08:19] <booyaa> trust.in.rs
+[08:47] <skade> there's a TLD where not all TLA's are taken?
+[08:48] <skade> ah, it is taken
+[10:15] <chriskrycho> booyaa, heh, no, though that's not a terrible idea if I'd been doing it a year ago. Looking at registering for a different project I'm working on. ;)
+[11:41] <skade> who's running the meeting later?
+[14:09] <erickt> hi skade! I'll run it
+[14:10] <erickt> I've unfortunately been getting swamped with work recently though, so I haven't been able to dedicate as much time as I want to our team though :(
+[14:19] <carols10cents> erickt: #thiscouldbeusrightnowbutuworkin http://imgur.com/hg9Hxi3
+[14:19] <erickt> ;_;
+[14:20] <erickt> carols10cents: http://giphy.com/search/crying
+[14:21] <carols10cents> <3
+[14:21] <erickt> carols10cents: you know, if you know of anyone who could take my ticket, they are welcome to it
+[14:21] <carols10cents> erickt: ok, i'll give that to someone who walks in without having registered... there's always one
+[14:22] <carols10cents> erickt: want me to mail you your t-shirt?
+[14:22] <erickt> I also ordered a gluten free meal you might be able to cancel
+[14:22] <carols10cents> um
+[14:22] <erickt> that would be swell!
+[14:22] <erickt> I think I ordered that
+[14:22] <carols10cents> there were meals?
+[14:22] <carols10cents> i'm not serving meals haha
+[14:22] <erickt> are there? I can't remember
+[14:22] <erickt> haha
+[14:22] <erickt> ok nevermind
+[14:23] <carols10cents> only coffee/tea/soda and granola bars/fruit
+[14:23] <erickt> oh and you could probably just send the shirt back with aturon or one of the other SFers
+[14:23] <carols10cents> ah ok
+[14:23] <carols10cents> should i send the tablecloth back with one of them too?
+[14:24] <erickt> it depends, whens the next rust belt rust con?
+[14:25] <carols10cents> unknown
+[14:25] <carols10cents> i mean, i can keep it til someone needs it
+[14:26] <carols10cents> #keeperofthecloth
+[14:28] <edunham> carols10cents++
+[14:28] <edunham> send it with whoever from your local meetup attends the next event that needs it
+[14:31] <carols10cents> https://github.com/rust-community/team/issues/103
+[14:33] <carols10cents> edunham: should i mail you your rustbeltrust stickers? or is there someone from portland going that i can send them back with?
+[14:33] <carols10cents> is carl lerche in portland?
+[14:48] <edunham> carols10cents: yeah, he is
+[14:48] <edunham> otherwise, any Moz person will see me at hawaii :)
+[15:00] <meetingbot> This week's agenda: https://github.com/rust-community/team/issues/102. The meeting is this Weds @ 4PM UTC. No minutes found for last week. :( bippity beep!
+[15:21] <badboy> oh shit. I'm still out and won't have mobile internet so I probably miss the meeting
+[15:25] <skade> hm, similar to me, I have to run for my sports courses :)
+[15:28] <skade> i may sit outside for a while for some questions, but yes
+[15:54] <erickt> T-6 minutes!
+[15:56] <erickt> a slightly late https://www.youtube.com/watch?v=9jK-NcRmVcw!
+[15:59] <erickt> T-1 minutes!
+[16:00] <erickt> T-0!
+[16:00] <erickt> hi everybody!
+[16:00] <erickt> meetin time!
+[16:00] <erickt> who's here today?
+[16:00] <edunham> \o
+[16:01] <carols10cents> o/
+[16:01] <erickt> well! I guess it's just you and me?
+[16:01] <erickt> and you!
+[16:01] <carols10cents> HI I AM HERE
+[16:01] <erickt> hi carol!
+[16:01] <erickt> err, HI CAROL!
+[16:01] <erickt> well lets begin!
+[16:02] <erickt> https://github.com/rust-community/team/issues/102
+[16:02] <erickt> so first off, and my biggest thing
+[16:02] <erickt> as you know, I've been busy, and I expect I'm going to be work busy for the next month or so :(
+[16:03] <erickt> so would anyone be interested in helping to advance (and really build) or agenda over the next month or so?
+[16:03] * frewsxcv is on his way to Rust Belt Rust!
+[16:03] <bstrie> I'm here!
+[16:03] <bstrie> distracted though, preparing to depart for pgh
+[16:03] * erickt is jealous
+[16:04] <bstrie> erickt: it might be prudent to appoint a semi-permanent lieutenant to handle things like this
+[16:05] <erickt> ya
+[16:05] <edunham> officers++
+[16:05] <erickt> that would be delightful :)
+[16:05] <bstrie> now does anyone want the job, is the question :P
+[16:05] <edunham> I would volunteer to handle the occasional agenda, but tbh I do not know where to start on it
+[16:05] <edunham> ping each person and ask what's new?
+[16:06] <erickt> edunham: that'd be a great start!
+[16:06] <erickt> better than I've been doing for the past bit
+[16:07] <erickt> we also have some initiatives we've been working on, like fleshing out the website more
+[16:07] <erickt> so it's also about recruiting people to help build them out
+[16:07] <bstrie> would be good to track progress on the things that we do somewhere public
+[16:07] * edunham starts a "how to make agenda" wiki page on the team repo
+[16:07] <erickt> bstrie: I did start doing https://github.com/rust-community/team/milestones
+[16:08] <erickt> to start collecting things
+[16:08] <edunham> also, why does meetingbot not create our agenda issues for us
+[16:08] <edunham> where's meetingbot's source live?
+[16:08] <booyaa> can do
+[16:08] <booyaa> https://github.com/rust-community/meetingbot
+[16:09] <booyaa> although it's running off my raspberry pi at home (cron)
+[16:09] <erickt> oh that's a good idea. it could poll our latest milestones and ping the ticket owners
+[16:09] <erickt> to update their status in the meeting notes
+[16:09] <bstrie> carols10cents: I've made some new tchotchkes for rust belt rust, think I should make one last reddit post to see if we can get any last-minute ticket sales?
+[16:10] <booyaa> happy to have this assign to me
+[16:10] <carols10cents> bstrie: go right ahead!
+[16:12] <erickt> ok so next thing
+[16:12] <erickt> carol, any last minute things you need from people headed to pittsburgh?
+[16:12] <carols10cents> this is my status update http://imgur.com/a/ywR4J
+[16:13] <edunham> carols10cents++
+[16:13] <carols10cents> we will have a community table on which i am going to put extra stickers and a big pad of paper
+[16:13] <erickt> nice!
+[16:13] <carols10cents> so any community people there who would like to sit at it, or indicate what to do with the paper, i would love help with that :)
+[16:13] <erickt> do you need any volunteers to pack bags or anything?
+[16:14] <carols10cents> erickt: i'm hoping to have that done today, i have a bit of help and we should be able to handle it
+[16:14] <edunham> erickt: https://github.com/rust-community/team/wiki/How-to-make-an-agenda is not great but it's a start
+[16:14] <carols10cents> also if anyone wants to help with setup/registration, i'll be at the venue around 7am tomorrow
+[16:14] * edunham would like a wiki of 'how to erickt'
+[16:15] <erickt> I'd find that document useful
+[16:15] <erickt> I forget sometimes
+[16:15] * badboy joining in
+[16:16] <erickt> hello!
+[16:16] <erickt> ok so lets see, what's next
+[16:17] <erickt> skade added a few things to the agenda, but I don't think he's around
+[16:17] <erickt> anyone know if there's outstanding work on the interview request?
+[16:18] <erickt> or about rust-handson? https://github.com/chikoski/rust-handson
+[16:18] <erickt> seems bridgy
+[16:19] <badboy> we should definitely save that link for re-use
+[16:19] <badboy> I didn't look through it though
+[16:19] <erickt> I agree
+[16:19] <erickt> another thing for the wiki :)
+[16:19] <badboy> wiki all the things
+[16:20] <erickt> do we have a webpage to point at all the training material out therE?
+[16:21] <edunham> erickt: I've been dumping stuff in the rust-learning repo as I find it, but perhaps a rust-bridge README would be a better place
+[16:21] <erickt> http://community.rs/resources/ does have some tutorials and examples
+[16:21] <erickt> edunham: https://github.com/ctjhoa/rust-learning?
+[16:21] <edunham> specifically https://github.com/ctjhoa/rust-learning/#tutorials--workshop-materials
+[16:21] <edunham> yep
+[16:21] <erickt> awesome
+[16:22] <erickt> I wonder if we could get that list replicated on community.rs
+[16:23] <skade> Erickt I've got a call with the interview tomorrow morning
+[16:23] <erickt> skade: great!
+[16:23] <carols10cents> after rust belt rust i will be putting a bunch of material/instructions/feedback in the rustbridge repo about the one we ran last weekend
+[16:23] <badboy> skade: the Philippines thingy?
+[16:23] <skade> But yes, I'm at the archery range, preparing
+[16:24] <skade> Badboy yes
+[16:24] <carols10cents> o.O 
+[16:24] <erickt> preparing for the interview? what kind of interview is it!!
+[16:24] <badboy> skade: alright, they contacted me as well, asking if I can poke you again. guess it's covered then
+[16:24] * carols10cents wonders what skade is practicing archery to prepare for...
+[16:25] <badboy> carols10cents: next rustfest will have archery workshops
+[16:25] <carols10cents> badboy: plz don't shoot me
+[16:25] <badboy> Lerne Rust und triff Leute!
+[16:25] <badboy> (that joke sadly only works in german, sorry)
+[16:25] <carols10cents> i thought rust was all about NOT shooting yourself in your foot
+[16:26] <badboy> well, we're not _aiming_ for the foot
+[16:26] <erickt> heh
+[16:27] <mbrubeck> "Rust: The language that makes you take the safety off before shooting yourself in the foot"
+[16:27] <erickt> lol
+[16:27] <erickt> mbrubeck: that's getting nominated: https://users.rust-lang.org/t/twir-quote-of-the-week/328
+[16:28] <erickt> anyway
+[16:29] <badboy> back to business
+[16:29] <badboy> I still didn't get around to write anything up for the switchboard thingy, sorry about that. It's on my list for after RBR
+[16:29] <erickt> edunham: oh another erickt todo is fotf-ing: https://users.rust-lang.org/t/twir-friends-of-the-forest/7295
+[16:30] <erickt> badboy: no worries. we just need to figure out how to steal freetime from others
+[16:31] <erickt> skade: you also mentioned talking about rust-community/talks's future
+[16:31] <badboy> (there's a joke about being in the city of ste(a|e)l right now hidden in there, I'm just not sure where)
+[16:31] <erickt> what did you want to say about that?
+[16:31] <erickt> heh
+[16:33] <erickt> well if skade is no longer available, we can reschedule that to next week. Anyone have any other topics to discuss?
+[16:34] <erickt> going once...
+[16:35] * badboy resists eating the stroopwafels for RBR 
+[16:35] <erickt> ok I'm gonna call the meeting over!
+[16:35] <erickt> heh
+[16:35] <badboy> erickt: that's btw another thing you gonna miss
+[16:35] <erickt> ;_;
+[16:35] <erickt> I love stoopwaffels
+[16:36] <badboy> you had your chance!
+[16:36] <badboy> :P
+[16:36] <erickt> I did
+[16:36] <badboy> you could still make it in time
+[16:36] <erickt> well you kids have fun at your conference!
+[16:36] <carols10cents> all alone, I have cried/silent tears full of pride/in a woooorld made of steel/made of stooooone https://www.youtube.com/watch?v=ILWSp0m9G2U
+[16:36] <carols10cents> erickt: thaaaanks daaaaaad, sorry you have to go to stupid work
+[16:36] <erickt> me too!
+[16:36] <erickt> I hope you are recording the talks!
+[16:36] <erickt> I wanna see it
+[16:37] <erickt> I want to be among those whining that the videos aren't up yet
+[16:37] <erickt> it'll be awesome
+[16:37] <erickt> actually
+[16:37] <erickt> waah why aren't the videos up yet?!
+[16:37] <badboy> mostly because ... actually I don't know
+[16:38] <badboy> pinging my video guy now
+[16:38] <erickt> carols10cents, stop slacking!
+[16:39] <carols10cents> YINZ JUST MADE THE VIDEOS GET RELEASED LATER HOPE YOU'RE HAPPY
+[16:39] <carols10cents> (we're videoing day 2 only)
+[16:39] <erickt> haha
+[16:39] <carols10cents> dealwithit.gif
+[16:39] <erickt> https://www.youtube.com/watch?v=c-xWVTkY0vE
+[16:39] <badboy> carols10cents: let's do that "JUST WAIT FOR IT" video for erickt personally
+[16:40] <erickt> alrighty then, I'm going to do stupid real work
+[16:40] <badboy> yikes
+[16:41] <erickt> edunham: please ping me if you got questions. I'm operating in reactive mode so if you ask me for help on something I'll try to help out :)
+[16:41] <badboy> and I'm gonna eat stroopwa^W^W prepare my slides
+[16:41] <erickt> heh
+[16:41] <erickt> just after that next stroopwaffel
+[16:42] <edunham> erickt: SGTM
+[17:24] <bstrie> carols10cents: https://www.reddit.com/r/rust/comments/59im8a/rust_belt_rust_starts_tomorrow_in_pittsburgh_and/
+[17:25] <badboy> o m g
+[17:25] <badboy> are those rusty ferris crabs?
+[17:29] <bstrie> badboy: the rustiest
+[17:29] <steveklabnik> niiiiiiiiice
+[17:32] <carols10cents> \o/
+[22:55] <skade> erickt: I didn't have much to say about talks either, I just saw that it went stagnant
+[22:59] <skade> carols10cents: fun answer: obviously for the next attack of the ninja zombies. honest answer: it's great exercise for people with a desk job
+[23:00] <skade> mbrubeck: considerung that the bow I use is 2m30 and the projectile itself more then a meter, I'd be amazed if people manage to shoot themselves in the foot with it :) https://www.youtube.com/watch?v=Mbq6FN0yw-w

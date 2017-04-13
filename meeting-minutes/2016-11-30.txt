@@ -1,0 +1,284 @@
+== 30 Nov 2016
+[00:51] <Phrohdoh> If I want to get other rustaceans involved in a project of mine where would I do this? I know that's quite vague and can have a lot of answers so I'm really asking "where have you gotten the best results?"
+[12:14] <booyaa> during my rather long xmas break i'm gonna write meetingbot v2
+[12:15] <booyaa> it'll have a permanent prescence and will generate agendas on the fly (asking permission first of course).
+[16:00] <meetingbot> No agenda has been set! :( The meeting is this Weds @ 4PM UTC. No minutes found for last week. :( bippity beep!
+[16:00] <erickturkey> T-60 minutes!
+[16:00] <erickt> just enough time to make an agenda!
+[16:05] <erickt> booyaa / carols10cents / bstrie / badboy / jntrnr / hjr3 / steveklabnik / edunham / Manishearth / people I missed: any agenda items for https://github.com/rust-community/team/issues/110?
+[16:07] <badboy> erickt: damn, still at the university. I won't be there on time. 
+[16:07] <steveklabnik> i don't
+[16:07] <steveklabnik> have anything
+[16:07] <badboy> (a bit flat the last few weeks, our meetings :D)
+[16:07] <erickt> badboy: we need to make you a rust job so you can get out of that dead end "education"
+[16:07] <badboy> I'm now doing Kernel stuff
+[16:07] <erickt> nifty!
+[16:07] <badboy> like ... constantly crashing and so one. Can someone please rewrite Linux in Rust?
+[16:08] <badboy> > BUG: unable to handle kernel
+[16:08] <badboy> yeah, that's how I feel.
+[16:08] <erickt> my stupid logitech mouse driver kept crashing my MacOS Sierra
+[16:08] <badboy> well, it's kinda fun how I can't even reboot that vm because of a crashed kernel module
+[16:09] <erickt> heh
+[16:09] <erickt> that's beautiful
+[16:14] <jntrnr> erickt: nothing from me yet
+[16:15] <erickt> jntrnr: can you make yourself a survey that gathers up ideas on what your next project should be? ;)
+[16:15] <carols10cents> i have closed the rbr survey but i haven't written up anything about the results yet
+[16:16] <jntrnr> erickt: lol I'm already working on it. Was skade's idea :)
+[16:17] <erickt> hah
+[16:17] <skade> yeah, I also need another week to write my two things :(
+[16:17] <skade> (also, have to leave in 10 minutes)
+[16:18] <erickt> we should organize a community work week
+[16:19] <erickt> all this life is getting in the way of doing important things, like organizing underhanded.rs!
+[16:21] <badboy> or turning up at certain conferences!
+[16:21] <erickt> ;_;
+[16:21] <badboy> (didn't we decide Manishearth will do the underhanded.rs? did he not deliver yet? shame shame.)
+[16:22] * erickt goes off to buy underhanded.rs
+[16:22] <erickt> done!
+[16:22] <erickt> it's happening!
+[16:23] <Manishearth> wat
+[16:23] <erickt> badboy: dunno. Manishearth moves to SF and then he's all "waah I need to find a place to sleep" and not doing the things I want him to do
+[16:23] <erickt> then he's all "i need to unpack"
+[16:23] <erickt> what about my needs, Manishearth 
+[16:25] <erickt> badboy: I got inspiration for a challenge that I'm finally writing up :) 
+[16:25] <erickt> https://en.wikipedia.org/wiki/Office_Space
+[16:26] <badboy> that's a movie. Are you telling me you were slacking around, now trying to turn that into "inspirational moment"?
+[16:26] <erickt> I think that's the movie's core thesis
+[16:27] <badboy> :D
+[16:38] <hjr3> no specific agenda items for me
+[16:38] <badboy> oh, btw: https://fnordig.de/2016/11/29/novemb-rs-code-sprint-weekend-2016-retrospective/
+[16:38] <erickt> neat!
+[16:39] <erickt> I meant to ask about that
+[16:39] <badboy> (the CYBER CYBER in conjunction with the rust logo is great! :D)
+[16:39] <badboy> also: my module is not crashing anymore. yey.
+[16:39] <erickt> T-20 minutes!
+[16:51] <erickt> T-10 minutes!
+[16:51] <badboy> gotta go. ...
+[16:52] <edunham> \o hello hello
+[16:55] <erickt> https://www.youtube.com/watch?v=9jK-NcRmVcw
+[16:55] <erickt> aloha!
+[16:57] <jackpot51> Anyone want to talk about Redox in an official context?
+[16:57] <jackpot51> Now that it is close to being tier-3
+[16:57] <erickt> hi jackpot51! what do you mean by official context?
+[16:57] * erickt waves at brson
+[16:58] <brson> hi
+[16:58] <jackpot51> how we may collaborate to make it tier 2 or tier 1
+[16:58] <erickt> booyaa: can meetingbot automatically start playing final countdown at T-5?
+[16:58] <carols10cents> jackpot51: and what do you mean by "talk about"?
+[16:58] <jackpot51> Very simply: now that std is ported, what needs to be done to port rustc?
+[16:58] <erickt> jackpot51: I think #rust-internals or #rustc might be the right place for that
+[16:59] <steveklabnik> carols10cents: i assume jackpot51 means "how do we get redox onto being tier 3, and then move up to tier 2 and then tier 1"
+[16:59] <steveklabnik> but yeah this meeting is probably not the place for that
+[16:59] <erickt> there are more compiler hackers there :)
+[16:59] <carols10cents> steveklabnik: ah. if they meant "conference/meetup talk", then this room might be the right place :)
+[16:59] <erickt> that's true! I do want to get the redox folks at a meetup/conference
+[17:00] <erickt> meeting time!!!! https://github.com/rust-community/team/issues/110
+[17:00] <erickt> omg
+[17:00] <erickt> hi everyone
+[17:00] * erickt meeting dances
+[17:00] <erickt> who's in today?
+[17:00] <carols10cents> o/
+[17:00] <jntrnr> o/
+[17:01] <erickt> so I don't have that much for the agenda
+[17:01] <erickt> first thing, it's about time for us to start scheduling the core/conference meeting
+[17:01] <carols10cents> i just added a thing but badboy isn't here oh well
+[17:02] <erickt> https://github.com/rust-community/team/issues/108
+[17:02] <erickt> next week is the mozilla work week, so we *probably* can't schedule the call then, but carols10cents / skade, can you put in some availability times on https://github.com/rust-community/team/issues/108
+[17:03] <erickt> ?
+[17:03] <carols10cents> so to clarify: each conference will write up something first,
+[17:03] <carols10cents> and *then* we're going to have a synchronous meeting?
+[17:03] <erickt> yeah, I think that's what skade wanted
+[17:03] <carols10cents> vidyo/hangout, phone call, or irc meeting?
+[17:03] <erickt> I think a vidyo/hangout
+[17:04] <carols10cents> and what's the purpose of the call?
+[17:04] <carols10cents> how long should we schedule it for?
+[17:04] <erickt> it's a shame skade had to leave, but I believe he wanted to talk through some of the issues rustfest encountered
+[17:04] <carols10cents> is it more retro, more future looking, or both?
+[17:05] <erickt> and wants to talk through how we can do things better for 2017
+[17:05] <erickt> I think both
+[17:05] <erickt> length I'd say max of an hour
+[17:06] <carols10cents> i'm writing up these assumptions
+[17:06] <carols10cents> on the ticket
+[17:06] <carols10cents> and i will add some availability
+[17:06] <erickt> thanks :)
+[17:06] <erickt> I'll ping aturon and skade on the ticket
+[17:07] <erickt> anyone else have any other questions?
+[17:08] <carols10cents> is anyone invited to attend this meeting or just the conf organizers?
+[17:08] <erickt> I think it'd be core/community/conference organizers private
+[17:09] <Manishearth> btw, I've been talking with some RH people
+[17:09] <Manishearth> redhat
+[17:09] <carols10cents> conf organizers required, other core and community people optional?
+[17:09] <Manishearth> seems like there are rumblings for using rust within rh
+[17:09] <erickt> we'd then want to gather up the writeups into a public post
+[17:10] <erickt> carols10cents: I'd say conf organizers required, a quorum of core team, and community is optional
+[17:10] <erickt> Manishearth: nice!
+[17:10] <carols10cents> erickt: could you put parens in that statement plz?
+[17:10] <erickt> yep
+[17:11] <carols10cents> (conf orgs AND quorum of core team) required, community optional
+[17:11] <carols10cents> (conf orgs) required, (quorum of core team AND community) optional
+[17:11] <carols10cents> ?
+[17:11] <erickt> hehe
+[17:12] <erickt> the first one
+[17:12] <carols10cents> ty!
+[17:12] <erickt> I figure since the conference organizers are also part of the community team, we got some coverage 
+[17:12] <carols10cents> some are also core tho :P
+[17:13] <erickt> that too
+[17:13] <erickt> :)
+[17:13] <carols10cents> i need a venn diagram
+[17:13] <erickt> :)
+[17:14] <erickt> ok so next up, we're getting to the end of 2016
+[17:14] <erickt> so we have some things in https://github.com/rust-community/team/milestone/1
+[17:14] <jntrnr> A pretty good year!
+[17:15] <erickt> yeah!
+[17:15] <carols10cents> for rust stuff at least :P
+[17:15] <erickt> hehe
+[17:15] <jntrnr> (At least for Rust) ha!
+[17:16] <erickt> so it'd be great to try to close out some of these before the end of the new year
+[17:16] <carols10cents> erickt: i changed all instances of "post mortem" to "retrospective" bc nobody died
+[17:16] <carols10cents> i only had one bleeder, anyway
+[17:17] <erickt> jntrnr / edunham / Manishearth / steveklabnik: can we carve out some time in Hawaii to work on these?
+[17:17] <jntrnr> Sure
+[17:17] <steveklabnik> sure
+[17:17] <carols10cents> just rub it in
+[17:17] <Manishearth> erickt: ... probably :)
+[17:17] <erickt> carols10cents: ack! that's something we should avoid next conference
+[17:17] <carols10cents> bleeding? :)
+[17:18] <erickt> YEP
+[17:18] <erickt> err
+[17:18] <erickt> yep
+[17:18] <edunham> erickt: my schedule's pretty flexible :)
+[17:18] <erickt> much more dramatic that I meant
+[17:18] * edunham has many humans to catch up with and talk to, but few Official Meetings
+[17:18] <carols10cents> i was prepared at least!! i bring a first aid kit with me!
+[17:18] <carols10cents> erickt: are you going to hawaii?!?!?
+[17:18] <erickt> smart!
+[17:18] <Manishearth> yeah, I don't have Official Meetings yet
+[17:18] <erickt> carols10cents: yep, core team perk
+[17:18] <Manishearth> but this happens every time. I have like one Official Meeting planned, but by Friday I am literally in 3 meetings at once
+[17:19] <carols10cents> NOFE AIR
+[17:19] <erickt> see, thats why we need our own work week
+[17:20] <carols10cents> "our own"? YOU'RE ONE OF THEM
+[17:20] <erickt> I mean community team work week
+[17:20] <carols10cents> rabble rabble
+[17:20] <erickt> since I haven't met you all in person (sob)
+[17:21] <edunham> just need better travel budgets for rustconfs
+[17:21] <erickt> ok I'll work to schedule time next week. carols10cents are you around to work on things too?
+[17:21] <erickt> yeah
+[17:22] <carols10cents> erickt: no i'm on strike pending flight to hawaii
+[17:22] <erickt> haha
+[17:22] <carols10cents> (yes i'm around sigh)
+[17:23] <erickt> ok I'll coordinate you as well on when we all can be in the same virtual room to talk and/or work online on these things
+[17:24] <erickt> not sure if I have anything else for the 2016 milestones, I did start a 2017 milestone: https://github.com/rust-community/team/milestone/2
+[17:24] <erickt> so we can start filling that out too
+[17:25] <erickt> I think I'm outta things. anyone else have anything else to talk about?
+[17:26] <erickt> if not, then we can all work on the underhanded.rs proposal I just mailed to you all :)
+[17:26] <brson> i can at least mention that we need a better t-shirt story
+[17:26] <brson> the participation team asks me for t-shirts every few weeks
+[17:27] <erickt> we do! I thought that was almost organized though
+[17:27] <brson> the community t-shirts we have available don't satisfy them
+[17:27] <could_it_be_bstrie> hello! am I missing a meeting?
+[17:27] <erickt> could it be could_it_be_bstrie?!
+[17:27] <carols10cents> brson: what about the t-shirts is unsatisfying?
+[17:28] <could_it_be_bstrie> yes! I've been swamped with work, have missed meetings for a while :P
+[17:28] <erickt> been there, done that
+[17:28] <edunham> brson: do they want to buy in bulk or something?
+[17:28] <brson> carols10cents: i can't speak for why the participation team isn't using them
+[17:29] <carols10cents> brson: what do they say when they ask you?
+[17:29] <edunham> let's set the hawaii goal fo persuading participation to disclose their actual goals for rust shirts then
+[17:29] <brson> edunham: yes, they don't want to use the commercial sites i think
+[17:30] <edunham> well that's a little silly; if there's budget and a list of sizes needed we can work with a local printer and get a couple boxes made
+[17:30] <edunham> do we know who did the art on the Rust 1.0 shirt or the RustConf shirt?
+[17:30] <carols10cents> yeah all the logos are available for use........ what's preventing them from making shirts?
+[17:30] <erickt> edunham: I think it's https://devswag.com
+[17:30] <edunham> if participation has shirts budget, it would be amazing to get another good piece of art like that done up under a permissive license
+[17:30] <carols10cents> do they just want the rust teams to do the work....?
+[17:31] <brson> carols10cents: yes they want the rust team to do the work seemingly
+[17:31] * edunham wonders if participation is thinking the shirts should come out of Rust's budget
+[17:31] <edunham> oh yeah, and acting in my capacity as a random Rust nerd, I have ordered a prototype of a mini Ferris plushie from Squishable
+[17:31] <carols10cents> i will order them shirts if they buy me a flight to hawaii :P
+[17:32] <erickt> brson / edunham I put swag on the work week meeting
+[17:32] <erickt> carols10cents: hehe
+[17:32] <edunham> so uh within the next 3-6 months I might be asking around if any groups within Moz want to purchase some number of hundred adorable plushies at cost
+[17:32] <edunham> and if that's not enough to meet the minimum order, I may make incredibly poor life choices involving Kickstarter
+[17:32] <carols10cents> edunham: THINK BIG! THOUSANDS!
+[17:33] <erickt> edunham: haha
+[17:33] * carols10cents imagines a moz conference room filled with thousands of plush ferrises and smiles
+[17:33] <erickt> a ferris on every seat
+[17:33] <could_it_be_bstrie> +1 rust swag
+[17:34] <edunham> carols10cents: minimum order is 1500 so yeah
+[17:34] <could_it_be_bstrie> I have been oathbound to print out some more metal ferrises
+[17:34] <carols10cents> edunham: we have to figure this out. this needs to happen
+[17:34] <erickt> there are metal ferrises?!
+[17:34] <edunham> carols10cents: oh don't worry it's totally happening
+[17:34] <carols10cents> erickt: you could have gotten one IF YOU CAME TO RUST BELT RUST
+[17:34] <erickt> nooo
+[17:34] <carols10cents> edunham: <3
+[17:34] <edunham> I have approved initial art and mailed them a cheque, is how happening it is
+[17:35] <edunham> so then they eventually build and mail me a prototype, then maybe we make adjustments, and once we have a prototype I approve of I figure out how to arrange an appropriately sized stack of money to get an order sewn up
+[17:36] <brson> neat
+[17:36] <could_it_be_bstrie> what company is this that would be making the plushies?
+[17:36] <erickt> edunham: awesome. can you finish that all up by next week? I'd like one :)
+[17:36] * carols10cents throws wallet at screen
+[17:36] <edunham> could_it_be_bstrie: Squishable
+[17:37] <edunham> erickt: nope, I'm gated on factory stuff and the postal service. If we're lucky it'll be done by SF workweek though!
+[17:37] <erickt> wunderbar
+[17:38] <jntrnr> a metal plushie?
+[17:38] <could_it_be_bstrie> jntrnr: steel wool!
+[17:38] <erickt> ow
+[17:40] <erickt> well it seems the plushie conversation is dying down, so I think I'm gaveling this meeting adjourned
+[17:40] <could_it_be_bstrie> although even more important than plushies or metal doodads is stickers
+[17:41] <brson> thanks erickt 
+[17:41] <erickt> y'all are welcome to stick around of course and help me on underhanded!
+[17:41] <could_it_be_bstrie> we need a sticker fund
+[17:41] <edunham> could_it_be_bstrie: we have some amount of unofficial sticker fund from me reimbursing stickers against Rust's promotion budget within moz
+[17:41] <erickt> could_it_be_bstrie: we should start a sticker-based cryptocurrency
+[17:41] <edunham> could_it_be_bstrie: how would you like a proper sticker fund to look?
+[17:41] <erickt> stickycoin
+[17:42] <edunham> hmm that has potential
+[17:42] <could_it_be_bstrie> edunham: I'm not sure, I do think it would be good for people in general to be able to pitch in, without having to go through mozilla
+[17:42] <edunham> if I post stickers to random people who DM me on Twitter, does that make me poor or rich in stickycoin?
+[17:42] <could_it_be_bstrie> edunham: rich, I think
+[17:43] <could_it_be_bstrie> edunham brson: where do you usually buy your stickers?
+[17:43] <erickt> edunham: I think that'd make you like the Federal Bank
+[17:44] <brson> could_it_be_bstrie: i buy the official stickermule stickers and sometimes do custom stickers with stickermule
+[17:44] <could_it_be_bstrie> edunham brson: it might suffice to just have a public link to wherever you usually source your stickers from, and just have folks buy some and ship them wherever when they feel charitable
+[17:44] <brson> a lot of them are in the swag thread
+[17:44] <edunham> could_it_be_bstrie: Stickermule, and I've stuck a bunch of designs in the Stickermule Store with no markup
+[17:44] <edunham> erickt: oh yeah, is there a place that people can donate money to Rust if they want to?
+[17:44] <edunham> for like... scholarships to conferences, or something?
+[17:45] <could_it_be_bstrie> edunham: this is what I want a rust foundation for :\
+[17:45] <edunham> if that existed, we could probably set up a lot of the swag sales to feed back into it
+[17:45] <erickt> edunham: skade is working on a nonprofit for europe, but so far they haven't been granted non-profit status yet
+[17:46] <erickt> mozilla allows the rust team to capture some amount of money for rust projects, but I think that's capped to some amount
+[17:46] <erickt> aturon knows more about it.
+[17:46] <could_it_be_bstrie> someday we're going to want a rust foundation, but this is probably too big a conversation to have right now
+[17:46] <carols10cents> integer 32 takes money #justsaying
+[17:47] <ambaxter> signed or unsigned?
+[17:47] <Manishearth> carols10cents: not a bad idea actually
+[17:47] <carols10cents> signed :)
+[17:47] <erickt> I gave integer32 money and all I got was a lovely t-shirt!
+[17:48] <carols10cents> we are starting to funnel some of our corporate profits around to other OSS devs actually.... announcement coming soon
+[17:49] <could_it_be_bstrie> carols10cents: you have corporate profits?? tell us more!
+[17:49] <carols10cents> i wouldn't necessarily be opposed to being, like, a a seed foundation
+[17:49] <carols10cents> could_it_be_bstrie: ummmmm it's not very much
+[17:55] <edunham> carols10cents: oh that's a good point re integer32
+[17:56] * edunham just pinged devswag inquiring whether the plushies are a thing they'd be interested in carrying
+[17:56] <edunham> it also *might* be possible to go the squishable store route; we'll see
+[17:56] <ambaxter> I would totally buy a squishable ferris
+[18:03] <erickt> Manishearth: feel free to add/edit anything in the underhanded document
+[18:16] <erickt> Manishearth: since you've read my proposal... how simple do you think we should make the attackable surface?
+[18:17] <erickt> in http://www.underhanded-c.org/_page_id_5.html, they just have a "match" function that specifies the problem area
+[18:18] <erickt> hm, this might be more analogous to my idea: http://www.underhanded-c.org/_page_id_26.html
+[18:19] <erickt> another good reference: https://underhandedcrypto.com/2016/01/27/rules-for-the-2016-underhanded-crypto-contest/
+[18:31] <booyaa> heh i'm gonna need to write some c to understand any of this
+[19:05] <erickt> emails sent to get permission to draw inspiration from underhandedcrypto.com and underhanded-c.org!
+[19:37] <Manishearth> erickt: I thought we'd ask them to write the program from scratch
+[19:37] <Manishearth> oh I see
+[19:38] <Manishearth> ... I think it depends on the actual problem statement
+[19:38] <Manishearth> and Rust being Rust
+[19:38] <Manishearth> I think we should give them a large attack sufrace
+[19:48] <Manishearth> erickt: I added a section about clever use of unsafe blocks
+[19:48] <Manishearth> I'm not sure how to word it
+[19:49] <Manishearth> the idea is that if you can use unsafe in a very devious way that is resilient to high levels of scrutiny 
+[19:49] <Manishearth> it shoudl get bonus points
+[19:49] <Manishearth> the situation I'm thinking of is where the bug is in code outside of the unsafe code, and the unsafe code relies on  a tricky invariant
+[19:49] <Manishearth> or something like that

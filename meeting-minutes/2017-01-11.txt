@@ -1,0 +1,214 @@
+== 11 Jan 2017
+[02:25] <erickt> hello team! anyone have any agenda items for tomorrow?
+[02:29] <edunham|pto> not I! My week is a little overrun with tutorial prep for linux.conf.au.
+[04:59] <Manishearth> carols10cents: what's the state of the integer32 playpen on timing attacks?
+[04:59] <Manishearth> cache based
+[12:57] <carols10cents> Manishearth: uhhh idk
+[13:05] <shep> Manishearth: I'm not sure what you are asking; why would the playground care about timing attacks?
+[13:14] <shep> > In cryptography, a timing attack is a side channel attack in which the attacker attempts to compromise a cryptosystem by analyzing the time taken to execute cryptographic algorithms
+[13:27] * carols10cents looks up money laundering in the dictionary
+[13:43] <shep> Specifically for caching, there is none
+[13:43] <shep> well, we cache the page assets HTML/CSS/JS
+[13:44] <shep> but no caching of posted code or results
+[13:45] <shep> although there's an issue open to cache it in the browser in the future 
+[13:47] <shep> But I'm interested to know what it is you are worried about and what you would like to prevent
+[15:55] <badboy> dang, don't have much for the agenda and have atmost 30minutes today
+[16:00] <meetingbot> This week's agenda: https://github.com/rust-community/team/issues/119. The meeting is this Weds @ 5PM UTC. No minutes found for last week. :( bippity beep!
+[16:00] <Manishearth> shep: carols10cents see: rowhammer
+[16:01] <Manishearth> shep: you can basically write a program that twiddles with bits and figures out which cache rows are getting used
+[16:01] <Manishearth> software like openssl uses big tables. this can be used to figure out which part of the table is in use
+[16:02] <Manishearth> which can leak the key
+[16:09] <shep> Manishearth: what's the ultimate attack vector here?
+[16:10] <shep> (Feel free to add an issue to https://github.com/integer32llc/rust-playground)
+[16:10] <shep> We can discuss and document there for posterity as well
+[16:10] <shep> Which key can be leaked?
+[16:11] <booyaa> mmm i think meeting bot fell asleep
+[16:11] <Manishearth> shep: AES keys with openssl iirc
+[16:11] <shep> Every compilation occurs in a one-off Docker container that doesn't run SSH
+[16:11] <meetingbot> This week's agenda: https://github.com/rust-community/team/issues/119. The meeting is this Weds @ 5PM UTC. No minutes found for last week. :( bippity beep!
+[16:11] <Manishearth> shep: docker containers still share a cache no?
+[16:11] <badboy> booyaa: why? it woke up at 17:00 GMT
+[16:12] <shep> Manishearth: a cache of what, exactly?
+[16:12] <booyaa> wasn't it meant to nudge everyone an hour before or on the hour?
+[16:12] <badboy> everyone directly? nasty! :D
+[16:14] <booyaa> heh
+[16:14] <shep> Manishearth: Are you suspecting that specifically crafted Rust code, running inside an ephemeral docker container, could expose the SSH key of the AWS user that can log in to the machine?
+[16:15] <Manishearth> shep: yes
+[16:15] <Manishearth> shep: "cache timing attacks" and "rowhammer" are what you need to look for
+[16:15] <shep> Manishearth: then sure, please file an issue
+[16:15] <Manishearth> these are realistic; there are C programs that demonstrate this
+[16:16] <Manishearth> IIRC there are even *Javascript* programs that demonstrate this with sufficient granulatiry on performance.now
+[16:16] <Manishearth> cool will do
+[16:17] <shep> Mitigation appears to be "replace your RAM"
+[16:17] <shep> so I'm not sure how feasible that is
+[16:17] <Manishearth> heh
+[16:17] <Manishearth> shep: you can either try very hard to futz all timing data
+[16:18] <Manishearth> but that's not straightforward; if you have two threads that can share a bit of data you can build a timer
+[16:18] <Manishearth> or you can isolate the container to a single processor or something
+[16:19] <shep> Manishearth: I'll admit to feeling this is either a low risk, or it's so high risk that we need to take down all servers on the internet
+[16:19] <Manishearth> IIRC it's a totally feasible attack, and is an issue whenever you can deploy a random exe to a server
+[16:20] <shep> > AWS platforms use server processor versions which have various hardware features designed to mitigate row hammer effects. Additionally, memory de-duplication is not enabled by Amazon EC2's hypervisor.
+[16:20] <Manishearth> ah ok
+[16:20] <Manishearth> well
+[16:20] <Manishearth> yeah
+[16:20] <shep> https://forums.aws.amazon.com/thread.jspa?messageID=739485
+[16:20] <shep> (behind a login)
+[16:20] <Manishearth> this does mean that two separate cloud "servers" running on the same machine can't rowhammer each other
+[16:21] <Manishearth> but I'm not sure it means that an application within one server can't rowhammer another on the same server
+[16:21] <Manishearth> probably not
+[16:37] <booyaa> badboy: in the event rustfest in kiev doesn't happen. as the currently awake mainland european would people be resistant to it being held in the uk?
+[16:37] <booyaa> my gut instinct is hell yeah
+[16:39] <badboy> it looks like it is going to happen ;)
+[16:41] <erickt> howdy hay it's meeting day
+[16:44] <badboy> howdy
+[16:47] <erickt> anyone have any agenda items?
+[16:47] <erickt> Manishearth / badboy / booyaa / carols10cents / steveklabnik / jntrnr / bstrie: ?
+[16:47] <erickt> https://github.com/rust-community/team/issues/119
+[16:47] <carols10cents> i got nothin
+[16:49] <erickt> curses
+[16:50] <badboy> only: https://github.com/badboy/rustaceans-src/pull/3 - though I did not add the map yet
+[16:50] <erickt> hwoo
+[16:50] <erickt> woo
+[16:50] <badboy> also: orrrrr C
+[16:51] <erickt> that looks great!
+[16:51] <badboy> (yesterday I wrote 250 lines of C, compiled it and it ran without an immediate segfault!)
+[16:51] <erickt> ew
+[16:51] <erickt> badboy: well for you we just need to put pressure on nrc to land it
+[16:52] <erickt> or get him to give us commit bits to it :)
+[16:52] <booyaa> erickt: nothing from me too
+[16:52] <erickt> perhaps we should skip this one
+[16:52] <badboy> :D that would be the next question: do we keep it with nrc or is there any chance to move it over?!
+[16:52] <badboy> also: https://community.rs/meetup-map/ - i more or less took meetup.com's data and made it a bit more free
+[16:53] <erickt> we talked to nick at one point and he was receptive to the idea, if i recall correctly
+[16:53] <badboy> ok
+[16:53] <erickt> challenge is that I think it's running on one of his servers
+[16:53] <badboy> right
+[16:54] <erickt> alright, hear ye hear ye, meeting is canceled
+[16:54] <badboy> it's like you don't even want to talk to us! 
+[16:55] <erickt> aw of i want to talk to you
+[16:55] <erickt> i don't need a reason
+[16:56] <erickt> our skade is famous: http://www.se-radio.net/2017/01/se-radio-episode-279-florian-gilcher-on-rust/
+[16:57] <badboy> wuih
+[16:57] <badboy> my swag-tweet got kinda famous, too: https://twitter.com/badboy_/status/818394002970050560
+[16:58] <erickt> ooh
+[16:58] <erickt> who else wants to be famous? I'll totally write up a tweet about you
+[16:59] <erickt> all 111 of my followers will know your name
+[16:59] <erickt> assuming they happen to look at twitter
+[17:00] <steveklabnik> speaking of twitter
+[17:00] <steveklabnik> https://twitter.com/rustlang/status/819227035138748417 ;)
+[17:00] <erickt> skade: https://amara.org/en/ looks great! I think translation might become a overarching theme this year
+[17:00] <erickt> steveklabnik: \o/
+[17:00] <carols10cents> argh why not 1.0?!?!
+[17:00] <carols10cents> cmon let's be bold
+[17:01] <erickt> lol
+[17:01] <badboy> and get punished in a week or two when they have to release 2.0...
+[17:01] <carols10cents> uhhh yes
+[17:01] <erickt> steveklabnik: lets get https://tokio.rs translated!
+[17:01] <badboy> \o/
+[17:01] <carols10cents> WHY HAVE MAJOR VERSIONS IF YOU'RE NOT GOING TO USE THEM
+[17:01] <badboy> version numbers are cheap
+[17:02] <erickt> carols10cents: lets just redefine versions to be epoch.major.minor
+[17:02] <badboy> Romantic Versioning
+[17:02] <carols10cents> erickt: i'm into that
+[17:03] <erickt> eon.mra.period.major.minor
+[17:03] <erickt> err, eon.era.period.major.minor
+[17:03] <badboy> eon.era.period.major.minor+<commit-offset>@<bug fix release>
+[17:04] <badboy> still like the version number of Tex
+[17:04] <skade> erickt: I also got word an hour ago that the videos on our account are importet
+[17:04] <skade> I haven't checked yet
+[17:04] <erickt> I only use projects that hit the Silurian epoch version
+[17:04] <skade> though everything that is just linked (such as rustconf and rustbeltrust) is not includede
+[17:04] <erickt> everything else isn't stable enough for me
+[17:06] <erickt> skade: hm, I wonder how we get the subtitles on the video. does it happen automatically?
+[17:06] <erickt> that'd be a bit strange
+[17:06] <skade> erickt: it has direct youtube integration
+[17:06] <erickt> nifty
+[17:07] <badboy> auto-subtitles on Youtube are suprisingly good on videos from native english speakers such as https://www.youtube.com/watch?v=LoKPupeKW08
+[17:07] <badboy> (or in general on clear spoken english)
+[17:08] <skade> I was also very surprised
+[17:09] <mbrubeck> You can even view them as a "transcript" by clicking on the "··· More" button
+[17:10] <badboy> I know that someone from my university now works at Google doing auto-live transcription. The youtube integration is probably part of his job :D
+[17:10] <erickt> badboy: that's great
+[17:11] <badboy> (yeah, the professor couldn't stop talking about it...)
+[17:11] <erickt> all this deep learning stuff is going great
+[17:11] <erickt> if only I had time to study it
+[17:11] <skade> badboy: the poor person - must be a lot of work by hand
+[17:12] <erickt> maybe that should be a community project
+[17:13] <badboy> studying for erickt?
+[17:14] <erickt> badboy: yep
+[17:14] <erickt> if i can't abuse my power, what's the use of leading the community team?
+[17:20] <bstrie_werk> hola!
+[17:20] * erickt waves at bstrie_werk
+[17:21] <erickt> we canceled the formal agenda because I'm a terrible person
+[17:21] <bstrie_werk> erickt: the agenda in the channel topic could use updating :P
+[17:21] <erickt> but I'll totally tweet your name to make you famous
+[17:21] <bstrie_werk> motion to vote on whether erickt is a terrible person
+[17:21] <erickt> second
+[17:35] <booyaa> once i've got meeting bot rewritten, if it could have ops or +t(opic?) user mode then it could set the topic / agenda
+[17:37] <badboy> once the bots have ops, we are all doomed
+[17:37] <erickt> I'll be out of a job ;_;
+[17:38] <booyaa> never just means more leisure time
+[17:38] <booyaa> honest
+[17:39] <booyaa> alexa refactor meetingbot
+[17:39] <booyaa> no no alexa not the red button!
+[17:59] <carols10cents> meetingbot does not wish to be refactored
+[18:19] <booyaa> lol i now regret running `brew cleanup` week, i am struggling to find out the last version python 3.5.x
+[18:20] <booyaa> +ly
+[18:23] <booyaa> or i could go here *facepalm* https://www.python.org/downloads/
+[20:21] <jntrnr> erickt: hmmm, making it to these meetings is hard :)
+[20:21] <jntrnr> erickt: it's 6am for me now, and I think it gets even earlier when the times change?
+[20:21] <jntrnr> erickt: the meeting starts at 6am for me, I mean
+[20:22] <erickt> jntrnr: :) you don't want to be up when the sun comes up?
+[20:22] <jntrnr> -_-
+[20:22] <jntrnr> erickt: carols10cents was wondering if we should start thinking about different times
+[20:22] <badboy> would you be willing to relocate to a more appropiate timezone?
+[20:23] <jntrnr> I *may* be able to make a few of them, but it'd be pretty rare I think
+[20:23] <jntrnr> badboy: hahaha
+[20:23] <jntrnr> badboy: 10 months getting to NZ, I don't think I'm leaving anytime soon :)
+[20:23] <erickt> jntrnr: sf is lovely this time of the year
+[20:23] <badboy> but it's sf
+[20:23] <jntrnr> erickt: ha!  you're such a liar ;)
+[20:24] <badboy> jntrnr: yeah, I get you. not the worst place to be
+[20:24] <erickt> jntrnr: so much rain
+[20:24] <jntrnr> erickt: I used to live in Seattle, so umm, no thanks ;)
+[20:25] <badboy> anyone who complains about rain never lived in Aachen, Germany.
+[20:25] <badboy> only _then_ you are allowed to complain
+[20:25] <jntrnr> badboy: I know you all get it a bit worse
+[20:25] <erickt> jntrnr: allegedly this was Sonoma yesterday: http://i.imgur.com/baH2RK6.jpg
+[20:25] <jntrnr> O_O
+[20:26] <badboy> oops :/
+[20:28] <erickt> jntrnr: the storm apparently added 350 billion gallons of water to the reservoirs: http://www.eastbaytimes.com/2017/01/09/california-storms-fill-drought-parched-reservoirs/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+quicksnailsfeed+%28quicksnailsfeed%29
+[20:28] <badboy> that is ... good.
+[20:30] <jntrnr> so... totally not rain related
+[20:30] <jntrnr> can we have an official Rust jobs list somewhere?
+[20:31] <jntrnr> I noticed that there are a few openings but I didn't know of any one place to see them
+[20:31] <Manishearth> jntrnr: twir?
+[20:31] <booyaa> twir?
+[20:31] <booyaa> snap
+[20:31] <jntrnr> so you have to know about twir...
+[20:31] <jntrnr> I meant more central
+[20:31] <jntrnr> like on the website possibly
+[20:31] <jntrnr> but maybe twir is better?
+[20:31] <booyaa> the community website?
+[20:31] <jntrnr> it just doesn't come up when you search for "rust jobs"
+[20:31] <Manishearth> jntrnr: yeah we could set that up
+[20:31] <Manishearth> we used to have rust.jobboard.io but it didn't get much traction
+[20:32] <booyaa> perhaps you could have "powered by" twir so people discover twir too?
+[20:32] <booyaa> which ever page the jobs appear in
+[20:34] <jntrnr> Manishearth: there's also http://rust-jobs.com/ but looks like no one is doing anything with it?
+[20:35] <Manishearth> yeah
+[20:50] <badboy> apropos rust jobs: http://advancedtelematic.com/en/careers/embedded-software-engineer.html
+[20:50] <badboy> a friend just pointed me to it
+[20:51] <jntrnr> who do we email to get that on twir?
+[20:51] <jntrnr> that's cool
+[20:51] <carols10cents> no email. pull requests!
+[20:51] <badboy> PR!
+[20:52] <jntrnr> badboy: you want to submit it?
+[20:52] <badboy> go ahead
+[20:53] <badboy> uuuh, it says september 2016
+[20:53] <badboy> seems that is already online for quite some time
+[20:54] <jntrnr> badboy: all the better reason to advertise it?
+[20:54] <badboy> sure
+[20:54] <jntrnr> lol
+[20:55] * jntrnr has no idea how a twir pr works yet
+[20:55] <jntrnr> oic

@@ -1,0 +1,378 @@
+== 1 Mar 2017
+[00:14] <Manishearth> brson: re: illinois: so awesome. wish I had come
+[00:21] <Manishearth> brson: I love the "become a next gen systems hacker" framing
+[00:37] <brson> <3
+[00:37] <brson> next time we can all go :)
+[00:37] <Manishearth> yep :)
+[02:33] <brson> huh tessel has 3 applicants on https://teams.railsgirlssummerofcode.org/projects
+[02:33] <brson> Rust has 0 :(
+[02:33] <brson> nor servo
+[02:34] <brson> tessel is still rust though so that's actual good. more mentors
+[02:47] <brson> badboy: ping
+[02:47] <brson> ok i'm pretty caught up on intern stuff
+[02:47] <brson> i'm a bit unclear yet on the gsoc process
+[02:48] <brson> i gather the students are supposed to submit a proposal to mozilla
+[02:48] <brson> i wonder what our responsibility at this stage is
+[02:48] <brson> do we help anybody that asks prepare a good proposal or should we be like interviewing and filtering candidates
+[02:49] <brson> their due date to submit is 3/20
+[02:49] <brson> https://developers.google.com/open-source/gsoc/
+[02:50] <brson> badboy: can i schedule a video conf?
+[02:50] <brson> what times are good for you
+[02:50] <brson> i'll email you :)
+[12:54] <booyaa> anyone seen n-gate.com?
+[12:57] <booyaa> wonder if they're referring to us as the rust evangelism strikeforce
+[12:59] <badboy> it's at least referring to the comment in that thread
+[13:01] <booyaa> wondering who it is (n-gate.com), this reminds me of the register in it's heyday
+[13:01] <booyaa> fossdem stuff is making me chuckle
+[13:02] <badboy> there's a name in whois ;)
+[13:02] <booyaa> ah well sleuth columbo!
+[13:03] <badboy> but it'S so generic, I'm not sure it helps
+[13:04] <booyaa> yeah looks like it's gandi's details (the registrar)
+[13:04] <badboy> naaah, the name isn't 
+[13:06] <booyaa> you mean kurt?
+[13:06] <badboy> yup
+[13:07] <badboy> it's also the assigned organisation for the IP 
+[13:07] <badboy> and is linked to a IT company
+[13:08] <badboy> seems like a friendly person :)
+[13:33] <skade> brson hm, the usually, you'd need someone to convice a team to apply for servo and be mentoring at the same time 
+[13:33] <skade> I'd like to do it, but I don't know enough servo and wasn't to happy with my last attempt of having a RGSoC team (you really need a lot of time to spend)
+[16:00] <meetingbot> This week's agenda: https://github.com/rust-community/team/issues/133. The meeting is this Weds @ 5PM UTC. Last week's minutes https://github.com/rust-community/team/blob/master/meeting-minutes/2017-02-22.txt. *happy bleeping sounds*
+[16:00] <badboy> oh I will probably be only available for a few minutes
+[16:07] <erickt> meetin day!
+[16:12] <skade> I feel like i'm the only person that ever mails trademark@rust-lang.org :)
+[16:13] <erickt> :) I don't think it's that frequent
+[16:19] <erickt> anyone here have issues for https://github.com/rust-community/team/issues/133
+[16:19] <erickt> ?
+[16:19] <erickt> Manishearth / bstrie / carols10cents / badboy /booyaa / skade / brson / steveklabnik: ^
+[16:19] <steveklabnik> i don't
+[16:19] <carols10cents> nope
+[16:21] <erickt> badboy: btw thanks for covering for me last week
+[16:21] <erickt> carols10cents: btw sorry for the notification spam :) I hope we didn't wake you or anything
+[16:22] <badboy> no problem
+[16:22] <carols10cents> erickt: nah i was without internet on a train, then i got internet and all the notifications at once :P
+[16:23] <badboy> "oh i'm offline" ... DINGDINGIDNGDING
+[16:25] <skade> I already added mine, but I have to leave for training (as always)
+[16:29] <badboy> github changed colors again!
+[16:29] <skade> omg
+[16:29] <steveklabnik> where?
+[16:30] <Manishearth> cheese. moved.
+[16:30] <Manishearth> i guess they embiggened the topbar?
+[16:30] <badboy> the link color of files is a different blue
+[16:30] <Manishearth> aaaaaa
+[16:30] <erickt> you're right!
+[16:30] <Manishearth> that looks so windows 95
+[16:30] <erickt> aaaah
+[16:30] <badboy> it does :D
+[16:30] <badboy> that's why I noticed
+[16:30] <johannh> so subtle
+[16:30] <johannh> (yes I'm alive)
+[16:31] <erickt> what are their designers dooooinggggg
+[16:31] <badboy> hello johannh!
+[16:31] <johannh> hey there
+[16:31] * erickt waves!
+[16:31] <badboy> erickt: unsafe stuff
+[16:31] <erickt> they should use rust for their design work
+[16:32] <erickt> their CSS cache must have read past the end of a buffer and got into some old windows 95 styling
+[16:34] <booyaa> won't be able to attend the meeting today, no mobile data
+[16:34] <badboy> whaaaat? first brexit, now no more mobile data on the island?
+[16:34] <booyaa> haha
+[16:35] <erickt> your country really is just falling off a cliff
+[16:35] <erickt> you could always move to the USA, we're doing fine... wait
+[16:35] <booyaa> erickt: sadly it looks like it
+[16:35] <erickt> (but I suppose we should be good and not talk politics here)
+[16:36] <booyaa> yup, otherwise i'd have to start drinking in the office
+[16:36] <badboy> didn't want to bring it up, sorry
+[16:41] <badboy>  /o\ the green merge button is also different
+[16:41] <skade> and everything is flatter
+[16:42] <badboy> the flattened a list it seems 
+[16:42] * badboy reads too much lobste.rs
+[16:50] <thejpster> I can't stick around this week, but have a good one.
+[16:55] <erickt> https://www.youtube.com/watch?v=9jK-NcRmVcw
+[16:55] <erickt> \m/
+[16:59] <Manishearth> s
+[16:59] <Manishearth> gah bad network on bart
+[16:59] <Manishearth> i am at the CENTER OF THE INTERNET y u no internet
+[17:00] <badboy> probably hosted on S3
+[17:00] <erickt> meeeeting time!
+[17:00] <Manishearth> lol
+[17:00] <Manishearth> theres an xkcd for that
+[17:00] <erickt> itsameeting time
+[17:00] <erickt> https://github.com/rust-community/team/issues/133
+[17:00] <erickt> everyone loves meeting time
+[17:00] <erickt> la la la
+[17:00] <erickt> who's in today?
+[17:00] <Manishearth> erickt btw, is XL your hoodie size?
+[17:01] <erickt> Manishearth: nope, I'm a medium, why do you ask?
+[17:01] <Manishearth> erickt i have extra github hoodies. 
+[17:01] <hjr3> hi folks
+[17:01] <Manishearth> for rust community folks
+[17:01] <erickt> hi hjr3! welcome back
+[17:01] <erickt> nifty!
+[17:01] <Manishearth> erickt might have l, idk. will bring
+[17:02] <Manishearth> er, L
+[17:02] <erickt> :)
+[17:03] <erickt> anyone else here?
+[17:03] * erickt waves at brson
+[17:03] <brson> hi erickt 
+[17:03] <erickt> (brson: btw, did we get the room reserved for the 25th? I need to announce the workshop)
+[17:03] <erickt> skade: got the first item: https://github.com/rust-community/team/issues/132
+[17:03] <erickt> want to take it away?
+[17:04] * erickt hasn't heard of https://dev.to/
+[17:04] <brson> erickt: yes room reserved
+[17:04] <erickt> <3
+[17:05] <erickt> hm, it seems like skade is out at the moment
+[17:05] <erickt> we can circle back to it
+[17:05] <erickt> so next item. underhanded
+[17:06] <erickt> I hope y'all saw I formally extended the announcement: https://underhanded.rs/blog/2017/02/28/extending-submission-deadline.en-US.html
+[17:06] <erickt> we've had some visibility, but no where near as much as the first announcement: https://www.reddit.com/r/rust/comments/5wojip/extending_the_underhanded_rust_submission/
+[17:06] * erickt checks google analytics
+[17:07] <hjr3> do you want people to broadcast the extended deadline?
+[17:07] <Manishearth> get steve to tweet it via rustlang?
+[17:07] <skade> I'm not taking part in the meeting today, but the issue contains all I know
+[17:07] <Manishearth> or via steve, that works too
+[17:07] <erickt> good idea, steveklabnik can you take care of tweeting that?
+[17:08] <erickt> or I can tweet it and you retweet?
+[17:08] <Trangar> No
+[17:08] <steveklabnik> so
+[17:09] <steveklabnik> is there an account that should get a rustlang RT
+[17:09] <steveklabnik> or should rustlang tweet it
+[17:09] <Manishearth> erickt would be thay account if so
+[17:09] <Manishearth> either works
+[17:09] <steveklabnik> dm it the link or the tweet
+[17:09] <erickt> we don't have an official "underhanded rust" twitter account. should we?
+[17:09] <steveklabnik> and i'm happy to do so :)
+[17:09] <erickt> my twitter is weak
+[17:10] <erickt> steveklabnik: here's the official post: https://underhanded.rs/blog/2017/02/28/extending-submission-deadline.en-US.html
+[17:11] <erickt> steveklabnik: I can tweet, since I also want to tweet out the example, and our wiki page
+[17:11] <steveklabnik> sweet
+[17:12] <erickt> so beyond that, I was also thinking we can keep this page up to date with interesting things: https://github.com/rust-community/underhanded.rs/wiki/Resisting-Underhandedness
+[17:13] <erickt> Manishearth: one recent thing that'd seem nice is if we could get you or dwrensha to write up https://dwrensha.github.io/capnproto-rust/2017/02/27/cargo-fuzz.html with a little more detail 
+[17:13] <Manishearth> erickt i can talk about fuzzing in general
+[17:14] <erickt> like on how exactly to get it up, and what does cargo-fuzz do
+[17:14] <erickt> great. We could reblog, or you could post directly to underhanded.rs
+[17:14] <Manishearth> i actually have a lightning talk about fuzzing prepared (didnt get to givr it, bit will give it in a few weeks)
+[17:14] <erickt> Manishearth: april meetup? ;)
+[17:14] <Manishearth> so my main issue is that cargo-fuzz is still unstbleish and may change
+[17:14] <Manishearth> its a 5min lightning talk
+[17:14] <erickt> aw
+[17:15] <erickt> so make it longer :p
+[17:15] <Manishearth> i can take the memes and make a blog post out of them
+[17:15] <carols10cents> do a meetup full of lightning talks
+[17:15] <Manishearth> yessssss
+[17:15] <Manishearth> april. done.
+[17:15] <erickt> wunderbar
+[17:15] <carols10cents> \o/
+[17:15] <Manishearth> unless isis wants to talk about dalek
+[17:15] <erickt> that'd work too
+[17:16] <erickt> also, we now formally have #underhanded-rust
+[17:16] <erickt> so people have been popping into that channel
+[17:17] <bstrie> oh right, a meeting is happening!
+[17:17] <bstrie> I'm so bad
+[17:17] * erickt waves at bstrie
+[17:17] <erickt> carols10cents: your one job! :p
+[17:17] <carols10cents> I QUIT
+[17:18] <erickt> anyone have any other ideas on how we can get attention?
+[17:18] <erickt> aw
+[17:18] <carols10cents> also I HAVE SO MANY JOBS GAH
+[17:18] <bstrie> re: underhanded, I was thinking of stickying the extension announcement
+[17:18] <erickt> carols10cents: your one job you can't quit from!
+[17:18] <carols10cents> don't even one job me
+[17:18] <erickt> haha
+[17:18] <bstrie> skade: would you like me to leave the rustfest sticky where it is?
+[17:18] <erickt> carols10cents: hobby?
+[17:18] <erickt> hm rustfest is also pretty important
+[17:18] <badboy> (i have to leave now)
+[17:19] <erickt> we need more stickies
+[17:19] * erickt waves
+[17:20] <erickt> bstrie: well rustfest has been stickied for almost 2 weeks...
+[17:21] <erickt> we could also do a text post for upcoming rust events that includes rustfest and the underhanded extension in the title
+[17:22] <erickt> either would work for me
+[17:22] <erickt> anyone else have post ideas beyond cargo fuzz?
+[17:22] <bstrie> yes, I think I'll remove the rustfest sticky for now, especially since rustfest will still be selling tickets after the underhanded contest is done
+[17:23] <erickt> great
+[17:23] <erickt> I suppose I could turn quad-bank into a tutorial
+[17:23] <erickt> we could also write up a post showing how to do quad-bank with raw SQL, and step through a simple SQL injection
+[17:24] <erickt> but that might be better to leave to someone to implement?
+[17:24] <hjr3> would be good. for anyone newer to rust, quad-bank has a lot going on
+[17:24] * erickt is quite proud that quad-rocket just fell naturally out of the naming scheme
+[17:24] <hjr3> well done!
+[17:25] <erickt> anyone want to write up using afl or rust-san to find a bug?
+[17:25] <erickt> we could get bascule to write up a tutorial on cargo-audit
+[17:26] * erickt pings bascule
+[17:27] <hjr3> im happy to ping him on twitter if needed to as well
+[17:28] <erickt> hjr3: bascule? he's usually pretty good on replying on irc
+[17:28] <hjr3> ok great
+[17:29] <erickt> ok so if we don't have anything else for underhanded, next item
+[17:29] <erickt> RustBridge workshop-a-thon
+[17:29] <erickt> so just a heads up that we are going ahead in SF with the bridgeathon on Saturday, March 25
+[17:30] <erickt> please let me know if you local organizers are gonna do the same thing, we can setup some tracking system to make sure we don't step on each others toes
+[17:30] <erickt> Please note in here if you are gonna participate: https://github.com/rust-community/talks/issues/39
+[17:31] <erickt> any questions?
+[17:31] <erickt> if not, moving on
+[17:31] <hjr3> im looking for the rust bridge page
+[17:31] <hjr3> remind me again please
+[17:32] <erickt> hjr3: https://github.com/rust-community/rustbridge
+[17:32] <erickt> one thing we need to do is actually setup bridge.community.rs
+[17:32] <hjr3> ah, so just the repo
+[17:32] <hjr3> got it
+[17:32] <hjr3> i was looking for a link on https://community.rs/resources/
+[17:33] <erickt> yeah
+[17:33] <hjr3> ill make a note to look into doing this in LA
+[17:34] <erickt> (bascule is in for a tutorial!)
+[17:34] <erickt> hjr3: great!
+[17:34] <erickt> ok so next up
+[17:34] <erickt> Worldwide online conference
+[17:34] <erickt> or https://github.com/rust-community/team/issues/123
+[17:35] <erickt> we should actually start organizing it :)
+[17:35] <carols10cents> i dont' see confirmation from aturon that it's possible.....
+[17:35] <erickt> carols10cents: easily solvable :)
+[17:36] <carols10cents> HE HAD ONE JOB SMH ;)
+[17:36] <erickt> we should start breaking this up into some milestones
+[17:36] <erickt> carols10cents: that's the spirit!
+[17:37] <carols10cents> <3 u aturon 
+[17:37] <aturon> ugh yeah i dropped the ball on this
+[17:37] <aturon> jntrnr: any chance you could help on this one?
+[17:37] <erickt> aturon: I'm not sure if I can ever trust you again
+[17:37] <erickt> <3
+[17:38] <aturon> erickt: oh i figured such trust was long since broken
+[17:38] <aturon> jntrnr: context: we want to figure out if we Mozilla can help host a worldwide remote Rust conf
+[17:38] <erickt> aturon: fair. moving to PDX was unforgivable
+[17:38] <aturon> basically a bit like a coordinated meetup using the various mozilla offices
+[17:38] <carols10cents> i bet he's asleep
+[17:38] <aturon> carols10cents: nope, i've been chatting with him on other channels
+[17:39] <carols10cents> oh well then
+[17:39] <carols10cents> :)
+[17:39] <aturon> anyway, i'll make sure something happens ASAP
+[17:39] <aturon> for realz this tine
+[17:39] <erickt> I made a milestone for this: https://github.com/rust-community/team/milestone/4
+[17:39] <erickt> can we start breaking this up into smaller tasks?
+[17:40] * jntrnr yawns
+[17:40] <erickt> good evening
+[17:40] <jntrnr> What am I helping out with?
+[17:40] <aturon> (fwiw i am pretty confident mozilla can help host this, given that we have regular meetings in precisely this fashion)
+[17:41] <jntrnr> Lol it's 6:40am here.
+[17:41] <erickt> jntrnr: worldwide, 24 hour meetup
+[17:41] <erickt> jntrnr: that's really late in the evening then!
+[17:41] <jntrnr> That sounds epic
+[17:41] <erickt> jntrnr: since traveling to and from the US has gotten... trickier
+[17:41] <aturon> jntrnr: basically the idea is to do something like what we do with Mozilla project meetings
+[17:42] <aturon> so use Mozilla offices to help host, but allow both speakers and attendees to come in via vidyo
+[17:42] <aturon> and stream on airmo
+[17:42] <aturon> we just need someone to figure out who to talk to at mozilla to try to set this up
+[17:43] <aturon> the community team in general will then handle the organization
+[17:43] <aturon> jntrnr: i figure coordinating with the participation group and/or devrel would be good, too
+[17:44] <aturon> anyway we can take that offline, but between us/Manishearth let's see if we can knock out https://github.com/rust-community/team/issues/123
+[17:44] <erickt> great!
+[17:45] <erickt> so we also need to start looping in the local meetup organizers
+[17:45] <erickt> I'm not sure if they'll all have the ability to do remote presentations
+[17:45] <erickt> but first thing we need to setup a proper channel to communicate with em
+[17:45] <jntrnr> Sure I can ask around and see what's possible and report back
+[17:46] <aturon> jntrnr: thanks! <3
+[17:46] <erickt> so I can turn the community calendar permissions into a mailing list 
+[17:47] <erickt> jntrnr: https://github.com/rust-community/team/issues/136
+[17:47] <erickt> what else do we need to do?
+[17:48] <erickt> hm. we do have this whole "language" issue we'll need to figure out
+[17:48] <carols10cents> yeah i'm filing some issues
+[17:48] <erickt> carols10cents: great!
+[17:48] <carols10cents> https://github.com/rust-community/team/milestone/4
+[17:49] <carols10cents> don't necessarily have to decide on all of these today, maybe put them on the agenda for next week
+[17:49] <erickt> yeah
+[17:49] <erickt> heh "human language"
+[17:50] <erickt> I think that's all I got
+[17:50] <erickt> oh, I forgot https://github.com/rust-community/team/issues/132
+[17:50] <erickt> do we want to syndicate our stuff?
+[17:51] <erickt> it'd be nice to collect our posts somewhere
+[17:52] <erickt> but I'm not well, we can move this to next week
+[17:52] <erickt> anyone have anything else they want to talk about?
+[17:53] <bstrie> I'm good
+[17:53] <erickt> you are good, bstrie!
+[17:53] <bstrie> I'm so good
+[17:53] <erickt> thanks for the sticky!
+[17:53] <bstrie> erickt: incidentally, how many submissions do we have for the underhanded contest?
+[17:53] <bstrie> is it like, two?
+[17:53] <bstrie> is it a HUNDRED
+[17:53] <erickt> 3!
+[17:53] <erickt> :)
+[17:53] <bstrie> that is more than two!
+[17:53] <erickt> it is!
+[17:54] <bstrie> I think next year we should make it completely freeform
+[17:54] <erickt> oh, it's 4 now!
+[17:54] <bstrie> just to establish an upper bound on how nefarious our community is
+[17:55] <erickt> I think a lot of people forgot about it
+[17:55] <erickt> I've heard that from a few people
+[17:55] <bstrie> I really want someone to make a submission based on `0x987ABf32`
+[17:55] <erickt> ...huh?
+[17:56] <erickt> "0x987AB" is almost a googlewack
+[17:56] <bstrie> erickt: https://twitter.com/JakeGoulding/status/834796262872535041
+[17:57] <erickt> binary floats are confuzing
+[17:57] <erickt> confusing
+[17:57] <carols10cents> :)
+[17:58] <bstrie> erickt: you've already been bamboozled! look more closely
+[17:58] <erickt> bstrie: lol
+[17:58] <erickt> haha
+[17:58] <erickt> ok
+[17:58] <erickt> that's silly
+[17:58] <bamboozled> what should our meetup organizers be called? rust-meetup-organizers@?
+[17:59] <bamboozled> or should we do something more general, like rust-organizers@
+[17:59] <bstrie> github lets you change the name of organizations, probably no need to sweat it
+[18:00] <bstrie> (at least, it lets you change the name of *users*)
+[18:00] <bamboozled> bstrie: this would be for the mailing list
+[18:00] <bamboozled> we could use urlo, but I'm not sure if we have global usage of that
+[18:00] <bstrie> ah I see
+[18:01] <bstrie> mailing lists...
+[18:01] <bamboozled> old school
+[18:02] <bamboozled> I think I'll go with rust-organizers@googlegroups.com
+[18:03] <bamboozled> I'm gonna make this list public
+[18:04] <carols10cents> um
+[18:05] <carols10cents> does that make membership and every member's email address public?
+[18:05] <carols10cents> or just make that the list exists public?
+[18:05] <bamboozled> good question!
+[18:06] <bamboozled> I'll test it out first.
+[18:19] <bamboozled> carols10cents: hrm, it seems like anyone in the group would get the email address in the email
+[18:19] <bamboozled> I can set up the list so that only the owners can see who's subscribed
+[18:19] <carols10cents> yeah that sounds better
+[18:20] <erickt> I'll mention this in the invitation
+[18:36] <erickt> mailing list created
+[18:36] <erickt> I'll leave the messages private for now
+[19:01] <erickt> thanks steveklabnik!
+[19:05] <frewsxcv> Anyone else get the "Rust Book Project" email
+[19:06] <mbrubeck> yes
+[19:06] <badboy> frewsxcv: armstrong publications?
+[19:06] <frewsxcv> I got that one last week, but a few minutes ago I got one from https://www.manning.com/
+[19:07] <badboy> wonder if they are gonna ask carols10cents again
+[19:08] <Manishearth> frewsxcv: huh, they have both emailed me within a month in the past
+[19:09] <mbrubeck> I only got the Manning one. Armstrong must have a higher quality bar. :)
+[19:12] <Manishearth> lol
+[22:52] <sleffy> Anyone here in Berkeley BARTing or otherwise traveling to the meetup tomorrow? I'm trying to find someone to head over with.
+[23:02] <Manishearth> sleffy: memememe
+[23:02] <Manishearth> sleffy: wait not me
+[23:02] <Manishearth> i work there
+[23:02] <Manishearth> i will bart in the morning
+[23:02] <Manishearth> sorry
+[23:03] <Manishearth> I will bart back though!
+[23:07] <sleffy> Manishearth, well, maybe I'll follow you back then! Still looking for a not-so-solitary trip over though.
+[23:49] <carols10cents> LOL
+[23:50] <carols10cents> sleffy: go to work with Manishearth! :)
+[23:51] <sleffy> carols10cents, I could... but then I'd have to practice violin over there since I'd be there all day, and I don't think anyone wants to deal with a few hours of my screeching :P
+[23:51] <sleffy> TBH I'm tempted to follow my dad over to the Google building in SF and hang out there. But then I have the same problem
+[23:52] <carols10cents> sleffy: just play out on the street. bonus: tips!
+[23:53] <sleffy> carols10cents, I often play on the street, actually. But I only play on the street itself when I'm trying to prove that I can play through something without crashing and stopping
+[23:54] <sleffy> So if I play outside, I prefer to play in a quiet space where people won't try to give me tips, because then no one will blame me for stopping and starting
+[23:54] <carols10cents> ah i see :)
+[23:54] <sleffy> It's a form of tempering
+[23:54] <sleffy> When I'm preparing to perform something for a recital, I'll take it to a nearby coffeeshop
+[23:54] <carols10cents> i do think you're overestimating the average pedestrian's ear though.....
+[23:55] <Manishearth> sleffy: it's the same building
+[23:55] <Manishearth> or it's next to that building
+[23:56] <Manishearth> also I go to work at like 10 or 11
+[23:56] <Manishearth> it's very possible that you could practice in the moz community space or on the roof :p
+[23:56] <sleffy> carols10cents, I'm currently practicing solo Bach
+[23:56] <Manishearth> the roof would be amazing
+[23:56] <Manishearth> it's noisy, but amazing
+[23:56] <sleffy> Pretty sure that if somebody's gonna hear flaws in it, solo Bach is where it's gonna come out lol
+[23:56] <carols10cents> THE VIOLIN PLAYING IS COMING FROM THE SKY
+[23:56] <Manishearth> carols10cents: +1
+[23:56] <sleffy> hahahaha I think the roof is too far up for that
+[23:56] <sleffy> I've been in that building before
+[23:57] <Manishearth> yeah
+[23:59] * sleffy has a fear of heights

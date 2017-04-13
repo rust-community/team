@@ -1,0 +1,286 @@
+== 23 Jun 2016
+[01:46] <erickt> T-14 minutes for the meeting!
+[01:48] <erickt> anyone have any agenda items for the meeting?
+[01:48] <erickt> https://github.com/rust-community/team/issues/39
+[01:49] <erickt> who is here for the meeting?
+[01:49] <jntrnr> me
+[01:49] * erickt waves
+[01:49] <erickt> jntrnr: do you have a draft done for the slides?
+[01:50] * jntrnr nods
+[01:50] <erickt> err, the post
+[01:51] <hjr3> 0/
+[01:54] * erickt waves
+[01:57] <erickt> T-3
+[01:58] <erickt> any others here for the meeting?
+[01:59] <erickt> T-1
+[02:00] <erickt> T-0!
+[02:00] <erickt> it's meeting time dance!
+[02:00] <erickt> dance dance
+[02:00] <hjr3> woo
+[02:00] * jntrnr waves arms like muppet
+[02:00] <erickt> that's the spirit
+[02:00] <erickt> 10 community points to jntnr
+[02:00] <jntrnr> lol
+[02:01] <erickt> well hello everyone
+[02:01] <brson_> hi erickt!
+[02:01] <erickt> so here's our agenda: https://github.com/rust-community/team/issues/39
+[02:02] <erickt> so I think  lets start out and say with this meeting time I still don't think we recruited anyone new
+[02:02] <jntrnr> seems like it
+[02:02] <hjr3> doesn't appear so
+[02:03] <erickt> so I want to propose an idea. how about we shift back to our 4pm UTC meeting, but we hang out at this time in case people show up
+[02:03] <erickt> which will allow for more participation
+[02:03] <jntrnr> I'm game
+[02:03] <hjr3> what does "hang out" entail?
+[02:04] <erickt> well, I'll at least be present in this meeting
+[02:04] <erickt> err at this time
+[02:04] <hjr3> oh sure
+[02:04] <erickt> in case we get anyone to attend
+[02:04] <erickt> but it won't necessarily be the official meeting time
+[02:05] <erickt> sound good? make sense to everyone?
+[02:05] <hjr3> i think that is a good plan. i will certainly try to be available
+[02:05] <erickt> cool
+[02:05] <erickt> ok next topic
+[02:05] <erickt> survey
+[02:05] * frewsxcv waves
+[02:05] <erickt> jntrnr: you're up, how's the document?
+[02:06] * erickt waves at frewsxcv
+[02:06] <jntrnr> good - I have a draft up here: https://docs.google.com/document/d/1F6oELZcO_ejX2oVk20hmiBWd4lQugfFahn7OOOOyKsw/edit?usp=sharing
+[02:06] <hjr3> oh nice
+[02:06] <jntrnr> so definitely give a read, send comments/thoughts/etc
+[02:07] <erickt> great! when do you need comments by?
+[02:07] <jntrnr> I was chatting a bit with aturon earlier today.  It sounds like the core team is also interested in putting it (or something like it) on the main Rust blog
+[02:07] <erickt> +1
+[02:07] <jntrnr> they want to use the data to help kick off some other blog posts
+[02:08] <jntrnr> erickt: soonish?  say by Friday would be great
+[02:08] <erickt> ok. want to file a ticket asking for comments, and add a `cc @rust-community/team`? that should get everyone
+[02:09] <jntrnr> can do - the only thing is that we were trying to be slightly careful with the draft
+[02:09] <jntrnr> though I don't think it's particularly damning in the current form :p
+[02:09] <erickt> ah, well then send a mail to community-team@rust-lang.org
+[02:09] <jntrnr> we will probably just want to massage it a bit before it goes a bit broader
+[02:09] <jntrnr> k, will do
+[02:10] <erickt> jntrnr: anything in particular you are looking for comments on?
+[02:10] <jntrnr> the main things I'm interested in for the post are a) major structural problems with the post.  If I need to cut whole sections or rethink the approach, knowing that sooner is helpful
+[02:11] <jntrnr> also b) if it feels like there are areas that I need to go into more detail or just are generally confusing, also good to know about
+[02:11] <erickt> by the way, thank you so much for doing all this
+[02:12] <hjr3> this is great jntrnr
+[02:12] * brson_ detraining
+[02:12] <jntrnr> hjr3: thx :)
+[02:12] <jntrnr> brson_: detraining sounds painful
+[02:12] <erickt> hehe
+[02:13] <erickt> I'm imagining brson punching caltrain off the tracks
+[02:13] <erickt> Also on the survey, I believe skade's partner may now be doing some deeper analysis on the survey
+[02:14] <erickt> unfortunately he's probably asleep at the moment, so we won't hear about that until the next meetin
+[02:14] <erickt> jntrnr: anything else on your end?
+[02:14] <erickt> or anyone else?
+[02:14] <jntrnr> that's it.  I'll put together an email for the community team for feedback
+[02:15] <erickt> great
+[02:15] <erickt> next up, just a status update on RustBridge
+[02:15] <erickt> we had our inaugural meeting earlier today that went pretty well
+[02:15] <hjr3> awesome
+[02:16] <erickt> the main highlights were starting to pick out a regular meeting time, which we didn't quite settle on
+[02:16] <erickt> and starting to think through what we should build for workshop tutorials
+[02:16] <Manishearth> i am here now
+[02:16] <Manishearth> sorry about the delay
+[02:17] <erickt> bridge meeting agenda is here: https://github.com/rust-community/rustbridge/issues/7
+[02:17] <erickt> and minutes here: https://github.com/rust-community/team/issues/39
+[02:17] * erickt waves at Manishearth
+[02:17] <erickt> so first off, if any of you want to join in the bridge talks
+[02:18] <erickt> please chime in here for helping to pick the day: https://github.com/rust-community/rustbridge/issues/8
+[02:18] <Manishearth> i might
+[02:18] <erickt> and time to meet next
+[02:18] <Manishearth> but right niw swamped-ish
+[02:18] <erickt> I invited them to use #rust-community in between meeting times
+[02:18] <erickt> so we may see more activity here :)
+[02:18] <erickt> (fingers crossed :) )
+[02:19] <hjr3> yes, more discussion
+[02:19] <erickt> one of the main things to consider with the workshops is that we expect that folks will want to actually build something at the end of the day
+[02:19] <erickt> rather than want to just do the more traditional tutorial a la this is an iterator, and this is borrow checking
+[02:20] <erickt> so like build a website or a game
+[02:20] <hjr3> ya i think that is a great idea
+[02:20] <erickt> but there's concern about tutorials being broken if dependencies break
+[02:20] <hjr3> happy to see what the workshop idea is
+[02:21] <erickt> or that it might end up requiring too high level knowledge. like "so you want to build a simple web page, first you need to understand sql"
+[02:21] <erickt> hjr3: https://github.com/rust-community/rustbridge/issues/2 is tracking workshop content
+[02:21] <hjr3> ya i posted there, per your recommendation ;)
+[02:22] <erickt> oh hey so you did
+[02:22] <erickt> anyway I'm not sure if there's anything else I had, but happy to answer any other questions
+[02:23] <hjr3> thanks for the update. glad it is moving along
+[02:23] <erickt> if not, next topic: 2017 rustconf planning: https://github.com/rust-community/team/issues/40
+[02:23] <erickt> the 2016 rustconf hasn't happened yet, but we've already made some mistakes, so aturon asked me to start a ticket tracking what we could do better
+[02:24] <erickt> so if you have any ideas or suggestions, please feel free to add them in here
+[02:24] <erickt> we should do the same for rust belt rust and rustfest.eu
+[02:25] <erickt> so please add anything else we could do better
+[02:25] <erickt> one thing for us I tried to get us some official time for community organization, but it was too late to actually get us room in the schedule :(
+[02:26] <hjr3> doh
+[02:26] * jntrnr disappears into a puff of sleepy smoke
+[02:26] <erickt> so we can do some unofficial stuff
+[02:26] <erickt> bye jntrnr !
+[02:27] <erickt> but next time we should try to have some more dedicated time
+[02:27] <erickt> hm. so anything else on this subject?
+[02:28] <hjr3> not from me atm
+[02:28] <erickt> alright so next up...
+[02:28] <erickt> rust forge: https://github.com/rust-community/team/issues/38
+[02:29] <erickt> this might need to bump to the next meeting because it's from skade
+[02:29] <erickt> but frankly i didn't even know https://forge.rust-lang.org/ existed
+[02:29] <erickt> so we have an advertising problem :)
+[02:30] <hjr3> it is out of site, out of mind
+[02:30] <erickt> so this might be one place where we can start aggregating tutorials
+[02:31] <erickt> but I think also edunham was working towards getting a planet-esque page for rust
+[02:31] <erickt> a la https://planet.mozilla.org/
+[02:31] <erickt> to aggregate blog posts
+[02:32] <erickt> hm. seems like we don't have critical mass to talk about forge
+[02:32] <hjr3> ya ; / 
+[02:32] <hjr3> does edunham know about forge?
+[02:32] <erickt> so we can bump to next time
+[02:32] <hjr3> i will be seeing her at codeconf next week
+[02:32] <hjr3> she has her talk right after mine
+[02:32] <erickt> great!
+[02:33] <erickt> ok next up
+[02:33] <erickt> oh, homu. so homu.io seems to be in a half dead state :(
+[02:34] <erickt> I've reached out to barosl, the owner a few weeks ago and haven't heard back yet
+[02:34] <erickt> so I'm starting the process of potentially building a clone of that service
+[02:34] <hjr3> oh nice
+[02:35] <erickt> I've gotten as far as buying bors.io :)
+[02:35] <erickt> but I'm looking for help to actually build bors-as-a-service
+[02:35] <erickt> so if anyone wants to help out, please comment on
+[02:35] <erickt> err
+[02:36] <erickt> oh I don't have a ticket
+[02:36] <hjr3> so my meetup is winding down on the stockfigher sdk
+[02:36] <hjr3> maybe we can switch to bors.io
+[02:36] <hjr3> ill bring it up
+[02:36] <edunham> hjr3: I'm aware of forge, but haven't been pushing as much docs to it as i ought lately
+[02:37] <edunham> looks like someone's squatting on bors.io
+[02:37] <erickt> edunham: that's me :)
+[02:37] <erickt> bought it earlier today
+[02:37] <edunham> erickt: awesome!
+[02:37] <edunham> envisioning a Rust-hosted homu that isn't gated on poor barosl?
+[02:38] <erickt> bors-as-a-service: https://github.com/rust-community/team/issues/41
+[02:38] <edunham> aha!
+[02:39] <erickt> edunham: unfortunately barosl appears to have not responded to github notifications for a couple months :(
+[02:39] <erickt> I'd much rather help him get homu.io back into a good state, but there's not much we can do with him being offline :(
+[02:40] <hjr3> there is no other way to get a hold of him?
+[02:40] <erickt> I'd love ideas, but everyone I've tried doesn't have a direct route to him
+[02:41] <hjr3> k
+[02:41] <erickt> wycats also thought the ember community might be up for contributing to a homu replacement, so there's a chance we could get a bunch of contributors for it
+[02:42] <hjr3> i believe cargo.io is built on ember too, right?
+[02:42] <erickt> yep
+[02:42] <hjr3> sorry, crates.io
+[02:43] <erickt> built by wycats and acrichto
+[02:43] <erickt> maybe we could convince one of the web dev projects to build it :)
+[02:44] <erickt> anyone want to reach out to them?
+[02:45] <hjr3> i barely know wycats. steveklabnik might make an intro on our collective behalf?
+[02:45] <erickt> oh I know wycats, I'm more speaking about the rust web framework folks
+[02:45] <hjr3> oh, i see
+[02:45] <erickt> like iron or nickel
+[02:46] <erickt> I can start poking them
+[02:46] <erickt> that's all I got for my agenda
+[02:46] <erickt> anyone else have anything else?
+[02:46] <bstrie> I just remembered there was a meeting!
+[02:46] <bstrie> I have a thing to talk about!!!
+[02:46] <erickt> bstrie!
+[02:46] <erickt> hello!
+[02:47] <bstrie> is aturon around, by chance?
+[02:47] <erickt> I haven't heard from him for a while
+[02:47] <bstrie> because my vague agenda item is working on returning some of the transparency around the mozilla devs' doing that we seem to have lost over the past year or so
+[02:48] <bstrie> it seems like a lot of people in the community are relatively in the dark regarding what acrichto et al are working on day-to-day
+[02:48] <bstrie> I personally used to catch up by reading the minutes of the weekly meetings, but I don't even know if they have those anymore
+[02:48] <bstrie> maybe this is something we should put on the agenda for next week, and see if aturon can show up for that
+[02:48] <erickt> oh! so I know aturon has been working on trying to come up with some better way to do meetings and etc
+[02:48] <erickt> yeah
+[02:49] <edunham> erickt, hjr3 it's become pretty clear to the Servo community that baosl's circumstances take him fully offline for 2-3 month stretches on a regular basis, so it's best for everybody to avoid setting up anything that requires consistent rapid responses
+[02:49] <erickt> bstrie: want to add it to https://github.com/rust-community/team/issues/42
+[02:50] <hjr3> edunham i was just thinking he could add erickt as a collaborator so we didn't have to start from scratch. i want to respect his time away though
+[02:50] <erickt> edunham: yeah. bors.io is not ideal
+[02:52] <erickt> anyone have anything else for the agenda?
+[02:52] <hjr3> not i
+[02:53] <hjr3> thank you erickt !
+[02:53] <edunham> regarding the planet, I've got individual +1's from most of the mod team that they're cool with it, but no formal "we as the mod team say yes"
+[02:54] <erickt> great!
+[02:54] <bstrie> erickt: comment left
+[02:55] <erickt> great!
+[02:55] <erickt> alright well I'm going to officially gavel this meeting closed
+[02:55] <hjr3> byeall
+[02:57] <erickt> thanks everyone!
+[03:08] <erickt> minutes: https://github.com/rust-lang/meeting-minutes/commit/7f5d91387904268a324820b93aa2d5ac9f0bcab4
+[09:05] <skade> was this officially released? https://docs.google.com/document/d/1F6oELZcO_ejX2oVk20hmiBWd4lQugfFahn7OOOOyKsw/preview
+[09:06] <skade> also, on the diversity question, I'm pretty sure some people just ticked all the boxes, btw
+[09:07] <badboy> I wondered as well, considering you all talked about a blog post before.
+[09:51] <skade_> erickt jntrnr 
+[10:06] <Manishearth> skade_: that explains the 47 
+[10:06] <skade> Manishearth yep... still, can someone close the google doc?
+[10:08] <Manishearth> oh that one?
+[10:08] <Manishearth> I don't have access
+[10:12] <skade_> yeah, I'd take a note that such documents should be given wide edit access for such reasons
+[10:33] <jntrnr> sigh...
+[10:34] <jntrnr> yeah, I can close it
+[10:37] <jntrnr> closed
+[10:41] <Manishearth> welp
+[10:41] <Manishearth> https://news.ycombinator.com/item?id=11959949
+[10:42] <Manishearth> every. time.
+[10:43] <jntrnr> yeah, and apparently on reddit too
+[10:43] <jntrnr> :( :(
+[10:43] <jntrnr> we should probably get a group together that doesn't have public access so we can at least give drafts a good vetting
+[10:43] <Manishearth> what reddit post? I don't see a reddit post. :p
+[10:52] <jntrnr> Manishearth: too bad we can't "don't see" the hn one ;)
+[10:53] <jntrnr> hopefully it'll just get downvoted now
+[10:53] <jntrnr> (though it's great to see how interested people are!)
+[11:40] <booyaa> +1
+[13:20] <erickt> jntrnr: your post is doing so well on HN it's still getting votes even though you locked it hours ago :)
+[13:20] <jntrnr> erickt: I noticed :p
+[13:20] <erickt> Manishearth: great job covering the comments
+[13:21] <jntrnr> yeah, and skade_ also
+[13:21] <jntrnr> seeing his email made me jump out of bed and lock it down this morning
+[13:21] <steveklabnik> by the time i had woken up, it was already basically handled
+[13:21] <steveklabnik> :)
+[13:21] <steveklabnik> and i woek up early today!
+[13:21] <jntrnr> hehe
+[13:21] <erickt> Oh skade too! I didn't recognize your HN username
+[13:22] <erickt> steveklabnik: I didn't think you actually slept
+[13:22] <erickt> Just uploaded your consciousness to respond to tweets at night :)
+[13:23] <steveklabnik> heh
+[13:23] <erickt> jntrnr: a few nice suggestions though. We could try to break out the people who never used rust from those who stopped
+[13:24] <jntrnr> erickt: agreed.  the Go version of our survey did that I think
+[13:24] <erickt> And to sort the bar charts by size
+[13:24] <jntrnr> erickt: I missed the bar charts by size comment
+[13:25] <erickt> If I recall correctly we can still extract this information by looking at the "why you stopped using rust" question
+[13:27] <skade_> well, such drilldown-questions would be interesting for followups
+[13:27] <skade> erickt: @argorak spells "skade was taken" :)
+[13:27] <skade> same on twitter
+[13:29] <erickt> So many interesting drill down questions to ask
+[13:46] <Manishearth> https://news.ycombinator.com/item?id=11960411
+[13:46] <Manishearth> ....
+[13:47] <Manishearth> "no u"
+[15:20] <Manishearth> omg this is amazing
+[15:20] <Manishearth> https://news.ycombinator.com/item?id=11960888
+[15:20] <Manishearth> saying "not everyone here is a guy: is now *against* the CoC
+[15:20] <Manishearth> s/:/"
+[15:21] <Manishearth> I may have momentarily forgotten I was on HN when I wrote that, in hindsight -- bad idea
+[15:23] <staticassert> "I've not heard this before. Citation?" lol HN
+[15:25] <jntrnr> haha
+[15:25] <jntrnr> indeed
+[15:55] <skade> Manishearth he's totally brushing over the fact that you are actually the person being addressed by "guys", so you are very much in line by complaining about it
+[17:20] <Manishearth> skade well, I am a guy
+[17:20] <Manishearth> i was referring to Carol, who also helped with survey things
+[17:20] <Manishearth> :)
+[17:21] <Manishearth> the commenter was fererring to the folks who worked on the survey or rust in general
+[17:21] <Manishearth> referring
+[17:21] <mbrubeck> it's okay, HTTP can't spell it either
+[17:21] <Manishearth> lol
+[17:22] <Manishearth> mbrubeck: my first two weeks at work were primarily getting confused with the spelling of xhr and of referer
+[17:23] <edunham> Manishearth: aww, so my planned bot to lurk in the channel and respond to /guys/ with "i'm not a guy, I'm a robot" would violate the CoC? too bad
+[17:23] <Manishearth> skade it is ironic that the "alienated" account is talking about getting worked up when all i did was leave two tiny comments
+[17:23] <Manishearth> hahaha
+[17:25] <Manishearth> bots cant violate the CoC
+[17:25] <Manishearth> algorithms are neutral
+[17:25] <Manishearth> (snickers)
+[18:24] <steveklabnik> Manishearth: i don't think it's ironic, it just exposes the double-standard here
+[18:24] <steveklabnik> "people should be tough and just deal with things" "omg you asked me politely to change one word in my vocabulary, you will drive me away"
+[18:40] <booyaa> :)
+[20:22] <staticassert> steveklabnik: Yeah the irony is pretty blatant
+[20:26] <staticassert> A lot of that thread seems pretty toxic and rehashed
+[20:26] <staticassert> "Exactly this. The internet is the great equalizer." kewl thx
+[20:29] * steveklabnik nods
+[20:36] <jntrnr> steveklabnik: yeah I assume we'll see that and more when go public with the final results
+[20:37] <jntrnr> those just are the stories are telling themselves so they're the ones they will quickly resonate with
+[20:37] <jntrnr> there are a ton of other things you can pull out of the survey results as well
+[23:19] <brson> anybody run across issues this week that new contributors can help with?
