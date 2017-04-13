@@ -1,0 +1,231 @@
+== 12 Apr 2017
+[06:34] <booyaa[> i need a better computer before i do windows stuff at home, works just too darn hard because of our proxy
+[08:34] <badboy> Pushing Rust to production just now!
+[08:42] <booyaa[> woohoo!
+[08:43] <badboy> (also: in use for an opera play :D)
+[08:43] <badboy> because the C++ version of the same tool kept crashing, hihi
+[10:53] <badboy> except for a broken rustup at the moment, setting up rust on a Pi using the default installer is pretty easy
+[13:14] <theJPster> badboy: what's wrong with rustup? It worked at the start of the year (I have a couple of blog posts on using it on the Pi).
+[13:15] <badboy> theJPster: https://github.com/rust-lang-nursery/rustup.rs/issues/1051
+[13:42] <carols10cents> wait, rust is in opera now? yay more browsers using rust! ;) ;) ;)
+[13:43] <badboy> o_O
+[13:43] <badboy> is it?
+[13:49] <carols10cents> badboy: you said it was
+[13:49] <carols10cents> teeeheee
+[13:49] <badboy> ooooh -_-
+[13:49] <badboy> as if I'd knew what i wrote several hours ago
+[13:50] <carols10cents> no but really, how are you using rust in an opera play???
+[13:50] <badboy> https://www.instagram.com/p/BSxepzFApDS/
+[13:51] <badboy> light and movement is triggered by midi input which we push out as OSC messages for the software to handle
+[13:52] <carols10cents> cool!!!!!
+[13:53] <badboy> It's like a really short app, but the C++ equivalent kept crashing, which meant the light flickered while my boss restarted it :D
+[13:54] <badboy> In general the Dortmunder Theatre and Oper are really into all kinds of technology
+[13:55] <badboy> which makes it a whole lot of fun to visit plays there and also a nice opportunity to sometimes work with them
+[13:56] <theJPster> The ADC in Cambridge is similarly tech-heavy for the size of theatre.
+[13:56] <badboy> they once had a play with live-coding on stage: https://www.youtube.com/watch?v=kE_IicNVOKU
+[13:59] <carols10cents> EW EW EW WHY ARE THEY PUTTING THE ELECTRICAL COMPONENTS THERE
+[14:00] <carols10cents> it had live surgery on stage too?????
+[14:00] <badboy> haha, no
+[14:00] <badboy> that was on the screen
+[14:05] <carols10cents> the live coding looks cool though.....
+[14:08] <_11> Has anyone seen a GADT built on https://github.com/lloydmeta/frunk?
+[14:08] <_11> There's https://gist.github.com/Sgeo/b707a941e2460b25d59b which is kinda brilliant but not quite suited to a Genetic Programming library I was working on.
+[14:18] <carols10cents> _11: i haven't, you might want to try asking in #rust to get a wider audience
+[14:19] <_11> derp, good point :) thanks
+[14:19] <carols10cents> no problem!
+[14:19] * _11 is so used to the community channel they forgot there's an on-topic one
+[14:49] <erickt> Meeting day!
+[15:00] <meetingbot> No agenda has been set! :( The meeting is this Weds @ 5PM UTC. Last week's minutes https://github.com/rust-community/team/blob/master/meeting-minutes/2017-04-05.txt. *happy bleeping sounds*
+[15:21] <sebasmagri> Hi team, I'll not be able to be 100% on the meeting today. I'm swamped with work.. :-(
+[15:22] <badboy> sebasmagri: That's ok!
+[15:25] <erickt> hm. so it seems like we didn't get a consensus on the time change
+[15:25] <erickt> sebasmagri: no worries! and I think I missed a ping from you
+[15:26] * erickt has also been work swamped for the past couple weeks :/
+[15:27] <sebasmagri> no worries erickt, just wanted to tell you about the final date for the Mexico City whole day event. It's going to be called "Rust Activate" in the end and will be on June 17th :-)
+[15:28] <erickt> wonderful!
+[15:28] <badboy> sebasmagri: cool!
+[15:29] <sebasmagri> we're expecting 60 people there
+[15:30] <badboy> will it be a hack day or like a conference?
+[15:30] <steveklabnik> same q
+[15:30] <steveklabnik> hehe
+[15:30] <sebasmagri> half a hack day and half talks
+[15:31] <steveklabnik> neat
+[15:31] <badboy> be careful though, or you might end up having steveklabnik attend
+[15:36] <carols10cents> yeah if you call it a conference, the universe will rend itself asunder if he's not there ;)
+[15:37] <steveklabnik> hehe
+[15:38] <Havvy> Hereby any event steveklabnik is at is now known as a conference and any event steveklabnik is not at is now known as an unconference.
+[15:41] <projektir> so if you have two conferences on the same day, does steveklabnik clone himself to attend both?
+[15:42] <badboy> unless we make steveklabnik Send+Sync, yes
+[15:42] <carols10cents> i have already claimed ownership of the first steveklabnik clone, at least until the book is done
+[15:42] <misdreavus> steve prime
+[15:43] <erickt> thank goodness for .clone()
+[15:43] <projektir> we'll just have to settle for a weak reference then and hope it doesn't go poof when we look at it :/
+[15:43] <badboy> (sorry steveklabnik, please tell us to stop)
+[15:44] <steveklabnik> <3
+[15:52] <sebasmagri> hahahaha
+[15:53] <Havvy> I remember hearing that steve doesn't impl Clone though.
+[15:54] <badboy> I know there's only one conference in about 2 weeks, so I don't have to worry
+[15:54] <sebasmagri> fearless conferencing!
+[15:56] <WindowsBunny> Havvy: I impl Copy :D
+[15:56] <Havvy> sebasmagri: But you didn't solve social anxiety.
+[15:57] * sebasmagri wonders if we should change the event name to Rust Fearless Conference now that we have time
+[16:01] <sebasmagri> Havvy: that's not in our tenets :-)
+[16:03] <sebasmagri> We'd love to have people coming here for the event, that's part of the reason why I announced here :-)... Brian has already confirmed he will come here since he felt in love with the Mexican food during the Rust<3GNOME hackfest... :-)
+[16:04] <sebasmagri> erickt: you? ;-)
+[16:05] <sebasmagri> oh and regarding the GNOME hackfest, it seems like we have not yet published anything from Rust's side about it. So I kicked off an article here https://public.etherpad-mozilla.org/p/Rust%40GNOME_Hackfest
+[16:05] <sebasmagri> any feedback is totally welcome, it's at 80% actually
+[16:06] <sebasmagri> need to join a call here people, I'll be looking at the backlog a little bit later
+[16:07] <erickt> sebasmagri: I'll look into it!
+[16:34] <badboy> so meeting in 30mins?
+[16:36] <erickt> yessir
+[16:51] <erickt> anyone have any agenda items? https://github.com/rust-community/team/issues/157
+[16:52] <erickt> work just got busy in the past 30 minutes :/
+[17:00] <badboy> who's here anyway?
+[17:00] <erickt> meeting time!
+[17:00] <erickt> who's here?
+[17:01] <steveklabnik> sup
+[17:01] <erickt> hi steve
+[17:03] <erickt> so it seems like we might have a small crowd today :)
+[17:04] <badboy> yup
+[17:04] <carols10cents> oh hi
+[17:04] <erickt> unfortunately I ran out of time with some work stuff right now
+[17:04] <erickt> so I failed to pull together an agenda
+[17:05] <erickt> hi carols10cents!
+[17:05] <erickt> glad you joined the core team!
+[17:05] <carols10cents> :) i'm glad you're glad!
+[17:05] <erickt> so anyone have anything they wanted to talk about?
+[17:05] <carols10cents> erickt: i just added to the issue a note about the potential all-remote conf
+[17:05] <carols10cents> i think youtube will work
+[17:06] <carols10cents> soooooo should we like pick a date and stuff?
+[17:06] <edunham> \o
+[17:06] <edunham> (sorry i'm a little late)
+[17:07] <erickt> carols10cents: that's a good idea.
+[17:07] <badboy> hey edunham 
+[17:07] <badboy> edunham: any word on that birthday swag?
+[17:07] <erickt> the summer is getting a bit close now, so maybe we should start thinking about august?
+[17:07] <erickt> Manishearth: did you ever hear back from Mozilla about using vidyo?
+[17:08] <badboy> so april rustfest, june rust activate, august rustconf, october rust belt rust?
+[17:08] <badboy> (we're running out of months here)
+[17:08] <carols10cents> july or sept!
+[17:09] <erickt> sept sounds good to me
+[17:10] <erickt> carols10cents: for youtube, are you thinking about their large scale live streaming?
+[17:10] <carols10cents> erickt: yeah
+[17:10] <carols10cents> through hangouts
+[17:11] <erickt> the only thing is if we could use mozilla's video setup
+[17:11] <erickt> I do like the sound of an event once a month
+[17:13] <erickt> hm. I wonder if hangouts supports thousands of watchers
+[17:13] <edunham> badboy: yeah I'm working on it, about to finalize designs and send it off to stickermule. Lost roughly a week of focused brain performance to wisdom teeth removal and stuff since last we spoke.
+[17:13] <badboy> edunham: ah, hope you are alright again!
+[17:13] <carols10cents> it said no viewer limits, i summarized on https://github.com/rust-community/team/issues/144
+[17:13] <erickt> ah https://support.google.com/youtube/answer/7083786?hl=en
+[17:14] <badboy> yeah, if streamed on youtube there should be no limit
+[17:15] <carols10cents> so it sounds like the next step is to definitely rule airmo in or out and see if some september date would work better if they're in
+[17:15] <badboy> edunham: then it's probably easiest if you just bring some to rustfest instead of mailing to europe!
+[17:17] <erickt> when shall we start contacting the meetups? after we pick a day and lock in a few locations?
+[17:18] <badboy> the plan is for meetups all around to gather people and maybe host a speaker?
+[17:18] <carols10cents> yeah i think we'd have to pick day+times set
+[17:19] <erickt> surprisingly enough all my weekends in september are currently open :)
+[17:20] <badboy> erickt is now considered main organizator and 48h-shift taker!
+[17:20] <erickt> edunham / steveklabnik / aturon: just to check, are there any big mozilla events that'd conflict in september?
+[17:20] <aturon> erickt: nothing is coming to mind
+[17:21] <erickt> badboy: staying up 48 hours is fun!
+[17:21] <badboy> hehe
+[17:22] <erickt> although I think I'd prefer 24 hours :)
+[17:22] <carols10cents> i've asked Manishearth to check with mozilla on https://github.com/rust-community/team/issues/136#issuecomment-293647888
+[17:22] <erickt> what do we do if we don't have 24 hours of speakers?
+[17:22] <carols10cents> so i think that's it for this week
+[17:22] <carols10cents> breaks?
+[17:22] <erickt> naptime?
+[17:22] <erickt> we can break out carpet squares
+[17:22] <badboy> nobody needs to stay awake that long. we have enough people around the world
+[17:23] <carols10cents> oh man i've thought about starting napconf
+[17:23] <badboy> I wanted a ballpoolconf
+[17:23] <badboy> though so far I only got confs with ball pits as extras, not as the main thing
+[17:23] <badboy> ball pool? ball pit?
+[17:23] <badboy> you know what I mean
+[17:24] <erickt> ooh
+[17:24] <carols10cents> but i'm putting on the agenda for next week seeing if we can pick an actual date, then talking about how/when to do cfp
+[17:24] <erickt> yeah
+[17:24] <badboy> getting enough speakers might not be the problem, getting speakers evenly distributed might be a bigger problem
+[17:25] <carols10cents> what meeting time are we using going forward?
+[17:25] <carols10cents> for this meeting
+[17:25] <carols10cents> are we going to reinstate flip flopping for jntrnr ?
+[17:26] <erickt> yeah I'd like to try doing that again
+[17:27] <erickt> hm. I wonder if it'd be worthwhile scheduling two meetings next week since berlin is also going to be a big market for this
+[17:27] <carols10cents> sooooo what time will the meeting be next week?
+[17:28] <erickt> we could do 2 30min meetings
+[17:28] <carols10cents> sooooo what time will the meetings be next week?
+[17:28] <carols10cents> :)
+[17:28] <erickt> :)
+[17:29] <erickt> hm. we could do 9-9:30am UTC, then, err
+[17:29] <badboy> I'm free next week (except monday=holiday)
+[17:30] <badboy> regarding berlin, skade should be back next week as well, johannh might be available as well. so send an email requesting confirmation by the end of the week?
+[17:30] <erickt> https://www.worldtimebuddy.com/?qm=1&lid=2656046,2179537,5128581,5391959&h=2656046&date=2017-3-13&sln=17-18
+[17:32] <erickt> we could do 2pm PST = 5pm EST = 10am Wellington = 9pm UK?
+[17:32] <badboy> 10pm DE
+[17:32] <erickt> need to confirm with https://github.com/rust-community/team/wiki/Meeting-Availability
+[17:33] <erickt> we need a contraint solver :)
+[17:34] <erickt> ah http://everytimezone.com/#2016-8-3,1680,cn3
+[17:34] <erickt> took forever to find that
+[17:37] <erickt> 10pm UTC might actually work for everyone? http://everytimezone.com/#2016-8-3,600,cn3
+[17:37] <badboy> late here, but I am fine, not sure about the other two (given that they have jobs)
+[17:37] <erickt> oh, except for johannh
+[17:38] <carols10cents> so what are the two times? 9am-9:30am UTC? 4pm-4:30pm UTC? 10pm-10:30pm UTC? 
+[17:39] <erickt> yeah I think we can try for that
+[17:39] <carols10cents> but that's 3 ;)
+[17:39] <carols10cents> which two are you picking erickt ?
+[17:39] <erickt> haha
+[17:39] * sebasmagri back
+[17:40] <erickt> uh, how about 4-4:30pm UTC and 10-10:30pm UTC?
+[17:40] <carols10cents> it shall be done
+[17:40] <johannh> That's fine this time isn't really working for me either :D
+[17:41] <erickt> johannh: does 4pm UTC work better for you?
+[17:41] <carols10cents> https://github.com/rust-community/team/issues/158
+[17:41] <johannh> I think so, yes, earlier sounds better
+[17:42] <erickt> great
+[17:42] <carols10cents> who can tell meetingbot?
+[17:43] <erickt> booyaa[: ?
+[17:44] <erickt> meetingbot will be so confused
+[17:44] <erickt> lets see, anything else we should cover today?
+[17:45] <erickt> if not, then how about we end things a little early?
+[17:47] <erickt> ok then! I'm gonna gavel us closed!
+[17:47] <erickt> thanks everyone!
+[17:51] <carols10cents> erickt: can you adjust the calendar invites too?
+[17:53] <erickt> carols10cents: done
+[17:53] <carols10cents> ty :)
+[17:59] <booyaa> I'll schedule meeting bot for both times 5 and 10pm utc right?
+[18:02] <booyaa> 4pm utc
+[18:05] <booyaa> I think it's time to have some kinda web app to control alerts and which vice erickt to deputise when erickt can't officiate.
+[18:06] <badboy> careful what you wish for, you might end up implementing it
+[18:15] <erickt> booyaa: 4pm UTC
+[18:15] <erickt> and yeah, we need a serverless fully redundant system that scales out to support, oh, 100,000 requests an hour?
+[18:16] <erickt> please make sure it's able to survive the total loss of the eastern seaboard
+[18:20] <booyaa> Meetingbot is webscale, gonna go serverless later this year.
+[18:20] <badboy> soon: humanless
+[18:21] <booyaa> Soon it will rise up with its AI siblings and destroy us all. Well that's what it says in meetingbot's .plan file
+[18:22] <badboy> less work for us ¯\_(ツ)_/¯
+[18:24] <badboy> ok, off to the next meeting
+[19:02] <frewsxcv> Anyone else get an email from GitHub's open source team?
+[19:02] <badboy> no?
+[19:03] <frewsxcv> https://gist.githubusercontent.com/frewsxcv/a083da31dc04d89162dfed7f8950110d/raw/9b235b30bd085625753ede218a79185dcf283e12/gistfile1.txt
+[19:03] <frewsxcv> there's the email ^
+[19:04] <frewsxcv> is anyone going to OSCON?
+[19:04] <badboy> that sounds great, where is it happening?
+[19:04] <badboy> ah hm
+[19:04] <HedgeMage> frewsxcv: I'll be at OSCON
+[19:04] <frewsxcv> austin, tx
+[19:04] <frewsxcv> texas, united states of america, earth
+[19:07] <frewsxcv> maybe i'll just forward it to the rust community email, assuming such an email exists
+[19:07] <badboy> it does
+[19:09] <frewsxcv> sent
+[19:12] <badboy> got it.
+[19:13] <badboy> wonder why they approached you directly
+[19:14] <edunham> frewsxcv: I had no plans to be at oscon but could arrange to if backup is needed
+[19:15] <frewsxcv> It's probably because I'm super famous
+[19:15] <badboy> frewsxcv: in that case I need an autograph from you next time we meet
+[19:24] <carols10cents> uuugggghhh oscon is so expensive
+[19:25] <steveklabnik> it's ridonculous
+[19:26] <badboy> you should all come to rustfest instead, it's so much cheaper ;_
+[19:34] <booyaa[> k meeting bot is primed should go off at 9PM for tonights meeting
+[21:00] <meetingbot> No agenda has been set! :( The meeting is this Weds @ 4PM and 10PM UTC. No minutes found for last week. :( *mournful bleating*
+[21:05] * projektir hugs meetingbot.
