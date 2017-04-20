@@ -1,0 +1,425 @@
+== 19 Apr 2017
+[02:26] <WindowsBunny> notriddle: Was this awful comment yours? https://github.com/retep998/winapi-rs/commit/b46452eb512d721fa55ef994cfd9f5f21058bda3#commitcomment-21810241
+[02:28] <projektir> WindowsBunny: well, that's not very nice. :/
+[03:03] <notriddle> WindowsBunny: yep
+[03:04] <projektir> notriddle: :(
+[03:05] <projektir> notriddle: why, man
+[03:05] <notriddle> Because I think the Bunny Code is not a very good Code Of Conduct.
+[03:06] <projektir> I mean it's kinda a joke CoC. Why the hostility?
+[03:06] <WindowsBunny> notriddle: How is it not good? It effectively gives me the power to stop any behavior I don't like.
+[03:06] <WindowsBunny> And it is intended to be satire of CoCs anyway.
+[03:06] <notriddle> Then I guess it's not intended to be a very good CoC.
+[03:07] <projektir> There are nicer ways to express that, tho.
+[03:08] <WindowsBunny> notriddle: It's very good at being both satire and letting me stop bad behavior. What more do you want from a CoC?
+[03:08] <notriddle> Probably so, yeah. I can change it, then...
+[03:09] <WindowsBunny> notriddle: If you have suggestions for how to improve it, I'd love them
+[03:10] <sebasmagri> Hi! https://imgur.com/a/BBpmc
+[03:11] <sebasmagri> My wife wants to reproduce Ferris using this style of 8bit plastic composition that's being used nowadays, what do you think of using that as a starting point?
+[03:12] <sebasmagri> I promise I'll take some to RustConf :-)
+[03:12] <notriddle> You don't need a CoC to spell out that you're allowed to stop bad behavior. Owning the repo gives you that. AFAICT, the goal of a CoC is to give people an idea of what "bad behavior" is. The only behavior that Bunny Code spells out is stuff that isn't a real problem anywhere.
+[03:12] <projektir> notriddle: I feel like he's just joking around, though. I'm trying to figure out what can be accomplished with angrily lashing out at that "CoC" and I am drawing a blank.
+[03:14] <notriddle> It's deleted.
+[03:14] <projektir> sebasmagri: tbh I don't think that's very good pixel art, but it may be a decent starting point for making good pixel art.
+[03:14] * projektir runs away
+[03:15] <sebasmagri> projektir: it's my first time doing this and I know I'm not good... x-D
+[03:15] <projektir> sebasmagri: for first time it's very good :)
+[03:16] <sebasmagri> The problem is that if I add a second level of resolution, then the physical version will be bigger
+[03:16] <projektir> I thought I saw this earlier, though, was this used in r/place or am I mixing it up
+[03:16] <sebasmagri> oh you're right, I believe there was one on r/place
+[03:16] <projektir> sebasmagri: yeah so pixel art is tricky but you can get a lot of expression by a very small amount of pixels if you know how to place them :3
+[03:17] <notriddle> Actually, no, the one in /r/place has a "shadow" on the bottom that the imgur link lacks.
+[03:17] <projektir> notriddle: fair enough, I don't have the other image handy
+[03:18] <projektir> sebasmagri: how big is this supposed to be in actual pixel size?
+[03:18] <sebasmagri> projektir: it's like 2mm per pixel
+[03:19] <projektir> I meant pixel count
+[03:19] <projektir> 25x25 etc.
+[03:19] <projektir> the image itself ix not sized in the same... relative pixel size idk right terms
+[03:20] <sebasmagri> oh, it's like 32x24
+[03:20] * notriddle will try to avoid being a humorless git in the future. 😳
+[03:20] <WindowsBunny> notriddle: I personally find it quite obvious what the bad behavior is. Those 3 numbered things under the Conduct section describe exactly what the bad behavior is.
+[03:20] <projektir> notriddle: at least you're not a repo that has commands that do completely different things depending on which flag you use
+[03:20] <projektir> s/repo/CVS
+[03:21] <projektir> s/CVS/VCS I should go to sleep
+[03:27] <sebasmagri> I took the r/place's one and updated colors to match the original Ferris' ones https://imgur.com/a/BBpmc this was supposed to be quick :-)
+[06:45] <skade> srsly? https://twitter.com/geroter/status/854584774018686979
+[07:05] <Sergio> What does that mean?
+[07:48] <skade> I understand it as not having to have expectations towards mozilla
+[09:09] <booyaa]> .
+[09:10] <badboy> .
+[09:10] <booyaa[> :D
+[09:12] <Trangar> .
+[09:14] <killercup> ·
+[09:14] <badboy> such dot. 
+[09:15] <killercup> higher level dot
+[09:15] <badboy> impl Dot for .
+[09:41] <skade> !
+[09:45] <badboy> gnaaaah, compiling ANYTHING which references Linux Kernel headers is a pain in the ass
+[09:47] <skade> I told you to write your thesis in redox, but you wouldn't listen
+[09:49] <badboy> > /usr/src/linux-headers-4.10.0-041000/arch/x86/include/
+[09:49] <badboy> oops
+[09:50] <badboy> > error: old-style parameter declarations in prototyped function definition
+[09:50] <badboy> thanks!
+[10:17] <theJPster> Is there ever funding available for speakers/helpers at RustFest to help towards travel/accommodation costs?
+[10:18] <badboy> yes
+[10:18] <badboy> we cover travel and accomodation for speakers
+[13:29] <skade> did anyone follow up with that person that tried to find people for a rust camp in england?
+[13:29] <skade> (beyond my very short interaction with them in URLO)
+[13:48] <erickt> meeting days!
+[13:49] * erickt can't wait to get out from under all this real work stuff
+[13:53] <theJPster> What's rust camp?
+[13:57] <skade> https://users.rust-lang.org/t/rust-unconference-idea/10212/6?u=skade
+[13:57] <skade> that wasn't a name :)
+[13:58] <theJPster> I assume it's like Band Campo
+[13:58] <theJPster> Campo? Camp.
+[13:58] <theJPster> It's very possible that reference is from before people here were born, which makes me feel very old.
+[13:59] <erickt> skade: is this what you are talking about? https://users.rust-lang.org/t/rust-unconference-idea/10212
+[13:59] <skade> erickt: just found it and replied again
+[14:09] <theJPster> skade: Happy to talk at Zurich on embedded stuff.
+[14:12] <projektir> That's a pretty cool idea (the unconference thing).
+[14:12] <skade> yeah, the issue is just that i need someone to help me with all that embedded thingy-stuff
+[14:12] <skade> that I'm carrying around :D
+[14:17] <erickt> fyi, meeting is at 4pm UTC
+[15:00] <meetingbot> This week's agenda: https://github.com/rust-community/team/issues/158. The meeting is this Weds @ 4PM and 10PM UTC. No minutes found for last week. :( *mournful bleating*
+[15:14] <erickt> meetingbot, you liar
+[15:15] <erickt> it's right in the topic!
+[15:15] <erickt> I thought we were on good terms
+[15:15] <erickt> but you have to go and pull that off, dontcha
+[15:32] <locks> 10pm utc? xD
+[15:32] <locks> oohh, two meetings
+[15:32] <locks> double the fun
+[15:53] <erickt> locks: yep! we now have members in an inconvenient triangle (trisphere?) Europe, US, and New Zealand
+[15:54] <locks> awesome
+[15:54] <locks> we have the same problem
+[15:54] <erickt> https://www.youtube.com/watch?v=9jK-NcRmVcw
+[15:57] <theJPster> Took me a moment to realise I'm currently on +0100. Stupid daylight savings.
+[15:58] <edunham> o/
+[15:58] <erickt> \m/
+[15:58] <erickt> theJPster: it's the worst!
+[15:58] <erickt> but if you get it wrong today, we got you covered cuz we got two meeting
+[15:58] <erickt> s
+[16:00] <erickt> meeting time!!!
+[16:00] <erickt> huzzah
+[16:00] <erickt> who's here today?
+[16:01] <erickt> agenda: https://github.com/rust-community/team/issues/158
+[16:01] <erickt> big thing on the table is getting this worldwide meetup setup
+[16:01] <locks> unless you get it wrong both times
+[16:01] <badboy> o/
+[16:01] <erickt> locks: then we'll plan another meeting!
+[16:01] <erickt> we'll just have a 24hour meeting
+[16:02] <booyaa[> o/
+[16:02] * locks puts Happy's videoclip as backdrop
+[16:02] <erickt> carols10cents / Manishearth: you around?
+[16:02] <carols10cents> hi
+[16:02] <erickt> hello!
+[16:02] <carols10cents> i think Manishearth is traveling
+[16:03] <erickt> aw
+[16:03] <carols10cents> so no updates on airmo stuff
+[16:03] <erickt> ;_;
+[16:03] <erickt> hrm. well I don't want to waste too much time on trying to figure out tech stuff
+[16:04] <erickt> so we should probably start advancing towards figuring out a CFP and hosting locations
+[16:04] <erickt> carols10cents: I can't remember, did you put out a CFP before you had a firm date?
+[16:04] <carols10cents> erickt: nope
+[16:04] <erickt> or did you lock in a place first?
+[16:04] <carols10cents> date 1st
+[16:04] <carols10cents> otherwise people don't know if they're available :-/
+[16:05] <erickt> bah. people should work around our schedule
+[16:05] <erickt> me me me
+[16:05] <carols10cents> shrug
+[16:05] <erickt> :)
+[16:05] <carols10cents> we could try the other way
+[16:06] <carols10cents> and just make it clear that the deadline wont be until after we have a date
+[16:06] <carols10cents> we're considering a weekend in sept
+[16:06] <carols10cents> and if it turns out you're not available, no worries
+[16:06] <carols10cents> get people thinking about it
+[16:06] <bstrie> oh wait is there a meeting?
+[16:06] <bstrie> am I here totally by accident??
+[16:06] <carols10cents> the real tough thing is going to be
+[16:06] <erickt> hi bstrie!
+[16:06] <carols10cents> each rust conference has their own cfp app
+[16:06] <erickt> congrats!
+[16:07] <carols10cents> so which do we use
+[16:07] <carols10cents> FIGHT
+[16:07] <erickt> lol
+[16:07] <bstrie> whichever one is written in rust, obvs
+[16:07] <erickt> carols10cents: I think the sensible thing to do is make our own cfp
+[16:07] <carols10cents> or do we go with the 18th standard
+[16:07] <carols10cents> YESSS
+[16:07] <erickt> then you'll need to fight with yourself
+[16:07] <carols10cents> https://xkcd.com/927/
+[16:07] <locks> paper.ly
+[16:07] <locks> done, next
+[16:07] <carols10cents> look we need to be able to customize questions
+[16:07] <locks> sorry ,that's the wrong one
+[16:08] <sebasmagri> papercall?
+[16:08] <carols10cents> like what time zone are you in, what language would you be giving your talk in
+[16:08] <erickt> carols10cents: two times over cuz you are on the core team, and now rustconf is under your leadership!
+[16:08] <locks> yes sebasmagri 
+[16:08] <carols10cents> does papercall let you do that?
+[16:08] <locks> I believe so
+[16:08] <carols10cents> wait have we decided on the language issue
+[16:08] <carols10cents> https://github.com/rust-community/team/issues/137
+[16:09] <carols10cents> we could argue about that now if we dont have anything else
+[16:09] <sebasmagri> I don't think papercall let you add geo/time info for each proposal
+[16:09] <sebasmagri> but we should check it out
+[16:11] <erickt> hm. english would be the easiest, since that's how I think our largest community communicates
+[16:11] <carols10cents> i disagree let's fight
+[16:11] <carols10cents> (i'm just in a fighting mood today)
+[16:11] <sebasmagri> we should have the schedule in english, with a language indicator and the title of the talk in the language as a tooltip
+[16:11] <erickt> however, as part of the CFP we could gather up what languages people might want to present under
+[16:11] <locks> I like the timezone boxed language thing
+[16:12] <erickt> we could also potentially have parallel talks if we're on youtube
+[16:12] <sebasmagri> Like `Bla bla | Time @ TZ(with UTC as tooltip) | Spanish(with bla bla in spanish as tooltip)`
+[16:13] <erickt> we could survey our meetup organizers to see what languages their community speaks
+[16:13] <sebasmagri> it's mostly english currently
+[16:13] <bstrie> carols10cents: you've gone mad with power
+[16:13] <sebasmagri> oh 1 sec
+[16:13] <erickt> we need another rust survey
+[16:14] <erickt> ooh, we should put out the survey in different languages
+[16:16] <bstrie> btw I've announced the boston 1.0 anniversary party meetup https://www.reddit.com/r/rust/comments/66b2i7/boston_rust_meetup_celebrating_the_second/
+[16:16] <carols10cents> ok the only way i can see to ask custom questions in papercall
+[16:16] <Manishearth> erickt: carols10cents I am here
+[16:16] <carols10cents> is you can ask a bunch of questions, and submitters can answer all of them in one text box
+[16:16] <erickt> bstrie: oh yeah, we got our birthday on https://www.meetup.com/Rust-Bay-Area/events/239222217/
+[16:16] <carols10cents> which is  a problem because people don't friggin read directions ever
+[16:17] <erickt> heh
+[16:17] <locks> :C
+[16:17] <locks> emberconf has a cfp app I think?
+[16:17] <locks> emberconf/railsconf/etc?
+[16:17] <carols10cents> locks: we're not at a loss for apps, each rust conference has their own lolo
+[16:17] <carols10cents> it's a matter of deciding between them
+[16:17] <sebasmagri> this is a list of rust meetups I gathered from meetup.com https://gist.github.com/sebasmagri/91bdd9b1ac7deb26373aa7726c18ab56
+[16:17] <locks> it's SWOT time
+[16:18] <bstrie> why don't we ask other confs for what they use, and then use their thing, so that they're on the hook for maintaining it
+[16:18] <locks> what are the apps
+[16:18] <carols10cents> mine is https://github.com/carols10cents/blinder
+[16:18] <carols10cents> idk what the others are
+[16:18] <carols10cents> bstrie: we are the other confs
+[16:18] <bstrie> erickt: oh awesome speaker, I was wondering what dropbox was up to these days
+[16:18] <bstrie> carols10cents: I mean, non-rust confs
+[16:18] <sebasmagri> I'm afraid that most conferences CFP apps do not have this `distributed` requirement
+[16:18] <erickt> carols10cents: just checked the 2016 survey, 94.5% responders are fluent in english, 17.6% other, 14.2% german, 10.9% in french
+[16:19] <erickt> everything else is under 10 percent
+[16:19] <carols10cents> ok
+[16:19] <erickt> but the survey was in english, so take it with a grain of salt
+[16:19] <carols10cents> truuuuu
+[16:19] <bstrie> we can find folks to translate the survey this year, if we have the energy
+[16:19] <bstrie> certainly into german
+[16:19] <locks> I can do PT
+[16:19] <carols10cents> i still think it would be nice to have a few talks in other languages
+[16:19] <bstrie> carols10cents: where, at RBR?
+[16:19] <carols10cents> bstrie: no, in the remote conf
+[16:20] <bstrie> aha, first I've heard of this
+[16:22] <carols10cents> bstrie: https://github.com/rust-community/team/milestone/4, take a look at the meeting minutes around march 1
+[16:22] <carols10cents> we havent announced yet because we havent picked a date because we're not sure if airmo IT people can help us
+[16:23] <erickt> Manishearth: oh hey you said you're here. any word from moz on using their space?
+[16:24] <erickt> carols10cents: yeah
+[16:25] <erickt> fyi, technically we're supposed to end in 5 minutes, but we can keep going as long as all y'all want to keep talking
+[16:27] <erickt> how about we send out a mail to the organizer list saying we want to do this worldwide thing on a weekend in september. tentatively 9/16 or 9/23
+[16:28] <erickt> to hold the date, and invite them to next week's meetup
+[16:28] <carols10cents> 👍 ship it
+[16:28] <sebasmagri> +1
+[16:28] <erickt> for CFP, lets use whatever is most convenient
+[16:28] <badboy> a worldwide thing on my birthday? I'm in!
+[16:29] <erickt> badboy: sold! we'll sing you happy birthday around the world
+[16:29] <skade> oh, is the meeting back at 6?
+[16:29] <erickt> skade: 10pm UTC?
+[16:29] <erickt> if that's 6 for you?
+[16:30] <skade> me and timezones
+[16:30] <skade> hi!
+[16:30] <erickt> oh, 4pm == 6pm UTC
+[16:30] <erickt> :)
+[16:30] <erickt> hi!
+[16:30] <erickt> we can keep going though
+[16:31] <skade> erickt: ha, that will be a september
+[16:31] <skade> one rustfest is planned for the 29th (september)
+[16:31] <erickt> oh? hrm
+[16:32] <erickt> can you reschedule rustfest? ;)
+[16:32] <skade> I see no collision there
+[16:32] <skade> so, is everything discussed already? I've got a small thing
+[16:32] <erickt> how about then 6/6 or 9/16, to give a little separation from rustfest
+[16:33] <erickt> err, 9/6
+[16:33] <skade> 9/16 sounds great
+[16:33] <erickt> or 2017-09-06 or 2017-09-16 for those of you that write dates in odd orders (which frankly I prefer)
+[16:34] <erickt> I suppose we don't need to block ourselves on deciding a CFP app at the moment
+[16:34] <erickt> anything else on the worldwide meetup?
+[16:34] <erickt> if not, then take it away skade
+[16:35] <skade> okay, so dev.to contacted me that they have RSS support now. if everyones fine, I'll attach the community blog as a test and the rust-lang.org blog at earliest convenience
+[16:35] <skade> that's about it :)
+[16:36] <erickt> +1
+[16:36] <booyaa[> :+1:
+[16:36] <erickt> there's also http://www.planet-rust.com/ which I recently discovered
+[16:36] <sebasmagri> +1
+[16:36] <edunham> erickt++
+[16:37] <booyaa[> i need to link meeting bot to the google calendar, would make things easier for announcements. i think google calendars still have rss/atom feeds
+[16:37] <booyaa[> edunham++
+[16:38] <sebasmagri> oh and it's written in Rust https://github.com/Vagdish/planetrs :-)
+[16:38] <skade> erickt: yeah, but i don't want to feed an aggregator into an aggregator :)
+[16:38] <skade> I could ask about their stance, though :)
+[16:38] <erickt> skade: of course!
+[16:38] <erickt> but we could add the planet rust sources into dev.to
+[16:38] <erickt> then they could fight it out
+[16:39] <erickt> which would make bloodthirsty carols10cents happy
+[16:39] <carols10cents> FIGHT. ME.
+[16:39] <erickt> booyaa[: I don't see an RSS feed, but I did find an .ics link: https://calendar.google.com/calendar/ical/apd9vmbc22egenmtu5l6c5jbfc%40group.calendar.google.com/public/basic.ics
+[16:40] <booyaa[> erickt: cool there's prolly a parser for ical
+[16:40] <erickt> I bet
+[16:40] <booyaa[> i would not want to fight carols10cents not unless the rest of the team formed into voltron
+[16:40] <booyaa[> even then it would be a close battle
+[16:40] <carols10cents> lol
+[16:41] <skade> badboy: when is the rustfest meeting today?
+[16:41] <badboy> 20:30
+[16:41] <erickt> alrighty then, if there's nothing else, I'm gonna start working on a draft to the organizer team. i'll send it off to community-team@ before i send it everywhere else
+[17:11] <bstrie> carols10cents: did that software conservancy guy ever get back to you?
+[17:11] <carols10cents> bstrie: nope
+[17:11] <bstrie> ah well
+[17:44] <Manishearth> erickt: I thought I already gave an update?
+[17:44] <Manishearth> we can use the space, the issue is the streaming -- we can't get someone to handle that 24hrs. we could potentially do it ourselvse
+[19:34] <frewsxcv> Anyone know when RustConf CFP is supposed to open?
+[19:34] <badboy> soon™
+[19:37] <frewsxcv> I should probably start prepping for a proposal anyways
+[21:00] <meetingbot> This week's agenda: https://github.com/rust-community/team/issues/158. The meeting is this Weds @ 4PM and 10PM UTC. No minutes found for last week. :( *mournful bleating*
+[21:45] <erickt> T-15 minutes!
+[21:47] <badboy> 'til going to bed, yeah :P
+[21:50] * jntrnr pants
+[21:50] <jntrnr> omg I'm actually going to make it to this for a change
+[21:50] <jntrnr> maybe... :o
+[21:53] <erickt> jntrnr: get ready!
+[21:54] <erickt> it's time for the final final countdown! https://www.youtube.com/watch?v=9jK-NcRmVcw
+[21:54] <erickt> of today
+[21:55] * jntrnr plays
+[21:56] * jntrnr still doesn't know why they fly low over a marsh at the beginning
+[21:57] <erickt> because it's epic
+[21:57] <erickt> \m/
+[21:57] <jntrnr> Bands named after places... Europe... Boston... Kansas... UK...
+[22:00] <erickt> and it's time!
+[22:00] <erickt> https://github.com/rust-community/team/issues/158
+[22:00] <erickt> woo
+[22:00] <erickt> who's in?
+[22:00] <jntrnr> o/
+[22:00] <erickt> hi jntrnr! it's been so long!
+[22:00] * jntrnr lets Eye of the Tiger play
+[22:00] <jntrnr> greetz :D
+[22:00] <erickt> I shifted over to the Guardians of the Galaxy soundtrack
+[22:01] <jntrnr> is it just the two of us?
+[22:01] <erickt> might be you and me today, if badboy went to sleep :)
+[22:01] <erickt> have you started working on the survey?
+[22:01] <jntrnr> tbh I looked at it but that's as far as I've gotten
+[22:02] <erickt> ah ok. so one thing skade suggested was using a different technology to run the survey, since he found the raw text hard to manipulate
+[22:02] <erickt> do you have experience with alternative tools?
+[22:02] <jntrnr> I don't
+[22:02] <jntrnr> did he have suggestions?
+[22:03] <jntrnr> I like how we could craft it based on their answers
+[22:03] <jntrnr> and export to excel
+[22:03] <erickt> me too
+[22:03] <jntrnr> tbh I thought the data output was fine, but I did have to massage some
+[22:03] <jntrnr> but that's normal working with raw data
+[22:03] <erickt> yeah
+[22:04] <erickt> seems like there are a bunch of alternatives
+[22:05] <erickt> well, I figure we'd have to script out extracting data, which isn't *that* scary. but maybe other alternatives can make prettier forms?
+[22:06] <erickt> anyway, do you have an estimate on how long it'll take to get out the door?
+[22:06] <erickt> or are we too early?
+[22:06] * jntrnr listens to the crickets
+[22:06] <erickt> it'd be wonderful if we could announce it during our birthday parties
+[22:06] <erickt> hehe
+[22:06] <jntrnr> when is that?
+[22:06] <erickt> abstractly? may
+[22:07] <erickt> the sf meetup is on the 4th
+[22:07] <erickt> boston is on the 3rd, i think (bstrie?)
+[22:07] <jntrnr> I'll see if I can get some people together to work on it
+[22:07] <erickt> sure. we could carve out a working session, maybe over the weekend?
+[22:07] <jntrnr> I found the feedback from the last one but it seems like there were at least a couple bigger changes people wanted to make
+[22:07] <jntrnr> week...end...?
+[22:08] <jntrnr> but yeah, wishing carols10cents and skade were here
+[22:08] <erickt> heh
+[22:08] <jntrnr> brson I think is still out
+[22:08] <erickt> I think so
+[22:08] <skade> Hmm?
+[22:08] <jntrnr> we were talking survey
+[22:09] <erickt> hm. looking at https://github.com/rust-community/team/issues/28 it might only be a few questions to add
+[22:09] <jntrnr> there were some revisions we wanted to do for the new one
+[22:09] <jntrnr> I mean, I can take a swing at doing the changes and then let folks review
+[22:10] <skade> ah, so google forms is just a terrible mess that writes to spreadsheets
+[22:10] <erickt> skade: have you used typeform?
+[22:11] <skade> only on the input side
+[22:11] <bstrie> erickt: announce what? rbr cfp? survey?
+[22:11] <skade> but I heard good things about it
+[22:11] <erickt> bstrie: announce survey at the birthday parties
+[22:11] <skade> (also, I know one of the people who implemented it)
+[22:11] <erickt> might not be worthwhile, but a good way to draw attention to it
+[22:11] <jntrnr> ahh, if we want to move to new tech, that's going to be a bit more time involvement
+[22:12] <erickt> yeah
+[22:13] <jntrnr> skade: do you have a better survey system you like?
+[22:14] <skade> nope, I'd have a look at typeform
+[22:14] <skade> there's also surveymonkey, but their interface seems very clunky
+[22:15] <erickt> https://www.typeform.com/pricing/ - $29 a year, which isn't so bad
+[22:17] <erickt> it doesn'
+[22:17] <skade> month
+[22:17] <erickt> t seem like there's a way to automatically convert survey
+[22:18] <erickt> ooh, that's a bit more then
+[22:18] <skade> also, you need to have pro+ if you want to remove branding and such...
+[22:19] <jntrnr> seems like google is the lesser evil still?
+[22:19] <skade> i think, for surveymonkey, mozilla devrel has an account
+[22:19] <erickt> yeah, it might be easiest to start there. we could convert it later if we have freetime
+[22:19] <erickt> oh?
+[22:19] <skade> jntrnr: have you had a look at the resulting data?
+[22:19] <jntrnr> oh they might lemme ask
+[22:19] <jntrnr> skade: for the google thing?  yeah I did the analysis
+[22:20] <erickt> skade: it's not great, but hey, you built a rust data extractor for it :)
+[22:20] <jntrnr> I haven't looked at the output from a surveymonkey though
+[22:20] <erickt> that was fun :)
+[22:20] <jntrnr> heh
+[22:20] <skade> did you use the google thingy or work on the raw data?
+[22:20] <jntrnr> true
+[22:20] <jntrnr> raw
+[22:20] <skade> ah, I see. that was great :)
+[22:20] <skade> I mean, in the end, if you keep everything very carefully aligned, you can use google forms, it's just not very pleasant
+[22:20] <erickt> seems surveymonkey does about the same thing? https://help.surveymonkey.com/articles/en_US/kb/Exports
+[22:21] <skade> well, the issue was mainly that Google Forms doesn't properly quote data, for example
+[22:22] <erickt> oh? I don't remember that
+[22:23] <erickt> do you remember where you had to handle that?
+[22:23] <skade> If you have a free-form answer that has a comma, you'll get "anwer1, answer2, all I'm saying, is"
+[22:23] <skade> yep, in exactly those cases
+[22:23] <skade> that can be circumvented by going xlsx->csv over excel or something
+[22:24] <jntrnr> skade: I thought google forms had xls output or am I remembering wrong?
+[22:24] <erickt> ah, yeah
+[22:24] <erickt> I'm looking through my code and I do see myself reading xlsx, but I don't remember why
+[22:25] <skade> yep, and then you need to fight with that ugly behaviour of trying to find out which one in this thing is the free-text answer
+[22:25] <jntrnr> yeah, it does
+[22:25] <jntrnr> yeah, that's true
+[22:25] <jntrnr> maybe we if we put those last?
+[22:25] <skade> so, I guess, with enough care (for example by making the free-text a seperate "answer"), you could circumvent that, too
+[22:25] <jntrnr> true
+[22:25] <erickt> that's true, that was annoying
+[22:25] <skade> well, but what is "last"?
+[22:26] <jntrnr> I'll see if i can clean that up also
+[22:26] <jntrnr> I think your idea of just separating them so they are their own column
+[22:26] <erickt> I did have to prepopulate my code with the responses
+[22:26] <skade> In any case, probably makes sense to have the reading script ready before the survey starts
+[22:26] <jntrnr> agreed
+[22:26] <jntrnr> so we can tweak it before it's live
+[22:26] <bstrie> erickt: is there a place where we can proofread the survey?
+[22:27] <erickt> bstrie: yeah it's on google drive in the "rust community private" folder
+[22:29] <bstrie> erickt: I have no idea how to find folder in google drive
+[22:29] <bstrie> oh I found it through the search box
+[22:30] <erickt> great
+[22:31] <erickt> well, jntrnr want to see if mozilla has a surveymonkey account?
+[22:31] <erickt> in the meantime, we could just start adding in the new questions
+[22:32] <erickt> to google forms, then solve the export problem later
+[22:32] <jntrnr> erickt: I thought we agreed google was okay as long as we made the fixes?
+[22:32] <jntrnr> I took some notes
+[22:32] <erickt> :)
+[22:32] <erickt> oh I suppose
+[22:32] <jntrnr> :p
+[22:33] <erickt> alright fine. hm. so I might have some time on sunday to work on stuff
+[22:33] <erickt> or randomly on evenings
+[22:33] <jntrnr> cool
+[22:33] <jntrnr> I'll try to carve out a block of time to make the fixes
+[22:33] <erickt> great
+[22:33] <jntrnr> then we can try a tool on it
+[22:33] <erickt> +1
+[22:34] <skade> okay, please share drafts early, we had some back and forth with some of the questions last time :)
+[22:34] <skade> sooo, I'll head to bed
+[22:34] <erickt> ok!
+[22:34] <erickt> alright well I should also be getting to work
+[22:35] <jntrnr> thx all
+[22:35] <erickt> thank you all!
