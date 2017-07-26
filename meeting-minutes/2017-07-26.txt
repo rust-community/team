@@ -1,0 +1,671 @@
+meeting time!
+9:00 AM woo
+9:00 AM fireworks
+9:00 AM etc
+9:00 AM who's here?
+9:01 AM 
+<sebasmagri> o/
+9:01 AM 
+<anna-liao> i'm listening in :)
+9:01 AM 
+<•erickt> Erick Tryzelaar heya anna-liao!
+9:01 AM and sebasmagri!
+9:01 AM 
+<sebasmagri> hey erickt! :-)
+9:02 AM 
+<•erickt> Erick Tryzelaar Manishearth / ag_dubs / carols10cents / edunham|pto / brson / skade / badboy / booyaa[ / bstrie ?
+9:02 AM 
+<carols10cents> o/
+9:02 AM 
+<•ag_dubs> hello!
+9:02 AM 
+<•erickt> Erick Tryzelaar hello!
+9:02 AM 
+<•skade> Still on transit
+9:02 AM 
+<•erickt> Erick Tryzelaar cool! lets get started
+9:03 AM it seems we got critical mass for rustbridge
+9:03 AM how's things, ag_dubs / sebasmagri / anna-liao?
+9:03 AM you blocked on anything for the website revamp?
+9:03 AM 
+<•ag_dubs> no, beyond time to work on stuff, heh
+9:03 AM 
+<•erickt> Erick Tryzelaar work is the worst!
+9:03 AM 
+<•Manishearth> o/
+9:03 AM 
+<•erickt> Erick Tryzelaar hallo!
+9:04 AM 
+<•ag_dubs> the new site will be ready in time for rustconf at the latest. i have the content for the learn page p much done, the last thing to do is the volunteer page
+9:04 AM which is how mentors/teachers/students/companies contact rustbridge
+9:04 AM so, not sure if there is prior art on that that i should follow
+9:04 AM 
+<•erickt> Erick Tryzelaar if I recall, wasn't I supposed to point bridge.community.rs at your website?
+9:05 AM 
+<•ag_dubs> ? i dont think so
+9:05 AM 
+<marioidival> good
+9:05 AM 
+<•erickt> Erick Tryzelaar hello marioidival!
+9:05 AM 
+<•ag_dubs> rustbride.rs i think is what you had said you'd grab
+9:05 AM bridge, not bride, whew
+9:05 AM 
+<•erickt> Erick Tryzelaar heh
+9:05 AM 
+<•ag_dubs> i think it's fine to just have community.rs/rustbridge-www
+9:05 AM 
+<•erickt> Erick Tryzelaar *thats* how we'll make rust make money! Pivot into a dating app!
+9:05 AM 
+<•ag_dubs> the URL is like, the least of my worries heh
+9:05 AM 
+<•erickt> Erick Tryzelaar hehe
+9:05 AM 
+<sebasmagri> ag_dubs: I don't think there's anything for that
+9:06 AM 
+— •ag_dubs nod
+9:06 AM 
+<•ag_dubs> how does this group feel about google forms?
+9:06 AM that's what i've used in the past
+9:06 AM 
+<carols10cents> google form for what?
+9:06 AM 
+<•erickt> Erick Tryzelaar I think we've been pushing these groups to try to get onto https://users.rust-lang.org
+9:06 AM 
+<sebasmagri> I've mixed feelings about it but it works
+9:07 AM 
+<•ag_dubs> google for for registering mentor/teacher/student/sponsor interest
+9:07 AM 
+<•erickt> Erick Tryzelaar oh, *forms*
+9:07 AM 
+<•ag_dubs> @erickt does that support forms or spreadsheets
+9:07 AM 
+<•erickt> Erick Tryzelaar yeah. it's somewhat sucky, but it works
+9:07 AM 
+<•ag_dubs> oh haha
+9:07 AM ok
+9:07 AM yeah i mean i am open to whatever, but i dont know of anything offhand
+9:07 AM 
+<carols10cents> for rustconf specifically or for future rustbridges?
+9:07 AM 
+<•ag_dubs> future
+9:07 AM 
+<•erickt> Erick Tryzelaar skade had some ideas on alternatives for surveys, but we ran out of time to evaluate them
+9:07 AM 
+<•ag_dubs> its a good way to get a list of interested people
+9:07 AM 
+<carols10cents> rails bridge has https://www.bridgetroll.org/
+9:08 AM which i used for the rustbridge i ran
+9:08 AM it was perfect
+9:08 AM 
+<edunham|pto> \o oops i lost track of time but i'm here now if you need me
+9:08 AM edunham|pto → edunham
+9:08 AM 
+<•erickt> Erick Tryzelaar +1
+9:08 AM 
+<edunham> (lost track of nickname too apparently)
+9:08 AM 
+<•ag_dubs> oh word, @carols10cents let's take a look at that, sounds good
+9:08 AM 
+<•erickt> Erick Tryzelaar :)
+9:08 AM yeah this looks good
+9:08 AM 
+<carols10cents> ag_dubs: are you just recommending something for people running rustbridges to use?
+9:08 AM 
+<•ag_dubs> does that also work for potential sponsors
+9:08 AM 
+<•erickt> Erick Tryzelaar carols10cents: is this a rails app?
+9:08 AM 
+<•ag_dubs> or people registrering interest when there is not an event yet?
+9:09 AM 
+<carols10cents> erickt: probably? it's SaaS, you don't have to set up anything
+9:09 AM ag_dubs: i dont think there's a signup for sponsors
+9:09 AM or interest
+9:09 AM 
+<•ag_dubs> got it
+9:09 AM so with nodetogether i have this http://www.nodetogether.org/#help
+9:09 AM 
+<carols10cents> i feel like those are kind of separate things
+9:09 AM 
+<•erickt> Erick Tryzelaar oh, it's supporting multiple bridges
+9:09 AM 
+<•ag_dubs> and it was v helpful for getting sponsors and mentors and planning future events
+9:10 AM 
+<carols10cents> like once you have an event scheduled, you want TAs/volunteers/attendees
+9:10 AM but before you have an event scheduled, people might want a way to contact us
+9:10 AM 
+<bstrie> here!
+9:10 AM 
+<•erickt> Erick Tryzelaar heya bstrie!
+9:10 AM 
+<•ag_dubs> kk well in the interest of time, let's have this convo at the first rustbridge meeting
+9:10 AM 
+<carols10cents> 👍
+9:10 AM 
+<•ag_dubs> :)
+9:10 AM which
+9:10 AM 
+<•erickt> Erick Tryzelaar cool. did you figure out when to schedule it?
+9:10 AM 
+<•skade> stylo running down the chat rows.... I'm here
+9:10 AM 
+<•ag_dubs> haha perfect lead in
+9:11 AM 
+<•erickt> Erick Tryzelaar I try to do my best
+9:11 AM 
+<•skade> google forms: cool, because free and turns stuff into a spreadsheet, bad, because the data in the end is a mess.
+9:11 AM 
+<•ag_dubs> https://github.com/rust-community/rustbridge-admin/issues/3
+9:11 AM this is the issue for scheduling the meeting
+9:11 AM 
+<•skade> for signups and surveys, it's perfectly fine except some people not wanting to touch google, especially over here
+9:11 AM 
+<•ag_dubs> @skade we tabled that convo
+9:12 AM for the rust bridge meeting, which we are talking about now
+9:12 AM 
+<•skade> okay, just saw erickts mention
+9:12 AM → Muhannad joined (Muhannad@moz-1t9.ga1.95.78.IP)
+9:12 AM 
+<•ag_dubs> so if you are interested in attending the rust-bridge meeting, please register your interest on that issue and let me know if that time works
+9:12 AM tl;dr every 2 weeks, right after this meeting
+9:12 AM 
+<carols10cents> starting when?
+9:13 AM (like which week)
+9:13 AM 
+<•ag_dubs> i was gonna say next week
+9:13 AM 
+<carols10cents> 👍
+9:13 AM 
+<•ag_dubs> cool cool
+9:13 AM if there's no qs re that we can move on to the next topic @erickt :)
+9:13 AM 
+<booyaa[> hello!
+9:13 AM 
+<•erickt> Erick Tryzelaar (aside - skade: it looks like there's an api for google forms, we might be able to use that to pull out the data in a sensible format: https://developers.google.com/apps-script/reference/forms/form-response#)
+9:13 AM 
+<•skade> 👍
+9:14 AM 
+<dvigneshwer> 👍
+9:14 AM 
+<•skade> (erickt: yep, I know that, but there's just better options if you're willing to pay :) )
+9:14 AM 
+<•erickt> Erick Tryzelaar ok so next up, ag_dubs, you also wanted to talk about rustfund
+9:14 AM 
+<•ag_dubs> save it for the rustbridge meeting! plz!
+9:15 AM ah ok cool
+9:15 AM SO, i didn't get a chance to get as much done as i would like, but lemme pitch rustfund
+9:15 AM rustfund is a service that rust offers to allow people involved in rust to discover and solicit micro-funding opportunities
+9:16 AM the idea is that we want to get people money to work on rust stuff in their free time
+9:16 AM 
+<•erickt> Erick Tryzelaar like kickstarter / patreon?
+9:16 AM 
+<•ag_dubs> one sec
+9:16 AM we dont want the overhead of a foundation
+9:16 AM 
+<dvigneshwer> @ag_dubs: is it okay if I attend the rustbridge meeting?  I don't have much context about the rust bridge initiave and goals.
+9:16 AM 
+<•ag_dubs> many people already use sites like patreon and gofundme to raise funds for themselves
+9:16 AM 
+<•erickt> Erick Tryzelaar dvigneshwer: of course!
+9:17 AM 
+<•ag_dubs> we do not want to run a patreon
+9:17 AM 
+<dvigneshwer> Ty
+9:17 AM 
+<•ag_dubs> instead, what we are making is a site to discover those things
+9:17 AM 
+<•erickt> Erick Tryzelaar we run these meetings in the open to make it easy for people to join in
+9:17 AM 
+<•ag_dubs> think pinterest but for gofundme links
+9:17 AM 
+<•erickt> Erick Tryzelaar ah, interesting
+9:17 AM 
+<dvigneshwer> erickt: yeah makes sense 
+9:17 AM 
+<sebasmagri> we could add that to rust-campaigns as well skade
+9:17 AM 
+<dvigneshwer> Rustfund sounds interesting 
+9:18 AM 
+<•ag_dubs> what is rust-campaigns?
+9:18 AM 
+<•erickt> Erick Tryzelaar ag_dubs: so just making it easier for people to discover fundable ideas
+9:18 AM 
+<•ag_dubs> ideas/people
+9:18 AM 
+<sebasmagri> ag_dubs: it's a simple "ad" service for the rust web ring
+9:18 AM 
+<•ag_dubs> i dont know what that means
+9:18 AM we have a webring?
+9:18 AM 
+<dvigneshwer> What's rust web ring?
+9:18 AM 
+<•skade> let's not get ahead of ourselves
+9:18 AM 
+<•ag_dubs> yeah i would REALLY like to focus
+9:18 AM 
+<dvigneshwer> Can you share some links? 
+9:18 AM 
+<•skade> I don't think that adds to the discussion
+9:19 AM 
+<•ag_dubs> full disclosure i'm getting a lil frustrated
+9:19 AM 
+<carols10cents> STOP
+9:19 AM 
+<•Manishearth> do we have that many people doing rust paterons already?
+9:19 AM 
+<carols10cents> zomg
+9:19 AM one topic plz
+9:19 AM 
+<dvigneshwer> +1 
+9:19 AM 
+<•Manishearth> cool
+9:19 AM 
+<•ag_dubs> ok, so, yes there are a handful of people already using these services to fund themselves
+9:19 AM 
+<sebasmagri> ok sorry :-)
+9:19 AM 
+<•ag_dubs> and we think that if we help create a discovery tool for them, we will encourage more people to do so
+9:20 AM ⇐ Muhannad quit (Muhannad@moz-1t9.ga1.95.78.IP) Ping timeout: 121 seconds
+9:20 AM 
+<•erickt> Erick Tryzelaar I found https://www.patreon.com/tomaka and https://www.patreon.com/newrustacean, for example
+9:20 AM 
+<•ag_dubs> so what i'd liek to do today is here people's thoughts and see if anyone is interested in helping build it out
+9:20 AM hear*
+9:20 AM 
+<carols10cents> so, for example, a company who would like a crate to have a particular feature 
+9:20 AM 
+<•skade> so, in its simplest form: basically a page where we list all of those and people can add themselves?
+9:20 AM 
+<•ag_dubs> yup
+9:20 AM 
+<dvigneshwer> Yeah I am interested in rust fund idea 
+9:20 AM 
+<•Manishearth> oh, yeah, tomaka and chris
+9:21 AM 
+<carols10cents> small contract work, and this would be matchmaking
+9:21 AM 
+<•erickt> Erick Tryzelaar in some ways, like https://www.rust-lang.org/en-US/friends.html, but maybe with a live feed of people's posts
+9:21 AM 
+<•ag_dubs> at some point, moderation/curation will probably be needed but we can cross that bridge when we get there
+9:21 AM 
+<carols10cents> right? the fund would'nt actually manage any money or contracts
+9:21 AM 
+<•ag_dubs> not posts
+9:21 AM it's literally a pretty set of links
+9:21 AM 
+<•erickt> Erick Tryzelaar even simpler
+9:21 AM 
+<dvigneshwer> It will catch the eyes of many developers 
+9:21 AM 
+<•ag_dubs> { person: "mary", link: patreon.com/~mary }
+9:21 AM and just making that look fun and making it searchable
+9:22 AM 
+<•erickt> Erick Tryzelaar I like it
+9:22 AM I especially like not having to build a payment processor to run it :)
+9:22 AM 
+<•skade> ag_dubs: I'd be up for building a small prototype, I'm just horrible at styling :)
+9:22 AM is GH pages as a start good?
+9:23 AM 
+<•ag_dubs> cool! so i am in the process of building out a backend for the API, and then we will do a frontend
+9:23 AM no it needs to be dynamic
+9:23 AM 
+<•erickt> Erick Tryzelaar I bet pages could work, we could do sorting/filtering in javascript?
+9:23 AM 
+<•ag_dubs> i would rather not
+9:23 AM 
+<•erickt> Erick Tryzelaar oh? why's that?
+9:23 AM 
+<dvigneshwer> Is it like a page where people outsource rust projects and interested people can contact the owner
+9:23 AM 
+<•ag_dubs> i think we should have a database
+9:23 AM we have resources, people need to make stuff and add it
+9:23 AM 
+<booyaa[> like rustaceans.org?
+9:23 AM 
+<•ag_dubs> it's a basic crud app
+9:24 AM i want to use github auth
+9:24 AM like cargo
+9:24 AM rustaceans is p obscure
+9:24 AM 
+<•erickt> Erick Tryzelaar ok, sure, we can do this
+9:24 AM 
+<•ag_dubs> yeah i know we can, i am interested in people willing to invest a fair amount of time into working on it with me
+9:24 AM 
+<•erickt> Erick Tryzelaar we can work with the infra team to get them to run it
+9:25 AM and by we, I mean me, since I'm also on there
+9:25 AM 
+<•ag_dubs> sure, i am also willing to just throw it on a free heroku instance for starters
+9:25 AM i dont think how we deploy it is an issue
+9:25 AM what we will need is people to commit to working on it
+9:25 AM the tech is the easy part
+9:25 AM 
+<dvigneshwer> @ag_dubs: I will give it a try 
+9:25 AM 
+<•skade> (I have a swarm of apps for the rust community running on heroku, happy to share the DB)
+9:26 AM ⇐ dowwie quit (dowwie@moz-rmp.dpg.227.23.IP) Ping timeout: 121 seconds
+9:26 AM 
+<anna-liao> ag_dubs, I am interested.
+9:26 AM 
+<•skade> ag_dubs: I can help with backend work and all the operations stuff
+9:26 AM 
+<dvigneshwer> Can you share some more details about the architecture of the app !! 
+9:26 AM 
+<•skade> which is rather easy, but still needs time
+9:26 AM 
+<•ag_dubs> ok i will start a repo and we can arrange to have a meeting to discuss it later this week perhaps
+9:27 AM and push up the backend i have
+9:27 AM i would like to have a video chat for our discussions on that, just FYI
+9:27 AM 
+<anna-liao> ag_dubs, sounds good
+9:27 AM 
+<•erickt> Erick Tryzelaar I can try to help where I can, I'm a bit behind with underhanded and the survey at the moment though
+9:27 AM 
+<dvigneshwer> Awesome 
+9:27 AM 
+<•ag_dubs> it's gonna be a rust backend on top of postgres, with a react frontend probably
+9:27 AM → behnam joined (behnam@moz-su3bj6.ss.shawcable.net)
+9:27 AM 
+<dvigneshwer> Sounds good
+9:28 AM 
+<•skade> 👍
+9:28 AM 
+<dvigneshwer> Share the github repo link here 
+9:28 AM 
+<•ag_dubs> so just so i'm clear @anna-liao @dvigneshwer @skade ya'll are interested?
+9:28 AM 
+<dvigneshwer> Yep
+9:28 AM 
+<•skade> ag_dubs: yep
+9:28 AM 
+<•erickt> Erick Tryzelaar me too
+9:28 AM 
+<•ag_dubs> if you DM me your github handle i will mention you on the repo
+9:28 AM 
+<sebasmagri> I can look around and try to help as well
+9:28 AM 
+<•ag_dubs> ok, in the interest of moving fast i think a small dedicated team is better
+9:28 AM 
+<anna-liao> ag_dubs, github handle is anna-liao
+9:29 AM → dowwie joined (dowwie@moz-rmp.dpg.227.23.IP)
+9:29 AM 
+<•ag_dubs> kk mind DMing me? i'm gonna lose that to the scroll soon
+9:29 AM 
+<marioidival> I would like to follow the development, share github repo ^^
+9:29 AM → sleffy joined (sleffy@moz-6h8duu.ca.comcast.net)
+9:29 AM 
+<dvigneshwer> Done I messaged you
+9:29 AM 
+<•ag_dubs> thanks ya'll
+9:29 AM ok
+9:29 AM 
+<dvigneshwer> 👍
+9:30 AM 
+<•erickt> Erick Tryzelaar ag_dubs: anything else on this subject?
+9:30 AM 
+<•ag_dubs> nope! not for now at least. thanks
+9:30 AM 
+<•erickt> Erick Tryzelaar :)
+9:30 AM ok next up, localization team!
+9:31 AM now where is this ticket
+9:31 AM 
+<sebasmagri> https://github.com/rust-community/team/issues/178
+9:31 AM there it is
+9:31 AM 
+<•erickt> Erick Tryzelaar great
+9:31 AM I'm super happy this is starting to get some traction
+9:32 AM 
+<sebasmagri> me too...
+9:32 AM 
+<•erickt> Erick Tryzelaar sebasmagri: are you comfortable being the owner of driving this?
+9:32 AM 
+<sebasmagri> I think we can start doing a more elaborate proposal and post it to URLO
+9:33 AM I guess there will be a bunch of people willing to help so yep, no problem...
+9:33 AM 
+<•erickt> Erick Tryzelaar and skade, you said in https://github.com/rust-community/team/issues/178#issuecomment-316649609 you were going to hunt down other translation efforts, any luck finding anything?
+9:33 AM 
+<dvigneshwer> What's URL0? Sorry if I am asking a silly question 
+9:33 AM 
+<booyaa[> user.rust-lang.org
+9:33 AM 
+<•erickt> Erick Tryzelaar dvigneshwer: no worries, we love our acronyms here in rust
+9:33 AM 
+<dvigneshwer> Ahh okay makes sense
+9:34 AM 
+<•erickt> Erick Tryzelaar booyaa[: https://users.rust-lang.org
+9:34 AM 
+<•skade> erickt: haven't had the time yet :/
+9:34 AM 
+<•erickt> Erick Tryzelaar forgot the "s" :)
+9:34 AM 
+<sebasmagri> dvigneshwer: your feedback there is also valuable, I'm already in touch with some Mozilla L10N members :)
+9:34 AM 
+<•erickt> Erick Tryzelaar awesome!
+9:34 AM what'd they say
+9:35 AM 
+<sebasmagri> erickt: skade I've been in touch with the people involved with the book translation to Spanish as well... I'll start to add that to the issue...
+9:35 AM 
+<dvigneshwer> Awesome let me know if you want me connect you with few volunteers from India who know Rust and also interested in L10n .. maybe you can run a small pilot exp with them 
+9:35 AM 
+<sebasmagri> erickt: they're completely willing to provide support and manpower
+9:35 AM 
+<dvigneshwer> 👍
+9:36 AM 
+<sebasmagri> we also discussed about different approaches to i18n depending on the type of project
+9:37 AM carols10cents: are there plans to integrate translations in https://doc.rust-lang.org/book/second-edition/?
+9:37 AM 
+<carols10cents> sebasmagri: i thought i commented on the issue?
+9:38 AM sebasmagri: there are people translating the book now, that i linked to, but integration is blocked on mdbook support
+9:38 AM 
+<•erickt> Erick Tryzelaar carols10cents: this one? https://github.com/azerupi/mdBook/issues/5
+9:38 AM 
+<sebasmagri> carols10cents: right sorry, I mean integration as in having translation links in the chapters instead of just having it in the appendix
+9:39 AM 
+<carols10cents> erickt: yes, and sebasmagri idk how the mdbook integration is going to work since it doesnt exist yet
+9:39 AM → Muhannad joined (Muhannad@moz-1t9.ga1.95.78.IP)
+9:39 AM 
+<sebasmagri> carols10cents: got it, thanks
+9:40 AM 
+<•skade> well, that might be a chance to get a team to build their own preferred feature :)
+9:40 AM 
+<carols10cents> just linked "mdBook support?" in the issue description to https://github.com/azerupi/mdBook/issues/5, i assumed since it was listed in the description that you knew about it :)
+9:42 AM 
+<•erickt> Erick Tryzelaar sorry, got pulled away for a work question
+9:42 AM 
+<sebasmagri> yeah I was aware of the block but didn't know what the plans were on the book side, hence my question... so is the official answer "we will support it through the mechanism provided by mdbook in the future"?
+9:42 AM 
+<carols10cents> sebasmagri: yep!
+9:42 AM 
+<sebasmagri> perfect!
+9:42 AM one of the following steps is to prioritize work so that helps a lot
+9:42 AM 
+<•erickt> Erick Tryzelaar carols10cents: one of the ideas for this l10n team would be also implementing l10n tech in our ecosystem, not just doing the translation itself
+9:43 AM 
+<carols10cents> erickt: i gathered that from the issue description
+9:43 AM 
+<sebasmagri> +1
+9:43 AM 
+<•erickt> Erick Tryzelaar :)
+9:43 AM sorry, just catching up
+9:43 AM 
+<carols10cents> sebasmagri: if there's somewhere the book can be clearer about our plans re: translations, please send a PR!
+9:43 AM 
+<•erickt> Erick Tryzelaar anyway, so it sounds like the big thing to do is start iterating on an RFC
+9:44 AM 
+<sebasmagri> carols10cents: sure thing!
+9:44 AM yep erickt
+9:45 AM 
+<dvigneshwer> I have never been part of any RFC would like to participate in this one :) 
+9:45 AM 
+<•erickt> Erick Tryzelaar sebasmagri: do you want to start writing it? anyone else want to help out with this?
+9:45 AM awesome
+9:45 AM 
+<sebasmagri> I started setting up something in https://github.com/rust-community/localisation/wiki
+9:45 AM but I can do it in RFC format as well
+9:45 AM 
+<•skade> 👍
+9:45 AM you can start with a pre-rfc on the wiki or in internals.rust-lang.org, which is also quite common
+9:46 AM 
+<dvigneshwer> 👍
+9:46 AM 
+<•erickt> Erick Tryzelaar +1
+9:46 AM 
+<sebasmagri> good, I believe internals will make it easier to gather feedback
+9:46 AM 
+<•skade> okay, we have 2 outstanding items
+9:47 AM 
+<•erickt> Erick Tryzelaar skade: on l10n?
+9:48 AM 
+<•skade> on the agenda, the ones by booya
+9:48 AM 
+<•erickt> Erick Tryzelaar oh, heh
+9:48 AM yep, more blogs
+9:49 AM oh hey! http://blog.community.rs/2017/07/23/rustdaymx-2017.html
+9:49 AM nice
+9:49 AM 
+<•skade> so, I still got one post I need to rework, but a more regular output would be nice. does it make sense to have a bit of a schedule?
+9:49 AM Like "we want to post twice per month"? 
+9:49 AM 
+<•ag_dubs> it depends on if we have enough authors
+9:49 AM 
+<•erickt> Erick Tryzelaar yeah :)
+9:49 AM 
+<•ag_dubs> a content calendar is nice, but we need to make sure we have people to fulfill it
+9:50 AM node started a neat thing
+9:50 AM on medium
+9:50 AM where they accept community contributions
+9:50 AM that could help us get more content
+9:50 AM 
+<dvigneshwer> skade: I will post one about the rain of rust campaign which we did in India
+9:50 AM 
+<•ag_dubs> it's easier to commit to editing something than writing something, often
+9:50 AM 
+<•skade> dvigneshwer: \o/
+9:51 AM 
+<dvigneshwer> 👍
+9:51 AM 
+<•ag_dubs> do we have stats on the blog views/reads?
+9:51 AM 
+<•skade> well, we do accept community contributions, but it's mostly on community subjects there
+9:51 AM we generally don't track
+9:51 AM 
+<•erickt> Erick Tryzelaar there's also https://herald.community.rs/
+9:51 AM → jdm joined (jdm@moz-otk.89d.46.142.IP)
+9:51 AM 
+<•ag_dubs> yeah i wonder if we dont have too many content outlets for the amount of content we have?
+9:51 AM 
+<booyaa[> re: blog posts - did i dream it or did we also think about interview user groups? or get those groups to do a guest post?
+9:51 AM 
+<•erickt> Erick Tryzelaar hehe
+9:51 AM ⇐ •niconii quit (nicole@moz-r2655b.midco.net) Quit: leaving
+9:51 AM 
+<•erickt> Erick Tryzelaar ag_dubs: yep
+9:51 AM 
+<•ag_dubs> if we funnel it all to one spot its easier to keep a cadence
+9:51 AM plus its easier for the community to find
+9:52 AM for those curious this is the node thing https://medium.com/the-node-js-collection
+9:52 AM 
+<•skade> yep, I wanted to have that on blog.rust-lang.org for that reason, but its generally just for project news
+9:52 AM 
+<•ag_dubs> having it on medium really improved the number of views/reads
+9:53 AM 
+<•skade> does medium do syndication?
+9:53 AM 
+<•erickt> Erick Tryzelaar oh? I didn't realize medium itself drove a lot of views
+9:53 AM 
+<•skade> erickt: it's their whole promise :)
+9:53 AM 
+<•ag_dubs> yeah a LOT of views
+9:53 AM 
+<•erickt> Erick Tryzelaar I only follow links to medium posts :)
+9:53 AM 
+<•ag_dubs> and yes it allows syndication
+9:53 AM so i could write on my medium, but then npm can publish it to their collection
+9:54 AM that's how we do it now actually, same with node
+9:54 AM 
+<•skade> we thought about syndicating to dev.to and others, but dev.to has their RSS integration in beta
+9:54 AM 
+<dvigneshwer> +1 integration idea
+9:54 AM 
+<•skade> but it has to be on medium first
+9:54 AM 
+<•ag_dubs> ok, i'm not sure what you mean by syndication then
+9:54 AM 
+<•skade> so you can't publish off-platform
+9:54 AM 
+<•ag_dubs> oh, no
+9:54 AM i mean, you could copy paste lol
+9:54 AM 
+<•skade> yeah, that's a problem :)
+9:54 AM 
+<•ag_dubs> why?
+9:55 AM 
+<•skade> because that means everyone has to publish on medium who wants to be there
+9:55 AM 
+<•ag_dubs> what's wrong with posting to the place that gets the most people to find and read it
+9:56 AM 
+<•erickt> Erick Tryzelaar there is support for directly importing a post from an external url: https://help.medium.com/hc/en-us/articles/214550207-Import-post
+9:56 AM 
+<•skade> erickt: great, that's what I meant
+9:57 AM 
+<•ag_dubs> oh rad i didn't even know that existed! cool find @erickt
+9:57 AM 
+<•skade> ag_dubs: people would like to keep things on their own spaces, also for future-profing
+9:57 AM 
+<•erickt> Erick Tryzelaar there's also ifttt.com support to track a feed https://help.medium.com/hc/en-us/articles/115004919347-IFTTT-Channel
+9:57 AM 
+<•skade> but rel-canonical is exactly what i mean
+9:57 AM 
+<•erickt> Erick Tryzelaar I've never used ifttt.com though
+9:57 AM 
+<•ag_dubs> well i didnt mean to derail, just sharing what we've learned at node
+9:57 AM 
+<•skade> ag_dubs: thanks for bringing it up and thanks for erickt on finding that \o/
+9:57 AM nah, that's perfect
+9:57 AM 
+<•ag_dubs> i have a hard stop in 3 min :/
+9:58 AM 
+<•erickt> Erick Tryzelaar ag_dubs: yeah. we've been struggling to figure out how to do content discovery and generation
+9:58 AM 
+<•ag_dubs> i can share the numbers from node after adding medium
+9:58 AM 
+<•erickt> Erick Tryzelaar as you can see from our few different approaches
+9:58 AM 
+<•ag_dubs> i saw them in the public boardm eeting yesterday
+9:58 AM 
+<•skade> I think we can push the meetup platform thing to the next week :)
+9:58 AM 
+<•ag_dubs> they are ridiculously good
+9:58 AM 
+<•erickt> Erick Tryzelaar skade: ok cool
+9:58 AM alright, so the big action items. ag_dubs  will organize a meeting on bridge
+9:58 AM → florent joined (Thunderbird@moz-f66o3s.abo.wanadoo.fr)
+9:58 AM 
+<•skade> i'll play around with the integration
+9:58 AM 
+<•erickt> Erick Tryzelaar sebasmagri: want to organize a writing session on l10n?
+9:59 AM and skade will play with medium?
+9:59 AM 
+<•ag_dubs> also a rustfund session ;)
+9:59 AM 
+<•skade> still, if you know any authors, send them our way :)
+9:59 AM 
+<•erickt> Erick Tryzelaar and rustfund
+9:59 AM 
+<sebasmagri> sure erickt
+9:59 AM 
+<dvigneshwer> Rustfund repo
+9:59 AM 
+<sebasmagri> who would like to jump in?
+9:59 AM 
+<•erickt> Erick Tryzelaar sebasmagri: me!
+10:00 AM 
+<dvigneshwer> Jump as in join rust-bridge ri8?
+10:00 AM 
+<•erickt> Erick Tryzelaar dvigneshwer: I think he meant working on the localization rfc
+10:00 AM 
+<sebasmagri> to dedicate some time to write a pre-rfc for the localization team
+10:01 AM 
+<dvigneshwer> Ohk 
+10:01 AM 
+<•erickt> Erick Tryzelaar please add any missing agenda items to https://github.com/rust-community/team/issues/179#issuecomment-318117469!
+10:01 AM thanks everyone!
