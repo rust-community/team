@@ -1,15 +1,38 @@
-# Rust Language Community Team
+# Rust Community Team
 > Leader: Ashley Williams ([@ashleygwilliams](https://github.com/ashleygwilliams))
 
-This is the main repository for tracking the results of the [Rust Language](https://www.rust-lang.org)
-community team's global outreach efforts.  If you would like to participate in any of the projects,
-or propose a new one, please either start a conversation on
-[users.rust-lang.org/c/community](https://users.rust-lang.org/c/community),
-or open an [issue](https://github.com/rust-community/team/issues).  We'd love to hear from you. 
+This repository is the home to the [Rust Language](https://www.rust-lang.org)
+Community Team. We use this repo to track meeting agendas, new ideas, and concerns
+that cut across our various [subteams](#subteams).
 
-The team meets on Wednesdays at 5PM UTC on the the mozilla.org irc network in the #rust-community channel. If you don't have an irc client you can access it via [Mibbit](http://chat.mibbit.com/?server=irc.mozilla.org&channel=%23rust-community). The meeting agendas can be found [here](https://docs.google.com/document/d/1ncFvzgb85ay5lNECV6myw4uOv5rjsvtyoLcgyQTJZ9E/edit?usp=sharing).
+## Get Involved!
 
-# Subteams
+### 💕 Participate in a Subteam
+
+Working with or joining a Subteam is the best way to get involved with the Rust
+Community team. Subteams are subject focused and bring together people who are
+invested in managing and producing awesome events, content, workshops and more!
+
+See more on subteams [below](#subteams).
+
+### 🏢 Attend a General Meeting
+
+The Rust Community Team meets every other Wednesday, 5PM UTC on the the mozilla.org
+IRC network in the #rust-community channel. These meetings are treated as a standup
+for the subteams, though we occasionally host guests. Before you consider joining a
+general meeting- take a look at the [Subteams](#subteams) to get a sense for what
+sort of work is being done!
+
+If you don't have an irc client you can access it via [Mibbit](http://chat.mibbit.com/?server=irc.mozilla.org&channel=%23rust-community). The meeting agendas can be found [here](https://docs.google.com/document/d/1ncFvzgb85ay5lNECV6myw4uOv5rjsvtyoLcgyQTJZ9E/edit?usp=sharing).
+
+If you would like to attend, please read our [Observer Policy](/rfcs/observer-policy.md).
+
+## Subteams
+
+The subteams are the best way to get involved in the Community Team. You can learn
+more about each team by visiting it's repository, reading it's goal document, or 
+messaging it's Team Lead. You can find all the details below- we're excited to hear from
+you!
 
 ### 🗓️ Events
 
