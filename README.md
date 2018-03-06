@@ -46,10 +46,10 @@ We are hoping to find new members around the globe, especially outside of Europe
 
 ### 📚 Content
 
-Organize and write for the community blog and other publication outlets, Organise and promote material like videos and podcasts, Provide lectorate (copy editing) and assistance for people that want to write blog posts on rust
+Organize and write for the community blog and other publication outlets; organize and promote material like videos and podcasts; provide lectorate (copy editing) and assistance for people that want to write blog posts on rust.
 
 [**Repo**](https://github.com/rust-community/content-team) 
- | [**Goals Document**](https://docs.google.com/document/d/1fNKaOiV-D2VHdNUPJoGFsM2D10RWNsTGj5WjGHLboqg)
+ | [**Goals Document**](https://github.com/rust-community/content-team/blob/master/GOALS.md)
 | **Leader**: Mark Sta Ana ([@booyaa])
 
 ### ☎️ Switchboard
@@ -69,13 +69,13 @@ RustBridge is a workshop focused on getting underrepresented people with a backg
 
 ### 📝  Survey
 
-Plan, run, analyse, publish community and commercial surveys
+Plan, run, analyse, publish surveys and provide other teams with advice on running surveys.
 
 **Leader**: Jonathan Turner ([@jonathandturner])
 
 ### 🗺️  i18n and l10n
 
-Organize folks interested in helping Rust become more accessible around the world
+Organize folks interested in helping Rust become more accessible around the world.
 
 **Leader**: Sebastian Magri ([@sebasmagri])
 
