@@ -84,4 +84,4 @@ Organize folks interested in helping Rust become more accessible around the worl
 [@manishearth]: https://github.com/manishearth
 [@ashleygwilliams]: https://github.com/ashleygwilliams
 [@jonathandturner]: https://github.com/jonathandturner
-[@sebasmagri]: https://github.com/sebasmagri/sebasmagri
+[@sebasmagri]: https://github.com/sebasmagri
