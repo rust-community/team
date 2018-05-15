@@ -65,7 +65,7 @@ Connect the community with the right Rust resources or people, gather feedback f
 RustBridge is a workshop focused on getting underrepresented people with a background in another programming language to learn Rust and join the community.
 
 [**Repo**](https://github.com/rustbridge/team)
-| **Leader**: Ashley Williams ([@ashleygwilliams])
+| **Leader**: Olivia Hugger ([@oe])
 
 ### 📝  Survey
 
@@ -85,3 +85,4 @@ Organize folks interested in helping Rust become more accessible around the worl
 [@ashleygwilliams]: https://github.com/ashleygwilliams
 [@jonathandturner]: https://github.com/jonathandturner
 [@sebasmagri]: https://github.com/sebasmagri
+[@oe]: https://github.com/oe
