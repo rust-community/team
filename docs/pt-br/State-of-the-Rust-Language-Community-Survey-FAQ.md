@@ -29,7 +29,7 @@ As respostas da pesquisa serão anonimizadas, agregadas e sumarizadas. Uma anali
 
 ### Como serão tratadas as informações de identificação pessoal (PII)?
 
-Quase todas as perguntas da pesquisa são opcionais. Você está convidado a compartilhar a maior ou menor quantidade de informação que você se sentir confortável em nos contar.
+Quase todas as perguntas da pesquisa são opcionais. Você está convidado a compartilhar o tanto de informação que você se sentir confortável em nos contar.
 Apenas a Equipe Core e os líderes da pesquisa da Equipe de Comunidade terão acesso aos dados brutos da pesquisa. Todas as respostas serão anonimizadas antes de serem compartilhadas com as outras equipes e antes da publicação dos resultados.
 
 ### Qual o motivo de coletar dados de contato na pesquisa?
