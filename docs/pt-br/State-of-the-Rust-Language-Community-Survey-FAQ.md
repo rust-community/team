@@ -1,19 +1,19 @@
-# Perguntas Frequentes sobre o Censo sobre a linguagem Rust (FAQ)
+# Perguntas Frequentes sobre a Pesquisa Sobre a Comunidade da Linguagem Rust (FAQ)
 
-Nesse FAQ tentaremos responder perguntas comuns sobre o Censo Comunitário Anual sobre o estado da linguagem Rust. Se você achar que existe uma pergunta faltando ou se você tiver alguma preocupação sobre este documento, não hesite em contatar a [Equipe de Comunidade Rust](email to:community-team@rust-lang.org) ou abrir uma [issue para a Equipe de Comunidade](https://github.com/rust-community/team/issues).
+Nesse FAQ tentaremos responder perguntas comuns sobre a pesquisa anual aobre a Comunidade da Linguagem Rust. Se você achar que existe uma pergunta faltando ou se você tiver alguma preocupação sobre este documento, não hesite em contatar a [Equipe de Comunidade Rust](email to:community-team@rust-lang.org) ou abrir uma [issue para a Equipe de Comunidade](https://github.com/rust-community/team/issues).
 
-[O documento original em Ingles se encontra aqui](https://github.com/rust-community/team/wiki/State-of-the-Rust-Language-Community-Survey-FAQ)
+[O documento original em Inglês se encontra aqui](https://github.com/rust-community/team/wiki/State-of-the-Rust-Language-Community-Survey-FAQ)
 
 ## Por que essa pesquisa é importante para o projeto Rust?
 
-[Rust](https://rust-lang.org) é um projeto Open Source. Isso significa que queremos ouvir das pessoas de dentro e de fora do nosso ecossistema, sobre a linguagem, como ela é percebida, e como podemos tornar a linguagem mais acessível e nossa comunidade mais convidativa. Esse feedback dará para a comunidade a oportunidade de moldar o futuro do projeto. Queremos focar nos requerimentos dos usuários atuais e futuros usuários, para oferecer uma ferramenta conveniente para que sejam resolvidos problemas reais de uma maneira segura, eficiente e moderna.
+[Rust](https://rust-lang.org) é um projeto Open Source. Isso significa que queremos ouvir das pessoas de dentro e de fora do nosso ecossistema, sobre a linguagem, como ela é percebida, e como podemos tornar a linguagem mais acessível e nossa comunidade mais convidativa. Esse feedback dará para a comunidade a oportunidade de moldar o futuro do projeto. Queremos focar nos requerimentos dos usuários atuais e futuros, para oferecer uma ferramenta conveniente para que sejam resolvidos problemas reais de maneira segura, eficiente e moderna.
 
 ## Quais os objetivos da pesquisa?
 
 * Entender as principais prioridades de desenvolvimento e necessidades da comunidade
 * Categorizar a população de usuários da linguagem
 * Focar nossos esforços em eventos e conferências para gerar mais impacto
-* Identificar novas pessoas que queiram contribuir com os objetivos comunitários
+* Identificar novas pessoas que possam contribuir com os objetivos comunitários
 
 ## Quanto tempo demora para responder a pesquisa?
 
@@ -25,7 +25,7 @@ A pesquisa inclui algumas perguntas básicas sobre o uso de Rust, suas opiniões
 
 ## Como serão usados os dados das respostas?
 
-As respostas da pesquisa serão anonimizadas, agregadas e sumarizadas. Uma analise geral sera publicada em https://blog.rust-lang.org
+As respostas da pesquisa serão anonimizadas, agregadas e resumidas. Uma analise geral sera publicada em https://blog.rust-lang.org
 
 ### Como serão tratadas as informações de identificação pessoal (PII)?
 
