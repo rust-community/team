@@ -1,6 +1,6 @@
 # Perguntas Frequentes sobre a Pesquisa Sobre a Comunidade da Linguagem Rust (FAQ)
 
-Nesse FAQ tentaremos responder perguntas comuns sobre a pesquisa anual aobre a Comunidade da Linguagem Rust. Se você achar que existe uma pergunta faltando ou se você tiver alguma preocupação sobre este documento, não hesite em contatar a [Equipe de Comunidade Rust](email to:community-team@rust-lang.org) ou abrir uma [issue para a Equipe de Comunidade](https://github.com/rust-community/team/issues).
+Nesse FAQ tentaremos responder perguntas comuns sobre a pesquisa anual sobre a Comunidade da Linguagem Rust. Se você achar que existe uma pergunta faltando ou se você tiver alguma preocupação sobre este documento, não hesite em contatar a [Equipe de Comunidade Rust](email to:community-team@rust-lang.org) ou abrir uma [issue para a Equipe de Comunidade](https://github.com/rust-community/team/issues).
 
 [O documento original em Inglês se encontra aqui](https://github.com/rust-community/team/wiki/State-of-the-Rust-Language-Community-Survey-FAQ)
 
@@ -25,7 +25,7 @@ A pesquisa inclui algumas perguntas básicas sobre o uso de Rust, suas opiniões
 
 ## Como serão usados os dados das respostas?
 
-As respostas da pesquisa serão anonimizadas, agregadas e resumidas. Uma analise geral sera publicada em https://blog.rust-lang.org
+As respostas da pesquisa serão anonimizadas, agrupadas e resumidas. Uma analise geral sera publicada em https://blog.rust-lang.org
 
 ### Como serão tratadas as informações de identificação pessoal (PII)?
 
@@ -46,7 +46,7 @@ Caso você queira ser contactado por qualquer um desses motivos, ou qualquer  ou
 
 ## Onde e quando serão publicado os resultados?
 
-Esperamos publicar os resultados sumarizados dentro de um ou dois meses depois que a pesquisa estiver completa. Os resultados serão publicados no [blog oficial do projeto](https://blog.rust-lang.org).
+Esperamos publicar os resultados resumidos dentro de um ou dois meses depois que a pesquisa estiver completa. Os resultados serão publicados no [blog oficial do projeto](https://blog.rust-lang.org).
 
 ## Onde eu posso ver os resultados anteriores?
 
