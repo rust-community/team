@@ -1,6 +1,6 @@
 # Perguntas Frequentes sobre o Censo sobre a linguagem Rust (FAQ)
 
-Nesse FAQ tentaremos responder perguntas comuns sobre o Censo Comunitário Anual sobre o estado da linguagem Rust. Se você achar que existe uma pergunta faltando ou se você tiver alguma preocupação sobre este documento, não hexite em contatar a [Equipe de Comunidade Rust](email to:community-team@rust-lang.org) ou abrir uma [issue para a Equipe de Comunidade](https://github.com/rust-community/team/issues).
+Nesse FAQ tentaremos responder perguntas comuns sobre o Censo Comunitário Anual sobre o estado da linguagem Rust. Se você achar que existe uma pergunta faltando ou se você tiver alguma preocupação sobre este documento, não hesite em contatar a [Equipe de Comunidade Rust](email to:community-team@rust-lang.org) ou abrir uma [issue para a Equipe de Comunidade](https://github.com/rust-community/team/issues).
 
 [O documento original em Ingles se encontra aqui](https://github.com/rust-community/team/wiki/State-of-the-Rust-Language-Community-Survey-FAQ)
 
