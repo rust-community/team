@@ -6,7 +6,7 @@ Nesse FAQ tentaremos responder perguntas comuns sobre a pesquisa anual sobre a C
 
 ## Por que essa pesquisa é importante para o projeto Rust?
 
-[Rust](https://rust-lang.org) é um projeto Open Source. Isso significa que queremos ouvir as pessoas de dentro e de fora do nosso ecossistema, sobre a linguagem, como ela é percebida, e como podemos tornar a linguagem mais acessível e nossa comunidade mais convidativa. Esse feedback dará para a comunidade a oportunidade de moldar o futuro do projeto. Queremos focar nos requerimentos que as pessoas que utilizam a linguagem agora e que irão utilizar no futuro, para oferecer uma ferramenta conveniente para que sejam resolvidos problemas reais de maneira segura, eficiente e moderna.
+[Rust](https://rust-lang.org) é um projeto Open Source. Isso significa que queremos ouvir as pessoas de dentro e de fora do nosso ecossistema, sobre a linguagem, como ela é percebida, e como podemos tornar a linguagem mais acessível e nossa comunidade mais convidativa. Esse feedback dará para a comunidade a oportunidade de moldar o futuro do projeto. Queremos focar nos requerimentos das pessoas que utilizam a linguagem agora e que irão utilizar no futuro, para oferecer uma ferramenta conveniente para que sejam resolvidos problemas reais de maneira segura, eficiente e moderna.
 
 ## Quais os objetivos da pesquisa?
 
