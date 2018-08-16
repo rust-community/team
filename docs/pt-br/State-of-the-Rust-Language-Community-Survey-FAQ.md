@@ -50,5 +50,5 @@ Esperamos publicar os resultados resumidos dentro de um ou dois meses depois que
 
 ## Onde eu posso ver os resultados anteriores?
 
-* [State of Rust 2016](https://blog.rust-lang.org/2017/09/05/Rust-2017-Survey-Results.html)
+* [State of Rust 2017](https://blog.rust-lang.org/2017/09/05/Rust-2017-Survey-Results.html)
 * [State of Rust 2016](https://blog.rust-lang.org/2016/06/30/State-of-Rust-Survey-2016.html)
