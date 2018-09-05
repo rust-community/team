@@ -4,12 +4,11 @@ ___ DELETE ___
 
 ___ DELETE ___
 
-5-5:30pm UTC on #rust-community on irc.mozilla.org. EIAL (Easy IRC Access Link): https://kiwiirc.com/client/irc.mozilla.org:+6667/#rust-community
+5-5:30pm UTC on the `community-team\general` in Discord (https://discordapp.com/channels/442252698964721669/443773747350994945) please ask @ashleygwilliams for invites if you don't haven't joined Discord before.
 
 - housekeeping (`facilitator` - ??min)
 - survey (@jonathandturner - ??min)
 - rustbridge (@oe - ??min)
-- switchboard (@Manishearth - ??min)
 - events (@skade - ??min)
 - content (@booyaa - ??min)
 - l10n (@sebasmagri - ??min)
