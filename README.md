@@ -17,15 +17,16 @@ See more on subteams [below](#subteams).
 
 ### 🏢 Attend a General Meeting
 
-The Rust Community Team meets every other Wednesday, 5PM UTC on the the mozilla.org
-IRC network in the #rust-community channel. These meetings are treated as a standup
-for the subteams, though we occasionally host guests. Before you consider joining a
-general meeting- take a look at the [Subteams](#subteams) to get a sense for what
-sort of work is being done!
-
-If you don't have an irc client you can access it via [Mibbit](http://chat.mibbit.com/?server=irc.mozilla.org&channel=%23rust-community). The meeting agendas can be found [here](https://docs.google.com/document/d/1ncFvzgb85ay5lNECV6myw4uOv5rjsvtyoLcgyQTJZ9E/edit?usp=sharing).
+The Rust Community Team meets once a month on the fourth Wednesday, 5PM UTC in the
+[#community-team channel on the Rust Discord][Discord]. These meetings are treated
+as a standup for the subteams, though we occasionally host guests. Before you
+consider joining a general meeting- take a look at the [Subteams](#subteams) to get
+a sense of what sort of work is being done! The meeting agendas can be found
+[here](https://github.com/rust-community/team/issues?utf8=%E2%9C%93&q=is%3Aissue+label%3Aagenda).
 
 If you would like to attend, please read our [Observer Policy](/rfcs/observer-policy.md).
+
+[Discord]: https://discord.gg/KskHZGT
 
 ## Subteams
 
@@ -50,28 +51,19 @@ Organize and write for the community blog and other publication outlets; organiz
 
 [**Repo**](https://github.com/rust-community/content-team) 
  | [**Goals Document**](https://github.com/rust-community/content-team/blob/master/GOALS.md)
-| **Leader**: Mark Sta Ana ([@booyaa])
 
-### ☎️ Switchboard
-
-Connect the community with the right Rust resources or people, gather feedback from production users, increase Rust presence in other communities
-
-[**Repo**](https://github.com/rust-community/switchboard-team)
- | [**Goals Document**](https://github.com/rust-community/switchboard-team/blob/master/README.md)
-| **Leader**: Manish Goregaokar ([@manishearth])
-
-### 🌉  RustBridge
+### 🌉 RustBridge
 
 RustBridge is a workshop focused on getting underrepresented people with a background in another programming language to learn Rust and join the community.
 
 [**Repo**](https://github.com/rustbridge/team)
-| **Leader**: Olivia Hugger ([@oe])
+| **Leader**: Marisa ([@fmoko])
 
 ### 📝  Survey
 
 Plan, run, analyse, publish surveys and provide other teams with advice on running surveys.
 
-**Leader**: Jonathan Turner ([@jonathandturner])
+**Leader**: Manish Goregaokar ([@Manishearth])
 
 ### 🗺️  i18n and l10n
 
@@ -80,9 +72,8 @@ Organize folks interested in helping Rust become more accessible around the worl
 **Leader**: Sebastian Magri ([@sebasmagri])
 
 [@skade]: https://github.com/skade
-[@booyaa]: https://github.com/booyaa
 [@manishearth]: https://github.com/manishearth
 [@ashleygwilliams]: https://github.com/ashleygwilliams
 [@jonathandturner]: https://github.com/jonathandturner
 [@sebasmagri]: https://github.com/sebasmagri
-[@oe]: https://github.com/oe
+[@fmoko]: https://github.com/fmoko
